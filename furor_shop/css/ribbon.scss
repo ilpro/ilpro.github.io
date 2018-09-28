@@ -1,0 +1,54 @@
+@import 'header';
+
+@media screen and (min-width: 320px){
+	
+.ribbon {
+	width: 100%;
+	margin-top: 350px;
+	button {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 17px;
+		border-radius: 20px;
+		outline: none;
+		border: 2px solid $black;
+		background-color: $white;
+		padding: 13px 50px 9px 50px;
+		font-family: $ffsb;
+		font-size: 14px;
+		text-transform: uppercase;
+		&:hover{
+			background-color: #2b2a2c;
+			color: $white;
+		}
+	}
+	figure{
+		margin-bottom: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 6px #a3a3a4; 
+		&:last-child{
+			margin-bottom: none;
+		}
+		img{
+			border-radius: 10px 10px 0 0;
+		}
+
+		figcaption {
+			padding: 15px 20px 10px 10px;
+			border-radius: 0 0 5px 5px;
+			text-transform: uppercase;
+		h4{
+			font-family: $ffm;
+			font-size: 12px;
+			line-height: 2.5;
+		}
+		p{
+			font-family: $ffmb;
+			font-size: 16px;
+		}
+		}
+	}
+
+}
+
+}
