@@ -1,110 +1,3 @@
-@font-face {
-  font-family: SegoeUI;
-  src: url(../fonts/SegoeUI.ttf);
-}
-@font-face {
-  font-family: SegoeUI-Bold;
-  src: url(../fonts/SegoeUI-Bold.ttf);
-}
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url(../fonts/Montserrat-Bold.ttf);
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: SegoeUI, sans-serif;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-li {
-  list-style: none;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #ffffff;
-}
-
-.mw-100 {
-  min-width: 100%;
-}
-
-@media screen and (min-width: 320px) {
-  /* HEADER */
-  header {
-    width: 100%;
-    height: 170px;
-    background: url(../img/header-bg.png) no-repeat;
-    background-size: cover;
-  }
-
-  .navigation {
-    position: absolute;
-    top: 87px;
-    width: 76%;
-    height: 365px;
-    display: flex;
-    flex-direction: column;
-    padding: 22px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #a3a3a4;
-  }
-  .navigation nav {
-    margin-top: 22px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .navigation nav li {
-    margin-bottom: 16px;
-    border-radius: 5px;
-    border: 1px solid #000000;
-  }
-  .navigation nav li:last-child {
-    margin-bottom: 0;
-  }
-  .navigation nav a {
-    font-family: SegoeUI-Bold, sans-serif;
-    font-size: 12px;
-    display: block;
-    padding: 20px 92px;
-  }
-  .navigation nav a:hover {
-    background-color: #2b2a2c;
-    color: #ffffff;
-  }
-
-  .logo {
-    display: flex;
-    text-transform: uppercase;
-  }
-  .logo img {
-    margin-right: 16px;
-  }
-  .logo h1 {
-    font-family: SegoeUI, sans-serif;
-  }
-}
 @media screen and (min-width: 320px) {
   .ribbon {
     width: 100%;
@@ -151,6 +44,33 @@ li {
   .ribbon figure figcaption p {
     font-family: Montserrat-Bold, sans-serif;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 411px) {
+  .ribbon button {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 568px) {
+  figure figcaption {
+    border-radius: 20px;
+  }
+  figure figcaption img {
+    border-radius: 20px 20px 0 0;
+  }
+  figure figcaption h4 {
+    font-size: 18px;
+  }
+  figure figcaption p {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  figure figcaption h4 {
+    font-size: 24px;
+  }
+  figure figcaption p {
+    font-size: 28px;
   }
 }
 

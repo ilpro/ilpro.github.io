@@ -83,5 +83,30 @@ li {
       margin-right: 16px; }
     .logo h1 {
       font-family: SegoeUI, sans-serif; } }
+@media screen and (min-width: 360px) {
+  .navigation {
+    width: 78%; } }
+@media screen and (min-width: 375px) {
+  .navigation {
+    width: 79%; }
+    .navigation nav li a {
+      font-size: 16px; } }
+@media screen and (min-width: 568px) {
+  .navigation {
+    width: 83%; } }
+@media screen and (min-width: 731px) {
+  .navigation {
+    width: 84%; }
+    .navigation nav li a {
+      font-size: 28px; } }
+@media screen and (min-width: 812px) {
+  .navigation {
+    width: 85%; } }
+@media screen and (min-width: 1024px) {
+  .navigation {
+    width: 86%; } }
+@media screen and (min-width: 1366px) {
+  .navigation {
+    width: 87%; } }
 
 /*# sourceMappingURL=header.css.map */

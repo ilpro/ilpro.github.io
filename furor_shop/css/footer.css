@@ -23,10 +23,22 @@
   .icon {
     display: flex; }
     .icon li {
-      margin-right: 14px; }
+      margin-right: 20px; }
       .icon li:last-child {
         margin-right: 0; }
       .icon li a {
         font-size: 20px; } }
+@media screen and (min-width: 411px) {
+  .footer-navigation p {
+    font-size: 18px; }
+
+  .icon a {
+    font-size: 24px; } }
+@media screen and (min-width: 768px) {
+  .footer-navigation p {
+    font-size: 24px; }
+
+  .icon a {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=footer.css.map */

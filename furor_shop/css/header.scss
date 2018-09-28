@@ -97,3 +97,60 @@ header{
 }
 
 }
+
+@media screen and (min-width: 360px){
+	.navigation{
+		width: 78%;
+	}
+}
+
+@media screen and (min-width: 375px){
+	.navigation{
+		width: 79%;
+		nav{
+			li{
+				a{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 568px){
+	.navigation {
+		width: 83%;
+	}
+}
+@media screen and (min-width: 731px){
+	.navigation{
+		width: 84%;
+		nav {
+			li {
+				a {
+					font-size: 28px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 812px){
+	.navigation{
+		width: 85%;
+	}
+}
+
+
+
+@media screen and (min-width: 1024px){
+	.navigation{
+		width: 86%;
+	}
+}
+
+@media screen and (min-width: 1366px){
+	.navigation{
+		width: 87%;
+	}
+}
