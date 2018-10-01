@@ -1,42 +1,53 @@
 @font-face {
   font-family: SegoeUI;
-  src: url(../fonts/SegoeUI.ttf); }
+  src: url(../fonts/SegoeUI.ttf);
+}
 @font-face {
   font-family: SegoeUI-Bold;
-  src: url(../fonts/SegoeUI-Bold.ttf); }
+  src: url(../fonts/SegoeUI-Bold.ttf);
+}
 @font-face {
   font-family: Montserrat-Regular;
-  src: url(../fonts/Montserrat-Regular.ttf); }
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
 @font-face {
   font-family: Montserrat-Bold;
-  src: url(../fonts/Montserrat-Bold.ttf); }
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   font-family: SegoeUI, sans-serif;
   background-color: #ffffff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
   text-decoration: none;
-  color: #000000; }
+  color: #000000;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+}
 
 .mw-100 {
-  min-width: 100%; }
+  min-width: 100%;
+}
 
 @media screen and (min-width: 320px) {
   /* HEADER */
@@ -44,71 +55,117 @@ li {
     width: 100%;
     height: 170px;
     background: url(../img/header-bg.png) no-repeat;
-    background-size: cover; }
+    background-size: cover;
+  }
 
   .navigation {
     position: absolute;
     top: 87px;
-    width: 76%;
+    width: 87%;
     height: 365px;
     display: flex;
     flex-direction: column;
     padding: 22px;
     background-color: #ffffff;
+    box-shadow: 0 2px 5px #a3a3a4;
+  }
+  .navigation nav {
+    margin-top: 22px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .navigation nav li {
+    margin-bottom: 16px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px #a3a3a4; }
-    .navigation nav {
-      margin-top: 22px;
-      text-transform: uppercase;
-      text-align: center; }
-      .navigation nav li {
-        margin-bottom: 16px;
-        border-radius: 5px;
-        border: 1px solid #000000;
-        background-color: #2b2a2c; }
-        .navigation nav li:last-child {
-          margin-bottom: 0; }
-      .navigation nav a {
-        color: #ffffff;
-        font-family: SegoeUI-Bold, sans-serif;
-        font-size: 12px;
-        display: block;
-        padding: 20px 92px; }
-        .navigation nav a:hover {
-          background-color: #ffffff;
-          color: #000000; }
+    border: 1px solid #000000;
+    background-color: #2b2a2c;
+  }
+  .navigation nav li:last-child {
+    margin-bottom: 0;
+  }
+  .navigation nav a {
+    color: #ffffff;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 12px;
+    display: block;
+    padding: 20px 92px;
+  }
+  .navigation nav a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 
   .logo {
     display: flex;
-    text-transform: uppercase; }
-    .logo img {
-      margin-right: 16px; }
-    .logo h1 {
-      font-family: SegoeUI, sans-serif; } }
+    text-transform: uppercase;
+  }
+  .logo img {
+    margin-right: 16px;
+  }
+  .logo h1 {
+    font-family: SegoeUI, sans-serif;
+  }
+}
 @media screen and (min-width: 360px) {
   .navigation {
-    width: 78%; } }
+    width: 88%;
+  }
+}
 @media screen and (min-width: 375px) {
   .navigation {
-    width: 79%; }
-    .navigation nav li a {
-      font-size: 16px; } }
+    width: 89%;
+  }
+  .navigation nav li a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 411px) {
+  .navigation {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 568px) {
   .navigation {
-    width: 83%; } }
+    width: 92%;
+  }
+}
 @media screen and (min-width: 731px) {
   .navigation {
-    width: 84%; }
-    .navigation nav li a {
-      font-size: 28px; } }
+    width: 84%;
+  }
+  .navigation nav li a {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 568px) {
+  .navigation {
+    width: 93%;
+  }
+}
+@media screen and (min-width: 731px) {
+  .navigation {
+    width: 94%;
+  }
+}
 @media screen and (min-width: 812px) {
   .navigation {
-    width: 85%; } }
+    width: 85%;
+  }
+}
+@media screen and (min-width: 812px) {
+  .navigation {
+    width: 95%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .navigation {
-    width: 86%; } }
+    width: 96%;
+  }
+}
 @media screen and (min-width: 1366px) {
   .navigation {
-    width: 87%; } }
+    width: 97%;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

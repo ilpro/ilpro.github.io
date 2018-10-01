@@ -56,7 +56,7 @@ li {
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -77,13 +77,12 @@ li {
   .navigation {
     position: absolute;
     top: 87px;
-    width: 76%;
+    width: 87%;
     height: 365px;
     display: flex;
     flex-direction: column;
     padding: 22px;
     background-color: #ffffff;
-    border-radius: 5px;
     box-shadow: 0 2px 5px #a3a3a4;
   }
   .navigation nav {
@@ -125,20 +124,25 @@ li {
 }
 @media screen and (min-width: 360px) {
   .navigation {
-    width: 78%;
+    width: 88%;
   }
 }
 @media screen and (min-width: 375px) {
   .navigation {
-    width: 79%;
+    width: 89%;
   }
   .navigation nav li a {
     font-size: 16px;
   }
 }
+@media screen and (min-width: 411px) {
+  .navigation {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 568px) {
   .navigation {
-    width: 83%;
+    width: 92%;
   }
 }
 @media screen and (min-width: 731px) {
@@ -149,30 +153,44 @@ li {
     font-size: 28px;
   }
 }
+@media screen and (min-width: 568px) {
+  .navigation {
+    width: 93%;
+  }
+}
+@media screen and (min-width: 731px) {
+  .navigation {
+    width: 94%;
+  }
+}
 @media screen and (min-width: 812px) {
   .navigation {
     width: 85%;
   }
 }
+@media screen and (min-width: 812px) {
+  .navigation {
+    width: 95%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .navigation {
-    width: 86%;
+    width: 96%;
   }
 }
 @media screen and (min-width: 1366px) {
   .navigation {
-    width: 87%;
+    width: 97%;
   }
 }
 @media screen and (min-width: 320px) {
-  /* RIBBON */
   .ribbon {
     width: 100%;
     margin-top: 350px;
-    text-align: center;
   }
   .ribbon button {
     width: 60%;
+    margin-left: 20%;
     margin-top: 17px;
     border-radius: 20px;
     outline: none;
@@ -188,21 +206,16 @@ li {
     color: #ffffff;
   }
   .ribbon figure {
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 35px;
     box-shadow: 0 0 6px #a3a3a4;
   }
   .ribbon figure:last-child {
     margin-bottom: none;
   }
-  .ribbon figure img {
-    border-radius: 10px 10px 0 0;
-  }
   .ribbon figure figcaption {
     padding: 15px 20px 10px 10px;
     border-radius: 0 0 5px 5px;
     text-transform: uppercase;
-    text-align: left;
   }
   .ribbon figure figcaption h4 {
     font-family: Montserrat-Regular, sans-serif;
@@ -230,21 +243,26 @@ li {
     width: 250px;
     margin: 14px auto;
   }
+
   .contact-social_icon li {
     margin-top: 15px;
     height: 50px;
     width: 250px;
     background: url(../img/soc-cont.png) no-repeat;
   }
+
   .contact-social_icon .wts {
     background-position: 0 -66px;
   }
+
   .contact-social_icon .teleg {
     background-position: 0 -132px;
   }
+
   .contact-social_icon .fas {
     background-position: 0 -198px;
   }
+
   .contact-social_icon .inst {
     background-position: 0 -264px;
   }
@@ -253,12 +271,14 @@ li {
   .about {
     margin: 360px auto 0 auto;
   }
+
   .about h2 {
     font-family: SegoeUI-Bold, sans-serif;
     font-size: 45px;
     color: #000000;
     text-transform: uppercase;
   }
+
   .about h3 {
     margin: 0 0 40px 20px;
     font-family: SegoeUI-Bold, sans-serif;
@@ -266,21 +286,11 @@ li {
     color: #dedede;
     text-transform: uppercase;
   }
+
   .about p {
     font-family: SegoeUI, sans-serif;
     font-size: 18px;
     color: #6a696b;
-  }
-}
-@media screen and (min-width: 375px) {
-  .about h2 {
-    font-size: 50px;
-  }
-  .about h3 {
-    font-size: 70px;
-  }
-  .about p {
-    font-size: 24px;
   }
 }
 @media screen and (min-width: 411px) {
@@ -308,16 +318,6 @@ li {
   }
   figure figcaption p {
     font-size: 28px;
-  }
-
-  .about h2 {
-    font-size: 60px;
-  }
-  .about h3 {
-    font-size: 80px;
-  }
-  .about p {
-    font-size: 30px;
   }
 }
 @media screen and (min-width: 320px) {

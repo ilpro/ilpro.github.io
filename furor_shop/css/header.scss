@@ -29,7 +29,7 @@ li {
 
 
 .wrapper{
-	width: 90%;
+	width: 100%;
 	margin:0 auto;
 	background-color: $white;
 }
@@ -52,13 +52,12 @@ header{
 .navigation{
 	position: absolute;
 	top:87px;
-	width: 76%;
+	width: 87%;
 	height: 365px;
 	display: $df;
 	flex-direction: column;
 	padding: 22px;
 	background-color: $white;
-	border-radius: 5px;
 	box-shadow: 0 2px 5px #a3a3a4;
 	nav {
 		margin-top: 22px;
@@ -102,13 +101,13 @@ header{
 
 @media screen and (min-width: 360px){
 	.navigation{
-		width: 78%;
+		width: 88%;
 	}
 }
 
 @media screen and (min-width: 375px){
 	.navigation{
-		width: 79%;
+		width: 89%;
 		nav{
 			li{
 				a{
@@ -119,9 +118,16 @@ header{
 	}
 }
 
+@media screen and (min-width: 411px){
+	.navigation {
+		width: 90%;
+	}
+}
+
+
 @media screen and (min-width: 568px){
 	.navigation {
-		width: 83%;
+		width: 92%;
 	}
 }
 @media screen and (min-width: 731px){
@@ -137,9 +143,29 @@ header{
 	}
 }
 
+
+@media screen and (min-width: 568px) {
+	.navigation {
+		width: 93%;
+	}
+}
+
+@media screen and (min-width: 731px){
+	.navigation {
+		width: 94%;
+	}
+}
+
+
 @media screen and (min-width: 812px){
 	.navigation{
 		width: 85%;
+	}
+}
+
+@media screen and (min-width: 812px){
+	.navigation{
+		width: 95%;
 	}
 }
 
@@ -147,12 +173,12 @@ header{
 
 @media screen and (min-width: 1024px){
 	.navigation{
-		width: 86%;
+		width: 96%;
 	}
 }
 
 @media screen and (min-width: 1366px){
 	.navigation{
-		width: 87%;
+		width: 97%;
 	}
 }

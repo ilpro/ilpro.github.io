@@ -21,15 +21,11 @@
     color: #ffffff;
   }
   .ribbon figure {
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 35px;
     box-shadow: 0 0 6px #a3a3a4;
   }
   .ribbon figure:last-child {
     margin-bottom: none;
-  }
-  .ribbon figure img {
-    border-radius: 10px 10px 0 0;
   }
   .ribbon figure figcaption {
     padding: 15px 20px 10px 10px;
@@ -44,6 +40,72 @@
   .ribbon figure figcaption p {
     font-family: Montserrat-Bold, sans-serif;
     font-size: 16px;
+  }
+
+  /* CONTACT */
+  .contact {
+    margin-top: 350px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-tel a {
+    letter-spacing: 1px;
+  }
+
+  .contact-social_icon {
+    width: 250px;
+    margin: 14px auto;
+  }
+
+  .contact-social_icon li {
+    margin-top: 15px;
+    height: 50px;
+    width: 250px;
+    background: url(../img/soc-cont.png) no-repeat;
+  }
+
+  .contact-social_icon .wts {
+    background-position: 0 -66px;
+  }
+
+  .contact-social_icon .teleg {
+    background-position: 0 -132px;
+  }
+
+  .contact-social_icon .fas {
+    background-position: 0 -198px;
+  }
+
+  .contact-social_icon .inst {
+    background-position: 0 -264px;
+  }
+
+  /* ABOUT */
+  .about {
+    margin: 360px auto 0 auto;
+  }
+
+  .about h2 {
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 45px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  .about h3 {
+    margin: 0 0 40px 20px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 65px;
+    color: #dedede;
+    text-transform: uppercase;
+  }
+
+  .about p {
+    font-family: SegoeUI, sans-serif;
+    font-size: 18px;
+    color: #6a696b;
   }
 }
 @media screen and (min-width: 411px) {
