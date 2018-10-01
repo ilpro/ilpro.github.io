@@ -95,19 +95,21 @@ li {
     margin-bottom: 16px;
     border-radius: 5px;
     border: 1px solid #000000;
+    background-color: #2b2a2c;
   }
   .navigation nav li:last-child {
     margin-bottom: 0;
   }
   .navigation nav a {
+    color: #ffffff;
     font-family: SegoeUI-Bold, sans-serif;
     font-size: 12px;
     display: block;
     padding: 20px 92px;
   }
   .navigation nav a:hover {
-    background-color: #2b2a2c;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
   }
 
   .logo {
@@ -163,13 +165,14 @@ li {
   }
 }
 @media screen and (min-width: 320px) {
+  /* RIBBON */
   .ribbon {
     width: 100%;
     margin-top: 350px;
+    text-align: center;
   }
   .ribbon button {
     width: 60%;
-    margin-left: 20%;
     margin-top: 17px;
     border-radius: 20px;
     outline: none;
@@ -199,6 +202,7 @@ li {
     padding: 15px 20px 10px 10px;
     border-radius: 0 0 5px 5px;
     text-transform: uppercase;
+    text-align: left;
   }
   .ribbon figure figcaption h4 {
     font-family: Montserrat-Regular, sans-serif;
@@ -208,6 +212,75 @@ li {
   .ribbon figure figcaption p {
     font-family: Montserrat-Bold, sans-serif;
     font-size: 16px;
+  }
+
+  /* CONTACT */
+  .contact {
+    margin-top: 350px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-tel a {
+    letter-spacing: 1px;
+  }
+
+  .contact-social_icon {
+    width: 250px;
+    margin: 14px auto;
+  }
+  .contact-social_icon li {
+    margin-top: 15px;
+    height: 50px;
+    width: 250px;
+    background: url(../img/soc-cont.png) no-repeat;
+  }
+  .contact-social_icon .wts {
+    background-position: 0 -66px;
+  }
+  .contact-social_icon .teleg {
+    background-position: 0 -132px;
+  }
+  .contact-social_icon .fas {
+    background-position: 0 -198px;
+  }
+  .contact-social_icon .inst {
+    background-position: 0 -264px;
+  }
+
+  /* ABOUT */
+  .about {
+    margin: 360px auto 0 auto;
+  }
+  .about h2 {
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 45px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .about h3 {
+    margin: 0 0 40px 20px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 65px;
+    color: #dedede;
+    text-transform: uppercase;
+  }
+  .about p {
+    font-family: SegoeUI, sans-serif;
+    font-size: 18px;
+    color: #6a696b;
+  }
+}
+@media screen and (min-width: 375px) {
+  .about h2 {
+    font-size: 50px;
+  }
+  .about h3 {
+    font-size: 70px;
+  }
+  .about p {
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 411px) {
@@ -235,6 +308,16 @@ li {
   }
   figure figcaption p {
     font-size: 28px;
+  }
+
+  .about h2 {
+    font-size: 60px;
+  }
+  .about h3 {
+    font-size: 80px;
+  }
+  .about p {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 320px) {

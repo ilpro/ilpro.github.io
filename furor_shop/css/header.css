@@ -64,17 +64,19 @@ li {
       .navigation nav li {
         margin-bottom: 16px;
         border-radius: 5px;
-        border: 1px solid #000000; }
+        border: 1px solid #000000;
+        background-color: #2b2a2c; }
         .navigation nav li:last-child {
           margin-bottom: 0; }
       .navigation nav a {
+        color: #ffffff;
         font-family: SegoeUI-Bold, sans-serif;
         font-size: 12px;
         display: block;
         padding: 20px 92px; }
         .navigation nav a:hover {
-          background-color: #2b2a2c;
-          color: #ffffff; }
+          background-color: #ffffff;
+          color: #000000; }
 
   .logo {
     display: flex;
