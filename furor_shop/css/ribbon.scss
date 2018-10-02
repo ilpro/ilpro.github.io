@@ -4,7 +4,7 @@
 	
 .ribbon {
 	width: 100%;
-	margin-top: 350px;
+	margin-top: 30px;
 	button {
 		width: 60%;
 		margin-left: 20%;
@@ -48,19 +48,15 @@
 
 /* CONTACT */
   .contact {
-    margin-top: 350px;
+    margin-top: 30px;
     font-family: SegoeUI-Bold, sans-serif;
     font-size: 26px;
     text-align: center;
   }
 
-  .contact-tel a {
-    letter-spacing: 1px;
-  }
-
   .contact-social_icon {
     width: 250px;
-    margin: 14px auto;
+    margin: 0 auto;
   }
   .contact-social_icon li {
     margin-top: 15px;
@@ -83,7 +79,7 @@
 
   /* ABOUT */
   .about {
-    margin: 360px auto 0 auto;
+    margin: 30px auto 0 auto;
   }
   .about h2 {
     font-family: SegoeUI-Bold, sans-serif;

@@ -53,51 +53,47 @@ li {
   /* HEADER */
   header {
     width: 100%;
-    height: 170px;
-    background: url(../img/header-bg.png) no-repeat;
+    padding: 60px 0;
+    background: url(../img/bg.png) no-repeat;
     background-size: cover;
   }
 
-  .navigation {
-    position: absolute;
-    top: 87px;
-    width: 87%;
-    height: 365px;
-    display: flex;
-    flex-direction: column;
-    padding: 22px;
+  nav {
+    width: 100%;
     background-color: #ffffff;
+    text-transform: uppercase;
     box-shadow: 0 2px 5px #a3a3a4;
   }
-  .navigation nav {
-    margin-top: 22px;
-    text-transform: uppercase;
-    text-align: center;
+  nav ul {
+    display: flex;
+    justify-content: space-between;
   }
-  .navigation nav li {
-    margin-bottom: 16px;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    background-color: #2b2a2c;
+  nav ul li {
+    padding: 20px;
   }
-  .navigation nav li:last-child {
-    margin-bottom: 0;
+  nav ul li:hover {
+    border-bottom: 2px solid #000000;
   }
-  .navigation nav a {
-    color: #ffffff;
+  nav ul a {
+    color: #a8a8a8;
     font-family: SegoeUI-Bold, sans-serif;
-    font-size: 12px;
-    display: block;
-    padding: 20px 92px;
+    font-size: 15px;
   }
-  .navigation nav a:hover {
-    background-color: #ffffff;
+  nav ul a:hover {
     color: #000000;
   }
 
   .logo {
+    width: 286px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 65px 20px;
     display: flex;
+    align-items: center;
     text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
   }
   .logo img {
     margin-right: 16px;
@@ -106,65 +102,26 @@ li {
     font-family: SegoeUI, sans-serif;
   }
 }
-@media screen and (min-width: 360px) {
-  .navigation {
-    width: 88%;
-  }
-}
 @media screen and (min-width: 375px) {
-  .navigation {
-    width: 89%;
-  }
   .navigation nav li a {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 411px) {
-  .navigation {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 568px) {
-  .navigation {
-    width: 92%;
-  }
-}
 @media screen and (min-width: 731px) {
-  .navigation {
-    width: 84%;
-  }
   .navigation nav li a {
     font-size: 28px;
   }
 }
-@media screen and (min-width: 568px) {
-  .navigation {
-    width: 93%;
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 480px;
+    height: 145px;
+    justify-content: space-around;
   }
-}
-@media screen and (min-width: 731px) {
-  .navigation {
-    width: 94%;
-  }
-}
-@media screen and (min-width: 812px) {
-  .navigation {
-    width: 85%;
-  }
-}
-@media screen and (min-width: 812px) {
-  .navigation {
-    width: 95%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .navigation {
-    width: 96%;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .navigation {
-    width: 97%;
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
