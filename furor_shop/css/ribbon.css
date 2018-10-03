@@ -51,7 +51,7 @@
   }
 
   .contact-social_icon {
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
   }
   .contact-social_icon ul {
@@ -73,9 +73,6 @@
   }
   .contact-social_icon .fas {
     background-position: 0 -198px;
-  }
-  .contact-social_icon .teleg {
-    background-position: 0 -132px;
   }
 
   /* ABOUT */
@@ -103,11 +100,17 @@
   }
 }
 @media screen and (min-width: 360px) {
+  .contact-social_icon {
+    width: 96%;
+  }
   .contact-social_icon ul {
     width: 90%;
   }
 }
 @media screen and (min-width: 375px) {
+  .contact-social_icon {
+    width: 97%;
+  }
   .contact-social_icon ul {
     width: 86%;
   }
@@ -117,6 +120,9 @@
     font-size: 24px;
   }
 
+  .contact-social_icon {
+    width: 98%;
+  }
   .contact-social_icon ul {
     width: 78%;
   }
@@ -162,6 +168,9 @@
     font-size: 28px;
   }
 
+  .contact-social_icon {
+    width: 98%;
+  }
   .contact-social_icon ul {
     width: 42%;
   }
