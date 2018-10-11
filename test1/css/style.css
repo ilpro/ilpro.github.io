@@ -397,6 +397,13 @@ footer {
   color: #6ebdf9;
 }
 
+.number {
+  text-align: center;
+}
+
+.number-mobile {
+  width: 215px;
+}
 .number-mobile img {
   margin-right: 7px;
 }
@@ -409,16 +416,22 @@ footer {
 .number-mobile_tel {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
+.telegram {
+  text-align: center;
+}
 .telegram p {
+  font-family: Evolventa-Bold, sans-serif;
+  font-weight: bold;
   color: #ffffff;
 }
 
 .tg {
   display: block;
-  margin: 10px 0 0 35px;
+  margin: 10px 0 0 0;
   font-size: 40px !important;
   color: #312c30 !important;
 }
