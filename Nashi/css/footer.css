@@ -1,0 +1,98 @@
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #1478bf;
+  padding: 14px 0 58px 0;
+}
+
+.footer-info {
+  width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-info p {
+  font-family: Evolventa-Regular, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.footer-info img {
+  margin-bottom: 40px;
+}
+
+.our {
+  font-family: Evolventa-Bold, sans-serif;
+  font-weight: bold;
+}
+
+.contacts {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts h4 {
+  font-family: Evolventa-Bold, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join-in ul {
+  display: flex;
+  justify-content: space-around;
+}
+.join-in ul li a {
+  font-size: 40px;
+  color: #312c30;
+}
+.join-in ul li a:hover {
+  color: #6ebdf9;
+}
+
+.number-mobile {
+  display: flex;
+  align-items: center;
+}
+.number-mobile img {
+  margin-right: 7px;
+}
+.number-mobile a {
+  font-family: Evolventa-Regular, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.social {
+  text-align: center;
+  line-height: 1.7;
+}
+.social p {
+  font-family: Evolventa-Regular, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.social ul {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.social ul li a {
+  display: block;
+  font-size: 40px;
+  color: #312c30;
+}
+.social ul li a:hover {
+  color: #6ebdf9;
+}
+
+.name {
+  font-family: Evolventa-Bold, sans-serif;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=footer.css.map */
