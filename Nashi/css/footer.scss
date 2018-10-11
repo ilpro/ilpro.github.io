@@ -80,9 +80,15 @@ footer {
 	margin-bottom: 15px;
 }
 
+.telegram {
+	p {
+		color: $white;
+	}
+}
+
 .tg {
 	display: block;
-	margin-left: 35px;
+	margin:10px 0 0 35px;
 	font-size: 40px !important;
 	color: #312c30 !important;
 	&:hover {
