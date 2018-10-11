@@ -52,10 +52,6 @@ footer {
   color: #6ebdf9;
 }
 
-.number-mobile {
-  display: flex;
-  align-items: center;
-}
 .number-mobile img {
   margin-right: 7px;
 }
@@ -63,6 +59,22 @@ footer {
   font-family: Evolventa-Regular, sans-serif;
   font-size: 18px;
   color: #ffffff;
+}
+
+.number-mobile_tel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tg {
+  display: block;
+  margin-left: 35px;
+  font-size: 40px !important;
+  color: #312c30 !important;
+}
+.tg:hover {
+  color: #6ebdf9 !important;
 }
 
 .social {

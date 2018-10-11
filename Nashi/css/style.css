@@ -259,10 +259,19 @@ main {
   text-transform: uppercase;
   padding: 5px 0;
   border-top: 1px solid #d0d0d0;
+  transition: 1s background;
+}
+.caption:hover {
+  background-color: #2977cb;
 }
 .caption h3 {
   font-size: 60px;
   color: #515151;
+  cursor: pointer;
+  transition: 1s color;
+}
+.caption h3:hover {
+  color: #ffffff;
 }
 
 /* PRINCIPLES INFO */
@@ -386,10 +395,6 @@ footer {
   color: #6ebdf9;
 }
 
-.number-mobile {
-  display: flex;
-  align-items: center;
-}
 .number-mobile img {
   margin-right: 7px;
 }
@@ -397,6 +402,22 @@ footer {
   font-family: Evolventa-Regular, sans-serif;
   font-size: 18px;
   color: #ffffff;
+}
+
+.number-mobile_tel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tg {
+  display: block;
+  margin-left: 35px;
+  font-size: 40px !important;
+  color: #312c30 !important;
+}
+.tg:hover {
+  color: #6ebdf9 !important;
 }
 
 .social {

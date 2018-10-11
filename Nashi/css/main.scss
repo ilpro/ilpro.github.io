@@ -165,9 +165,18 @@ main {
 	text-transform: uppercase;
 	padding: 5px 0;
 	border-top: 1px solid #d0d0d0;
+	transition: 1s background;
+	&:hover {
+		background-color: #2977cb;
+	}
 	h3 {
 		font-size: 60px;
 		color: #515151;
+		cursor: pointer;
+		transition: 1s color;
+		&:hover {
+			color: #ffffff;
+		}
 	}
 }
 

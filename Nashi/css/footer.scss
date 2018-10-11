@@ -64,8 +64,6 @@ footer {
 
 
 .number-mobile {
-	display: $df;
-	align-items: center;
 	img {
 		margin-right: 7px;
 	}
@@ -73,6 +71,22 @@ footer {
 		font-family: $ffer;
 		font-size: 18px;
 		color: $white;
+	}
+}
+
+.number-mobile_tel {
+	display: $df;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.tg {
+	display: block;
+	margin-left: 35px;
+	font-size: 40px !important;
+	color: #312c30 !important;
+	&:hover {
+		color: #6ebdf9 !important;
 	}
 }
 
