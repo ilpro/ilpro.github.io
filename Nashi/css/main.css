@@ -32,7 +32,7 @@ li {
   width: 100%;
   height: 730px;
   background: url("../img/header_bg.png") no-repeat center #ffffff;
-  background-size: cover;
+  background-size: 75%;
 }
 
 .button-down {
@@ -65,7 +65,7 @@ main {
 .about-lider {
   width: 550px;
   height: 590px;
-  margin: 45px 0 0 300px;
+  margin: 45px 0 0 4%;
   padding: 25px 40px;
   line-height: 1.7;
   opacity: 0.7;
@@ -159,7 +159,7 @@ main {
 }
 .our-principles_mission p {
   font-family: Evolventa-Regular, sans-serif;
-  font-size: 24px;
+  font-size: 1.2em;
   line-height: 1.8;
 }
 .our-principles_mission:hover {
@@ -190,7 +190,7 @@ main {
 }
 .our-principles_intent p {
   font-family: Evolventa-Regular, sans-serif;
-  font-size: 24px;
+  font-size: 1.2em;
   line-height: 1.8;
 }
 .our-principles_intent:hover {
@@ -229,6 +229,7 @@ main {
   width: 379px;
   height: 696px;
   position: relative;
+  top: 1px;
   margin-right: 1px;
   cursor: pointer;
 }
@@ -254,7 +255,7 @@ main {
   margin: 0 auto 90px auto;
 }
 .principles-info_text p {
-  font-size: 48px;
+  font-size: 2em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -274,6 +275,11 @@ main {
 .mw-100 {
   min-height: 100%;
   min-width: 100%;
+}
+
+.mm-100 {
+  max-width: 100%;
+  min-height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
