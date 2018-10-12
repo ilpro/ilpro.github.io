@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  position: relative;
+  height: 100%;
+}
+
 /* HEADER */
 @media screen and (min-width: 320px) {
   header {
