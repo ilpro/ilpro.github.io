@@ -1,0 +1,89 @@
+@import 'vars';
+
+@media screen and (min-width: 320px){
+	
+	footer {
+		width: 100%;
+		background-color: #1478bf;
+		margin-top: -20px;
+		padding: 32px 0 20px 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	.contact {
+		p {
+			font-family: $ffeb;
+			font-size: 24px;
+		}
+		a {
+			color: $white;
+		}
+	}
+
+	.number-mobile_tel {
+		width: 110px;
+		margin: -15px auto;
+		display: $df;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.join-in {
+		 margin-top: 65px;
+		 font-family: $ffeb;
+		 font-size: 24px;
+		 font-weight: bold;
+		 ul {
+		 	width: 75%;
+		 	display: $df;
+		 	justify-content: space-around;
+		 	li {
+		 		a {	
+		 			font-size: 35px;
+		 			color: #312c30;
+		 			&:hover {
+		 				color: #31a2f8;
+		 			}
+		 		}
+		 	}
+		 }
+	}
+
+	.social {
+		p {
+			font-family: $ffer;
+			font-size: 16px;
+			line-height: 2.2;
+		}
+
+		a {
+			font-size: 35px;
+			color: #312c30;
+			margin-right: 16px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				color: #31a2f8;
+			}
+		}
+	}
+
+	.lider {
+		font-family: $ffeb;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.batch-name {
+		font-family: $ffer;
+		font-size: 18px;
+	}
+
+	.our {
+		font-family: $ffeb;
+		font-weight: bold;
+	}
+}
