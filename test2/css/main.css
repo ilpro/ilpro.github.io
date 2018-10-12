@@ -45,6 +45,11 @@ a {
     background: url("../img/arrow_down.png") no-repeat center;
   }
 }
+@media screen and (min-width: 411px) {
+  header {
+    background-size: 85%;
+  }
+}
 /* MAIN */
 @media screen and (min-width: 320px) {
   .party-lider {
@@ -75,7 +80,7 @@ a {
     display: block;
     content: '';
     position: relative;
-    top: 255px;
+    top: 245px;
     right: 13px;
     width: 65%;
     border: 1px solid #1478bf;
@@ -99,6 +104,8 @@ a {
   .signature h1 {
     font-family: Evolventa-Bold, sans-serif;
     font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
     margin-bottom: -1px;
   }
 
@@ -112,7 +119,7 @@ a {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 11px 5px 0 15px;
+    padding-top: 11px;
     border-bottom: 1px solid #d7d7d7;
   }
   .principles p {
@@ -139,6 +146,7 @@ a {
   }
 
   .caption {
+    font-family: Myriad Pro, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;

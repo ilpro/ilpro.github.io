@@ -86,4 +86,23 @@
 		font-family: $ffeb;
 		font-weight: bold;
 	}
+
+	.telegram {
+		text-align: center;
+	p {
+		font-family: $ffeb;
+		font-weight: bold;
+		color: $white;
+	}
+}
+
+	.tg {
+	display: block;
+	margin:10px 0 0 0;
+	font-size: 35px !important;
+	color: #312c30 !important;
+	&:hover {
+		color: #6ebdf9 !important;
+	}
+}
 }

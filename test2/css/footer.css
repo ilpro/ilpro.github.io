@@ -76,6 +76,25 @@
     font-family: Evolventa-Bold, sans-serif;
     font-weight: bold;
   }
+
+  .telegram {
+    text-align: center;
+  }
+  .telegram p {
+    font-family: Evolventa-Bold, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .tg {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 35px !important;
+    color: #312c30 !important;
+  }
+  .tg:hover {
+    color: #6ebdf9 !important;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
