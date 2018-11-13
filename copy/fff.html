@@ -1,0 +1,1370 @@
+<body>
+    <link rel="service" href="/logger" />
+    <link rel="service" href="/params/emitter" />
+    <link rel="service" href="/roles" />
+    <link rel="service" href="/google/authorization" />
+    <link rel="service" href="/logger"/>
+
+<div class="app-overlay">
+    <div class="container">
+        <div class="inner">
+
+        <div class="tab-panel">
+        <link rel="widget" href="/tabs" data-args="tab-panel"/>
+        <link rel="widget" href="/member-cancellation/tabs"/>
+            <ul class="tabs">
+                <li class="tab paidimages active">
+                    <a data-panel="paidimages" href="#" class="item">Paid Images</a>
+                </li>
+                
+            </ul>
+        </div>
+
+            <div class="frame">
+                
+                    <link rel="service" data-feature="membership" href="/purchase/subscription" defer="bus://authorized" data-args="autorun"/>				
+                
+				
+				
+
+                <div class="close-overlay" title="Close">
+                    <link rel="widget" href="/domevents/emitter" data-args="close">
+                    
+                </div>
+
+                
+
+                <div class="camshare-duration content">
+                    <link rel="widget" href="/chat/camshare-duration" data-feature="camshare-duration"/>
+                    <div class="context">
+                        <div class="lady-card">
+                            <div class="lady-profile">
+                                <div class="track">
+                                    <div class="photo">
+                                        <div class="inner">
+                                            <div class="container">
+                                                <img class="lady-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <a class="gradient" href="#"></a>
+                                <div class="inner-wrapper">
+                                    <p class="title">
+                                        <a class="lady-profile-link" href="#">
+                                            <span class="lady-name"><span class="name"></span>, <span class="age"></span></span>
+                                        </a>
+                                    </p>
+                                    <p class="location"><span class="city"></span>, <span class="country"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Unfortunately your CamShare has been ended.</p>
+                            
+                            
+                            <p>You can continue chatting with this member using Live Chat.</p>
+                            
+                        </div>
+                        <div class="livechat-button">
+                            <a class="button register big start-livechat" href="#">
+                                <link rel="widget" href="/domevents/emitter" data-args="start-livechat">
+                                <span>START LIVE CHAT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div><link rel="widget" href="/member-cancellation/form" data-args="overlay/member-cancellation" defer="bus://authorized"/></div>
+
+                <div class="subscriptions content">
+                    <link rel="widget" href="/subscription/popup" defer="dom://activated"/>
+                    <link rel="service" href="/subscriptions"/>
+                    <div class="context">
+                        <div class="one-notice">
+                            <p class="message">
+                                You will no longer receive
+                                &ldquo;<span class="notification-name">Notification Name</span>&rdquo;
+                                email notifications
+                            </p>
+                            <p class="re-subscribe">
+                                
+        <span id="" class="button submit-form" onclick="">
+            <!--[if lte IE 9]><span class="ie-button-content"><![endif]-->
+                Re-subscribe
+                <!--[if lte IE 9]>
+                    <span class="left-decor"></span>
+                    <span class="right-decor"></span>
+                <![endif]-->
+            <!--[if lte IE 9]></span><![endif]-->
+            <!--[if lte IE 9]><span class="ie-button-crop"><![endif]-->
+                <button hideFocus=true type="submit" class="included-button">
+                    Re-subscribe
+                </button>
+            <!--[if lte IE 9]></span><![endif]-->
+        </span>
+	
+                            </p>
+                            <div class="message-footer">
+                                <link rel="widget" href="/events/emitter" data-args="overlay, subscriptions, unsubscribe:*" data-container="next"/>
+                                <a href="#" class="unsubscribe-all">Unsubscribe me from all emails</a>
+                            </div>
+                        </div>
+                        <div class="all-notices">
+                            <p class="message">
+                                You are unsubscribed from all emails.
+                            </p>
+                            <p class="re-subscribe">
+                                
+        <span id="" class="button submit-form" onclick="">
+            <!--[if lte IE 9]><span class="ie-button-content"><![endif]-->
+                Re-subscribe
+                <!--[if lte IE 9]>
+                    <span class="left-decor"></span>
+                    <span class="right-decor"></span>
+                <![endif]-->
+            <!--[if lte IE 9]></span><![endif]-->
+            <!--[if lte IE 9]><span class="ie-button-crop"><![endif]-->
+                <button hideFocus=true type="submit" class="included-button">
+                    Re-subscribe
+                </button>
+            <!--[if lte IE 9]></span><![endif]-->
+        </span>
+	
+                            </p>
+                        </div>
+                        <div class="resubscribed">
+                            <p class="message only-text">
+                                <span class="text">You are subscribed back to
+                                &ldquo;<span class="notification-name">Notification Name</span>&rdquo;
+                                email notifications.</span>
+                            </p>
+                        </div>
+                        <div class="resubscribed-all">
+                            <p class="message only-text"><span class="text">You are subscribed back to all emails.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery content">
+                    <link rel="widget" href="/overlay/click-child-closer" data-args="overlay:gallery"/>
+                    
+                        <link rel="widget" href="/like/fb" data-args=""/>
+                        <div class="likes hidden">
+                            <iframe width="80" height="20" allowtransparency="true" scrolling="no" class="fb-like"
+                            src="about:blank" href="https://www.facebook.com/plugins/like.php?appId=&width=100&height=30&layout=button&action=like&show_faces=true&share=false&locale=en_US&href="
+                            frameborder="0"></iframe>
+                        </div>
+                    
+                    <link rel="widget" href="/fotorama"/>
+                    <div id="fotoramaOverlay">&nbsp;</div>
+                </div>
+
+                
+                    <div class="inactive-subscription content">
+                        <h1 class="title">
+                            <strong><l10n url="/texts/forms/purchase/subscribe#inactive-header">
+        Your subscription is now inactive!
+    </l10n></strong>
+                        </h1>
+                        <span class="description">
+                            <l10n url="/texts/forms/purchase/subscribe#inactive-sub-header">
+        Please subscribe again to enjoy all features on AnastasiaDate!
+    </l10n>
+                        </span><br />
+                        <a href="/login/pages/finance/clientcredits.aspx?mode=purchase#subscribe" class="button approve big">
+                            <l10n url="/texts/forms/purchase/subscribe#resubscribe">
+        Re-subscribe
+    </l10n>
+                        </a><br />
+                        <span class="separator">
+                            <l10n url="/texts/forms/purchase/subscribe#or">
+        or
+    </l10n>
+                        </span><br />
+                        <span class="button-group">
+                            <a href="/login/pages/finance/clientcredits.aspx?mode=purchase&showBillingInfo=1&tokens=0&activeViewIndex=1&showDescription=1#emit=command.purchase.paypal.buy,0" class="paypal submit button">
+                                <span class="text"> <l10n url="/texts/forms/purchase/subscribe#subscribe-with">
+        Subscribe with
+    </l10n></span> <span class="pay">Pay</span><span class="pal">Pal</span>
+                            </a>
+                        </span>
+                        <div class="popup-footer">
+                            <div class="purchase subscribe form-footer">
+                                <l10n url="/texts/forms/purchase/purchase#problems">If you have any problems please contact </l10n>
+                                
+                                        <link rel="widget" href="/live-support" data-container="next" data-args="purchase, true" />
+                                        <a class="submit live-support offline"
+                                            href="/pages/customersupport/questioncategories.aspx?source=live-support" title="">
+                                            <l10n url="/texts/forms/purchase/purchase#live-support">Live Support</l10n>
+                                        </a>
+                                    
+                                <span class="call"><l10n url="/texts/forms/purchase/purchase#call">
+        or call us at <br />+1 (888) 200-1282
+        </l10n></span>
+                                <span class="call-gb"><l10n url="/texts/forms/purchase/purchase#call-gb">
+        or call us at <br />+1 (800) 356-3130
+        </l10n></span>
+                                <span class="call-fr"><l10n url="/texts/forms/purchase/purchase#call-fr">
+        or call us at <br />+1 (800) 356-3130
+        </l10n></span>
+                                <span class="call-de"><l10n url="/texts/forms/purchase/purchase#call-de">
+        or call us at <br />+1 (800) 356-3130
+        </l10n></span>
+                            </div>
+                        </div>
+                     </div>
+                
+               	
+
+                
+                        
+
+
+<div class="purchase content">
+
+        <link rel="service" href="/module/purchase"/>
+        <link rel="service" href="/stores" data-args="paypal" />
+        <link rel="service" href="/stores" data-args="skrill" />
+        <link rel="service" href="/purchase/exchanger"/>
+        <link rel="service" href="/informer/purchase"/>
+        <link rel="widget" href="/module/purchase/form" data-args="card-payment, focused"/>
+        <link rel="widget" href="/module/purchase/card-number/receiver" />
+        <link rel="widget" href="/module/purchase/charge" defer="bus://authorized"/>
+        <link rel="widget" href="/events/transmitter" data-args="dom://activated, bus://command.credit-card.restore" />
+        <link rel="widget" href="/events/transmitter" data-args="dom://activated, bus://event.purchase.params.ready" />
+        <link rel="widget" href="/events/transmitter" data-args="dom://activated, bus://command.live-support.check.online.agent" />
+
+        <div class="purchase-form loading">
+            <link rel="widget" href="/module/purchase/units"/>
+            <link rel="widget" href="/stylist" data-args="event.purchase.failed, event.application.purchase.stop, purchase-failed" />
+            <form class="form" id="purchase-form">
+                <div class="purchase-header">
+                    <div class="spinner"></div>
+                    <div class="inner-wrapper">
+                        <div class="info">
+                            <div class="wrapper purchase">
+                                <link rel="widget" href="/module/purchase/header" data-container="next"/>
+                                <h1 class="title loading promo-enabled">
+                                    <link rel="widget" href="/stylist" data-args="event.overlay.closed, event.purchase.chargeback-reduction.disabled, promo-enabled"/>
+                                </h1>
+
+                                <p class="subtitle promo hidden">
+                                    <link rel="widget" href="/stylist" data-args="event.overlay.closed, event.purchase.chargeback-reduction.enabled, hidden"/>
+                                    <l10n url="/texts/forms/purchase/header#promo">Hey, no need to refill so often! SAVE up to <span class="benefit">50%</span> with a larger credits package.</l10n>
+                                </p>
+
+                                <div class="description">
+                                   <l10n url="/texts/forms/purchase/purchase#desc">
+         <span class="service livechat">Live Chat – 1 credit per minute,</span>
+         <span class="service camshare">CamShare – 6 credits per minute,</span>
+         <span class="service letters">Letter – 10 credits.</span>
+    </l10n>
+                                </div>
+                                <p class="balance">
+                                    <link rel="widget" href="/purchase/balance" data-container="next" defer="bus://event_purchase_params_ready" />
+                                    <span></span>
+                                    <a href="/login/pages/finance/clientcredits.aspx?mode=history">View history</a>
+                                </p>
+                            </div>
+                            <div class="wrapper subscribe">
+                                <h1 class="title">
+                                    <l10n url="/texts/forms/purchase/subscribe#header">
+            <strong>Subscribe and get</strong> amazing features for <span class="offer">only</span>
+        </l10n>
+
+                                    <span class="offer price-9-99">
+                                        
+                                            <link rel="widget" href="/purchase/vat/currency" data-args="usd" data-container="next"/>
+                                            <span class="purchase-currency shift-large"></span>
+                                            <l10n url="/texts/forms/purchase/subscribe#price-vat-2">9.99 </l10n>
+                                        
+                                    </span>
+                                    <span class="offer price-2-99">&nbsp;
+                                        
+                                            <link rel="widget" href="/purchase/vat/currency" data-args="usd" data-container="next"/>
+                                            <span class="purchase-currency shift-large"></span>
+                                            <l10n url="/texts/forms/purchase/subscribe#price-vat-1">2.99*</l10n>
+                                        
+                                    </span>
+                                    <span class="offer price-2-99 price-4-99">*</span>
+                                </h1>
+                            </div>
+                            <div class="wrapper free-membership">
+                                <h1 class="title">
+                                    <l10n url="/texts/forms/purchase/free-membership#header">Purchase credits and get amazing features!</l10n>
+                                </h1>
+                                <div class="description">
+                                    <l10n url="/texts/forms/purchase/purchase#desc">
+         <span class="service livechat">Live Chat – 1 credit per minute,</span>
+         <span class="service camshare">CamShare – 6 credits per minute,</span>
+         <span class="service letters">Letter – 10 credits.</span>
+    </l10n>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="packages loading purchase free-membership">
+                        
+ <script id="packages-list-template" type="text/html">
+                                <ol class="field card-payment paypal-payment form-payment" data-name="package">
+                                {{#packages}}
+                                <li class="package creditpack{{amount}} {{#subscribe}}subscribe{{/subscribe}} {{#selected}}active{{/selected}} {{#hidden}}hidden{{/hidden}} {{#vip}}vip{{/vip}}">
+                                    <span class="label">
+                                        {{#vip}}
+                                            <l10n url="/texts/forms/purchase/purchase#vip-package">
+            <i>VIP</i>package
+        </l10n>
+                                        {{/vip}}
+                                        {{^vip}}
+                                        
+                                                <l10n url="/texts/forms/purchase/purchase#best-price-0">
+            <span class="best-text">one time <br />offer<span>
+        </l10n>
+                                                <div class="best-price">
+                                                <link rel="widget" href="/purchase/vat/currency" data-args="usd" data-container="next"/>
+                                                    <span class="purchase-currency"></span>
+                                                <l10n url="/texts/forms/purchase/purchase#best-price-1">
+            2.99*
+    </l10n>
+                                                </div>
+                                        
+
+
+                                        {{/vip}}
+                                    </span>
+                                    <label>
+                                    {{#subscribe}}
+                                        <link rel="widget" href="/events/transmitter" data-container="next" data-args="bus://command.purchase.subscribe.switch/sync, dom://click" />
+                                    {{/subscribe}}
+                                        <input name="package" {{#sku}}data-sku="{{sku}}"{{/sku}} value="{{amount}}" type="radio"  required="required" tabindex="1"/>
+                                        <input name="price" value="{{price}}" type="hidden"/>
+
+                                        <span class="wrapper">
+                                            <span class="quantity">
+                                            {{amount}} <l10n url="/texts/forms/purchase/purchase#quantity">Credits</l10n>
+                                                <span class="price">&#8776;&nbsp;{{per-credit}}
+                                                
+                                                    <link rel="widget" href="/purchase/vat/currency" data-args="usd, true" data-container="next"/>
+                                                    <span class="purchase-currency shift-left"></span>
+                                                    <l10n url="/texts/forms/purchase/purchase#price-vat">per credit</l10n>
+                                                
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                {{/packages}}
+                                </ol>
+                            </script>
+                        
+                        </div>
+
+                        <div class="advantages subscribe">
+                            <ul>
+                                <li class="advantage price-2-99 price-4-99">
+                                    <l10n url="/texts/forms/purchase/subscribe#welcome">
+            <strong class="offer">Welcome 20</strong> Credits**
+        </l10n>
+                                </li>
+                                <li class="divider price-2-99 price-4-99"><span class="dash"></span></li>
+                                <li class="advantage">
+                                    <l10n url="/texts/forms/purchase/subscribe#unlimited">
+            <strong class="offer">Unlimited</strong> Love Notes
+        </l10n>
+                                </li>
+                                <li class="divider"><span class="dash"></span></li>
+                                <li class="advantage">
+                                    <l10n url="/texts/forms/purchase/subscribe#free">
+            <strong class="offer">10 Free</strong> Chats
+        </l10n>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-details">
+
+                    <link rel="widget" href="/purchase/detector" defer="bus://event_overlay_purchase_opened"/>
+                    <div class="clearfix">
+                        <div class="credit-card form-payment">
+                            <div class="card-list">
+                                <link rel="widget" href="/purchase/card-type" data-args="cards" />
+                                
+                                 <script id="cards-template" type="text/html">
+                                                                    <ul class="card-types">
+                                                                        {{#cardTypes}}
+                                                                        <li class="type {{type}}">{{name}}</li>
+                                                                        {{/cardTypes}}
+                                                                    </ul>
+                                                                </script>
+
+                            </div>
+                            <div class="field-group-name label"><l10n url="/texts/forms/purchase/purchase#number">Card number</l10n></div>
+                            <div class="field field-wrapper card-number card-payment form-payment">
+                                <link rel="widget" href="/forms/inputs/connect" data-args="number" data-container="next">
+                                <link rel="widget" href="/module/purchase/card-number" data-container="next" defer="bus://event_purchase_params_ready" />
+                                <input class="data" type="text" name="number" value="" placeholder="Card number" required="required" maxlength="25" pattern="^([0-9\s\*X]{15,})*$" tabindex="2" />
+                            </div><br />
+
+                            <div class="cart-date field card-payment" data-name="expiration" data-validator="ui.forms.fieldset.expires">
+                                <div class="field-group-name label"><l10n url="/texts/forms/purchase/purchase#valid">Valid thru</l10n></div>
+
+                                <div class="month-wrapper">
+                                    <div class="field field-wrapper card-payment form-payment">
+                                        <link rel="widget" href="/forms/inputs/connect" data-args="month" data-container="next">
+                                        <select class="data" name="month" required="required" tabindex="9">
+                                            <option value="" disabled selected>MM</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="slash-separator">&nbsp;/&nbsp;</div>
+                                <div class="year-wrapper">
+                                    <div class="field field-wrapper form-payment card-payment">
+                                        <link rel="widget" href="/module/purchase/form/year" data-container="next">
+                                        <link rel="widget" href="/forms/inputs/connect" data-args="year" data-container="next">
+                                        <select class="data" name="year" required="required" tabindex="10">
+                                            <option value="" disabled selected>YY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="expired"></div>
+                            </div>
+
+                            <div class="card-cvv ">
+                               <div class="field-group-name label small"><l10n url="/texts/forms/purchase/purchase#cvv-new">CVV</l10n></div>
+                               <div class="field field-wrapper form-payment card-payment card-values">
+                                   <link rel="widget" href="/forms/inputs/connect" data-args="code" data-container="next">
+                                   <link rel="widget" href="/module/purchase/cvv" data-container="next"/>
+                                   <input class="data card-cvv-input" name="verification" type="text" maxlength="4" pattern="^([0-9]{3,4}|X{3,4}|\\u0058{3,4})$" tabindex="12" required="required" />
+                               </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="field-group-name label"><l10n url="/texts/forms/purchase/purchase#cardholder-new">Name on Card</l10n></div>
+                                <div class="field form-payment card-payment field-wrapper">
+                                    <link rel="widget" href="/forms/inputs/connect" data-args="holder" data-container="next">
+                                    <input class="data" name="cardholder" placeholder="Name on card" maxlength="64" type="text" required="required" tabindex="11" />
+                                </div>
+                            </div>
+                            
+                                <div class="phone hidden">
+                                    <link rel="widget" href="/module/purchase/phone/saver" defer="bus://authorized" />
+                                    <div class="field-group-name label"><l10n url="/texts/forms/purchase/purchase#mobile-phone">
+		Mobile phone
+	</l10n></div>
+                                    <link rel="widget" href="/purchase/phone/formater" data-container="next" data-args="no-sync"/>
+                                    <div class="field form-payment card-payment field-wrapper">
+                                        <input class="data" pattern="^[0-9\s+]{5,}" name="phone" placeholder="Mobile phone" maxlength="25" type="text" tabindex="12"  />
+                                        <link rel="widget" href="/forms/inputs/connect" data-args="phone" data-container="prev">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="purchase-footer">
+                        <div class="spinner"></div>
+                        <div class="inner-wrapper">
+                            <div class="actions-wrapper clearfix">
+                                <div class="security">
+
+                                    <link rel="widget" href="/module/purchase/certificate" data-args="verisign" data-feature="verisign-cert" />
+                                    
+ <script id="verisign-cert-template" type="text/html">
+                                        <div class="cert verisign">
+                                            <div id="Verisign" class="item verisign">
+                                                <link rel="widget" href="/restrain-loader" data-args="//63ad.itocd.net/www/js/verisign.js?1&v6b06c631" />
+                                            </div>
+                                        </div>
+                                    </script>
+
+                                    <link rel="widget" href="/module/purchase/certificate" data-args="mcafee" data-feature="mcafee-cert" />
+                                    
+<script id="mcafee-cert-template" type="text/html">
+                                        <div class="cert mcafee">
+                                            <div class="item mcafee">
+                                                <a target="_blank" href="https://www.scanalert.com/RatingVerify?ref={{referal}}" rel="nofollow">
+                                                    <img no-defer src="https://images.scanalert.com/meter/{{referal}}/13.gif" width="94" height="54" border="0" l10n:alt="/texts/forms/purchase/purchase#mcafee-cert-alt" alt="McAfee Secure sites help keep you safe from identity theft, credit card fraud, spyware, spam, viruses and online scams" l10n:oncontextmenu="/texts/forms/purchase/purchase#mcafee-cert-oncontextmenu" oncontextmenu="alert('Copying Prohibited by Law - McAfee Secure is a Trademark of McAfee, Inc.'); return false;" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </script>
+                                    
+                                    <link rel="widget" href="/module/purchase/certificate" data-args="godaddy" data-feature="godaddy-cert" />
+                                    
+ <script id="godaddy-cert-template" type="text/html">
+                                        <div class="cert godaddy">
+                                            <span>
+                                                <span id="siteseal"><link rel="widget" href="/restrain-loader" data-args="{{script}}" /></span>
+                                                <br />
+                                                <a href="https://www.godaddy.com/ssl/ssl-certificates.aspx" target="_blank"><l10n url="/texts/forms/purchase/purchase#godaddy-cert-description">SSL Certificates</l10n></a>
+                                            </span>
+                                        </div>
+                                    </script>
+                                    
+                                </div>
+                                <p class="button-wrapper">
+                                    <link rel="widget" href="/stylist" data-args="command.purchase.form.payment.setup,, hidden" data-container="next"/>
+                                    <button type="submit" class="button approve big checkout" tabindex="19" disabled="disabled" value="card-payment">
+                                    <link rel="widget" href="/stylist" data-args="event.purchase.started, event.purchase.completed, loading" />
+                                        <span class="purchase free-membership">
+                                            <span>
+                                                <l10n url="/texts/forms/purchase/purchase#checkout">Checkout</l10n>
+                                            </span>
+                                        </span>
+                                        <span class="subscribe">
+                                            <span><l10n url="/texts/forms/purchase/subscribe#journey">
+        Subscribe
+    </l10n></span>
+                                        </span>
+                                    </button>
+                                    <link rel="widget" href="/stylist" data-args=", command.purchase.form.payment.setup, hidden" data-container="next"/>
+                                    <button type="submit" class="button approve big hidden" tabindex="19" disabled="disabled" value="form-payment">
+                                        <span class="purchase">
+                                            <span><l10n url="/texts/forms/purchase/purchase#journey">Purchase Credits</l10n></span>
+                                            <link rel="widget" href="/purchase/description" data-container="next"/>
+                                            <span class="package"></span>
+                                        </span>
+                                        <span class="subscribe">
+                                            <span><l10n url="/texts/forms/purchase/subscribe#journey">
+        Subscribe
+    </l10n></span>
+                                        </span>
+                                    </button>
+                                </p>
+                            </div>
+
+                            <div class="free-membership included-features">
+                                <l10n url="/texts/forms/purchase/free-membership#included-features">
+            Includes <strong class="offer">10 Free Chats</strong> and <strong class="offer">Unlimited Love Notes</strong>
+        </l10n>
+                            </div>
+                             <div class="alternate">
+                                <div>
+                                    <link rel="widget" href="/stylist" data-args="command.purchase.form.payment.show.alternative, , not-link" data-container="next"/>
+                                    <link rel="widget" href="/stylist" data-args="event.purchase.failed, , not-link" data-container="next"/>
+                                    <span class="alternate-link"><l10n url="/texts/forms/purchase/purchase#alternative">Alternative payment methods</l10n></span>
+                                    <link rel="widget" data-container="prev" href="/events/transmitter" data-args="dom://click, bus://command.purchase.form.payment.show.alternative"/>
+                                </div>
+
+                                <link rel="widget" href="/stylist" data-args=", command.purchase.form.payment.show.alternative, hidden" data-container="next"/>
+                                <link rel="widget" href="/stylist" data-args=", event.purchase.failed, hidden" data-container="next"/>
+                                <span class="button-group hidden">
+                                    <link rel="widget" href="/purchase/stores/button/toggler" data-container="next"/>
+                                    <button type="button" class="paypal submit button" disabled>
+                                        <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.paypal.start"/>
+                                        <span class="pay">Pay</span><span class="pal">Pal</span>
+                                    </button>
+
+                                    <link rel="widget" href="/purchase/stores/button/toggler" data-container="next"/>
+                                    <button type="button" class="skrill submit button purchase" disabled>
+                                        <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.skrill.start"/>
+                                        <span>Skrill</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="purchase free-membership selected-package">
+                                <link rel="widget" href="/purchase/description" data-container="next"/>
+                                <span class="package"></span>
+                            </div>
+                            <div class="charge field-wrapper field card-payment purchase free-membership">
+                                <label>
+                                    <link rel="widget" href="/forms/inputs/connect/checkbox" data-args="charge" data-container="next">
+                                    <input type="checkbox" name="charge" />
+                                    <l10n url="/texts/forms/purchase/purchase#account-charged">Update my account to the same amount when my credits end.</l10n>
+                                </label>
+                            </div>
+                            <div class="free-membership form-footer notes">
+                                <p class="indent price-2-99">
+                                
+                                    <l10n url="/texts/forms/purchase/free-membership#note-1">* 1st purchase discount, </l10n>
+                                    <link rel="widget" href="/purchase/vat/currency" data-args="usd" data-container="next"/>
+                                    <span class="purchase-currency">
+                                    </span>
+
+                                    <link rel="widget" href="/purchase/vat/price" data-args="15.99" data-container="next"/>
+                                    <span>
+                                    </span>
+                                    <l10n url="/texts/forms/purchase/free-membership#note-2"> starting with 2nd purchase.</l10n>
+                                
+                                </p>
+                                <p class="indent">
+                                
+                                    <l10n url="/texts/forms/purchase/free-membership#autosubscribe-0">By purchasing any credit package you automatically receive a 1-month membership subscription for free, </l10n>
+                                    <link rel="widget" href="/purchase/vat/currency" data-args="usd" data-container="next"/>
+                                    <span class="purchase-currency"></span>
+                                    <l10n url="/texts/forms/purchase/free-membership#autosubscribe-1">9.99 starting from 2nd month.</l10n>
+                                    <br/>
+                                    <l10n url="/texts/forms/purchase/free-membership#autosubscribe-2">Your subscription will renew until you cancel.</l10n>
+                                
+                                </p>
+                                <p class="indent">
+                                    <l10n url="/texts/forms/purchase/subscribe#agreement">By subscribing you authorize us to charge your credit card now and upon each renewal and accept Terms and Conditions.</l10n>
+                                      <span><link rel="widget" href="/localization" data-args="/texts/forms/purchase/subscribe#the-payment-processed-by-in" data-feature="region-company"/></span>
+                                    <l10n url="/texts/forms/purchase/subscribe#terms">
+           <a target="_blank" href="/terms-and-conditions.html#membership">Learn more</a><br/>
+        </l10n>
+                                </p>
+                            </div>
+                            <div class="subscribe form-footer">
+                                <span class="indent">
+                                    <l10n url="/texts/forms/purchase/subscribe#renew">Your subscription will renew until you cancel.</l10n><br>
+                                    <l10n url="/texts/forms/purchase/subscribe#agreement">By subscribing you authorize us to charge your credit card now and upon each renewal and accept Terms and Conditions.</l10n>
+                                    <span><link rel="widget" href="/localization" data-args="/texts/forms/purchase/subscribe#the-payment-processed-by-in" data-feature="region-company"/></span>
+                                    <l10n url="/texts/forms/purchase/subscribe#terms">
+           <a target="_blank" href="/terms-and-conditions.html#membership">Learn more</a><br/>
+        </l10n>
+                                </span>
+                                <span class="price-2-99 price-4-99 indent">
+                                    <l10n url="/texts/forms/purchase/subscribe#note">
+            *1<sup>st</sup> month discount, $9.99 starting from 2<sup>nd</sup> month.
+        </l10n> <l10n url="/texts/forms/purchase/subscribe#first-time-credits">
+           ** 20 welcome credits are available only for first-time subscription.<br/>
+         </l10n>
+                                </span>
+                            </div>
+                            
+                                <div class="autocharge form-footer subscribe hidden">
+                                    <link rel="widget" href="/purchase/informer/autocharge" defer="bus://authorized" />
+                                    
+                                    <div>
+                                        <l10n url="/texts/forms/purchase/purchase#autocharge-vat-0">
+        Once your welcome credits end, your account will be upgraded to the 20 Credit Package.
+    </l10n>
+                                        <br/>
+                                        <l10n url="/texts/forms/purchase/purchase#autocharge-vat-1">
+        Your credit card will be charged
+    </l10n>
+                                        <link rel="widget" href="/purchase/vat/currency" data-args="usd" data-container="next"/>
+                                            <span class="purchase-currency">
+                                            </span>
+                                            <link rel="widget" href="/purchase/vat/price" data-args="15.99" data-container="next"/>
+                                            <span>
+                                            </span>.
+                                        <l10n url="/texts/forms/purchase/purchase#autocharge-vat-2">
+            You can change this at any time in My Settings &amp; Password.
+        </l10n>
+                                        <br/>
+                                    </div>
+                                    
+                                </div>
+                            
+
+                            <div class="purchase subscribe free-membership form-footer">
+                                <l10n url="/texts/forms/purchase/purchase#problems">If you have any problems please contact </l10n>
+
+                                
+                                    <a class="help-center-link" href="#">
+                                        <link rel="widget" href="/stylist" data-args="event.live-support.offline, event.live-support.online, operator-offline"/>
+                                        <link rel="widget" href="/stylist" data-args="event.live-support.online,event.live-support.offline, operator-online"/>
+                                        <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.overlay.open, preventing|args, help-center,purchase"/>
+                                        <l10n url="/texts/interface#help-center">Help Center</l10n>
+                                    </a>
+                                    <a class="live-support-link" href="#">
+                                        <link rel="widget" href="/stylist" data-args="event.user.purchase.history.paying, event.user.purchase.history.notpaying, user-paying"/>
+                                        <link rel="widget" href="/stylist" data-args="event.user.status.vip, event.user.status.notvip, user-vip"/>
+                                        <link rel="widget" href="/stylist" data-args="event.live-support.online, event.live-support.offline, operator-online"/>
+                                        <link rel="widget" href="/live-support" data-args="purchase" />
+                                        <l10n url="/texts/interface#live-support">Live Support</l10n>
+                                    </a>
+
+                                    <a class="vip-support-link" href="#">
+                                        <link rel="widget" href="/stylist" data-args="event.user.status.vip, event.user.status.notvip, user-vip"/>
+                                        <link rel="widget" href="/stylist" data-args="event.live-support.online, event.live-support.offline, operator-online"/>
+                                        <link rel="widget" href="/live-support" data-args="purchase" />
+                                        <l10n url="/texts/interface#live-support">Live Support</l10n>
+                                    </a>
+                                
+
+                                <span class="call"><l10n url="/texts/forms/purchase/purchase#call-phone">
+        or call us at <strong>+1 (888) 200-1282</strong>
+        </l10n></span>
+                                <span class="call-gb"><l10n url="/texts/forms/purchase/purchase#call-phone-gb">
+        or call us at <strong>+1 (800) 356-3130</strong>
+        </l10n></span>
+                                <span class="call-fr"><l10n url="/texts/forms/purchase/purchase#call-phone-fr">
+        or call us at <strong>+1 (800) 356-3130</strong>
+        </l10n></span>
+                                <span class="call-de"><l10n url="/texts/forms/purchase/purchase#call-phone-de">
+        or call us at <strong>+1 (800) 356-3130</strong>
+        </l10n></span>
+                            </div>
+                            <div class="error-container">
+                                <p><l10n url="/texts/forms/purchase/purchase#error">Something has gone wrong and your payment was not accepted. Please check your billing information or use one of the alternative payment methods.</l10n></p>
+                                <p><l10n url="/texts/forms/purchase/purchase#error1">If you have any problems please</l10n>
+
+                                    
+                                        contact
+                                        
+                                                <link rel="widget" href="/live-support" data-container="next" data-args="purchase, true" />
+                                                <a class="submit live-support offline" href="/pages/customersupport/questioncategories.aspx?source=live-support">
+                                                    <l10n url="/texts/client/globalresources/services#livesupport-text">Live Support</l10n>
+                                                </a>
+                                            
+                                        or
+                                    
+                                    <l10n url="/texts/forms/purchase/purchase#error2">call us at +1 (888) 200-1282</l10n>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="purchase-processing-overlay">
+                <link rel="widget" href="/stylist" data-args="event.purchase.started, event.purchase.completed, purchase-started" />
+                <link rel="widget" href="/stylist" data-args="event.purchase.waiting, event.purchase.completed, purchase-waiting" />
+                <link rel="widget" href="/stylist" data-args="event.purchase.waiting.long, event.purchase.completed, purchase-waiting-long" />
+                <link rel="widget" href="/stylist" data-args=", event.overlay.purchase.closed, purchase-started" />
+                <link rel="widget" href="/stylist" data-args=", event.overlay.purchase.closed, purchase-waiting" />
+                <link rel="widget" href="/stylist" data-args=", event.overlay.purchase.closed, purchase-waiting-long" />
+                <div class="processing-overlay"></div>
+                <div class="spinner"></div>
+                <div class="processing-message">
+                    <span class="purchase-waiting"><l10n url="/texts/forms/purchase/purchase#purchase-waiting">
+        Please wait while we`re processing your payment.
+    </l10n></span>
+                    <span class="purchase-waiting-long"><l10n url="/texts/forms/purchase/purchase#purchase-waiting-long">
+        Your payment is still processing. Thank you for your patience.
+    </l10n></span>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+
+                    
+                
+                <div class="help-center content loading">
+    <link rel="widget" href="/events/transmitter" data-args="dom://activated, dom://load">
+    <link rel="widget" href="/events/transmitter" data-args="dom://deactivated/sync, dom://clear">
+    <link rel="widget" href="/events/transmitter" data-args="bus://authorized, dom://load">
+    <!--<link rel="widget" href="/helpdesk/container" data-feature="help-center" data-args="help-center"/>-->
+    <link rel="widget" href="/helpdesk/container" data-args="help-center"/>
+
+    <div class="widget-container"></div>
+</div>
+
+                
+                     <div class="membership-congrats content">
+                        <div class="inner-wrapper">
+                            <h2 class="title"><l10n url="/texts/congrats/membership#title">
+        Congrats!
+    </l10n></h2>
+                            <p class="message"><l10n url="/texts/congrats/membership#member-now">
+        We are happy to inform that now you’re a member on AnastasiaDate!
+    </l10n></p>
+                            <p class="button-wrapper">
+                                <button class="big approve button">
+                                    <l10n url="/texts/congrats/membership#continue">Continue</l10n>
+                                    <link rel="widget" href="/events/transmitter" data-args="dom://click, dom://close, asis">
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                
+
+
+                
+
+                <div class="localization content">
+                
+                    <div class="localization-browser clearfix">
+                        <link rel="widget" href="/tools/localization" defer="bus://overlay.localization" />
+                        <aside class="tree" class="folder">
+                            <span class="refresh" l10n:title="/texts/tools/tools#refresh" title="refresh"></span>
+                        </aside>
+                        <section class="pad">
+                            <div class="editor empty">
+                                <h3 class="filename"></h3>
+
+                                <form class="form" action novalidate>
+                                    <link rel="widget" href="/tools/localization/form" defer="bus://overlay.localization" />
+                                    <div class="button-wrapper">
+                                        <button type="submit" class="button approve"><l10n url="/texts/tools/tools#save">save</l10n></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                         <script id="localization-form-template" type="text/html">
+                                                    <div class="field field-wrapper" ><label for="{{key}}">{{key}}</label><br/><textarea class="data" required="required" name="{{key}}" id="{{key}}">{{value}}</textarea></div>
+                                                </script>
+                    </div>
+                    
+                    
+                </div>
+                
+                 <div class="add-company content">
+                                                    <div class="context">
+                                                        <form class="form current" action="" novalidate="">
+                                                            <p class="field-wrapper field new">
+                                                                <label>Company name</label><br/>
+                                                                <button class="change button approve tt-style">add</button>
+                                                                <input name="name" class="data" type="text" required="required" >
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hidden-hotkeys">
+    
+</div>
+
+<div class="home-page landing">
+    <link rel="widget" href="/tools/current-language" />
+    <div class="bounded-wrapper">
+        <div class="main-header">
+            <div class="registration-block">
+            <div class="login-form">
+                <div class="support">
+                    <a class="help" href="/pages/customersupport/questioncategories.aspx">
+                    <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.overlay.open, preventing|args, help-center">
+                        <l10n url="/texts/landing/forms/authorization#help">Need Help? Contact Us</l10n>
+                    </a>
+                </div>
+                <div class="extra-nav">
+                    <div class="popup-container">
+                        <link rel="widget" href="/popup/auto-opener" data-args="login" />
+                        <link rel="widget" href="/popup" />
+                        <link rel="widget" href="/events/transmitter" data-args="bus://command.login.popup.open/sync, dom://open" />
+                        <link rel="widget" href="/events/transmitter" data-args="bus://command.authentication.default.authenticate/sync, dom://open" />
+                        <div class="popup-trigger">
+                            <span class="button default"><l10n url="/texts/landing/forms/authorization#signin">Sign In</l10n></span>
+                        </div>
+
+                        <div class="popup login form top with-arrow">
+                            
+                                <div class="fb-button">
+                                    <span class="button facebook big fbbtn silver smooth">
+                                        <l10n url="/texts/landing/forms/authorization#fb-button">Login Fast with Facebook</l10n>
+                                        <button hidefocus="true" type="button" class="included-button">
+                                            <l10n url="/texts/landing/forms/authorization#fb-button">Login Fast with Facebook</l10n>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div class="form-divider">
+                                     <span><l10n url="/texts/landing/forms/authorization#login-divider">or sign in below</l10n></span>
+                                </div>
+                            
+
+                            <form id="member-login">
+                                <link rel="widget" href="/domevents/trap" data-args="click" />
+                                <link rel="widget" href="/authentication/form" />
+                                <link rel="service" href="/authentication/providers/default" />
+
+                                <div class="form-fields clearfix">
+                                    
+                                    
+                                        <div class="field" data-name="email">
+                                            <div class="label-ie"><label for="email"><l10n url="/texts/landing/forms/authorization#label-ie-email">ID or Email</l10n></label></div>
+                                            <input name="email" class="input txt" type="text" l10n:placeholder="/texts/landing/forms/authorization#placeholder1" placeholder="Your ID or Email" required="required" autofocus />
+                                        </div>
+                                    
+
+                                    <div class="field" data-name="password">
+                                        <div class="label-ie"><label for="password"><l10n url="/texts/landing/forms/authorization#label-ie-password">Password</l10n></label></div>
+                                        <input name="password" class="input txt" type="password" l10n:placeholder="/texts/landing/forms/authorization#placeholder2" placeholder="Password" required="required" />
+                                    </div>
+                                </div>
+
+                                <div class="find-button">
+                                    <button type="submit" class="button register big"><l10n url="/texts/landing/forms/authorization#signin">Sign In</l10n></button>
+                                </div>
+                            </form>
+
+                            
+
+                            
+                                <a class="link" href="#">
+                                    <l10n url="/texts/landing/forms/authorization#forgot-pass">Forgot password?</l10n>
+                                    <link rel="widget" href="/domevents/trap" data-args="click" />
+                                    <link rel="widget" href="/events/emitter" data-args="command.form.forgot.password.show" />
+                                </a>
+                                <form class="forgot-password hidden">
+                                    <link rel="widget" href="/domevents/trap" data-args="click" />
+                                    <link rel="widget" href="/stylist/toggler" data-args="command.form.forgot.password.show,hidden" />
+                                    <link rel="widget" href="/authentication/forgot-password" data-args="forgotten-password" />
+                                    <div class="forgot-password-container">
+                                        <div class="inner">
+                                            <l10n url="/texts/landing/forms/authorization#send-email">Enter your registration email<br />  and we’ll send you a password</l10n>
+                                            <div class="email field" data-message-invalid="User with this email does not exist" data-message-required="Email required" data-message-pattern="Valid email required">
+                                                <input class="input txt" type="email" name="email" required="required" pattern="^\s*[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+\s*$">
+                                                <div class="validator-wrapper">
+                                                    <div class="validator">
+                                                        <div class="shadow">
+                                                            <div class="shadow-arrow"></div>
+                                                        </div>
+                                                        <div class="content-container">
+                                                            <div class="arrow"></div>
+                                                            <div class="content validation-message"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="find-button">
+                                                <div id="button-forgot-password">
+                                                   <button type="submit" class="button register big"><l10n url="/texts/landing/forms/authorization#send-password">Send password</l10n></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="password-sent"><l10n url="/texts/landing/forms/authorization#password-sent">Password has been sent</l10n></div>
+                                    </div>
+                                </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="content-block">
+                 <div class="introduce">
+                     <h2 class="title"><l10n url="/texts/landing/forms/authorization#title1">Introducing AnastasiaDate</l10n></h2>
+                     <p class="tagline"><l10n url="/texts/landing/forms/authorization#intro-tagline">Connecting singles across the world<br/>to their ideal partner.</l10n></p>
+                 </div>
+                 <form class="registration-form-block"  data-access="private" data-action="/member/register/?source=index&afid=&subafid=&current-language=&transaction-id=&offer-id=" data-type="jsonp">
+
+                    <link rel="widget" href="/registration" data-args="main" />
+
+                    <input class="field" type="hidden" name="subafid" value="" />
+                    <input class="field" type="hidden" name="current-language" value="" />
+                    <h1 class="logo" l10n:title="/texts/landing/forms/authorization#fotm-logo2" title="AnastasiaDate is a premier international dating service that features thousands of beautiful Russian women for dating and romance.">
+                         <l10n url="/texts/landing/forms/authorization#fotm-logo">Anastasia Date — Love Knows no Boundaries</l10n>
+                     </h1>
+
+                     
+                     
+                      
+                           <div class="form-content google-auth">
+                    
+                    
+                    <div class="form-header fb-header">
+                         <h2 class="title-form" l10n:data-content="/texts/landing/forms/authorization#title2"><l10n url="/texts/landing/forms/authorization#title2">Join the Secure & Easy Way</l10n></h2>
+                     </div>
+                         
+                         
+                            <button class="button google-login" type="button">
+                                <link rel="widget" href="/domevents/trap" data-args="activated" />
+                                <link rel="widget" href="/domevents/trap" data-args="deactivated" />
+                                <link rel="widget" href="/events/transmitter" data-args="bus://event.google-auth.loaded, dom://activated" />
+                                <link rel="widget" href="/events/transmitter" data-args="bus://event.google-auth.failed, dom://deactivated" />
+                                <link rel="widget" href="/authentication/google" />
+                                <div class="google-logo"></div>
+                                <span>
+                                
+                                                    <l10n url="/texts/landing/forms/authorization#signin-via-google">Sign in via Google</l10n>
+                                
+                                </span>
+                            </button>
+                        
+                         
+                            <div class="form-divider">
+                                                      <span><l10n url="/texts/landing/forms/authorization#form-divider">or create an account</l10n></span>
+                                                  </div>
+                        
+                         <div class="form-fields clearfix">
+                             <div class="clearfix">
+                                 <div class="label-wrapper"><label for="im-a"><l10n url="/texts/landing/forms/authorization#label1">I'm a</l10n></label></div>
+                                 <div class="field">
+                                    <link rel="widget" href="/selector" data-args=", command.registration.provider.change, RegistrationProviderState, true" data-container="next" />
+                                     <select id="im-a">
+                                         <option value="default" selected>Man Seeking a Woman</option>
+                                         <option value="dating.com">Woman Seeking a Man</option>
+                                         
+                                             <option value="dating.com">Man Seeking a Man</option>
+                                             <option value="dating.com">Woman Seeking a Woman</option>
+                                         
+                                     </select>
+                                 </div>
+
+                                 <div class="label-wrapper"><label for="name"><l10n url="/texts/landing/forms/authorization#label2">Name</l10n></label></div>
+                                 <div class="field" data-message-required="Name required">
+                                     <link rel="widget" href="/forms/inputs/focus" data-args="command.register.focus" data-container="next" />
+                                     
+                                        <input id="name" class="txt" type="text" name="first-name" required="required" autofocus="autofocus" x-webkit-speech="x-webkit-speech" placeholder="Taylor Smith" />
+                                     
+                                     
+                                     <div class="validator-wrapper">
+                                         <div class="validator">
+                                             <div class="shadow">
+                                                 <div class="shadow-arrow"></div>
+                                             </div>
+                                             <div class="content-container">
+                                                 <div class="arrow"></div>
+                                                 <div class="content validation-message"></div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="label-wrapper email"><label for="email"><l10n url="/texts/landing/forms/authorization#label3">Email</l10n></label></div>
+                                 <div class="email field" data-message-invalid="Email is invalid" data-message-required="Email required" data-message-pattern="Valid email required">
+                                     <input class="txt" type="email" name="email" required="required" pattern="^\s*[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+\s*$">
+                                     <div class="validator-wrapper">
+                                         <div class="validator">
+                                             <div class="shadow">
+                                                 <div class="shadow-arrow"></div>
+                                             </div>
+                                             <div class="content-container">
+                                                 <div class="arrow"></div>
+                                                 <div class="content validation-message"></div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="label-wrapper pass"><label for="pass"><l10n url="/texts/landing/forms/authorization#label4">Password</l10n></label></div>
+                                 <div class="pass field" data-message-required="Password required" data-message-pattern="Must be at least 6 characters">
+                                     <input id="pass" class="txt" type="password" name="password" required="required" pattern="^\s*.{6,}?\s*$" l10n:placeholder="/texts/landing/forms/authorization#placeholder4" placeholder="At least 6 characters" />
+                                     <div class="validator-wrapper">
+                                         <div class="validator">
+                                             <div class="shadow">
+                                                 <div class="shadow-arrow"></div>
+                                             </div>
+                                             <div class="content-container">
+                                                 <div class="arrow"></div>
+                                                 <div class="content validation-message"></div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <div class="conditions">
+                                 <l10n url="/texts/landing/forms/authorization#conditions1">By clicking “Find Your Matches” you agree with the<br></l10n>
+                                 <a class="link" href="/terms-and-conditions.html" onclick="OpenCenterWindow('/terms-and-conditions.html', '', 780, 600, 'yes', 'yes'); return false;" target="_blank" l10n:title="/texts/landing/forms/authorization#title3" title="AnastasiaDate policy"><l10n url="/texts/landing/forms/authorization#conditions2">Terms and Conditions</l10n></a>
+                                 <l10n url="/texts/landing/forms/authorization#conditions3">and</l10n>
+                                 <a class="link" href="/privacy-policy.html" onclick="OpenCenterWindow('/privacy-policy.html', '', 780, 600, 'yes', 'yes'); return false;" target="_blank"><l10n url="/texts/landing/forms/authorization#conditions4">Privacy Policy</l10n></a>
+                                 
+                             </div>
+
+                             <div class="find-button">
+                                 <button type="submit" class="button register big" disabled><l10n url="/texts/landing/forms/authorization#button1">Find Your Matches</l10n></button>
+                                 <div id="button-proceed">
+                                    <button type="submit" class="button register big"><l10n url="/texts/landing/forms/authorization#button2">Proceed</l10n></button>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="form-footer">
+                             <p class="login">
+                                 <l10n url="/texts/landing/forms/authorization#have-account">Already have an account?</l10n>&nbsp;
+                                 <a class="signin" href="#">
+                                    <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.login.popup.open" />
+                                    <l10n url="/texts/landing/forms/authorization#signin">Sign In</l10n>
+                                 </a>
+                             </p>
+                         </div>
+
+                     </div>
+
+                 </form>
+
+             </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="section unit">
+        <div class="qualities">
+            <div class="container">
+                <div class="property">
+                    <div class="figure protect"></div>
+                    <h3 class="title"><l10n url="/texts/landing/partitions/qualities#title1">Protection</l10n></h3>
+                    <p class="detail"><l10n url="/texts/landing/partitions/qualities#detail1">Your safety is provided <br />by leading Safety &amp; Security <br />System in the industry.</l10n></p>
+                </div>
+                <div class="property">
+                    <div class="figure verify"></div>
+                    <h3 class="title"><l10n url="/texts/landing/partitions/qualities#title2">Verification</l10n></h3>
+                    <p class="detail"><l10n url="/texts/landing/partitions/qualities#detail2">All members are personally<br> confirmed by our staff to<br> prove they are real.</l10n></p>
+                </div>
+                <div class="property">
+                    <div class="figure care"></div>
+                    <h3 class="title"><l10n url="/texts/landing/partitions/qualities#title3">Attention</l10n></h3>
+                    <p class="detail"><l10n url="/texts/landing/partitions/qualities#detail3">Receive lots of attention<br> from attractive members<br> worldwide.</l10n></p>
+                </div>
+                <div class="property">
+                    <div class="figure interaction"></div>
+                    <h3 class="title"><l10n url="/texts/landing/partitions/qualities#title4">Communication</l10n></h3>
+                    <p class="detail"><l10n url="/texts/landing/partitions/qualities#detail4">Chat, send letters,<br> call, share your photos<br> and make presents.</l10n></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section unit showcase">
+        <div class="animate-helper">
+            <link rel="widget" href="/scroll/track" data-args="animate" />
+        </div>
+        <div class="showcase">
+            <div class="container">
+                <div class="description">
+                    <div class="badge"></div>
+                    <h3 class="title"><l10n url="/texts/landing/partitions/showcase#title">Your Device — Your AnastasiaDate</l10n></h3>
+                    <p class="detail"><l10n url="/texts/landing/partitions/showcase#detail">Keep in touch wherever you go,<br/> whenever you want.</l10n></p>
+                    <div class="apps">
+                        
+                        <link rel="widget" href="/tracking/app-banner/ios" data-container="next" />
+                        <a class="app app-store" target="_blank" href="https://app.appsflyer.com/id1018728221?pid=referral" title="App Store"></a>
+                            <a class="app g-play" target="_blank" href="https://app.appsflyer.com/com.itonline.anastasiadate?pid=referral" title="Google play"></a>
+                        
+                        
+                    </div>
+                </div>
+            <div class="device">
+                
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section unit">
+        <div class="comments">
+            <div class="container">
+                <div class="box">
+                    <h3 class="title"><l10n url="/texts/landing/partitions/comments#title">Members About AnastasiaDate</l10n></h3>
+                    <div class="tab-panel">
+                        <link rel="widget" href="/tabs" data-args="blockquote">
+                        <link rel="widget" href="/domevents/prevent" data-args="click">
+
+                        <div class="comment-box">
+                        
+                            <div class="blockquote num1 item">
+                                <l10n url="/texts/landing/partitions/comments#blockquote1">
+        "I loved receiving letters from different men around the world! I’ve had tons of fun
+        and way less stress on AnastasiaDate than I do in the usual club or bar scene."
+    </l10n>
+                            </div>
+                            <div class="blockquote num2 item active">
+                                <l10n url="/texts/landing/partitions/comments#blockquote2">
+        "When I first signed up for AnastasiaDate.com I was overwhelmed by the amount
+        of people to talk to. It’s really about choices and on AD they are unlimited!"
+    </l10n>
+                            </div>
+                            <div class="blockquote num3 item smaller">
+                                <l10n url="/texts/landing/partitions/comments#blockquote3">
+        "AnastasiaDate.com is straightforward and fun. Setting up chats and video calls
+        feels safe and secure. I’ve spoken to a lot of great women but I’m particularly
+        excited about the conversation I’ve currently got going with a woman named Mary.
+        She has a great smile and a beautiful spirit. I’m excited to see where things go!"
+    </l10n>
+                            </div>
+                        
+                        
+                        </div>
+
+                        
+                            <div class="author num1"><l10n url="/texts/landing/partitions/comments#author1">Jane, London</l10n></div>
+                            <div class="author num2 active"><l10n url="/texts/landing/partitions/comments#author2">Bernard, Chicago</l10n></div>
+                            <div class="author num3"><l10n url="/texts/landing/partitions/comments#author3">Nicolas, Brussel</l10n></div>
+                        
+                        
+                        <ul class="tabs">
+                            <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.transform.font">
+                            <li class="tab num1">
+                                <a class="item" data-panel="num1" href="#"></a>
+                            </li>
+                            <li class="tab num2 active">
+                                <a class="item" data-panel="num2" href="#"></a>
+                            </li>
+                            <li class="tab num3">
+                                <a class="item" data-panel="num3" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section unit">
+        <div class="hostess">
+            <div class="container">
+                <div class="box">
+                    <h3 class="title">
+                        <l10n url="/texts/landing/partitions/hostess#title">Receive Lots of Attention<br/> from Attractive Members Worldwide</l10n>
+                    </h3>
+                    <p class="caption"><l10n url="/texts/landing/partitions/hostess#caption">Join the Secure & Easy Way</l10n></p>
+                    
+
+                    
+                         <div class="google-button">
+                             <button class="button google-login" type="button">
+                                 <link rel="widget" href="/domevents/trap" data-args="activated" />
+                                 <link rel="widget" href="/domevents/trap" data-args="deactivated" />
+                                 <link rel="widget" href="/events/transmitter" data-args="bus://event.google-auth.loaded, dom://activated" />
+                                 <link rel="widget" href="/events/transmitter" data-args="bus://event.google-auth.failed, dom://deactivated" />
+                                 <link rel="widget" href="/authentication/google" />
+                                 <div class="google-logo"></div>
+                                 <span>
+                                 
+                                                     <l10n url="/texts/landing/forms/authorization#signin-via-google">Sign in via Google</l10n>
+                                 
+                                 </span>
+                             </button>
+                         </div>
+                        <p class="separator"><l10n url="/texts/landing/partitions/hostess#separator">or</l10n></p>
+                    
+
+                    <button type="submit" class="button register big">
+                        <link rel="widget" href="/events/transmitter" data-args="bus://scroll-end/sync, bus://command.register.focus, asis" />
+                        <link rel="widget" href="/scroll/top" />
+                        <l10n url="/texts/landing/partitions/hostess#submit">Create an account</l10n>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="section unit">
+            <div class="container">
+                <aside class="left-column">
+                    <div class="logo"></div>
+
+                    
+                    <div class="verificate">
+                        <div id="veriSign" class="item verisign">
+                            <script restrain href="//50ad.itocd.net/www/js/verisign.js?v6b06c631" type="text/deferred-javascript"></script>
+                        </div>
+                        <div class="item mcafee">
+                            <a target="_blank" href="https://www.scanalert.com/RatingVerify?ref=www.anastasiadate.com" rel="nofollow">
+                                <img width="94" height="54" border="0" href="https://images.scanalert.com/meter/www.anastasiadate.com/13.gif" l10n:alt="/texts/landing/footer/common#mcafee" alt="McAfee Secure sites help keep you safe from identity theft, credit card fraud, spyware, spam, viruses and online scams" oncontextmenu="alert('Copying Prohibited by Law - McAfee Secure is a Trademark of McAfee, Inc.'); return false;" href="https://images.scanalert.com/meter/www.anastasiadate.com/13.gif">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                </aside>
+
+                <nav class="right-column">
+                    <div class="footer-menu">
+                        <div class="partition-menu">
+                        <h4 class="title"><l10n url="/texts/landing/footer/common#title1">Services</l10n></h4>
+                            <ul class="list-menu">
+                            
+                                <li class="list-item"><a class="link" href="/livechatdescription.html"><l10n url="/texts/landing/footer/common#link1">Chat</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/camsharedescription.html"><l10n url="/texts/landing/footer/common#link2">CamShare</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/correspondence.html"><l10n url="/texts/landing/footer/common#link3">Correspondence</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/virtual-gifts-description.html"><l10n url="/texts/landing/footer/common#link4">Virtual Gifts</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/callme.html"><l10n url="/texts/landing/footer/common#link5">Calls</l10n></a></li>
+                            
+                            
+                            </ul>
+                        </div>
+                        
+                        <div class="partition-menu">
+                            <h4 class="title"><l10n url="/texts/landing/footer/common#title3">Information</l10n></h4>
+                            <ul class="list-menu">
+                            
+                                <li class="list-item"><a class="link" href="/about-anastasia.html"><l10n url="/texts/landing/footer/common#link11">About Us</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/faq.html"><l10n url="/texts/landing/footer/common#link12">FAQ</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/news-page.html"><l10n url="/texts/landing/footer/common#link13">News & Updates</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/media-publications.html"><l10n url="/texts/landing/footer/common#link14">Media Publications</l10n></a></li>
+                                <li class="list-item"><a class="link" href="/anastasia-anti-scam-policy.html"><l10n url="/texts/landing/footer/common#link15">Dating Securely</l10n></a></li>
+                            
+                            
+                            </ul>
+                        </div>
+                        
+                            <div class="partition-menu floatet">
+                                <h4 class="title"><l10n url="/texts/landing/footer/common#title11">Follow Us</l10n></h4>
+                                <div class="social">
+                                    <ul class="social-icons">
+                                        <li class="social-icon first"><a class="item fb" l10n:title="/texts/landing/footer/common#title4" title="Facebook" target="_blank"  href="https://www.facebook.com/anastasiadate"></a></li>
+                                        <li class="social-icon"><a class="item tw" l10n:title="/texts/landing/footer/common#title5" title="Twitter" target="_blank"  href="https://twitter.com/AnastasiaDate"></a></li>
+                                        <li class="social-icon"><a class="item gl" l10n:title="/texts/landing/footer/common#title6" title="Google+" target="_blank"  href="https://plus.google.com/+anastasiadate"></a></li>
+                                        <li class="social-icon"><a class="item yt" l10n:title="/texts/landing/footer/common#title7" title="Youtube" target="_blank" href="https://www.youtube.com/user/anastasiadate"></a></li>
+                                        <li class="social-icon"><a class="item ig" l10n:title="/texts/landing/footer/common#title8" title="Instagram" target="_blank"  href="https://instagram.com/anastasia_date/"></a></li>
+                                        <li class="social-icon"><a class="item pt" l10n:title="/texts/landing/footer/common#title9" title="Pinterest" target="_blank"  href="https://www.pinterest.com/anastasiadate/"></a></li>
+                                    </ul>
+                                    <div class="ad-blog">
+                                        <a href="http://blog.anastasiadate.com" l10n:title="/texts/landing/footer/common#title10" title="AnastasiaDate's Blog" target="_blank"><l10n url="/texts/landing/footer/common#title10">AnastasiaDate's Blog</l10n></a>
+                                        <l10n url="/texts/landing/footer/common#blog-text">A wonderful place to find answers to a range of questions.</l10n>
+                                    </div>
+                                </div>
+                                <ul class="list-menu">
+                                    <li class="list-item"><a class="link" href="/success-stories.html"><l10n url="/texts/landing/footer/common#link16">Success Stories</l10n></a></li>
+                                </ul>
+                            </div>
+                        
+                    </div>
+                </nav>
+            </div>
+            <div class="divider-line"></div>
+            <div class="extra-options">
+                <div class="left-column">
+                    <div class="copyright">
+                        <l10n url="/texts/landing/footer/common#copyright">Copyright <strong>AnastasiaDate</strong> 2001‑2018. All rights reserved.</l10n>
+                    </div>
+                    <div>
+                        <link rel="widget" href="/localization" data-args="/texts/interface#company-address-landing" data-feature="landing-region-address"/>
+                    </div>
+
+                    <div class="additional">
+                        <l10n url="/texts/landing/footer/common#contact1">General comments or questions:</l10n>
+                        <ul class="list-menu">
+                            <li class="list-item">
+                                
+
+                                    <a class="link" href="#">
+                                    <link rel="widget" href="/events/transmitter" data-args="dom://click, bus://command.overlay.open, preventing|args, help-center">
+                                    <l10n url="/texts/interface#help-center">Help Center</l10n></a>
+                                
+                                
+                            </li>
+
+
+                            <li class="list-item"><a href="/privacy-policy.html" onclick="OpenCenterWindow('/privacy-policy.html', '', 780, 600, 'yes', 'yes'); return false;" target="_blank" class="link"><l10n url="/texts/landing/footer/common#contact3">Privacy policy</l10n></a></li>
+                            <li class="list-item"><a href="/terms-and-conditions.html" onclick="OpenCenterWindow('/terms-and-conditions.html', '', 780, 600, 'yes', 'yes'); return false;" target="_blank" class="link"><l10n url="/texts/landing/footer/common#contact4">Terms and Conditions</l10n></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="social">
+                        <ul class="social-icons">
+                        
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+    </footer>
+</div>
+
+
+    <div class="fb-overlay">
+        <div class="fb-popup fb-not-registered">
+            <div class="fb-overlay-close close-overlay" title="Close"></div>
+            <p class="header-popup">
+                <l10n url="/texts/notification#not-registered">You are not registered via Facebook. Use other methods to sign in or create a new account.</l10n>
+            </p>
+            <button type="submit" class="button big close-btn fb-overlay-close register">
+                <l10n url="/texts/notification#close">Close</l10n>
+            </button>
+        </div>
+    </div>
