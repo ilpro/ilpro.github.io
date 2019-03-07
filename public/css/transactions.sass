@@ -1,0 +1,92 @@
+@import 'vars'
+@import 'mixins'
+
+body.page-users, body.page-transactions
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-family: $open-sans
+		font-weight: bold
+		color: $black
+		font-size: 15px
+	.video-block
+		width: 312px
+		display: block
+		margin: 0 auto
+		.video-from-youtube
+			display: block
+			margin: 0 auto
+			height: 0
+			position: relative
+			padding-bottom: 56.25% 
+			iframe 
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+	.call-refill-modal
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $gray-light
+		cursor: pointer
+		padding: .6rem 0
+		width: 230px
+		margin: 1.8rem auto
+		img, svg
+			height: 32px
+			width: auto
+			margin-right: 0.6rem
+		p 
+			margin-bottom: 0
+			color: $black
+			font-family: $open-sans
+			font-size: 16px
+		&:hover
+			background: $gray-second
+			p 
+				color: rgba(0,0,0,0.2)
+		&:active
+			background: #D2D8E3
+			p 
+				color: $white
+	.transactions-table
+		padding-right: 0.6rem
+		.table-head
+			display: flex
+			justify-content: space-between
+			align-items: center
+			h4
+				display: block
+				background: $gray-second
+				color: $black
+				font-family: $open-sans
+				font-size: 12px
+				text-align: center
+				padding: .6rem 0
+				margin-bottom: .6rem
+				width: 98px
+		.table-body
+			.table-row
+				background: $gray-second
+				display: flex
+				justify-content: space-between
+				align-items: center
+				color: $black
+				font-family: $open-sans
+				font-size: 10px
+				text-align: center
+				&:nth-child(even)
+					background: $white
+				.table-data
+					height: 33.19px
+					width: 98px
+					display: flex
+					flex-direction: columns
+					align-items: center
+					justify-content: center
+					&.with-arrows
+						flex-direction: row
+						svg
+							margin-right: 0.6rem

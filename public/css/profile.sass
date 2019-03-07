@@ -1,0 +1,262 @@
+body.page-profile, body.page-profile-id
+	.profile-main-info
+		margin-top: .6rem
+		.profile-avatar-wrap
+			position: relative
+			.btn-upload-img
+				position: absolute
+				top: 0
+				right: 0
+				background: $white
+				padding: 5px
+				cursor: pointer
+				display: none
+				z-index: 1
+				svg
+					fill: $black
+					width: 16px
+					height: auto
+				&:hover
+					svg
+						fill: #707070
+				&:active
+					svg
+						fill: #484848
+			&:hover
+				.btn-upload-img
+					display: block
+	.profile-media-info
+		padding: .6rem
+		h5
+			text-transform: uppercase
+			color: $black
+			font-family: $open-sans
+			font-weight: bold
+			font-size: 16px
+			position: relative
+			padding-bottom: 5px
+			margin-bottom: 15px
+			&:before
+				position: absolute
+				content: ''
+				bottom: 0
+				left: 0
+				height: 1px
+				width: 90px
+				background: $rose
+		.add-photo-container
+			height: 200px
+			width: 360px
+			overflow: hidden
+			background: #E9ECF2
+			@include justify-content-center
+			cursor: pointer
+			margin-bottom: .6rem
+			img
+				max-height: 100%
+				max-width: 100%
+			svg
+				height: 105px
+				width: 105px
+	.more-info .left-part
+		.more-info-card, .more-info-card-edit
+			position: relative
+			&.hide
+				display: none
+			.edit
+				position: absolute
+				cursor: pointer
+				fill: $black
+				top: 15px
+				right: 10px
+				width: 16px
+				height: auto
+				&:hover
+					fill: #707070
+				&:active
+					fill: #484848
+			&.info
+				margin-top: .6rem
+			&.visit
+				margin-top: .6rem
+				.more-info-card-body
+					
+					padding: 10px 15px
+					
+					.visit-wrap
+						display: flex
+						flex-wrap: wrap
+						overflow-X: auto
+						max-height: 300px
+						.tag-place
+							color: $black
+							padding: 0 3px
+							border: solid 1px $black
+							border-radius: 5px
+							margin-right: 5px
+							margin-bottom: 5px
+							cursor: pointer
+							font-size: 14px
+		.more-info-card-edit
+			background: $white
+			//background: #F4F5F6
+			box-shadow: 0 0 5px -1px rgba(0,0,0,.16)
+			margin-bottom: .6rem
+			.more-info-card-header
+				text-transform: uppercase
+				font-family: $open-sans
+				font-size: 16px
+				padding: 13px 10px 25px
+				font-weight: bold
+			.more-info-card-body
+				padding: 0 10px
+			.btn-done
+				width: 100%
+				cursor: pointer
+				outline: none!important
+				box-shadow: none !important
+				border: none!important
+				color: $black
+				font-family: $open-sans
+				font-size: 16px
+				text-align: center
+				padding: 15px 0
+				background: $gray-light
+				margin-top: 25px
+				display: block
+				&:hover
+					background: #F4F5F6
+					color: #C3C4C4
+				&:active
+					background: #D2D8E3
+					color: $white
+			&.text
+				.more-info-card-body textarea
+					margin-bottom: 0
+					font-family: $open-sans
+					font-size: 14px
+					color: $black
+					resize: none
+					padding: 5px 10px
+					border: solid 1px #BCB4B4
+					outline: none!important
+					box-shadow: none !important
+					background: $white
+					width: 100%
+					height: 216px
+					&:active, &:focus
+						border: solid 1px #484848
+					&:placeholder
+						font-family: $open-sans
+						font-size: 14px
+						color: $black
+			&.info
+				label
+					font-family: $open-sans
+					color: $black
+					font-size: 14px
+					margin-bottom: 0
+				.form-control
+					outline: none!important
+					box-shadow: none !important
+					border: solid 1px #BCB4B4
+					margin-bottom: 0
+					font-family: $open-sans
+					font-size: 14px
+					color: $black
+					padding: 3px 5px
+					border-radius: 0
+					background: $white
+					&:active, &:focus
+						border: solid 1px #484848
+					&:placeholder
+						font-family: $open-sans
+						font-size: 14px
+						color: $black
+				input.form-control
+					width: 150px
+				input[type="checkbox"]
+					outline: none!important
+					box-shadow: none !important
+					border: solid 1px #BCB4B4
+					background: $white
+					border-radius: 0
+					width: 15px
+					height: 15px
+				select.form-control
+					height: 29px
+					width: 150px
+				.select-holder
+					display: flex
+					justify-content: space-between
+					width: 150px
+					select, input
+						outline: none!important
+						box-shadow: none !important
+						border: solid 1px #BCB4B4
+						font-family: $open-sans
+						font-size: 14px
+						color: $black
+						border-radius: 0
+						background: $white
+						width: 30%
+						&:active, &:focus
+							border: solid 1px #484848
+						&:placeholder
+							font-family: $open-sans
+							font-size: 14px
+							color: $black
+					&.two
+						font-family: $open-sans
+						font-size: 14px
+						color: $black
+						select
+							width: 40px
+	//profile-photo-item_________________________________________________________________________
+	.profile-photo-item-container
+		.profile-photo-item
+			width: 360px
+			background: $white
+			box-shadow: 0 0 5px 0px rgba(0,0,0,.16)
+			margin-bottom: .6rem
+			figure
+				margin: 0
+				@include justify-content-center
+				overflow: hidden
+				img
+					height: auto
+					width: 100%
+			.profile-photo-item-action-row
+				width: 100%
+				display: flex
+				.profile-photo-item-action
+					flex: 1px
+					cursor: pointer
+					@include justify-content-center
+					color: $black 
+					height: 40px
+					font-size: 15px
+					&:nth-child(2)
+						border-left: solid 1px $border-gray
+						border-right: solid 1px $border-gray
+					svg
+						fill: #D2D2D2
+					span
+						margin-left: 0.6rem
+					&:hover
+						svg
+							fill: #D2D8E3
+						color: #D2D8E3
+					&:active, &.active
+						svg
+							fill: $rose
+						color: $rose
+					&.active
+						&:hover
+							svg
+								fill: #EB2C86
+							color: #EB2C86
+						&:active
+							svg
+								fill: #BC015A
+							color: #BC015A

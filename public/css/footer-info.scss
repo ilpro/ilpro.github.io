@@ -1,0 +1,227 @@
+.footer-info {
+  width: 828px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 5px 10px;
+  font-size: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  top: 30px;
+  background: #00011C;
+  .our-partners {
+    text-align: center;
+    margin-top: 35px;
+  }
+  .top-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    h5{
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    }
+    ul{
+      list-style: none;
+      padding-left: 0;
+      li{
+        margin-top: 7px;
+        a{
+          color: #22416d;
+          text-decoration: underline;
+          font-size: 14px;
+        }
+      }
+    }
+    .soc-links{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img{
+        height: 48px;
+        width: auto;
+        margin: 30px 10px 10px 0;
+        transform: scale(1);
+        &:hover{
+          opacity: .7;
+        }
+        &:active{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .follow-section{
+      text-align: right;
+    }
+    
+  }
+  .bottom-row{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    .text-section{
+      margin-top: auto;
+      p{
+        color: #333;
+        font-size: 14px;
+      }
+    }
+    .security-section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 220px;
+      margin-top: auto;
+    }
+    .payment-section{
+      text-align: right;
+      margin-top: auto;
+      .pay-method{
+        display: flex;
+        img{
+          height: 35px;
+          width: auto;
+          &:first-of-type{
+            margin-right: 5px;
+            margin-left: auto;
+          }
+        }
+      }
+      p, a{
+        color: #666;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+  }
+  h5, p, li, a{
+    color: #fff!important;
+  }
+  .app-row{
+    display: flex;
+    margin-top: 30px;
+    img{
+      height: 42px;
+      width: auto;
+      &:hover{
+        box-shadow: 0 0 10px 1px rgba(255,255,255,.25);
+      }
+      &:active{
+        opacity: .7;
+      }
+    }
+    a:first-of-type{
+      img{
+        margin-right: 15px;
+      }
+    }
+  }
+  .contacts-btn{
+    border: solid 2px #fff;
+    padding: 5px 10px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 0;
+    &:hover{
+      box-shadow: 0 0 10px 1px rgba(255,255,255,.25);
+    }
+    &:active{
+      background: rgba(235, 0, 139, 0.5);
+    }
+    figure{
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: solid 1px #EB008B;
+      margin: 0;
+      padding: 4px;
+    }
+    p{
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+  &.narrow{
+    width: 100%;
+    top: 0;
+    margin-bottom: 0;
+    margin-top: 60px; 
+    position: relative;
+    // left: -45px;
+    .top-row{
+      h5{
+        font-size: 12px;
+        text-decoration: none;
+        &:before{
+          content: none;
+        }
+      }
+      ul{
+        li{
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+      .soc-links{
+        img{
+          height: 30px;
+        }
+      }
+    }
+    .bottom-row{
+      .text-section{
+        p{
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+      }
+      .security-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 130px;
+        margin-top: auto;
+        img{
+          height: 30px !important;
+        }
+      }
+      .payment-section{
+        .pay-method{
+          img{
+            height: 30px;
+          }
+        }
+        p, a{
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .app-row{
+      display: flex;
+      margin-top: 10px;
+      img{
+        height: 28px;
+      }
+    }
+    .contacts-btn{
+      width: 180px;
+      figure{
+        height: 20px;
+        width: 20px;
+      }
+      p{
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

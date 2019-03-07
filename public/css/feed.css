@@ -1,0 +1,25 @@
+.page-feed .post-container .post-header {
+  /* .user-avatar-holder-wrap
+   * figure
+   * 	height: 38px
+   * 	width: 38px
+   * 	margin-right: 15px
+   * svg
+   * 	bottom: -5px
+   * 	right: 5px */ }
+.page-feed .post-container .post-body {
+  overflow-x: scroll; }
+  .page-feed .post-container .post-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5; }
+  .page-feed .post-container .post-body::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+    background-color: #686868; }
+  .page-feed .post-container .post-body::-webkit-scrollbar-thumb {
+    background-color: #686868; }
+  .page-feed .post-container .post-body img {
+    max-height: 500px;
+    max-width: 100%; }
+
+/*# sourceMappingURL=feed.css.map */
