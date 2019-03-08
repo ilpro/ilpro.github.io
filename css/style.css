@@ -27033,7 +27033,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background: url("../public/img/bg-landing-igl.png") no-repeat center/cover;
+  background: url("../public/img/bg-landing-igl.png") no-repeat center;
+  background-attachment: fixed;
 }
 
 .landing-new .ln-header .text_img {
@@ -27503,13 +27504,41 @@ body {
   content: '';
 }
 .landing-new .ln-text-ico .map_app {
-  color: #fff;
   padding: 10rem 0;
+  background: url(../public/img/bg-landing-nf.png);
+  background-attachment: fixed;
+  color: #fff;
 }
+
+.landing-new .ln-text-ico .map_app img{
+  transition: 1s;
+  cursor: pointer;
+}
+
+.landing-new .ln-text-ico .map_app img:hover{
+  transform: rotate(10deg);
+}
+
+.landing-new .ln-text-ico .world-map {
+  position: relative;
+  background: url(../public/img/bg-landing-maplocator.png) no-repeat center/cover;
+  background-attachment: fixed;
+}
+
+.landing-new .ln-text-ico .world-map img{
+  transition: 1s;
+  cursor: pointer;
+}
+
+.landing-new .ln-text-ico .world-map img:hover{
+  transform: rotateY(35deg);
+}
+
 .landing-new .ln-text-ico .yellow {
-  background: url("../public/img/bg-landing-igl2.png") no-repeat center/cover;
   position: relative;
   height: 650px;
+  background: url("../public/img/bg-landing-igl2.png") no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 .landing-new .ln-text-ico .yellow svg {
