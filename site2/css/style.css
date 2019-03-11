@@ -110,7 +110,7 @@ a{
     height: 430px;
     padding-top:1px;
     background: url(../img/bg-igl1.png)no-repeat center;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
     background-size: 150%;
   }
 
