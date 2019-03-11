@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.page-subscribe {
+  .users-list{
+    top: 134px;
+  }
+  .sub-header-item, .sub-button{
+    color: $main-color;
+    border: solid 1px $main-color;
+    box-shadow: none!important;
+    &.active{
+      color: #fff;
+      background-color: $main-color;
+    }
+  }
+  .user-subscribe{
+    .info-box{
+      .info-row{
+        .id-box{
+          .id{
+            background: $main-color;
+          }
+        }
+        .name{
+          color: $main-color;
+        }
+      }
+    }
+  }
+  .sub-button{
+    background: #fff;
+  }
+}

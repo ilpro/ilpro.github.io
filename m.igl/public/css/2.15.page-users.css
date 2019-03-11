@@ -1,0 +1,54 @@
+/* mixin for multiline */
+.page-users {
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px; }
+  .page-users .user-row {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-size: 15px;
+    padding: 5px; }
+    .page-users .user-row:nth-child(even) {
+      background: #ffffff; }
+    .page-users .user-row .user-info {
+      -webkit-box-flex: 0 180px;
+      -moz-box-flex: 0 180px;
+      -webkit-flex: 0 180px;
+      -ms-flex: 0 180px;
+      flex: 0 180px;
+      display: flex;
+      align-items: center; }
+      .page-users .user-row .user-info .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-right: 3px;
+        border: solid 1px #ccc; }
+        .page-users .user-row .user-info .user-avatar img {
+          height: 100%;
+          width: 100%; }
+    .page-users .user-row .user-age {
+      -webkit-box-flex: 0 90px;
+      -moz-box-flex: 0 90px;
+      -webkit-flex: 0 90px;
+      -ms-flex: 0 90px;
+      flex: 0 90px; }
+    .page-users .user-row .location {
+      -webkit-box-flex: 0 200px;
+      -moz-box-flex: 0 200px;
+      -webkit-flex: 0 200px;
+      -ms-flex: 0 200px;
+      flex: 0 200px; }
+    .page-users .user-row .visit {
+      -webkit-box-flex: 0 200px;
+      -moz-box-flex: 0 200px;
+      -webkit-flex: 0 200px;
+      -ms-flex: 0 200px;
+      flex: 0 200px; }
+
+/*# sourceMappingURL=2.15.page-users.css.map */

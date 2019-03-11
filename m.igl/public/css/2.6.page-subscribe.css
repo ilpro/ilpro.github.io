@@ -1,0 +1,18 @@
+/* mixin for multiline */
+.page-subscribe .users-list {
+  top: 134px; }
+.page-subscribe .sub-header-item, .page-subscribe .sub-button {
+  color: #ea6a6a;
+  border: solid 1px #ea6a6a;
+  box-shadow: none !important; }
+  .page-subscribe .sub-header-item.active, .page-subscribe .sub-button.active {
+    color: #fff;
+    background-color: #ea6a6a; }
+.page-subscribe .user-subscribe .info-box .info-row .id-box .id {
+  background: #ea6a6a; }
+.page-subscribe .user-subscribe .info-box .info-row .name {
+  color: #ea6a6a; }
+.page-subscribe .sub-button {
+  background: #fff; }
+
+/*# sourceMappingURL=2.6.page-subscribe.css.map */

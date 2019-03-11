@@ -1,0 +1,31 @@
+/* mixin for multiline */
+.page-profile-edit .other-info {
+  margin-top: 42px; }
+  .page-profile-edit .other-info .other-info-title, .page-profile-edit .other-info .about-text-title {
+    color: #ea6a6a; }
+  .page-profile-edit .other-info .save {
+    color: #ea6a6a;
+    border: solid 1px #ea6a6a;
+    background-color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px; }
+  .page-profile-edit .other-info .info-items-container .info-item .parameter-field {
+    border: solid 1px #ccc; }
+  .page-profile-edit .other-info .info-items-container .info-item .parameter-field .info-parameter.changeable {
+    border: solid 1px #ccc; }
+  .page-profile-edit .other-info .info-items-container.single-row .info-item .info-parameter select {
+    outline: none;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    width: 160px;
+    max-height: 80px;
+    background-color: #fff;
+    border-radius: 0; }
+    .page-profile-edit .other-info .info-items-container.single-row .info-item .info-parameter select .one-option-item {
+      border: none; }
+.page-profile-edit .divider {
+  background-color: #000; }
+
+/*# sourceMappingURL=2.7.page-profile-edit.css.map */
