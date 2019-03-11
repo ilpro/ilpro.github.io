@@ -181,6 +181,16 @@ a{
 
   .translator{
     width: 100%;
+  }
+
+  .translator:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
     background:url(../img/bg-igl3.png)no-repeat center;
     background-size: 175%;
     background-attachment: fixed;
@@ -214,10 +224,20 @@ a{
   .map-world{
     max-width:100%;
     padding:1px;
-    background: url(../img/bg-igl4.png) no-repeat center;
-    background-attachment: fixed;
     background-color:#ffffff;
   }
+  
+  .map-world:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../img/bg-igl4.png) no-repeat center;
+    background-attachment: fixed;
+  }
+
 
   .map-world img {
     width: 100%;
