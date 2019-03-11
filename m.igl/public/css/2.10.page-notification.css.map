@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AA2NA,yBAAyB;ACtNvB,uCAAmB;EDmCnB,mBAAmB,EAAE,MAAM;EAC3B,iBAAiB,EAAE,MAAM;EACzB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;ECpCjB,2DAAmB;IACjB,KAAK,ECgCU,OAAO;ED9BxB,kDAAU;IACR,OAAO,EAAE,QAAQ;IACjB,MAAM,EAAE,iBAAiB;IACzB,aAAa,EAAE,GAAG;IAClB,KAAK,EAAE,OAAO;IACd,cAAc,EAAE,SAAS;IACzB,gBAAgB,EAAE,IAAI;AAKtB,mEAAY;EACV,aAAa,EAAE,GAAG;EAClB,QAAQ,EAAE,MAAM;AAId,kGAAC;EACC,KAAK,ECYI,OAAO",
-"sources": ["0.0.mixins.scss","2.10.page-notification.scss","0.1.font-colors-variables.scss"],
-"names": [],
-"file": "2.10.page-notification.css"
-}
