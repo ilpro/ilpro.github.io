@@ -146,9 +146,19 @@ a{
 
   .new-friends{
     width: 100%;
+    background-color: #ffffff;
+  }
+
+  .new-friends:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
     background: url(../img/bg-igl2.png)no-repeat center;
     background-attachment: fixed;
-    background-color: #ffffff;
   }
 
   .new-friends img {
