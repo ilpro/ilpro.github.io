@@ -265,6 +265,16 @@ a{
     height:314px;
   }
 
+  .video:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
   .video iframe {
     max-width: 100%;
     min-width: 100%;
@@ -279,6 +289,15 @@ a{
     max-width: 100%;
     padding:1px;
     text-align: center;
+  }
+
+  footer:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 
   .footer-wrapper {
