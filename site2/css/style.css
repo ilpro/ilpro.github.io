@@ -1,0 +1,628 @@
+/* GENERAL STYLE */
+
+@font-face{
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUI.ttf);
+}
+
+@font-face{
+  font-family: SegoeUI-Bold;
+  src: url(../fonts/SegoeUI-Bold.ttf);
+}
+
+@font-face{
+  font-family: SegoeUI-SemiBold;
+  src: url(../fonts/SegoeUI-SemiBold.ttf);
+}
+
+body{
+  font-family: SegoeUI,sans-serif;
+  font-size: 16px;
+  color:#000000;
+/*  background-color: #D40F0F;*/
+  overflow-x: hidden;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* MEDIA */
+
+@media screen and (min-width: 320px){
+
+  /* HEADER */
+  header{
+    width:100%;
+    background-color: #ffffff;
+  }
+
+  .wrapper-top{
+    max-width: 80%;
+    margin: 0 auto 10px auto;
+  }
+
+  .logo{
+    margin-top: 20px;
+  }
+
+  .logo img {
+    height: auto;
+  }
+
+  .caption-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  /*BUTTONS TOP*/
+
+  .buttons-top{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  .buttons-top a:first-child {
+    margin-right: 20px;
+  }
+
+  .buttons-top img {
+    width: 100%;
+  }
+
+  
+
+
+
+  /* COMMUNITY */
+
+  .comunity-lgbt{
+    width: 100%;
+    height:53px;
+    background-color:#00d0ff;
+    text-align: center;
+    text-transform: uppercase;
+    padding:5px 0 17px 0;
+  }
+
+  .comunity-lgbt h3{
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size:22px;
+    color:#ffffff;
+  }
+  
+
+
+  /*KINDERED SPIRIT*/
+
+  .content-universe{
+    width: 100%;
+    height: 430px;
+    padding-top:1px;
+    background: url(../img/bg-igl1.png)no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .content-universe img {
+    width: 100%;
+  }
+
+  .content-universe img:first-child {
+    position: absolute;
+  }
+
+  .content-universe img:last-child {
+    margin-top: 45px;
+  }
+
+  .be-proud{
+    font-size:20px;
+    font-weight:bold;
+  }
+
+  /* .new-friends */
+
+  .new-friends{
+    width: 100%;
+    background: url(../img/bg-igl2.png)no-repeat center;
+    background-attachment: fixed;
+    background-color: #ffffff;
+  }
+
+  .new-friends img {
+    width: 100%;
+  }
+
+  .new-friends_text {
+    margin: -80px 0 0 20px;
+    padding: 20px;
+  }
+
+  .new-friends_text h3 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+
+ 
+
+  /* translator */
+
+  .translator{
+    width: 100%;
+    background:url(../img/bg-igl3.png)no-repeat center;
+    background-size: 175%;
+    background-attachment: fixed;
+  }
+
+  .translator img {
+    width: 100%;
+  }
+
+  .translator-text {
+    padding: 20px;
+    margin-top: -110px;
+    text-align: right;
+  }
+
+  .translator-text h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+
+  .translator-text p {
+    color: #ffffff;
+  }
+
+
+
+
+  /* map-world */
+  
+  .map-world{
+    max-width:100%;
+    padding:1px;
+    background: url(../img/bg-igl4.png) no-repeat center;
+    background-attachment: fixed;
+    background-color:#ffffff;
+  }
+
+  .map-world img {
+    width: 100%;
+  }
+
+  .map-world_text {
+    margin-top: -110px;
+    padding: 20px;
+  }
+
+  .map-world_text h3 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+
+  /* VIDEO */
+
+  .w100{
+    min-width:100%;
+  }
+
+  .video{
+    max-width:100%;
+    height:314px;
+  }
+
+  .video iframe {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+
+  /* FOOTER */
+
+  footer{
+    max-width: 100%;
+    padding:1px;
+    text-align: center;
+  }
+
+  .footer-wrapper {
+    margin-top: -17px;
+    padding: 25px 0 1px 0;
+    background: url(../img/bg-igl_footer.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .footer-about {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .footer-about h3 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .footer-about p {
+    font-family: SegoeUI-SemiBold;
+  }
+
+  .partners {
+    display: block;
+    width: 215px;
+    height: 170px;
+    margin: 20px auto 30px auto;
+    padding-top: 1px;
+    border-radius: 15px;
+    background-color: #ffffff;
+  }
+
+  .partners p {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .new-partners {
+    display: block;
+    width: 215px;
+    height: 170px;
+    margin: 20px auto 30px auto;
+    padding-top: 1px;
+    border-radius: 15px;
+    background-color: #ffffff;
+  }
+
+  .new-partners p {
+    font-size: 25px;
+    color: #000000;
+    margin: -7px 0 0 20px;
+    text-transform: uppercase;
+  }
+
+  .new-partners img {
+    width: 100px;
+    height: auto;
+    margin: 35px 0 0 0;
+  }
+
+  .praid {
+    font-weight: bold;
+  }
+
+  .footer-information p{
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size:16px;
+    color:#ffffff;
+  }
+
+  .footer-information a{
+    font-family: SegoeUI, sans-serif;
+    text-decoration:underline;
+    color:#ffffff;
+  }
+  
+  .footer-information ul{
+    margin:0;
+    padding:0;
+  }
+
+  .footer-information li{
+    margin-bottom:30px;
+  }
+
+  .footer-social p{
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size:16px;
+    color:#ffffff;
+  }
+
+  /*FOOTER SOCIAL ICON*/
+
+  .footer-social_icon{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 35px 0;
+  }
+
+  .footer-social_icon li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon{
+    width: 60px;
+    height: 60px;
+    background: url(../public/img/landing/social-icon.png)no-repeat;
+  }
+
+  .icon-facebook{
+    background-position:-70px 0;
+  }
+
+  .icon-twitter{
+    background-position:-140px 0;
+  }
+
+  .icon-google_plus{
+    background-position:-210px 0;
+  }
+  
+
+  /*FOOTER DOWNLOAD*/
+
+  .footer-download{
+    margin-top:38px;
+  }
+
+  .footer-download p{
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size:16px;
+    color:#ffffff;
+  }
+
+  .footer-download_button{
+    margin:32px 0 32px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-download_button button{
+    border:none;
+    outline:none;
+  }
+
+  .down{
+    height: 43px;
+    width: 130px;
+    background:url(../img/buttondown2.png)no-repeat;
+  }
+  
+  .googleplay{
+    background-position:-133px 0;
+  }
+}
+
+@media screen and (min-width: 360px){
+
+  header {
+    background-position: 65%;
+  }
+  
+  .offer{
+    background-size: 266% 132%;
+      background-position: 52% 31%;
+  }
+
+  .download-wrapper{
+    margin: 0 11%;
+  }
+
+  .subheading h2 {
+    font-size: 19px;
+  }
+
+  .content-universe {
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 375px){
+
+  .content-universe {
+    height: 500px;
+  }
+
+  .footer-social_icon li {
+    margin-right:10px;
+  }
+
+  .subheading h2 {
+      font-size: 21px;
+  }
+
+  header {
+      background-position: 64%; 
+  }
+
+  .grid-item--height3 p{
+    position: absolute;
+    top: 156px;
+  }
+  
+  .grid-item--width2 {
+    width: 94.25px;
+    height: 92.25px;
+  }
+    .grid-item--height3 {
+    width: 188.5px;
+    height: 185.5px;
+
+
+}
+  
+@media screen and (min-width: 411px){
+
+  .content-universe {
+    height: 560px;
+  }
+
+  .content-universe img:last-child {
+    margin-top: 55px;
+}
+  
+  .download{
+    background-position:0 -35px;
+  }
+
+  .footer-social_icon li{
+    margin-right:15px;
+  }
+
+  .subheading h2 {
+      font-size: 22px;
+  }
+
+  header {
+      background-position: 62%;
+  }
+
+  .grid-item--width2 p {
+    position: absolute;
+      top: 70px;
+  }
+
+
+  .grid-item--width3 p {
+    position: absolute;
+    top: 70px;
+  }
+
+  
+  .grid-item--height2 p {
+    position: absolute;
+    top: 160px;
+  }
+
+
+
+  .grid-item--height3 p{
+    position: absolute;
+    top: 151px;
+  }
+
+
+  .grid-item--width2 {
+    width: 108.25px;
+      height: 109.25px;
+  }
+
+  .grid-item--width3 {
+    height: 102.35px;
+      width: 103.13px;
+  }
+  
+  .grid-item--height2 {
+    height: 190px;
+      width: 212px;
+  }
+
+  .grid-item--height3 {
+    width: 213.75px;
+      height: 183.5px;
+  }
+
+
+@media screen and (min-width: 568px){
+  
+  header{
+    background-size:100%;
+    background-position:50% 50%;
+  }
+
+  .caption-top{
+    justify-content: center;
+  }
+
+  .subheading{
+    text-align:center;
+  }
+
+  .video{
+    height:530px;
+  }
+
+  .offer{
+    background-size:  270% 132%;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  
+  .mw100{
+    min-width:130%;
+  }
+
+  header{
+    background-size:100%;
+    background-position:0 35%;
+  }
+
+  .download{
+    height: 300px;
+  }
+
+  .video{
+    height:668px;
+  }
+
+  .caption-top{
+    justify-content: center;
+  }
+
+  .subheading{
+    text-align:center;
+  }
+
+  .kindred-spirit{
+    background-size: 60%;
+      background-position: 50% 20px;
+  }
+
+  .footer-social_icon {
+    margin:34px auto 0;
+  }
+
+}
+
+@media screen and (min-width: 823px){
+  .offer{
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  .kindred-spirit{
+    background-size:45%;
+  }
+}
+
+@media screen and (min-width: 1366px){
+  
+  header{
+    height: 815px;
+  }
+
+  .buttons-top{
+    margin: 620px auto;
+  }
+
+  .kindred-spirit{
+    background-size:34%;
+  }
+
+  .video{
+    height:1200px;
+  }
+
+}

@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.page-main {
+  padding: 15px 0;
+  text-align: center;
+
+  .preview-tile {
+    position: relative;
+    display: inline-block;
+    margin: 0 7px 14px;
+    color: $font-color-complement-antagonist;
+    box-shadow: 0 1px 12px 2px rgba(0, 0, 0, 0.3);
+
+    @media screen and (min-width: 450px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 750px) {
+      width: 30%;
+    }
+
+    .profile-nickname {
+      text-align: left;
+      font-size: 20px;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 3px;
+
+      &:after {
+        content: "id:" attr(profile-id);
+        position: absolute;
+        right: 0;
+        top: 4px;
+        padding: 3px 5px;
+        color: $font-color-main-inverse;
+        background-color: $background-color-main-second;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+    }
+
+    .age-status-holder{
+      @include flexbox;
+      @include space-between;
+      @include align-items-center;
+      padding: 0 3px 5px;
+
+      .profile-age{
+        font-size: 15px;
+      }
+
+      .online-status {
+        font-size: 10px;
+        position: relative;
+
+        &:before{
+          content: '';
+          background-color: $bg-color--allow;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          left: -7px;
+          top: 4px;
+          border-radius: 50%;
+        }
+
+        &.offline:before {
+          background-color: $bg-color--not-allow;
+        }
+      }
+    }
+
+
+    .camera-thumb-image {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .preview-title-menu{
+      @include flexbox;
+      @include space-between;
+      @include align-items-center;
+      padding: 10px;
+
+
+      svg:hover{
+        g, path{
+          fill: $background-color-complement-darker;
+        }
+      }
+
+      svg.active{
+        g, path{
+          fill: $background-color-main-second;
+        }
+      }
+    }
+
+  }
+}
+
+.page-single-pick{
+  padding-top: 50px;
+  .user-controls{
+    .control-btn.next-user{
+      .forwards-ico{
+        left: 60%;
+      }
+    }
+  }
+}
+
+.on-page{
+  background: #f1f1f1;
+  .title-for-tags{
+    font-size: 6.8vw;
+    text-align: center;
+    color: #2c3a48;
+    text-transform: uppercase;
+  }
+  .tag-place-container{
+    .tag-place{
+      &:active{
+        border: solid 1px $main-color;
+        background: $main-color;
+        color: #ffffff;
+      }
+    }
+  }
+  .select-title{
+    color: #2c3a48;
+    margin: 0 0 15px;
+    font-size: 6.8vw;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .input-range-wrapper{
+    input{
+      padding-left: 0;
+    }
+  }
+  .input-range-wrapper {
+    @include flexbox;
+    @include align-items-center;
+    @include justify-content-center;
+    margin-top: 10px;
+
+    &>* {
+      margin: 0 3px;
+    }
+
+    .input-title {
+      color: #2c3a48;
+      font-size: $font-size-large;
+    }
+
+    .age-input {
+      width: 40px;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      background-color: #fff;
+      height: 20px;
+      line-height: 20px;
+      padding: 5px;
+      text-align: center;
+      color: #2c3a48;
+      border: solid 1px #2c3a48;
+    }
+
+    .dash {
+      width: 12px;
+      height: 1px;
+      border-radius: 2px;
+      background-color: $background-color-main;
+    }
+  }
+  .select-gender.want-lives{
+    .gender-container{
+      svg path{
+        stroke: #666;
+        fill: none!important;
+      }
+      &.active{
+        svg path{
+          stroke: #fff!important;
+          fill: none!important;
+        }
+      }
+    }
+  }
+  .search-button{
+    font-size: 16px;
+  }
+  .slider-ui {
+    position: relative;
+    margin: 20px 18px;
+    border-radius: 0;
+    height: 1px;
+    background-color: #ccc;
+
+    .ui-slider-range {
+      border: none;
+      background: $background-color-main;
+      border-top: solid 1px #2c3a48;
+      border-bottom: solid 1px #2c3a48;
+      top: 0;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      font-size: .7em;
+      display: block;
+    }
+
+    .ui-slider-handle {
+      top: -9px;
+      margin-left: -10px;
+      position: absolute;
+      z-index: 2;
+      cursor: default;
+      width: 20px;
+      border: 1px solid #2c3a48;
+      height: 20px;
+      background: #fff;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+  .login-button, .register-button, .search-button {
+    border: solid 1px $main-color;
+    /*background-color: transparentize($background-color-main-second, .2);*/
+    background-color: #fff;
+    color: $main-color;
+    width: 94%;
+    height: 40px;
+    margin: 5px auto 0;
+    display: block;
+    @include transition(all .2s ease);
+    @include not-selectable;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+    &:active {
+      box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+      @include transform(translateY(1px));
+    }
+  }
+  padding-bottom: 20px;
+}
+
+.page-single-pick{
+  .user-controls{
+    .previous-user, .next-user{
+      color: #2c3a48!important;
+      background: #fff;
+      border: solid 1px #2c3a48;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 10px;
+      svg path{
+        fill: №2c3a48;
+      }
+      &:active{
+        background: #cccccc!important;
+      }
+    }
+  }
+}
+
+.select-gender .gender-container{
+  svg{
+    width: auto!important;
+    height: 35px!important;
+    margin-bottom: 7px;
+  }
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu .menu-item{
+  .icon-holder{
+    height: 35px!important;
+    svg{
+      width: auto!important;
+      height: 35px!important;
+    }
+  }
+  .menu-item-text{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.page-single-pick .user-controls{
+  padding: 15px 10px;
+}
+
+.tag-place-container.slider{
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: scroll;
+  height: 60px;
+}

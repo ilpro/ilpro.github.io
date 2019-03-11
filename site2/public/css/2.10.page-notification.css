@@ -1,0 +1,22 @@
+/* mixin for multiline */
+.page-notifications .notifications-head {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .page-notifications .notifications-head .notification-title {
+    color: #2c3a48; }
+  .page-notifications .notifications-head .clear-all {
+    padding: 5px 10px;
+    border: 1px solid #ea6a6a;
+    border-radius: 4px;
+    color: #ea6a6a;
+    text-transform: uppercase;
+    background-color: #fff; }
+.page-notifications .notifications-ribbon .message-row .user-avatar {
+  border-radius: 50%;
+  overflow: hidden; }
+.page-notifications .notifications-ribbon .message-row .message-text-controls-wrap .message-text a {
+  color: #2c3a48; }
+
+/*# sourceMappingURL=2.10.page-notification.css.map */

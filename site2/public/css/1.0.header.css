@@ -1,0 +1,448 @@
+/* mixin for multiline */
+.header-mobile {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  background-color: #fff;
+  width: -moz-calc(100% + 275px);
+  width: -webkit-calc(100% + 275px);
+  width: calc(100% + 275px);
+  -webkit-transform: translateX(-275px) translateZ(0);
+  -moz-transform: translateX(-275px) translateZ(0);
+  -o-transform: translateX(-275px) translateZ(0);
+  -ms-transform: translateX(-275px) translateZ(0);
+  transform: translateX(-275px) translateZ(0);
+  z-index: 10;
+  /*left: -275px;*/
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.25); }
+  .header-mobile .header-logo {
+    width: 275px;
+    height: 42px;
+    position: relative;
+    opacity: 1;
+    display: block; }
+    .header-mobile .header-logo .sidemenu-header {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 5px 5px 5px 20px; }
+      .header-mobile .header-logo .sidemenu-header figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px; }
+        .header-mobile .header-logo .sidemenu-header figure img {
+          height: 100%;
+          width: 100%; }
+      .header-mobile .header-logo .sidemenu-header p {
+        font-weight: bold;
+        font-size: 18px;
+        color: #000; }
+  .header-mobile .hamburger {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    height: 100%;
+    width: 42px;
+    min-width: 42px;
+    margin-right: auto; }
+    .header-mobile .hamburger .h-line {
+      position: absolute;
+      left: 8px;
+      width: 26px;
+      height: 2px;
+      background-color: #ea6a6a; }
+    .header-mobile .hamburger .h-top {
+      top: 14px; }
+    .header-mobile .hamburger .h-middle {
+      top: 24px; }
+    .header-mobile .hamburger .h-bottom {
+      top: 34px; }
+    .header-mobile .hamburger .unreaded-messages-count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      background-color: #ea6a6a;
+      color: #fff;
+      font-weight: bold;
+      height: 19px;
+      width: 19px;
+      line-height: 22px;
+      text-align: center; }
+  .header-mobile .center-content {
+    -webkit-box-flex: 1 auto;
+    -moz-box-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    position: relative; }
+    .header-mobile .center-content .header-profile-name {
+      position: relative;
+      /*top: 2px;*/ }
+    .header-mobile .center-content .header-profile-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      padding-left: 5px; }
+      .header-mobile .center-content .header-profile-info figure {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-right: 3px;
+        border: solid 1px #ccc; }
+        .header-mobile .center-content .header-profile-info figure img {
+          height: 100%;
+          width: 100%; }
+      .header-mobile .center-content .header-profile-info p {
+        color: #000;
+        margin-bottom: 3px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1; }
+        .header-mobile .center-content .header-profile-info p:first-of-type {
+          font-weight: bold; }
+          .header-mobile .center-content .header-profile-info p:first-of-type span {
+            color: #fff;
+            background-color: #ea6a6a;
+            margin-right: 5px;
+            /*padding: 0 3px;*/
+            padding: 2px 7px;
+            font-size: 12px; }
+          .header-mobile .center-content .header-profile-info p:first-of-type .nickname {
+            padding: 0; }
+      .header-mobile .center-content .header-profile-info .header-advanced-btn {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 20px; }
+      .header-mobile .center-content .header-profile-info .recipient-age {
+        margin-right: 5px; }
+      .header-mobile .center-content .header-profile-info .recipient-residence span {
+        color: #000;
+        font-size: 12px;
+        /*background: $main-color;*/
+        padding: 2px 7px;
+        /*border: solid 1px #fff;*/ }
+    .header-mobile .center-content .edit-profile {
+      transform: translateY(-50%);
+      top: 50%;
+      position: absolute;
+      right: 20px; }
+    .header-mobile .center-content .page-head {
+      color: #fff;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      height: 42px;
+      padding: 5px 0; }
+      .header-mobile .center-content .page-head .msg-privacy-status {
+        position: absolute;
+        top: 8px;
+        left: 2px; }
+      .header-mobile .center-content .page-head.single-pick .nickname, .header-mobile .center-content .page-head.profile-id .nickname, .header-mobile .center-content .page-head.profile-edit .nickname, .header-mobile .center-content .page-head.profile .nickname {
+        flex: 1 100%;
+        max-width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px; }
+      .header-mobile .center-content .page-head.single-pick .air-status, .header-mobile .center-content .page-head.profile-id .air-status, .header-mobile .center-content .page-head.profile-edit .air-status, .header-mobile .center-content .page-head.profile .air-status {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 42px;
+        width: 75px;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        .header-mobile .center-content .page-head.single-pick .air-status svg, .header-mobile .center-content .page-head.profile-id .air-status svg, .header-mobile .center-content .page-head.profile-edit .air-status svg, .header-mobile .center-content .page-head.profile .air-status svg {
+          position: relative;
+          bottom: 1px; }
+        .header-mobile .center-content .page-head.single-pick .air-status .air-text, .header-mobile .center-content .page-head.profile-id .air-status .air-text, .header-mobile .center-content .page-head.profile-edit .air-status .air-text, .header-mobile .center-content .page-head.profile .air-status .air-text {
+          display: none;
+          color: #fff;
+          font-size: 12px;
+          text-transform: uppercase;
+          margin-left: 2px;
+          text-align: center;
+          line-height: 12px; }
+          .header-mobile .center-content .page-head.single-pick .air-status .air-text span, .header-mobile .center-content .page-head.profile-id .air-status .air-text span, .header-mobile .center-content .page-head.profile-edit .air-status .air-text span, .header-mobile .center-content .page-head.profile .air-status .air-text span {
+            font-size: 16px;
+            letter-spacing: 1px; }
+        .header-mobile .center-content .page-head.single-pick .air-status .on-air, .header-mobile .center-content .page-head.profile-id .air-status .on-air, .header-mobile .center-content .page-head.profile-edit .air-status .on-air, .header-mobile .center-content .page-head.profile .air-status .on-air {
+          display: none; }
+        .header-mobile .center-content .page-head.single-pick .air-status.active .air-text, .header-mobile .center-content .page-head.profile-id .air-status.active .air-text, .header-mobile .center-content .page-head.profile-edit .air-status.active .air-text, .header-mobile .center-content .page-head.profile .air-status.active .air-text {
+          display: block;
+          animation: pulsar 1s infinite; }
+@keyframes pulsar {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+        .header-mobile .center-content .page-head.single-pick .air-status.active .no-air, .header-mobile .center-content .page-head.profile-id .air-status.active .no-air, .header-mobile .center-content .page-head.profile-edit .air-status.active .no-air, .header-mobile .center-content .page-head.profile .air-status.active .no-air {
+          display: none; }
+        .header-mobile .center-content .page-head.single-pick .air-status.active .on-air, .header-mobile .center-content .page-head.profile-id .air-status.active .on-air, .header-mobile .center-content .page-head.profile-edit .air-status.active .on-air, .header-mobile .center-content .page-head.profile .air-status.active .on-air {
+          display: block; }
+      .header-mobile .center-content .page-head.chat {
+        padding-left: 100px;
+        padding-right: 70px;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        position: relative; }
+        .header-mobile .center-content .page-head.chat .avatar-holder {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          position: absolute;
+          left: 54px;
+          top: 0;
+          width: 42px;
+          height: 42px; }
+          .header-mobile .center-content .page-head.chat .avatar-holder .user-avatar {
+            position: relative;
+            min-width: 35px;
+            width: 35px;
+            height: 35px;
+            overflow: hidden;
+            text-align: center;
+            margin: 0;
+            border-radius: 50%; }
+            .header-mobile .center-content .page-head.chat .avatar-holder .user-avatar img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              vertical-align: middle;
+              min-height: 105%;
+              min-width: 105%; }
+        .header-mobile .center-content .page-head.chat .online-status {
+          margin: 0 50% 0 7px;
+          text-align: left; }
+        .header-mobile .center-content .page-head.chat .nickname {
+          max-width: initial; }
+        .header-mobile .center-content .page-head.chat .header-profile-name {
+          position: absolute;
+          left: 100px; }
+          .header-mobile .center-content .page-head.chat .header-profile-name p {
+            color: #fff; }
+            .header-mobile .center-content .page-head.chat .header-profile-name p:first-of-type {
+              font-weight: bold; }
+              .header-mobile .center-content .page-head.chat .header-profile-name p:first-of-type span {
+                color: #ea6a6a;
+                background-color: #fff;
+                margin-right: 5px;
+                padding: 0 3px; }
+        .header-mobile .center-content .page-head.chat .clickable-areas {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1; }
+          .header-mobile .center-content .page-head.chat .clickable-areas .back-to-list-button {
+            width: 50px;
+            height: 42px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-flex: 0 auto;
+            -moz-box-flex: 0 auto;
+            -webkit-flex: 0 auto;
+            -ms-flex: 0 auto;
+            flex: 0 auto;
+            background-color: #fff; }
+            .header-mobile .center-content .page-head.chat .clickable-areas .back-to-list-button svg path:first-of-type {
+              stroke: #ea6a6a; }
+            .header-mobile .center-content .page-head.chat .clickable-areas .back-to-list-button svg path:last-of-type {
+              fill: #ea6a6a; }
+          .header-mobile .center-content .page-head.chat .clickable-areas .to-profile-link {
+            -webkit-box-flex: 1 auto;
+            -moz-box-flex: 1 auto;
+            -webkit-flex: 1 auto;
+            -ms-flex: 1 auto;
+            flex: 1 auto; }
+        .header-mobile .center-content .page-head.chat .air-status {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          height: 100%;
+          width: 75px; }
+          .header-mobile .center-content .page-head.chat .air-status svg {
+            position: relative;
+            bottom: 1px; }
+          .header-mobile .center-content .page-head.chat .air-status .air-text {
+            display: none;
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-left: 2px;
+            text-align: center;
+            line-height: 12px; }
+            .header-mobile .center-content .page-head.chat .air-status .air-text span {
+              font-size: 16px;
+              letter-spacing: 1px; }
+          .header-mobile .center-content .page-head.chat .air-status .on-air {
+            display: none; }
+          .header-mobile .center-content .page-head.chat .air-status.active .air-text {
+            display: block;
+            animation: pulsar 1s infinite; }
+@keyframes pulsar {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+          .header-mobile .center-content .page-head.chat .air-status.active .no-air {
+            display: none; }
+          .header-mobile .center-content .page-head.chat .air-status.active .on-air {
+            display: block; }
+      .header-mobile .center-content .page-head > * {
+        margin-right: 2px; }
+      .header-mobile .center-content .page-head .nickname {
+        max-width: 60vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .header-mobile .center-content .page-head .id {
+        font-weight: bold;
+        color: #ea6a6a;
+        text-transform: uppercase;
+        background-color: #F2F2F2;
+        padding: 0 3px;
+        margin-right: 5px;
+        display: none; }
+      .header-mobile .center-content .page-head .online-status {
+        position: relative;
+        margin: 0 40%;
+        text-align: center;
+        white-space: nowrap; }
+        .header-mobile .center-content .page-head .online-status:before {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          left: -7px;
+          top: 6px;
+          border-radius: 50%; }
+        .header-mobile .center-content .page-head .online-status.online:before {
+          background-color: #39B54A; }
+        .header-mobile .center-content .page-head .online-status.offline:before {
+          background-color: #FF0000; }
+
+.header-mobile .center-content .header-profile-info p:first-of-type span:last-of-type {
+  color: #000;
+  background: #fff; }
+
+/*# sourceMappingURL=1.0.header.css.map */
