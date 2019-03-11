@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AA2NA,yBAAyB;ACtNvB,2BAAW;EACT,GAAG,EAAE,KAAK;AAEZ,6DAA6B;EAC3B,KAAK,EC0BS,OAAW;EDzBzB,MAAM,EAAE,iBAAqB;EAC7B,UAAU,EAAE,eAAc;EAC1B,2EAAQ;IACN,KAAK,EAAE,IAAI;IACX,gBAAgB,ECqBJ,OAAW;ADdnB,+DAAG;EACD,UAAU,ECaJ,OAAW;ADVrB,yDAAK;EACH,KAAK,ECSG,OAAW;ADJ3B,2BAAW;EACT,UAAU,EAAE,IAAI",
-"sources": ["0.0.mixins.scss","2.6.page-subscribe.scss","0.1.font-colors-variables.scss"],
-"names": [],
-"file": "2.6.page-subscribe.css"
-}
