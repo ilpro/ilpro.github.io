@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+@import "0.2.common-multiuse";
+@import "1.0.header";
+@import "2.0.body";
+@import "3.0.side-menu";
+@import "add_places";
+@import "preference";
+// @import "custbox";
+
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+.attachments{
+	flex-wrap: wrap;
+}
+
+.save-place{
+	border: none;
+	border-radius: 7px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #2A2A2A;
+	color: #fff;
+	transition: .2s;
+	&:hover{
+		opacity: .8;
+	}
+
+}

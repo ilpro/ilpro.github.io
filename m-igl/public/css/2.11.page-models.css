@@ -1,0 +1,739 @@
+/* mixin for multiline */
+.emails .emails-outer-wrapper {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  padding-left: 16px;
+  width: 100%;
+  min-width: 900px; }
+  .emails .emails-outer-wrapper .tutorial {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto; }
+    .emails .emails-outer-wrapper .tutorial .tutorial-box {
+      padding-bottom: 0; }
+    .emails .emails-outer-wrapper .tutorial .tutorial-video {
+      position: absolute;
+      width: 268px;
+      height: auto;
+      left: 50%;
+      margin-left: -134px; }
+  .emails .emails-outer-wrapper .search-field {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; }
+    .emails .emails-outer-wrapper .search-field .search-input {
+      background-color: #fff;
+      border: 1px solid #313131;
+      padding: 2px 5px;
+      margin: 0 20px;
+      width: 200px; }
+    .emails .emails-outer-wrapper .search-field .search-button {
+      width: 100px;
+      height: 25px;
+      background-color: #f2f2f2;
+      color: #666666;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+      font-size: 15px;
+      text-align: center;
+      line-height: 25px;
+      border: 1px solid #666666;
+      cursor: pointer;
+      margin-right: 5px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .emails .emails-outer-wrapper .search-field .search-button:active {
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+        -o-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px); }
+  .emails .emails-outer-wrapper .emails-header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #808080;
+    border-bottom: 1px solid #ea6a6a;
+    padding: 3px 0; }
+    .emails .emails-outer-wrapper .emails-header a:active {
+      color: #EB008B; }
+    .emails .emails-outer-wrapper .emails-header a:hover {
+      color: #2E5894; }
+    .emails .emails-outer-wrapper .emails-header .box-hold {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1; }
+      .emails .emails-outer-wrapper .emails-header .box-hold > * {
+        margin-right: 10px;
+        cursor: pointer; }
+    .emails .emails-outer-wrapper .emails-header .back-mail-svg-ico {
+      width: 17px;
+      height: 9px; }
+  .emails .emails-outer-wrapper .emails-inner-wrapper {
+    /*@include bg-fill;*/
+    /*        overflow-y: auto;
+      top: 26px;
+      height: auto;
+      left: 16px;
+      position: absolute;
+      right: 0;*/ }
+    .emails .emails-outer-wrapper .emails-inner-wrapper.chain {
+      top: 20px; }
+    .emails .emails-outer-wrapper .emails-inner-wrapper .models-filter-wrapper {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding: 5px 0;
+      font-weight: bold;
+      color: #22416d;
+      /*.status-filter{
+        color: $font-color-primary;
+        border: solid 1px $font-color-primary;
+        font-size: 12px;
+        outline: none;
+      }*/ }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .models-filter-wrapper span.active {
+        color: #EB008B; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .models-filter-wrapper .id-filter {
+        color: #2c3a48;
+        margin-right: 630px;
+        cursor: pointer; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .models-filter-wrapper .on-air-filter {
+        color: #2c3a48;
+        margin-right: 32px;
+        cursor: pointer; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .models-filter-wrapper .status-filter {
+        color: #2c3a48;
+        cursor: pointer;
+        margin-right: 55px; }
+    .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter {
+      display: flex;
+      align-items: center;
+      padding: 7px 0 7px 32px;
+      font-weight: bold;
+      color: #2c3a48; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-id {
+        -webkit-box-flex: 0 400px;
+        -moz-box-flex: 0 400px;
+        -webkit-flex: 0 400px;
+        -ms-flex: 0 400px;
+        flex: 0 400px;
+        cursor: pointer; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-id.active {
+          color: #ea6a6a; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-online {
+        -webkit-box-flex: 0 120px;
+        -moz-box-flex: 0 120px;
+        -webkit-flex: 0 120px;
+        -ms-flex: 0 120px;
+        flex: 0 120px;
+        cursor: pointer; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-online.active {
+          color: #ea6a6a; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-date {
+        -webkit-box-flex: 0 98px;
+        -moz-box-flex: 0 98px;
+        -webkit-flex: 0 98px;
+        -ms-flex: 0 98px;
+        flex: 0 98px;
+        cursor: pointer; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-date.active {
+          color: #ea6a6a; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-symbols {
+        -webkit-box-flex: 0 100px;
+        -moz-box-flex: 0 100px;
+        -webkit-flex: 0 100px;
+        -ms-flex: 0 100px;
+        flex: 0 100px;
+        cursor: pointer; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter .filter-symbols.active {
+          color: #ea6a6a; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter.models .filter-id {
+        -webkit-box-flex: 0 315px;
+        -moz-box-flex: 0 315px;
+        -webkit-flex: 0 315px;
+        -ms-flex: 0 315px;
+        flex: 0 315px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter.models .filter-online {
+        -webkit-box-flex: 0 110px;
+        -moz-box-flex: 0 110px;
+        -webkit-flex: 0 110px;
+        -ms-flex: 0 110px;
+        flex: 0 110px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter.models .filter-date {
+        -webkit-box-flex: 0 90px;
+        -moz-box-flex: 0 90px;
+        -webkit-flex: 0 90px;
+        -ms-flex: 0 90px;
+        flex: 0 90px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .head-filter.models .filter-symbols {
+        -webkit-box-flex: 0 100px;
+        -moz-box-flex: 0 100px;
+        -webkit-flex: 0 100px;
+        -ms-flex: 0 100px;
+        flex: 0 100px; }
+    .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 2px 5px;
+      padding: 2px 0;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3); }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email:nth-child(odd) {
+        background: #fafafa; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email > * {
+        margin: 0 3px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-flex: 1 auto;
+        -moz-box-flex: 1 auto;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > :not(.user-avatar) {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-flex: 1 100px;
+          -moz-box-flex: 1 100px;
+          -webkit-flex: 1 100px;
+          -ms-flex: 1 100px;
+          flex: 1 100px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .preferences {
+          -webkit-box-flex: 0 85px;
+          -moz-box-flex: 0 85px;
+          -webkit-flex: 0 85px;
+          -ms-flex: 0 85px;
+          flex: 0 85px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .last-active {
+          -webkit-box-flex: 0 85px;
+          -moz-box-flex: 0 85px;
+          -webkit-flex: 0 85px;
+          -ms-flex: 0 85px;
+          flex: 0 85px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .register-date {
+          -webkit-box-flex: 0 95px;
+          -moz-box-flex: 0 95px;
+          -webkit-flex: 0 95px;
+          -ms-flex: 0 95px;
+          flex: 0 95px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .user-nickname {
+          -webkit-box-flex: 0 180px;
+          -moz-box-flex: 0 180px;
+          -webkit-flex: 0 180px;
+          -ms-flex: 0 180px;
+          flex: 0 180px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .coins-amount {
+          -webkit-box-flex: 0 50px;
+          -moz-box-flex: 0 50px;
+          -webkit-flex: 0 50px;
+          -ms-flex: 0 50px;
+          flex: 0 50px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .messages-amount {
+          -webkit-box-flex: 0 65px;
+          -moz-box-flex: 0 65px;
+          -webkit-flex: 0 65px;
+          -ms-flex: 0 65px;
+          flex: 0 65px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .mails-amount {
+          -webkit-box-flex: 0 60px;
+          -moz-box-flex: 0 60px;
+          -webkit-flex: 0 60px;
+          -ms-flex: 0 60px;
+          flex: 0 60px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .user-id {
+          -webkit-box-flex: 0 100px;
+          -moz-box-flex: 0 100px;
+          -webkit-flex: 0 100px;
+          -ms-flex: 0 100px;
+          flex: 0 100px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .visit {
+          -webkit-box-flex: 0 200px;
+          -moz-box-flex: 0 200px;
+          -webkit-flex: 0 200px;
+          -ms-flex: 0 200px;
+          flex: 0 200px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 200px;
+          white-space: nowrap;
+          margin-right: 15px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .location {
+          -webkit-box-flex: 0 100px;
+          -moz-box-flex: 0 100px;
+          -webkit-flex: 0 100px;
+          -ms-flex: 0 100px;
+          flex: 0 100px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100px;
+          white-space: nowrap;
+          margin-right: 15px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .verify-user {
+          -webkit-box-flex: 0 100px;
+          -moz-box-flex: 0 100px;
+          -webkit-flex: 0 100px;
+          -ms-flex: 0 100px;
+          flex: 0 100px; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .verify-user input {
+            margin-right: 3px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .on-air-checkbox {
+          -webkit-box-flex: 0 60px;
+          -moz-box-flex: 0 60px;
+          -webkit-flex: 0 60px;
+          -ms-flex: 0 60px;
+          flex: 0 60px;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          cursor: pointer; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .on-air-checkbox .checkbox-container {
+            margin-right: 3px; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .on-air-checkbox svg {
+            fill: #ccc; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > .on-air-checkbox.active svg {
+            fill: #eb008b; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > * {
+          margin: 0 3px; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .single-cell > * svg {
+            margin: 0 3px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .inner-row {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 2px 7px;
+        background-color: #fff;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+        width: 100%; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .checkbox-container {
+        position: relative; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .checkbox-container input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 15px;
+          height: 15px;
+          z-index: -1; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .checkbox-container input[type=checkbox]:checked + label .check-img {
+          background-position: 0px -16px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .checkbox-container label {
+          position: relative;
+          height: 100%;
+          cursor: pointer; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .checkbox-container .check-img {
+          width: 15px;
+          height: 15px;
+          display: block;
+          vertical-align: middle;
+          background: url("../img/mail-checkbox.svg") no-repeat 0 0; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .online-status-lamp {
+        width: 15px;
+        height: 15px;
+        position: relative; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .online-status-lamp:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 9px;
+          height: 9px;
+          border-radius: 50%; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .favour-mail-svg-ico {
+        width: 15px;
+        height: 15px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .user-id {
+        color: #2c3a48;
+        -webkit-box-flex: 0 50px;
+        -moz-box-flex: 0 50px;
+        -webkit-flex: 0 50px;
+        -ms-flex: 0 50px;
+        flex: 0 50px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .user-avatar {
+        position: relative;
+        min-width: 27px;
+        width: 27px;
+        height: 27px;
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+        border-radius: 50%;
+        background: transparent;
+        margin: 0 3px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .user-avatar img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          vertical-align: middle;
+          min-height: 105%;
+          min-width: 105%; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .user-nickname {
+        -webkit-box-flex: 0 auto;
+        -moz-box-flex: 0 auto;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+        color: #2c3a48;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .user-message {
+        -webkit-box-flex: 1 auto;
+        -moz-box-flex: 1 auto;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
+        color: #666666;
+        width: 430px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 16px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .user-message img[alt='smile'] {
+          max-height: 16px;
+          max-width: 16px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .attachment-mail-svg-ico {
+        width: 18px;
+        height: 15px;
+        opacity: 0; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .attachment-mail-svg-ico path, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .attachment-mail-svg-ico g {
+          fill: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .message-status {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        position: relative;
+        display: none; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .message-status:before, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .message-status:after {
+          content: '';
+          position: absolute;
+          transition: all .1s ease; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .status-confirm {
+        color: #2c3a48; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .readed-mail-svg-ico {
+        width: 16px;
+        height: 18px;
+        display: none; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .readed-mail-svg-ico path, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .readed-mail-svg-ico g {
+          fill: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .unreaded-mail-svg-ico {
+        width: 16px;
+        height: 12px;
+        display: block; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .unreaded-mail-svg-ico path, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .unreaded-mail-svg-ico g {
+          fill: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .reply-mail-svg-ico {
+        width: 18px;
+        height: 14px;
+        display: none; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .reply-mail-svg-ico path, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .reply-mail-svg-ico g {
+          fill: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .date {
+        color: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .msg-counter {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        font-size: 9px;
+        line-height: 19px;
+        text-align: center;
+        background-color: #999999;
+        color: #fff; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .online-status {
+        position: relative;
+        color: #808080;
+        float: right;
+        margin: var(main-info-edit--margin-top) var(main-info-edit--margin-right) 0 0; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .online-status:before {
+          content: '';
+          background-color: transparent;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          left: -7px;
+          top: 5px;
+          border-radius: 50%; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .online-status.online:before {
+          background-color: #39B54A; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email .online-status.offline:before {
+          background-color: #FF0000; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.online .online-status-lamp:before {
+        background-color: #39B54A; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.offline .online-status-lamp:before {
+        background-color: #FF0000; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.readed .inner-row {
+        background-color: #f2f2f2; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.readed .favour-mail-svg-ico path, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.readed .favour-mail-svg-ico g {
+        fill: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.readed .readed-mail-svg-ico {
+        display: block; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.readed .unreaded-mail-svg-ico {
+        display: none; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.readed .user-message {
+        color: #999999; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .inner-row {
+        background-color: #f2f2f2; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .message-status {
+        display: block; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .message-status:before, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .message-status:after {
+          top: 0;
+          left: 0;
+          width: 12px;
+          height: 8px;
+          border-left: 2px solid #999;
+          border-bottom: 2px solid #999;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .message-status:after {
+          top: 6px;
+          left: 8px;
+          height: 1px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .unreaded-mail-svg-ico, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered-to-me .readed-mail-svg-ico {
+        display: none; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered .inner-row {
+        background-color: #f2f2f2; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered .message-status {
+        display: block; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered .message-status:before {
+          top: 0;
+          left: 0;
+          width: 12px;
+          height: 8px;
+          border-left: 2px solid #999;
+          border-bottom: 2px solid #999;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered .unreaded-mail-svg-ico, .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.delivered .readed-mail-svg-ico {
+        display: none; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.replied .reply-mail-svg-ico {
+        display: block; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.is-favour .favour-mail-svg-ico path {
+        fill: #E90E8B !important; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .emails-wrapper .single-email.has-attachment .attachment-mail-svg-ico {
+        opacity: 1; }
+    .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      background-color: #f2f2f2;
+      font-size: 13px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .last-mail-title {
+        color: #333333;
+        line-height: 40px;
+        height: 40px;
+        border-top: 1px solid #ea6a6a;
+        border-bottom: 1px solid #ea6a6a;
+        padding: 0 10px; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 1px 0;
+        padding: 1px 0; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header > * {
+          margin: 0 10px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header:first-of-type {
+          margin-top: 5px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header:last-of-type {
+          margin-bottom: 5px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .favour-mail-svg-ico {
+          width: 15px;
+          height: 15px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .user-avatar {
+          position: relative;
+          min-width: 41px;
+          width: 41px;
+          height: 41px;
+          overflow: hidden;
+          text-align: center;
+          margin: 0;
+          border-radius: 50%;
+          background: transparent; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .user-avatar img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            vertical-align: middle;
+            min-height: 105%;
+            min-width: 105%; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .nick-message {
+          -webkit-box-flex: 1 auto;
+          -moz-box-flex: 1 auto;
+          -webkit-flex: 1 auto;
+          -ms-flex: 1 auto;
+          flex: 1 auto;
+          width: 5%; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .nick-message .user-nickname {
+            color: #808080; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .nick-message .user-message {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #666666; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .attachment-mail-svg-ico {
+          width: 18px;
+          height: 15px;
+          opacity: 0; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .single-mail-header .date {
+          color: #666666; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .chain-wrapper .single-mail-header {
+        background-color: #e6e6e6; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .chain-wrapper .chain-other-mails {
+        border-top: 2px solid #e6e6e6;
+        border-bottom: 2px solid #e6e6e6;
+        margin: 3px 0;
+        padding: 1px;
+        cursor: pointer; }
+      .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .last-mail-body {
+        width: 100%;
+        padding: 10px 20px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .last-mail-body .mail-text-field {
+          background: white;
+          border: 1px solid rgba(153, 153, 153, 0.53);
+          padding: 10px; }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .last-mail-body .answer-button {
+          cursor: pointer;
+          margin: 20px 0;
+          padding: 3px 15px;
+          border: 1px solid rgba(153, 153, 153, 0.53);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          color: #808080;
+          display: inline-block;
+          font-size: 14px; }
+          .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .last-mail-body .answer-button:hover {
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15); }
+        .emails .emails-outer-wrapper .emails-inner-wrapper .single-mail-chain .last-mail-body .editable-email {
+          width: 20px;
+          height: 20px;
+          opacity: 0; }
+
+/*# sourceMappingURL=2.11.page-models.css.map */

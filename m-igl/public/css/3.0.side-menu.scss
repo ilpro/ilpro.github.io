@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.side-menu {
+  position: absolute;
+  background-color: #fff;
+  width: $menu-width;
+  z-index: $z-side-menu;
+  @include transform(translateX(-275px) translateZ(0));
+  @include calc(height, '100vh - 42px');
+  overflow: auto;
+  top: 50px;
+  left: 0;
+  /*left: -275px;*/
+
+  &-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+  }
+
+  &-item {
+    @include flexbox;
+    @include align-items-center;
+    @include no-select;
+    height: 42px;
+    color: #2c3a48;
+    font-size: $font-size-large;
+    border-bottom: dashed 2px #f1f1f1!important;
+    &.active{
+      background-color: #fff;
+      color: $main-color;
+      .def-ico{
+        fill: $main-color!important;
+      }
+      .stroke-ico{
+        path, rect, circle{
+          stroke: $main-color!important;
+        }
+      }
+      .notify{
+        path:first-of-type{
+          stroke: $main-color!important;
+        }
+        path:last-of-type{
+          fill: $main-color!important;
+        }
+      }
+    }
+
+    &-ico-holder {
+      @include flexbox;
+      @include align-items-center;
+      @include justify-content-center;
+      width: 25px;
+      margin: 0 20px;
+    }
+  }
+  a{
+    display: block;
+    position: relative;
+    .side-menu-item-messages-number{
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+      .number.unreaded{
+        background: $main-color;
+        color: #ffffff;
+      }
+    }
+  }
+  .block-menu{
+    position: relative;
+    .dropdown-menu{
+      padding-left: 65px;
+      display: none;
+      border-bottom: dashed 2px #f1f1f1 !important;
+      &.active{
+        display: block;
+      }
+      p{
+        padding: 5px 0;
+        a{
+          color: #2c3a48;
+          font-size: 15px;
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.side-menu-close-cover {
+  display: none;
+  position: fixed;
+  top:42px;
+  left:0;
+  @include calc(height, '100vh - 42px');
+  @include calc(width, '100% - 275px');
+  @include transform(translateX(275px) translateZ(0));
+  background-color: rgba(0, 0, 0, .5);
+  /*left: 275px;*/
+  z-index: $z-side-menu;
+}
+
+.block-status-btn.block{
+  color: #fff;
+  svg{
+    circle, line{
+      stroke: #fff;
+    }
+  }
+}
+
+.block-status-btn.chat{
+  right: 20px;
+}
+
+.page-chat .load-more{
+  background-color: $main-color;
+  border-top: solid 1px #fff;
+}
+
+.page-notifications{
+  padding-top: 50px;
+}

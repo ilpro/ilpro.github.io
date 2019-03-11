@@ -1,0 +1,529 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+$base-color: #4d4d4d;
+
+$font-color--dark: #222222;
+$font-color--middle: #808080;// #999999
+$font-color--soft-light: #666666;
+$font-color--light: #333333;//#ffffff
+$font-color--orange: $main-color;//#ffae2e
+$font-color--white: #fff;
+$font-color--main: $main-color;
+$font-color-middle-light: #ccc;
+$font-color-complement: #B3B4B4;
+$font-color-base: $base-color;
+$font-color-black: #000;
+
+$bg-color--white: #fff;
+$bg-color--very-light: #999999;
+$bg-color--soft-light: #666666;
+$bg-color--lighter: #f2f2f2;//#333333
+$bg-color--normal: #fff;//#222222
+$bg-color--darker: #F2F2F2;//#242424
+$bg-color--light-grey: #e0e0e0;
+$bg-color--orange: $main-color;//#ffae2e
+
+@mixin stretch-height {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin media-1000 {
+  @media screen and (max-width: 1000px) {
+    @content
+  }
+}
+
+.transactions-user-outer-wrapper {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+
+  .other-info {
+    margin-top: var(other-info--margin-top);
+
+    .other-info-title {
+      @include main-title;
+      display: inline-block;
+    }
+
+    .save {
+      float: right;
+      margin: 2px 0 0 0;
+      padding: 2px 5px;
+      background-color: #f2f2f2;
+      color: $font-color-primary;
+      border: 1px solid $font-color-primary;
+    }
+
+    .info-items-container {
+      position: relative;
+
+      &.special {
+        background: #f2f2f2;
+        margin: 10px -10px;
+        padding: 10px;
+        border: 1px solid #999;
+      }
+
+      &.single-row {
+        .info-item {
+          @include flex(1 100%);
+
+          &:nth-of-type(2n+1) {
+            margin-right: 0;
+          }
+
+          &.gallery-include {
+            @include flex(0 47.5%);
+
+            &:nth-of-type(2n+1) {
+              margin-right: 5%;
+            }
+
+            .profile-photos-block {
+              display: block;
+              position: relative;
+              top: auto;
+              bottom: auto;
+              left: auto;
+              right: auto;
+              width: 100%;
+            }
+          }
+
+          .info-name {
+            @include flex(0 100px);
+            color: #333333;
+            margin-right: 15%;
+            white-space: nowrap;
+          }
+
+          .info-parameter {
+            @include flex(1 auto);
+            color: #808080;
+            text-align: left;
+            //todo cleanup vars & styles
+            /*font-size: var(other-info-info-parameter--font-size);*/
+
+            &.changeable {
+              width: 200px;
+              border: 1px solid #666666;
+              padding: 3px 8px;
+              background-color: #f2f2f2;
+              color: #333333;
+            }
+
+            &.about-text-content {
+              width: 100%;
+            }
+            //todo make Variables!
+
+            input, .bootstrap-tagsinput {
+              text-align: left;
+            }
+
+            select, option {
+              direction: rtl;
+            }
+
+            &[contenteditable=true]:empty {
+              background-color: #fff;
+              &:before {
+                color: #808080;
+              }
+            }
+          }
+        }
+      }
+
+      .info-item {
+        @include flex(0 47.5%);
+
+        @include media-1000 {
+          @include flex(1 100%);
+        }
+
+        &.weight {
+          .info-parameter.units {
+            width: auto;
+            display: inline-block;
+            padding: 5px 8px 0;
+          }
+
+          .info-parameter.decimals {
+            width: 61px;
+            margin: 0;
+          }
+        }
+
+        &.height {
+          .info-parameter.units {
+            width: auto;
+            display: inline-block;
+            padding: 5px 2px 0;
+          }
+
+          .info-parameter.decimals {
+            width: 56px;
+            margin: 0;
+          }
+        }
+
+        &:nth-of-type(2n+1) {
+          margin-right: 5%;
+
+          @include media-1000 {
+            margin-right: 0;
+          }
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        .parameter-field {
+          @include flex(0 auto);
+          position: relative;
+          border: 1px solid transparent;
+          background: transparent;
+
+          &.editable {
+
+          }
+
+          .parameter-text {
+
+          }
+
+          .field-button {
+            height: 25px;
+            background-color: #f2f2f2;
+            color: #666666;
+            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #666666;
+            cursor: pointer;
+            @include no-select;
+            padding: 0 5px;
+
+            &:active {
+              box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
+              @include transform(translateY(1px));
+            }
+          }
+
+          .save-button-holder {
+            display: none;
+            background: rgb(153, 153, 153);
+            position: absolute;
+            //top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+
+            .save-status-btn {
+              color: white;
+              background: #222;
+              display: inline-block;
+              padding: 1px 5px;
+              float: right;
+              margin: 4px;
+              border: 1px solid black;
+              cursor: pointer;
+            }
+            .cancel-status-btn {
+              @extend .save-status-btn;
+              float: left;
+            }
+          }
+        }
+
+        //todo universal checkbox
+        .check-container {
+
+          input {
+            position: absolute;
+            top: 13px;
+            left: 16px;
+            width: 18px;
+            height: 18px;
+            z-index: -1;
+          }
+
+          input[type=checkbox]:checked + label .check-img {
+            background-position: 0px -19px;
+          }
+
+          label {
+            position: relative;
+            height: 100%;
+            cursor: pointer;
+          }
+
+          .check-img {
+            width: 18px;
+            height: 18px;
+            display: block;
+            vertical-align: middle;
+            background: url('../img/checkbox.svg') no-repeat 0 0;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .horizontal-divider {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #333;
+    margin-top: var(horizontal-divider--margin-top);
+  }
+
+  .other-info {
+    margin-top: var(other-info--margin-top);
+
+    .other-info-title {
+      @include main-title;
+      display: inline-block;
+    }
+
+    .edit {
+      float: right;
+      margin: var(other-info-edit--margin-top) var(other-info-edit--margin-right) 0 0;
+    }
+
+    .info-items-container {
+      @include flexbox;
+      @include flex-flow(row, wrap);
+
+      .info-item {
+        @include flexbox;
+        @include flex(1 100%);
+        font-size: var(other-info-info-item--font-size);
+        padding: var(other-info-info-item--padding-t-b) 0;
+        margin: var(other-info-info-item--margin-t-b) 0;
+
+        @include media-1000 {
+          @include flex(1 100%);
+        }
+
+        &.height {
+          .info-parameter {
+            &.feet, &.inch, &.sm {
+              margin: 0 2px 0 5px;
+            }
+          }
+        }
+
+        &.weight {
+          .info-parameter {
+            &.lbs, &.kg {
+              margin: 0 2px 0 5px;
+            }
+          }
+        }
+
+        //todo cleanup vars & styles
+        /*&:nth-of-type(2n+1) {
+            margin-right: 5%;
+
+            @include media-1000 {
+              margin-right: 0;
+            }
+          }*/
+
+        .info-name {
+          @include flex(1 auto);
+          color: $font-color-black;
+          margin-right: 0;
+          white-space: nowrap;
+        }
+
+        .info-parameter {
+          @include flex(0 auto);
+          color: $font-color-base;
+          text-align: right;
+          //todo cleanup vars & styles
+          /*font-size: var(other-info-info-parameter--font-size);*/
+
+          &.changeable {
+            width: 200px;
+            border: 1px solid $bg-color--soft-light;
+            padding: 3px 8px;
+            background-color: $bg-color--lighter;
+            color: $font-color--light;
+          }
+          //todo make Variables!
+
+          input, .bootstrap-tagsinput {
+            text-align: left;
+          }
+
+          select, option {
+            direction: rtl;
+          }
+
+          &[contenteditable=true]:empty {
+            background-color: $bg-color--normal;
+            &:before {
+              color: $font-color--middle;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .cpf-container {
+    height: 42px;
+    margin-bottom: 10px;
+    position: relative; }
+  .cpf-container .cpf-button {
+    width: auto;
+    border: solid 1px #4d4d4d;
+    border-radius: 5px;
+    color: #4d4d4d;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 10px;
+    position: relative; }
+  .cpf-container .cpf-button:active {
+    background-color: #ea6a6a;
+    color: #fff;
+    border-color: #fff; }
+  .cpf-container .cpf-button:active svg, .cpf-container .cpf-button:active path {
+    fill: #fff; }
+  .cpf-container .cpf-button svg {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 10px;
+    top: 50%; }
+  .cpf-container.active .arrow {
+    transform: rotate(180deg);
+    top: 40%; }
+  .cpf-container.active .cpf-list {
+    display: block; }
+  .cpf-container .cpf-list {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    margin: 0 10px;
+    border: solid 1px #ccc;
+    z-index: 5; }
+  .cpf-container .cpf-list .pay-type-item {
+    font-weight: bold;
+    height: 42px;
+    width: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; }
+  .cpf-container .cpf-list .pay-type-item.two {
+    background: #B0CB49; }
+  .cpf-container .cpf-list .pay-type-item.one {
+    background: #EAB828; }
+  .cpf-container .cpf-list .pay-type-item.none {
+    background: #EA6A6A; }
+
+
+  .avatar-edit-section{
+    border: 1px solid #999;
+    margin: 10px -10px;
+    padding: 10px;
+    .img-holder{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      overfow: hidden;
+      @include flexbox;
+      @include justify-content-center;
+      @include align-items-center;
+      margin-bottom: 10px;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .gallery-edit-section{
+    border: 1px solid #999;
+    margin: 10px -10px;
+    padding: 10px;
+    .img-grid{
+      @include flexbox;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      .img-holder{
+        height: 100px;
+        width: 100px;
+        @include flexbox;
+        @include justify-content-center;
+        @include align-items-center;
+        margin: 5px;
+        position: relative;
+        background: #f7f7f7;
+        &.main-photo{
+          border: solid 3px $main-color;
+        }
+        svg{
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          height: 15px;
+          width: auto;
+          padding: 3px;
+          background: #ffffff;
+          fill: #000;
+          cursor: pointer;
+        }
+        img{
+          max-height: 100%;
+          max-width: 100%;
+        }
+        &:hover{
+          .btn-main{
+            opacity: 1;
+            transition: 0.3s;
+          }
+        }
+        .btn-main{
+          color: $main-color;
+          background: #ffffff;
+          border: solid 1px $main-color;
+          padding: 3px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          opacity: 0;
+          transition: 0.3s;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .pay-type-container{
+    &.selected{
+      margin-top: -38px;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+
+.footer-info {
+  background-color: #c19191;
+  width: 100%;
+  display: block;
+  font-size: 11px;
+  padding-bottom: 20px;
+  .row-first, .row-second{
+    @include flexbox;
+    @include space-between;
+    padding: 20px;
+    width: auto;
+    .main-menu-section, .info-section{
+      width: 142px;
+      text-align: left;
+    }
+    .search-section, .follow-section{
+      width: 124px;
+      text-align: left;
+    }
+    h5{
+      color: #fff;
+      font-weight: bold;
+      font-size: 12px;
+      font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    }
+    ul{
+      list-style: none;
+      li{
+        margin-top: 7px;
+        a{
+          color: #fff;
+          text-decoration: underline;
+          font-size: 12px;
+        }
+      }
+    }
+    .soc-links{
+      @include flexbox;
+      justify-content: flex-start;
+      @include  align-items-center;
+      flex-wrap: wrap;
+      img{
+        height: 40px;
+        width: auto;
+        margin: 10px 10px 0 0;
+      }
+    }
+  }
+  .footer-last{
+    .pay-method{
+      padding: 20px 0;
+      @include flexbox;
+      @include  align-items-center;
+      @include  justify-content-center;
+      img{
+        height: 45px;
+        width: auto;
+        &:first-of-type{
+          margin-right: 5px;
+        }
+      }
+    }
+    .security-section{
+      @include flexbox;
+      @include space-between;
+      @include align-items-center;
+      width: 140px;
+      margin: 0 auto;
+    }
+    .text-section{
+      text-align: center;
+      padding-top: 10px;
+      p{
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+    .text-two-section{
+      text-align: center;
+      padding-top: 10px;
+      p, a{
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+      }
+    }
+  }
+
+}

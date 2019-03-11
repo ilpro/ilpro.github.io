@@ -1,0 +1,398 @@
+/* mixin for multiline */
+.page-chat {
+  background-color: #F2F2F2;
+  height: -moz-calc(100vh - 92px);
+  height: -webkit-calc(100vh - 92px);
+  height: calc(100vh - 92px);
+  overflow: auto; }
+  .page-chat .send-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff; }
+    .page-chat .send-box .enter-text-field {
+      -webkit-box-flex: 1 0px;
+      -moz-box-flex: 1 0px;
+      -webkit-flex: 1 0px;
+      -ms-flex: 1 0px;
+      flex: 1 0px;
+      color: #333333;
+      /*padding: 3px 37px 3px 3px;
+      margin: 10px;*/
+      line-height: 20px;
+      background-color: #fff;
+      outline: none; }
+      .page-chat .send-box .enter-text-field:before {
+        color: #333333;
+        line-height: 22px; }
+    .page-chat .send-box .send-message-button {
+      -webkit-box-flex: 0 75px;
+      -moz-box-flex: 0 75px;
+      -webkit-flex: 0 75px;
+      -ms-flex: 0 75px;
+      flex: 0 75px;
+      background-color: #ea6a6a;
+      position: relative; }
+      .page-chat .send-box .send-message-button .chat-send-button-ico {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+    .page-chat .send-box .open-chat-smiles-ico {
+      position: absolute;
+      /*top: 15px;*/
+      right: 75px; }
+    .page-chat .send-box .close-chat-smiles-ico {
+      right: 75px; }
+    .page-chat .send-box .open-chat-smiles-ico.hidden, .page-chat .send-box .item-attach-wrapper.hidden {
+      diplay: none; }
+    .page-chat .send-box .translate-button {
+      margin-right: 0;
+      background-color: #fff;
+      color: #ea6a6a;
+      border: solid 1px #ea6a6a; }
+    .page-chat .send-box .translator-close.translate-active {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .page-chat .send-box .send-message-button.translate-active {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .page-chat .send-box .smiles-wrapper {
+      display: none;
+      -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      position: fixed;
+      top: 42px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      bottom: 50px;
+      background-color: #f2f2f2;
+      z-index: 10; }
+      .page-chat .send-box .smiles-wrapper.opened {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1; }
+      .page-chat .send-box .smiles-wrapper .sticker-container {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-flex: 1 auto;
+        -moz-box-flex: 1 auto;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
+        background-color: #f2f2f2;
+        overflow: auto;
+        width: 100%;
+        padding: 5px;
+        display: none; }
+        .page-chat .send-box .smiles-wrapper .sticker-container:after {
+          content: "";
+          -webkit-box-flex: 1 auto;
+          -moz-box-flex: 1 auto;
+          -webkit-flex: 1 auto;
+          -ms-flex: 1 auto;
+          flex: 1 auto; }
+        .page-chat .send-box .smiles-wrapper .sticker-container.active {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1; }
+        .page-chat .send-box .smiles-wrapper .sticker-container .sticker {
+          position: relative;
+          width: 72px;
+          height: 72px;
+          overflow: hidden;
+          margin-right: 5px;
+          margin-bottom: 5px; }
+          .page-chat .send-box .smiles-wrapper .sticker-container .sticker img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-width: 72px;
+            max-height: 72px; }
+        .page-chat .send-box .smiles-wrapper .sticker-container .recent-smiles-wrapper, .page-chat .send-box .smiles-wrapper .sticker-container .recent-stickers-wrapper {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-align-content: flex-start;
+          -ms-flex-line-pack: start;
+          align-content: flex-start;
+          -webkit-justify-content: space-between;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+          .page-chat .send-box .smiles-wrapper .sticker-container .recent-smiles-wrapper:after, .page-chat .send-box .smiles-wrapper .sticker-container .recent-stickers-wrapper:after {
+            content: "";
+            -webkit-box-flex: 1 auto;
+            -moz-box-flex: 1 auto;
+            -webkit-flex: 1 auto;
+            -ms-flex: 1 auto;
+            flex: 1 auto; }
+        .page-chat .send-box .smiles-wrapper .sticker-container .recent-smiles-stickers-divider {
+          width: 100%;
+          height: 1px;
+          background: #dedede;
+          margin: 5px 0; }
+      .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap {
+        background-color: #dedede;
+        -webkit-box-flex: 0 50px;
+        -moz-box-flex: 0 50px;
+        -webkit-flex: 0 50px;
+        -ms-flex: 0 50px;
+        flex: 0 50px;
+        min-height: 50px;
+        max-height: 50px;
+        height: 50px;
+        width: 100%; }
+        .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-pack-row, .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-set-btn-container {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          -webkit-transform: translate(0, 0) translateZ(0);
+          -moz-transform: translate(0, 0) translateZ(0);
+          -o-transform: translate(0, 0) translateZ(0);
+          -ms-transform: translate(0, 0) translateZ(0);
+          transform: translate(0, 0) translateZ(0); }
+          .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-pack-row .sticker-set-btn, .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-set-btn-container .sticker-set-btn {
+            width: 55px;
+            min-width: 55px;
+            height: 100%;
+            padding: 0 5px;
+            display: inline-block;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+            .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-pack-row .sticker-set-btn.active, .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-set-btn-container .sticker-set-btn.active {
+              background-color: #ccc; }
+            .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-pack-row .sticker-set-btn img, .page-chat .send-box .smiles-wrapper .sticker-pack-set-wrap .sticker-set-btn-container .sticker-set-btn img {
+              width: 100%; }
+      .page-chat .send-box .smiles-wrapper .close-smiles-wide-button {
+        width: 90%;
+        height: 42px;
+        min-height: 42px;
+        background-color: #F2F2F2;
+        position: relative;
+        border: 1px solid #22416d;
+        margin: 5px auto 0;
+        border-radius: 5px; }
+        .page-chat .send-box .smiles-wrapper .close-smiles-wide-button:active {
+          background-color: #EB008B; }
+        .page-chat .send-box .smiles-wrapper .close-smiles-wide-button:before {
+          content: 'close';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-justify-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          color: #ea6a6a;
+          text-transform: uppercase;
+          font-weight: bold; }
+  .page-chat .messages-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 2vw; }
+    .page-chat .messages-wrapper .message-row {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: .5em 0; }
+      .page-chat .messages-wrapper .message-row.left .message-wrap .msg-tail {
+        left: 0; }
+      .page-chat .messages-wrapper .message-row.left .message-wrap .message-text {
+        margin-left: 10px;
+        background-color: #fff; }
+      .page-chat .messages-wrapper .message-row.left .message-time {
+        padding-left: 10px; }
+      .page-chat .messages-wrapper .message-row.right .message-wrap .msg-tail {
+        right: 0; }
+      .page-chat .messages-wrapper .message-row.right .message-wrap .message-text {
+        margin-right: 10px;
+        background-color: #fadada; }
+        .page-chat .messages-wrapper .message-row.right .message-wrap .message-text .pictures-holder .picture-box, .page-chat .messages-wrapper .message-row.right .message-wrap .message-text .pictures-holder .template {
+          height: auto; }
+      .page-chat .messages-wrapper .message-row.right .message-time {
+        padding-right: 10px;
+        text-align: right; }
+      .page-chat .messages-wrapper .message-row .message-wrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        max-width: 400px;
+        position: relative; }
+        .page-chat .messages-wrapper .message-row .message-wrap .msg-tail {
+          position: absolute;
+          bottom: 0; }
+        .page-chat .messages-wrapper .message-row .message-wrap .message-text {
+          padding: 5px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          border-radius: 3px; }
+      .page-chat .messages-wrapper .message-row .message-time {
+        -webkit-box-flex: 1 auto;
+        -moz-box-flex: 1 auto;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
+        min-width: 20%;
+        color: #B3B4B4; }
+    .page-chat .messages-wrapper .date-divider {
+      color: #B3B4B4;
+      width: 100%;
+      text-align: center; }
+
+.read-all-btn {
+  position: fixed;
+  z-index: 11;
+  right: 5px;
+  top: 8px;
+  padding: 5px 10px;
+  border: 1px solid #ea6a6a;
+  border-radius: 4px;
+  color: #ea6a6a;
+  text-transform: uppercase;
+  background-color: #fff; }
+  .read-all-btn:active {
+    background: #cccccc; }
+
+.page-messages-list .main-info .info-holder .main-info-row .id-box {
+  width: auto;
+  max-width: auto;
+  min-width: auto; }
+
+.page-chat .send-box .enter-text-field {
+  padding: 14px 100px 14px 10px; }
+
+.page-chat .send-box .send-message-button:active, .page-chat .send-box .translator-close.translate-active:active {
+  background: #666666; }
+
+.page-chat .pictures-holder .picture-box img {
+  width: auto; }
+
+.page-chat #attachments.pictures-holder .picture-box .close-cross {
+  background: #ffffff; }
+  .page-chat #attachments.pictures-holder .picture-box .close-cross svg path {
+    fill: #ea6a6a; }
+
+.page-chat .messages-wrapper .message-row .message-wrap .message-text img {
+  margin-right: 0; }
+
+.page-chat #attachments.pictures-holder {
+  top: 50px; }
+
+/*# sourceMappingURL=2.4.page-chat.css.map */

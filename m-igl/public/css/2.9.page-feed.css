@@ -1,0 +1,31 @@
+/* mixin for multiline */
+.page-ribbon {
+  padding-top: 42px; }
+  .page-ribbon .writepost .controls {
+    width: auto;
+    padding: 0 20px;
+    background: #fff; }
+    .page-ribbon .writepost .controls .control-btn {
+      width: 100px;
+      height: 35px;
+      border-radius: 5px;
+      border: solid 1px #ea6a6a;
+      color: #fff;
+      background-color: #ea6a6a;
+      outline: none;
+      text-transform: uppercase;
+      font-size: 18px; }
+      .page-ribbon .writepost .controls .control-btn.cancel-post {
+        color: #ea6a6a;
+        background-color: #fff; }
+    .page-ribbon .writepost .controls .soc-share .soc-block .check-container label {
+      height: 70px;
+      margin-top: -50px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center; }
+  .page-ribbon .writepost .check-container .clickable {
+    border: solid 1px #ea6a6a;
+    border-radius: 3px; }
+
+/*# sourceMappingURL=2.9.page-feed.css.map */
