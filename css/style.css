@@ -27819,7 +27819,7 @@ body {
 
 
 .mobile3 {
-  animation: 1s mob3 infinite linear;
+  animation: 2s mob3 infinite linear;
 }
 
 
@@ -32818,6 +32818,37 @@ body {
   .likel3 {
     top: 545px;
     left: 105px;
+  }
+}
+
+
+@media screen and (max-width: 1366px) {
+  .liker1 {
+    top: 275px;
+    left: 475px;
+  }
+
+  .liker2 {
+    top: 365px;
+    left: 455px;
+  }
+
+  .liker3 {
+    top: 395px;
+    left: 535px;
+  }
+
+  .likel1 {
+    left: 170px;
+  }
+
+  .likel2 {
+    left: 250px;
+  }
+  
+  .likel3 {
+    top: 545px;
+    left: 160px;
   }
 }
 
