@@ -203,12 +203,15 @@ a{
     background-color: #ffffff;
   }
 
+  .new-friends_img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
   .chat-logo {
     width: 74px;
     height: 60px;
-    position: relative;
-    top: -80px;
-    left: 220px;
+    margin: -70px 0 100px 200px;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     transform-origin: top;
