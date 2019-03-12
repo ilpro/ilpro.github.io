@@ -32795,7 +32795,7 @@ body {
 
 
 
-@media screen and (min-width: 1440px) {
+/*@media screen and (min-width: 1440px) {
   .liker1 {
     top: 270px;
     left: 495px;
@@ -32824,10 +32824,10 @@ body {
     top: 545px;
     left: 185px;
   }
-}
+}*/
 
 
-@media screen and (min-width: 1680px) {
+/*@media screen and (min-width: 1680px) {
   .liker1 {
     top: 270px;
     left: 620px;
@@ -32856,7 +32856,7 @@ body {
     top: 540px;
     left: 300px;
   }
-}
+}*/
 
 
 
