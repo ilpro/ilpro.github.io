@@ -159,30 +159,152 @@ a{
     height: 430px;
     padding-top:1px;
     background: url(../img/bg-igl1.png)no-repeat center;
-    background-attachment: fixed;
     background-size: 150%;
   }
-
-  /*.content-universe:before {
-    content: '';
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    background: url(../img/bg-igl1.png)no-repeat center;
-    background-attachment: fixed;
-    background-size: 150%;
-
-  }*/
-
-  .content-universe img {
-    width: 100%;
+  
+  .likel1 {
+    position: relative;
+    top: 220px;
+    left: 80px;
+    width: 54px;
+    height: 48px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
   }
 
-  .content-universe img:first-child {
-    position: absolute;
+  .anlikel1 {
+    animation-name: anlikel1;
+    animation-timing-function: linear;
+  }
+
+
+@keyframes anlikel1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+  .likel2 {
+    position: relative;
+    top: 180px;
+    left: 50px;
+    width: 32px;
+    height: 30px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+  }
+
+  .anlikel2 {
+    animation-name: anlikel2;
+    animation-timing-function: linear;
+}
+
+
+@keyframes anlikel2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+  .likel3 {
+    position: relative;
+    top: 185px;
+    right: 25px;
+    width: 41px;
+    height: 39px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+  }
+
+  .anlikel3 {
+    animation-name: anlikel3;
+    animation-timing-function: linear;
+  }
+
+
+@keyframes anlikel3 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateX(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+  .liker1 {
+    position: relative;
+    top: -390px;
+    left: 200px;
+    width: 59px;
+    height: 55px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+  }
+
+  .anliker1 {
+    animation-name: anliker1;
+    animation-timing-function: linear;
+  }
+
+  @keyframes anliker1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+  }
+
+  .liker2 {
+    position: relative;
+    top: -370px;
+    left: 115px;
+    width: 41px;
+    height: 39px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+  }
+  
+  .anliker2 {
+    animation-name: anliker2;
+    animation-timing-function: linear;
+  }
+
+  @keyframes anliker2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+
+  .liker3 {
+    position: relative;
+    top: -350px;
+    left: 115px;
+    width: 32px;
+    height: 30px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+  }
+  
+  .anliker3 {
+    animation-name: anliker3;
+    animation-timing-function: linear;
+  }
+
+
+
+@keyframes anliker3 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+  
+
+  .mobile {
+    margin-top: -125px;
   }
 
   .content-universe img:last-child {
@@ -250,18 +372,7 @@ a{
     background-attachment: fixed;
   }
 
-  /*.translator:before {
-    content: '';
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    background:url(../img/bg-igl3.png)no-repeat center;
-    background-size: 175%;
-    background-attachment: fixed;
-  }*/
+  
 
   .translator img {
     width: 100%;
