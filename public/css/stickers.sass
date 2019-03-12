@@ -1,0 +1,99 @@
+@import 'vars'
+@import 'mixins'
+
+
+body.page-stickers
+	main
+		hr 
+			border-top: solid 1px $border-gray
+	.stickers-grid
+		margin: 0 -0.5rem
+		.sticker-item
+			cursor: pointer
+			.sticker-body
+				position: relative
+				background: #746C6C
+				padding: 5px 0
+				border-radius: 5px 5px 0 0
+				.sticker-name
+					font-family: $open-sans
+					font-size: 12px
+					color: $white
+					text-align: center
+					max-width: 88px
+					overflow: hidden
+					white-space: nowrap
+					text-overflow: ellipsis
+					margin-bottom: 0
+					display: block
+					margin: 0 auto
+				img
+					display: block
+					max-width: 56px
+					max-height: 56px
+					margin: 5px auto 0
+				.purchase-holder
+					display: none
+				&:hover
+					.purchase-holder
+						display: flex
+			.btn-preview
+				background: $gray-second
+				outline: none !important
+				border: none !important
+				box-shadow: none !important
+				font-family: $open-sans
+				font-size: 12px
+				color: $black
+				text-align: center
+				padding: 5px 0
+				display: block
+				cursor: pointer
+				width: 100%
+				border-radius: 0 0 5px 5px
+				&:hover
+					background: #EEEEEF
+					color: $black
+				&:active
+					background: #D2D8E3
+					color: $black
+		&.current
+			.sticker-item
+				.sticker-body
+					cursor: default
+					background: $gray-second
+					.sticker-name
+						color: $black
+					.close
+						height: 16px
+						width: 16px
+						cursor: pointer
+						background: $white
+						position: absolute
+						transform: translate(50%, -50%)
+						top: 0
+						right: 0
+						border-radius: 50%
+						opacity: 1
+						@include justify-content-center
+						border: solid 1px #4D4D4D
+						svg g
+							stroke: #4D4D4D
+						&:hover
+							background: #39393A
+							svg g
+								stroke: #C5C5C5
+						&:active
+							background: #4D4D4D
+							border: none
+							svg g
+								stroke: $white
+				.btn-preview
+					background: #707070
+					color: $white
+					&:hover
+						background: #EEEEEF
+						color: $black
+					&:active
+						background: #D2D8E3
+						color: $black

@@ -1,0 +1,547 @@
+@import 'vars'
+@import 'mixins'
+
+.page-settings
+	section
+		box-shadow: 0 0 3px 0px rgba(0,0,0,.16)
+		padding: 10px 10px
+		margin-bottom: 10px
+		background: $white
+	h5
+		background: #F4F5F6
+		padding: 5px 10px
+		display: inline-block
+		&.subtitle
+			text-transform: uppercase
+			background: none
+			padding: 0
+			text-align: center
+			display: block
+		&.small
+			text-transform: none
+			font-size: 14px
+			color: #1a1a1a
+			font-weight: bold
+			text-align: center
+			margin-bottom: 15px
+			background: none
+			display: block
+			padding: 0
+	.input-range-wrapper
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 10px
+		&>* 
+			margin: 0 3px
+		.input-title 
+			color: #2c3a48
+			font-size: 16px	
+		.age-input 
+			width: 40px
+			outline: none
+			border: none
+			border-radius: 4px
+			background-color: #fff
+			height: 20px
+			line-height: 20px
+			padding: 5px
+			margin-bottom: 35px
+			text-align: center
+			color: $black
+			border: solid 1px $black
+			&::placeholder
+				color: $black !important
+	.dash 
+		width: 12px
+		height: 1px
+		border-radius: 2px
+		background-color: #F2F2F2
+	.select-gender
+		width: 279px
+		margin: 0 auto
+	.select-gender.want-lives
+		width: 279px
+		margin: 0 auto
+		.gender-container
+			padding: 20px 0
+			margin-top: 1rem
+			svg path
+				stroke: $rose
+				fill: none!important
+			&.active
+				svg path
+					stroke: $white!important
+					fill: none!important
+	.select-orientation
+		ul
+			display: flex
+			margin-left: -40px
+			li
+				margin-right: 15px
+				input
+					width: 15px
+					margin-right: 10px
+	.slider-ui
+		position: relative
+		margin: 20px 18px
+		border-radius: 0
+		height: 1px
+		background-color: #ccc
+		.ui-slider-range 
+			border: none
+			background: #F2F2F2
+			border-top: solid 1px #2c3a48
+			border-bottom: solid 1px #2c3a48
+			top: 0
+			height: 100%
+			position: absolute
+			z-index: 1
+			font-size: .7em
+			display: block
+		.ui-slider-handle
+			top: -9px
+			margin-left: -10px
+			position: absolute
+			z-index: 2
+			cursor: default
+			width: 20px
+			border: 1px solid $black
+			height: 20px
+			background: #fff
+			border-radius: 4px
+			outline: none
+	select
+		padding: 5px 10px
+		font-size: 17px
+		background: #ffffff
+		border: solid 1px $black
+		color: $black
+		width: 279px
+		text-align: center
+		outline: none!important
+		height: 35px
+		margin: 0 auto 15px
+		display: block
+		&:focus, &:hover
+			border: solid 1px #888
+		&.filled
+			input
+				border: solid 1px #000
+		&.error
+			border: solid 1px red
+	.tag-place-container
+		width: 279px
+		padding: 10px 0
+		margin: 0 auto
+	.tag-place-container.with-close
+		width: 279px
+		margin: 0 auto
+		.tag-place
+			position: relative
+			padding-right: 25px
+			background: #ccc
+			.close
+				position: absolute
+				top: 50%
+				right: 5px
+				transform: translateY(-50%)
+				height: 15px
+				width: 15px
+				cursor: pointer
+	.footer-info
+		h5
+			background: none
+			display: block
+			padding: 0
+	.input-holder
+		width: 100%
+		margin: 0 auto 15px
+		position: relative
+		height: 35px
+		border-radius: 4px
+	input
+		outline: none!important
+		padding: 5px 35px
+		font-size: 17px
+		background: #ffffff
+		border: solid 1px $black
+		border-radius: 4px
+		color: $black
+		width: 100%
+		&::placeholder
+			color: $black !important
+		&:focus, &:hover
+			border: solid 1px #888
+	.search-btn
+		background: #fff
+		width: 200px
+		padding: 10px
+		font-size: 15px
+		color: $black
+		text-align: center
+		cursor: pointer
+		margin: 0 auto 15px
+		border: solid 1px $black
+		border-radius: 4px
+		box-shadow: 0 0 5px 0px rgba(0,0,0,0.25)
+		font-family: $open-sans
+		&:hover
+			box-shadow: 0 0 15px 1px rgba(0,0,0,0.25)
+		&:active
+			background: $rose
+	.input-row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		width: 279px
+		margin: 0 auto 20px
+		label
+			text-transform: uppercase
+			font-size: 12px
+			color: $black
+			font-weight: bold
+			text-align: center
+			margin-bottom: 15px
+			background: none
+			display: block
+			padding: 0
+			margin-bottom: 0
+		.input-holder
+			width: 160px
+			margin: 0
+			position: relative
+			height: 35px
+			border-radius: 4px
+			.file-btn
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				bottom: 0
+				outline: none!important
+				@include justify-content-center
+				box-shadow: none!important
+				border: none !important
+				color: #000
+				text-align: center
+				cursor: pointer
+				border-radius: 5px
+				background: #E9ECF2
+				font-family: $open-sans
+				width: 100%
+			.search
+				position: absolute
+				left: 5px
+				transform: translateY(-50%)
+				top: 50%
+				z-index: 1
+				cursor: pointer
+			&.with-search
+				input
+					padding-left: 25px
+			input
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				bottom: 0
+				outline: none!important
+				padding: 5px
+				font-size: 17px
+				background: #ffffff
+				border: solid 1px $black
+				border-radius: 4px
+				width: 100%
+				color: $black
+			&:focus, &:hover
+				//border: solid 1px #888
+			&::placeholder
+				color: $black !important
+		.check-container
+			position: absolute
+			right: -19px
+			top: 10px
+			img
+				height: 13px
+				width: 13px
+			img
+				&:first-of-type
+					display: none
+				&:last-of-type
+					display: block
+			&.active
+				img
+					&:first-of-type
+						display: block
+					&:last-of-type
+						display: none
+	.cust_box
+		li
+			list-style: none
+			display: flex
+	.date-select-container
+		display: flex
+		select.date
+			padding: 5px 0
+			font-size: 17px
+			background: #ffffff
+			border: solid 1px $black
+			color: $black
+			width: 55px
+			text-align: center
+			outline: none!important
+			border-radius: 0
+			margin: 0
+			&:focus, &:hover
+				border: solid 1px #888
+			&.filled
+				input
+					border: solid 1px #000
+			&.error
+				border: solid 1px red
+			&::placeholder
+				color: $black !important
+	.settings-text
+		width: 100%
+		p 
+			font-family: $open-sans
+			font-size: 14px
+			color: #000
+		figure
+			margin: 0
+			display: block
+			width: 100%
+			img
+				width: 100%
+				height: auto
+			figcaption
+				background: #E9ECF2
+				text-align: center
+				font-family: $open-sans
+				font-size: 15px
+				color: #000
+				padding: 5px 0
+	.submit-btn-container
+		button
+			text-align: center
+			@include justify-content-center
+			width: 200px
+			height: 44px
+			outline: none !important
+			box-shadow: none !important
+			border: $black solid 1px !important
+			background: #fff
+			font-family: $open-sans
+			font-size: 15px
+			color: $black
+			border-radius: 4px
+			cursor: pointer
+			svg
+				margin-right: 5px
+				height: 15px
+				width: 15px
+			&.approved
+				background: #39AE4A
+				border: solid 1px #39AE4A!important
+				color: #fff
+				display: none
+			&.disapproved
+				background: $red
+				border: solid 1px $red!important
+				color: #fff
+				display: none
+			&.submitted
+				background: #EAB828
+				border: solid 1px #EAB828!important
+				color: #fff
+				display: none
+		&.approved
+			button.submit
+				display: none
+			button.approved
+				display: flex
+		&.disapproved
+			button.submit
+				display: none
+			button.disapproved
+				display: flex
+		&.submitted
+			button.submit
+				display: none
+			button.submitted
+				display: flex
+	.search-pref
+		p 
+			font-family: $open-sans
+			font-size: 14px
+			color: #000
+		.cpf-container
+			width: 270px
+	.notifications-settings-grid
+		margin-bottom: 20px
+		padding: 0 15px
+		.notifications-setting-header 
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			p
+				width: 45px
+				text-align: center
+				color: #666
+				margin: 0
+		.notification-settings-line
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding-top: 5px
+			p
+				color: $black
+				margin: 0
+			.triggers-container
+				width: 130px
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				margin-right: 10px
+				position: relative
+				&:before
+					content: 'off'
+					top: 50%
+					transform: translateY(-50%)
+					right: 35px
+					font-size: 12px
+					color: $black
+					font-family: $open-sans
+					font-weight: lighter
+					position: absolute
+				&:after
+					content: 'on'
+					top: 50%
+					transform: translateY(-50%)
+					right: -20px
+					font-size: 12px
+					color: $black
+					font-family: $open-sans
+					font-weight: lighter
+					position: absolute
+				.trigger
+					width: 30px
+					height: 15px
+					border: solid #ccc 1px
+					border-radius: 10px
+					position: relative
+					cursor: pointer
+					.trigger-dot
+						position: absolute
+						background-color: #ccc
+						border-radius: 50%
+						height: 13px
+						width: 13px
+						top: 1px
+						left: 1px
+					&.active
+						border: solid #ea6a6a 1px
+						.trigger-dot
+							background-color: #ea6a6a
+							left: auto
+							right: 1px
+	.delete-btn
+		background: #fff
+		width: 200px
+		padding: 10px
+		font-size: 15px
+		color: $red
+		text-align: center
+		cursor: pointer
+		margin: 0 auto 15px
+		border: solid 1px $red!important
+		border-radius: 4px
+		box-shadow: 0 0 5px 0px rgba(0,0,0,0.25)!important
+		font-family: $open-sans
+		outline: none!important
+		&:hover
+			box-shadow: 0 0 15px 1px rgba(0,0,0,0.25)!important
+		&:active
+			background: $rose
+
+
+.modal-wrap-delete-profile
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(0,0,0,.85)
+	cursor: pointer
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.modal-delete-profile
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: #fff
+		width: 400px
+		.modal-header
+			width: 100%
+			background: $rose
+			position: relative
+			border-radius: 0
+			border: 0
+			padding: 0
+			.title
+				text-align: center
+				padding: 7px 0
+				color: #fff
+				font-family: $open-sans
+				font-weight: bold
+				margin-bottom: 0
+				font-size: 18px
+				text-transform: uppercase
+				display: block
+				width: 100%
+			.close
+				top: 50%
+				right: 20px
+				height: 15px
+				width: 15px
+				cursor: pointer
+				transform: translateY(-50%)
+				display: block
+				position: absolute
+				margin: 0
+				padding: 0
+				cursor: pointer
+		.modal-body
+			p 
+				text-align: center
+				margin: 10px
+		.modal-footer
+			border: 0
+			button
+				background: #fff
+				width: 130px
+				padding: 3px 0
+				font-size: 15px
+				color: $red
+				text-align: center
+				cursor: pointer
+				margin: 0 auto 15px
+				font-weight: bold
+				border: solid 1px $red!important
+				border-radius: 4px
+				box-shadow: 0 0 5px 0px rgba(0,0,0,0.25)!important
+				font-family: $open-sans
+				font-weight: normal
+				outline: none!important
+				&:hover
+					box-shadow: 0 0 15px 1px rgba(0,0,0,0.25)!important
+				&:active
+					background: $rose
+				&:last-of-type
+					color: $black
+					border: solid 1px $black!important

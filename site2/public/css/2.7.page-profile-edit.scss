@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.page-profile-edit{
+  .other-info{
+    margin-top: 42px;
+    .other-info-title, .about-text-title{
+      color: $main-color;
+    }
+    .save{
+      color: $main-color;
+      border: solid 1px $main-color;
+      background-color: #fff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 10px;
+    }
+    .info-items-container .info-item .parameter-field{
+      border: solid 1px #ccc;
+    }
+    .info-items-container .info-item .parameter-field .info-parameter.changeable{
+      border: solid 1px #ccc;
+    }
+    .info-items-container.single-row .info-item .info-parameter select{
+      outline: none;
+      font-size: 14px;
+      border: solid 1px #ccc;
+      width: 160px;
+      max-height: 80px;
+      background-color: #fff;
+      border-radius: 0;
+      .one-option-item{
+        border: none;
+      }
+    }
+  }
+  .divider{
+    background-color: #000;
+  }
+}

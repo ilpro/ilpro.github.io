@@ -1,0 +1,79 @@
+.places
+	.dismis
+		padding: 11px
+		margin: 10px 0
+		background: #fff
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.15)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		h2
+			font-size: 20px
+			margin: 0
+		.dis
+			cursor: pointer
+			opacity: .7
+			transition: all .2s
+			line-height: 0px
+			&:hover
+				opacity: 1
+	.galary
+		display: flex
+		align-items: center
+		justify-content: space-between
+		overflow-x: scroll
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+			background-color: #F5F5F5
+		&::-webkit-scrollbar
+			width: 4px
+			height: 6px
+			background-color: #686868
+		&::-webkit-scrollbar-thumb
+			background-color: #686868
+		figure
+			width: 160px
+			height: 160px
+			margin: 8px 
+			img
+				height: 100%
+				width: auto
+	.place-more-info
+		margin: 10px 0
+		background: #fff
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.15)
+		padding: 11px
+		p
+			font-size: 16px
+		h4
+			font-size: 16px
+			font-weight: 700
+	.place
+		margin: 10px 0
+		background: #fff
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.15)
+		.place-photo
+			img
+				width: 100%
+		.place-info
+			padding: 8px
+			h2
+				font-size: 16px
+				color: #9500FF
+				margin: 0
+				font-weight: 700
+			p
+				font-size: 16px
+				margin: 0
+.active
+	.place-info
+		display: none
+	.dismis
+		display: flex!important
+	.galary
+		display: flex!important
+	.place-more-info
+		display: block!important
+
+.place-item:not(.active)
+	display: none

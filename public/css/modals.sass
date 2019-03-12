@@ -1,0 +1,1217 @@
+//user gallery modal_____________________________________________________________________
+.user-gallery-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.user-gallery-modal
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 10px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		.loader-wrap
+			height: 400px
+			width: 400px
+			@include justify-content-center
+			img 
+				height: 100px
+				width: auto
+		.arrow-left, .arrow-right
+			height: auto
+			width: 30px
+			fill: $white
+			transform: translateY(-50%)
+			top: 30%
+			position: absolute
+			cursor: pointer
+			&:hover
+				fill: $gray-light
+			&:active
+				fill: $rose
+		.arrow-left
+			left: -60px
+		.arrow-right
+			right: -60px
+		img
+			max-height: 450px
+			max-width: 600px
+			display: block
+			margin: 0 auto
+		.like
+			width: 54px
+			height: 46.78px
+			fill: #D2D2D2
+			display: block
+			margin: 2rem auto
+			cursor: pointer
+			&:hover
+				fill: #D2D8E3
+			&:active, &.active
+				fill: $rose
+				&.active
+					&:hover
+						fill: #EB2C86
+					&:active
+						fill: #BC015A
+		p 
+			margin-bottom: 0
+			text-align: center
+			color: $black
+			font-family: $open-sans
+			font-size: 16px
+
+
+//media storage video modal_____________________________________________________________________
+.media-storage-video-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.media-storage-video
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 15px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		.loader-wrap
+			height: 400px
+			width: 400px
+			@include justify-content-center
+			img 
+				height: 100px
+				width: auto
+		video
+			max-height: 450px
+			max-width: 600px
+			display: block
+			margin: 0 auto
+
+
+//stickers preview modal_____________________________________________________________________
+.stickers-preview-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.stickers-preview-modal
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 13px
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		.stickers-preview-head
+			background: #707070
+			@include justify-content-between
+			padding: 5px 30px 5px 10px
+			border-radius: 5px 5px 0 0
+			p 
+				margin-bottom: 0
+				font-family: $open-sans
+				color: $white
+				font-size: 12px
+		.stickers-preview-body
+			border-radius: 0 0 5px 5px
+			display: grid
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+			width: 900px	
+			padding-top: 10px
+			.stickers-preview-item
+				height: 112.5px
+				@include justify-content-center
+			img
+				display: block
+				margin: 0 auto
+				max-width: 56px
+				max-height: 56px
+
+//user crop photo modal_____________________________________________________________________  
+.user-crop-photo-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.user-crop-photo-modal
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 10px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			z-index: 240
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		.loader-wrap
+			height: 400px
+			width: 400px
+			@include justify-content-center
+			img 
+				height: 100px
+				width: auto
+		.arrow-left, .arrow-right
+			height: auto
+			width: 30px
+			fill: $white
+			transform: translateY(-50%)
+			top: 30%
+			position: absolute
+			cursor: pointer
+			&:hover
+				fill: $gray-light
+			&:active
+				fill: $rose
+		.arrow-left
+			left: -60px
+		.arrow-right
+			right: -60px
+		img
+			max-height: 450px
+			max-width: 600px
+			display: block
+			margin: 0 auto
+		.like
+			width: 54px
+			height: 46.78px
+			fill: #D2D2D2
+			display: block
+			margin: 2rem auto
+			cursor: pointer
+			&:hover
+				fill: #D2D8E3
+			&:active, &.active
+				fill: $rose
+				&.active
+					&:hover
+						fill: #EB2C86
+					&:active
+						fill: #BC015A
+		p 
+			margin-bottom: 0
+			text-align: center
+			color: $black
+			font-family: $open-sans
+			font-size: 16px
+		button
+			font-family: $open-sans
+			font-size: 16px
+			background: none !important
+			box-shadow: none !important
+			outline: none!important
+			border: none!important
+			cursor: pointer
+			color: $blue-light
+			border-radius: 3px
+			display: block
+			margin: .6rem auto 0
+			&:hover
+				background: #F4F5F6 !important
+			&:active
+				background: #D2D8E3 !important
+
+//send present modal_____________________________________________________________________
+.send-present-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.send-present-modal-wrap
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+	.send-present-modal
+		background: $white
+		border-radius: 5px
+		padding: 10px
+		max-height: 90vh
+		overflow: auto
+		width: 900px
+		&::-webkit-scrollbar
+			display: none
+		.dropdown-heading 
+			width: 100%
+			color: #22416d
+			text-transform: uppercase
+			position: relative
+			font-weight: bold
+			padding: 15px 0 15px 15px
+			cursor: pointer
+			&:hover
+				background-color: #e0e0e0
+			&:before 
+				content: ''
+				position: absolute
+				right: 1vw
+				top: 50%
+				transform: translateY(-10%)
+				border: 7px solid transparent
+				border-top: 10px solid #22416d
+			&.active:before 
+				transform: translateY(-60%)
+				border-top: 7px solid transparent
+				border-bottom: 10px solid #22416d
+		.dropdown-block 
+			@include justify-content-center
+			display: none
+			padding: 10px 0
+			flex-flow: row wrap
+			&.opened 
+				display: flex
+			.divider 
+				width: 100%
+				height: 1px
+				background-color: #cccccc
+			.present
+				width: 148.867px
+				height: 225.785px
+				display: inline-block
+				border-radius: 5px
+				box-shadow: 0 0 10px rgba(0,0,0,0.5)
+				position: relative
+				margin: 8px 7.98px
+				cursor: pointer
+				&:hover
+					box-shadow: 0 0 20px rgba(0,0,0,0.75)
+			.present-name
+				padding: 12px 0 10px 0
+				font-size: 12px
+				text-transform: uppercase
+				text-align: center
+				color: #22416d
+				.type
+					text-transform: none
+			.present-img
+				display: block
+				margin: 0 auto
+				height: 100px
+				width: 100px
+			.present-footer
+				width: 100%
+				height: 35px
+				border-bottom-left-radius: 5px
+				border-bottom-right-radius: 5px
+				position: absolute
+				@include justify-content-center
+				bottom: 0
+				.price
+					font-size: 12px
+					text-transform: uppercase
+					color: #22416d
+					padding-left: 5px
+
+//send gift modal_____________________________________________________________________
+.send-gift-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.send-gift-modal-wrap
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+	.send-gift-modal
+		background: $white
+		border-radius: 5px
+		padding: 10px
+		max-height: 90vh
+		overflow: auto
+		width: 900px
+		&::-webkit-scrollbar
+			display: none
+		h3
+			padding: 10px
+			font-weight: bold
+			font-size: 15px
+			color: #22416d
+			text-transform: uppercase
+			text-align: center
+		.video-from-youtube-wrap
+			width: 400px
+			display: block
+			margin: 0 auto
+		.video-from-youtube
+			display: block
+			margin: 15px auto
+			height: 0
+			position: relative
+			padding-bottom: 56.25% 
+			iframe 
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+		.dropdown-heading 
+			width: 100%
+			color: #22416d
+			text-transform: uppercase
+			position: relative
+			font-weight: bold
+			padding: 15px 0 15px 15px
+			cursor: pointer
+			&:hover
+				background-color: #e0e0e0
+			&:before 
+				content: ''
+				position: absolute
+				right: 1vw
+				top: 50%
+				transform: translateY(-10%)
+				border: 7px solid transparent
+				border-top: 10px solid #22416d
+			&.active:before 
+				transform: translateY(-60%)
+				border-top: 7px solid transparent
+				border-bottom: 10px solid #22416d
+		.dropdown-block 
+			@include justify-content-center
+			display: none
+			padding: 10px 0
+			flex-flow: row wrap
+			border-top: 1px solid #ccc
+			&.opened 
+				display: flex
+			.divider 
+				width: 100%
+				height: 1px
+				background-color: #cccccc
+			.gift-image-container
+				position: relative
+				justify-content: center
+				align-items: flex-end
+				width: 100px
+				height: 100px
+				cursor: pointer
+				img
+					max-height: 100px
+					max-width: 100px
+				.price-holder
+					display: none
+					position: absolute
+					top: 0
+					left: 0
+					padding: 2px 5px
+					background: rgba(255, 255, 255, 0.9)
+					z-index: 1
+					.price-ico
+						margin-right: 5px
+						width: 24px
+						height: 27px
+						background: url("/img/gifts-coins-ico.svg") no-repeat center / contain
+					.price-title
+						white-space: nowrap
+						text-transform: uppercase
+						color: #e8008b
+						user-select: none
+
+//buy send present modal_____________________________________________________________________
+.buy-send-present-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.buy-send-present
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 30px
+		width: 450px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		h3
+			text-align: center
+			font-size: 14px
+			font-family: $open-sans
+			color: #000
+		p 
+			text-align: center
+			font-size: 14px
+			font-family: $open-sans
+			color: #000
+		.buy-btn
+			@include justify-content-center
+			background: $blue-light
+			outline: none !important
+			box-shadow: none !important
+			border: solid 1px $white
+			border-radius: 5px
+			width: 83px
+			height: 41px
+			cursor: pointer
+			span
+				color: $white
+				margin-bottom: 0
+				font-size: 14px
+				text-align: center
+				font-family: $open-sans
+				line-height: 14px
+			svg
+				margin-right: 5px
+				display: block
+			&:hover
+				background: #0061D6
+			&:active
+				background: #0061D6
+				border-color: #0061D6
+		.gift-choose-container
+			width: 100%
+			height: 100%
+			overflow: hidden
+			position: relative
+			.swiper-slide
+				@include justify-content-center
+				img
+					max-height: 100px
+					max-width: 100px
+			.swiper-button-next
+				background: url("../img/present-arrow-modal-right.svg") no-repeat center / contain
+				right: 0
+			.swiper-button-prev
+				background: url("../img/present-arrow-modal-left.svg") no-repeat center / contain
+				left: 0
+
+//buy send present modal_____________________________________________________________________
+.gift-confirm-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.gift-confirm
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 30px
+		width: 150px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		h3
+			text-align: center
+			font-size: 14px
+			font-family: $open-sans
+			color: #000
+		p 
+			text-align: center
+			font-size: 14px
+			font-family: $open-sans
+			color: #000
+		.buy-btn
+			@include justify-content-center
+			background: $blue-light
+			outline: none !important
+			box-shadow: none !important
+			border: solid 1px $white
+			border-radius: 5px
+			width: 83px
+			height: 41px
+			cursor: pointer
+			span
+				color: $white
+				margin-bottom: 0
+				font-size: 14px
+				text-align: center
+				font-family: $open-sans
+				line-height: 14px
+			svg
+				margin-right: 5px
+				display: block
+			&:hover
+				background: #0061D6
+			&:active
+				background: #0061D6
+				border-color: #0061D6
+		.container-avatar
+			position: relative
+			.gift
+				bottom: -25px
+				right: -25px
+				position: absolute
+				max-height: 50px
+				max-width: 50px
+			.user-avatar-holder
+				margin: 0
+				height: 70px
+				width: 70px
+
+//purchase symbols modal_____________________________________________________________________
+.purchase-symbols-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.purchase-symbols
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 20px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		h3
+			text-align: center
+			font-family: $open-sans
+			font-size: 22px
+			color: #000
+		.payment-type-choose
+			margin: 1rem auto 2rem
+			display: flex
+			justify-content: center
+			.payment-type
+				cursor: pointer
+				padding: 10px
+				figure
+					margin: 0 auto 1rem
+					height: 40px
+					@include justify-content-center
+					filter: grayscale(100%)
+				h4
+					font-family: $open-sans
+					font-weight: bold
+					color: #E0E0E0
+					text-align: center
+					font-size: 12px
+				&.active
+					figure
+						filter: none
+						border-bottom: solid 1px $blue-light
+					h4
+						color: #000
+		.payment-card-choose
+			display: flex
+			justify-content: center
+			align-items: flex-end
+			.payment-card
+				width: 150px
+				height: 260px
+				box-shadow: 0 15px 32px 0px rgba(0,0,0,.16)
+				border-radius: 4px
+				margin: 0 10px 0
+				position: relative
+				cursor: pointer
+				opacity: .75
+				.medal
+					position: absolute
+					top: -30px
+					right: -25px
+					height: 110px
+				.payment-card-header
+					text-shadow: 0 -1px 11px rgba(0,0,0,11)
+					color: #fff
+					font-family: $open-sans
+					font-size: 20px
+					width: 100%
+					padding: 10px
+					text-align: center
+					border-radius: 4px 4px 0 0
+				.payment-card-price
+					background: #EEEEEF
+					color: #000
+					font-family: $open-sans
+					font-weight: bold
+					font-size: 28px
+					text-align: center
+					padding: 10px
+					width: 100%
+					@include justify-content-center
+					span
+						font-size: 16px
+						font-weight: normal
+				.payment-card-body
+					height: 120px
+					@include justify-content-center
+					flex-direction: column
+					.payment-card-line
+						border-bottom: #E7E7E7 solid 1px
+						padding: 10px
+						width: 100%
+						color: #000
+						font-size: 12px
+						font-family: $open-sans
+						text-align: center
+						b 
+							font-weight: bold
+						&:last-of-type
+							border-bottom: none
+				.payment-card-footer
+					@include justify-content-center
+					padding: 20px
+					button
+						height: 40px
+						width: 150px
+						border-radius: 4px
+						color: #fff
+						font-size: 14px
+						font-family: $open-sans
+						box-shadow: 0 2px 3px 0px rgba(0,0,0,.16)!important
+						@include justify-content-center
+						text-align: center
+						cursor: pointer
+						outline: none !important
+						border: none!important
+						&:hover
+							opacity: .46
+						&:active
+							background: #fff!important
+							color: #000
+							opacity: 1
+				&.standart 
+					.payment-card-footer button
+						background: #84B7FA
+						&:active
+							border: solid 1px #84B7FA!important
+					.payment-card-body .payment-card-line
+							border-top: #E7E7E7 solid 1px
+							border-bottom: #E7E7E7 solid 1px
+				&.premium .payment-card-footer button
+					background: #308FFD
+					&:active
+						border: solid 1px #308FFD!important
+				&.silver
+					.payment-card-price
+						background: #0F49AC
+						color: #fff
+					.payment-card-footer button
+						background: #0F49AC
+						height: 43px
+						width: 163px
+						&:active
+							border: solid 1px #0F49AC!important
+				&.gold .payment-card-footer button
+					background: #FDA134
+					&:active
+						border: solid 1px #FDA134!important
+				&.platinum .payment-card-footer button
+					background: #F35E00
+					&:active
+						border: solid 1px #F35E00!important
+				&.diamond .payment-card-footer button
+					background: #F20D04
+					&:active
+						border: solid 1px #F20D04!important
+				&.ultimate 
+					.payment-card-price
+						background: #C01515
+						color: #fff
+					.payment-card-footer button
+						background: #C01515
+						&:active
+							border: solid 1px #C01515!important
+				&.active
+					width: 160px
+					height: 280px
+					opacity: 1
+					border-width: 2px!important
+					.payment-card-header
+						width: 160px
+					.payment-card-price
+						font-size: 38px
+					.payment-card-body
+						height: 135px
+		.purchase, .modal__purshare
+			background: $blue-light
+			color: #fff
+			font-size: 14px
+			font-family: $open-sans
+			text-align: center
+			width: 150px
+			height: 40px
+			outline: none !important
+			box-shadow: 0 2px 3px 0px rgba(0,0,0,.16)!important
+			border: solid 1px $blue-light !important
+			border-radius: 4px
+			cursor: pointer
+			&:hover
+				opacity: .46
+			&:active
+				background: $white
+				color: $black
+		.payment-modal-info
+			img
+				height: 30px
+				width: auto
+				margin-right: 5px
+			p 
+				color: #000
+				font-family: $open-sans
+				font-size: 12px
+				margin-bottom: 0
+				a
+					text-decoration: underline
+					color: #000 !important
+
+//user crop photo modal_____________________________________________________________________
+.user-choose-photo-modal-layout
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	.shadow
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: $black
+		opacity: .85
+		cursor: pointer
+	.user-choose-photo-modal
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: $white
+		border-radius: 5px
+		padding: 10px
+		.close
+			height: 36px
+			width: 36px
+			cursor: pointer
+			background: $white
+			position: absolute
+			transform: translate(50%, -50%)
+			top: 0
+			right: 0
+			border-radius: 50%
+			opacity: 1
+			@include justify-content-center
+			border: solid 1px #4D4D4D
+			z-index: 240
+			svg g
+				stroke: #4D4D4D
+			&:hover
+				background: #39393A
+				svg g
+					stroke: #C5C5C5
+			&:active
+				background: #4D4D4D
+				border: none
+				svg g
+					stroke: $white
+		button
+			font-family: $open-sans
+			font-size: 16px
+			background: none !important
+			box-shadow: none !important
+			outline: none!important
+			border: none!important
+			cursor: pointer
+			color: $blue-light
+			border-radius: 3px
+			display: block
+			margin: .6rem auto 0
+			&:hover
+				background: #F4F5F6 !important
+			&:active
+				background: #D2D8E3 !important
+		.user-gallery-container-wrap
+			overflow-y: auto
+			height: 500px
+			width: 379.16px
+			.user-gallery-container
+				padding-left: 0.3rem
+				padding-right: 0.3rem
+				figure
+					position: relative
+					height: 84px
+					width: 84px
+					overflow: hidden
+					background-size: cover !important
+					margin: .55rem auto 0
+					display: block
+					cursor: pointer
+					transition: 0.2s
+					&.active
+						opacity: .6
+					&:hover
+						transform: scale(1.15)
+						box-shadow: 0 0 5px 0px rgba(0,0,0,0.1)
+						transition: 0.2s
+					&:active
+						transform: scale(.95)
+						transition: none
+					img
+						min-height: 100%
+						min-width: 100%
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translateY(-50%) translateX(-50%)
+						background-size: cover !important

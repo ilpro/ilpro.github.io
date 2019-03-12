@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA2NA,yBAAyB;ACtNzB,MAAO;EACL,WAAW,EAAE,IAAI;EACjB,WAAW,ECLM,qBAAqB;EDMtC,KAAK,EAAE,OAAO;EACd,YAAY,EAAE,GAAG;EACjB,aAAa,EAAE,GAAG;EAElB,mBAAY;IACV,UAAU,EAAE,MAAM;IAClB,SAAS,ECVK,IAAI;IDWlB,cAAc,EAAE,IAAI;EAGtB,kBAAY;IACV,cAAc,EAAE,IAAI;EAGtB,kBAAY;IACV,cAAc,EAAE,IAAI;EAGtB,kBAAY;IACV,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,IAAI;IACjB,qBAAG;MACD,cAAc,EAAE,GAAG",
+"sources": ["0.0.mixins.scss","2.14.page-terms.scss","0.1.font-colors-variables.scss"],
+"names": [],
+"file": "2.14.page-terms.css"
+}

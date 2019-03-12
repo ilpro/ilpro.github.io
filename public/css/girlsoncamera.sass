@@ -1,0 +1,234 @@
+//girls on camera page__________________________________________________
+.land-text-new
+	width: 900px
+	margin: 30px auto
+	h1
+		color: #333
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: bold
+	p 
+		color: #4d4d4d
+		font-size: 15px
+	.img-holder
+		position: relative
+		margin-left: auto
+		width: 350px
+		height: 350px
+		margin-right: 15px
+		margin-top: 15px
+		&:before
+			height: 100px
+			width: 100px
+			position: absolute
+			top: -15px
+			right: -15px
+			background: #ce0061
+			content: ''
+		img
+			position: relative
+			z-index: 2
+
+//best fotos page__________________________________________________
+
+.bestfotos-content
+	width: 854px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin: 0 auto
+	flex-wrap: wrap
+	.bestfotos-item
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+		margin-bottom: 20px
+		.bestfotos-header
+			background-color: #EFEFEF
+			padding: 7px
+			display: flex
+			align-items: center
+			figure
+				height: 60px
+				width: 60px
+				display: flex
+				align-items: center
+				justify-content: center
+				overflow: hidden
+				margin: 0
+				margin-right: 5px
+				border-adius: 50%
+				img
+					max-height: 100%
+					width: auto
+			.bestfotos-info
+				.id
+					background-color: #ce0061
+					color: #fff
+					text-transform: uppercase
+					padding: 0 3px
+					font-size: 14px
+					display: inline
+				.nickname
+					font-weight: bold
+					font-size: 15px
+					color: #22416d
+					margin-bottom: 0
+				.location
+					color: #333
+		.bestfotos-body
+			padding: 10px
+			display: flex
+			align-items: center
+			height: 300px
+			width: 250px
+			justify-content: center
+			position: relative
+			img
+				max-height: 100%
+				max-width: 100%
+			svg
+				position: absolute
+				transform: translate(-50%, -50%)
+				left: 50%
+				top: 50%
+				cursor: pointer
+
+//find your lady page__________________________________________________
+.new-findyourlady-content
+	width: 890px
+	box-shadow: none
+	width: 900px
+	margin: 0 auto 20px
+	text-decoration: none !important
+	.findyourlady-item
+		background: #fff
+		border-top: solid 5px #ce0061
+		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25)
+		padding-right: 10px
+		display: flex
+		figure
+			width: 250px
+			height: 250px
+			overflow: hidden
+			margin: 0
+			margin-right: 10px
+			img
+				width: 100%
+				height: auto
+		.findyourlady-container
+			padding-top: 10px
+			padding-bottom: 10px
+			.main-info
+				&:before
+					display: table
+					content: ""
+				.id 
+					font-weight: bold
+					font-size: 13px
+					color: #22416d
+					text-transform: uppercase
+					color: #fff
+					background-color: #ce0061
+					padding: 0 3px
+					display: inline-block
+					vertical-align: middle
+				.name
+					display: inline-block
+					vertical-align: middle
+					font-weight: bold
+					font-size: 13px
+					color: #22416d
+					text-transform: uppercase
+					text-transform: none
+					color: #345e91
+					max-width: 220px
+					overflow: hidden
+					white-space: nowrap
+					text-overflow: ellipsis
+					padding: 0 1px
+					&:before
+						content: ','
+				.age
+					font-size: 11px
+					color: #808080
+					margin-left: 3px
+					display: inline-block
+					vertical-align: middle
+				.city
+					font-size: 11px
+					color: #808080
+					margin-left: 3px
+			.rating-quote-wrap
+				height: 25px
+				display: flex
+				z-index: 4
+				position: relative
+				.rating-container
+					margin-right: 10px
+					display: flex
+					align-items: center
+					.rating-title
+						color: #4d4d4d
+					.rating-star path
+						fill: #B3B4B4
+					&.stars1 
+						.rating-star.one 
+							path 
+								fill: #FBB03B!important
+					&.stars2 
+						.rating-star.one,
+						.rating-star.two 
+							path 
+								fill: #FBB03B!important
+					&.stars3 
+						.rating-star.one,
+						.rating-star.two,
+						.rating-star.three 
+							path 
+								fill: #FBB03B!important
+					&.stars4 
+						.rating-star.one,
+						.rating-star.two,
+						.rating-star.three,
+						.rating-star.four 
+							path 
+								fill: #FBB03B!important
+					&.stars5 
+						.rating-star 
+							path 
+								fill: #FBB03B!important
+				.quote
+					position: relative
+					width: calc(100% - 130px)
+					padding: 0 0 5px 22px
+					color: #808080
+					margin-top: 6px
+					.quote-img
+						position: absolute
+						top: 0
+						left: 1px
+						z-index: 2
+					.static-quote
+						overflow: hidden
+						white-space: nowrap
+						text-overflow: ellipsis
+						width: 400px
+			article
+				padding-top: 10px
+				h4
+					color: #333333
+					font-weight: bold
+					text-transform: uppercase
+					font-size: 14px
+				p 
+					font-size: 12px
+					color: #333333
+					max-width: 544px
+
+.findyourlady-page
+	.btn-more
+		margin: 0 auto
+		p
+			margin-bottom: 0
+
+.page-under21yearsold, .page-21_25yearsold, .page-26_30yearsold, .page-31_35yearsold, .page-36_40yearsold, .page-over41yearsold
+	padding-top: 0!important
