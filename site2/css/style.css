@@ -65,15 +65,15 @@ a{
   @keyframes pulsing {
   0% {
     -webkit-transform: scale(0.7, 0.7);
-    transform: scale(1.0, 1.0)
+    transform: scale(0.7, 0.7)
   }
   50% {
     -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.5, 1.5);
+    transform: scale(1.0, 1.0);
   }
   100% {
     -webkit-transform: scale(0.7, 0.7);
-    transform: scale(1.0, 1.0);
+    transform: scale(0.7, 0.7);
   }
 }
 
@@ -97,13 +97,13 @@ a{
     justify-content: center;
     width: 100%;
     margin: 10px auto 0 auto;
-    animation-name: fadeIn;
+/*    animation-name: fadeIn;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
-    visibility: visible !important;
+    visibility: visible !important;*/
   }
   
-@keyframes fadeIn {
+/*@keyframes fadeIn {
     0% {
         transform: scale(0);
         opacity: 0.0;       
@@ -119,7 +119,7 @@ a{
         transform: scale(1);
         opacity: 1; 
     }       
-}
+}*/
 
   .buttons-top a:first-child {
     margin-right: 20px;
@@ -415,11 +415,6 @@ a{
     }
 }
 
-  
-
-  .translator img {
-    width: 100%;
-  }
 
   .translator-text {
     padding: 20px;
@@ -437,12 +432,36 @@ a{
     color: #ffffff;
   }
 
+  .translate {
+    position: relative;
+    z-index: 2;
+    animation: translateAnime 5s linear infinite;
+  }
 
+  @keyframes translateAnime {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+   }
+
+   100% {
+    transform: translateX(0px);
+   }
+  }
+  .mobile3 {
+    position: relative;
+    top: 60px;
+    right: 10px;
+  }
 
 
   /* map-world */
   
   .map-world{
+    position: relative;
     max-width:100%;
     padding:1px;
     background: url(../img/bg-igl4.png) no-repeat center;
@@ -459,9 +478,73 @@ a{
         background-position: -600px 600px /* анимируем свойство background-position */
     }
   }
-  
 
-  .mobile4 {
+
+  .locator1 {
+    position: absolute;
+    top: 120px;
+    animation: locAn 10s linear infinite;
+  }
+
+  @keyframes locAn {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(100px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+  .locator2 {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    animation: loc2An 5s linear infinite;
+  }
+
+  @keyframes loc2An {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(50px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  .locator3 {
+    position: absolute;
+    top: 170px;
+    right: 40px;
+    animation: loc3An 5s linear infinite;
+  }
+
+  @keyframes loc3An {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/*  .mobile4 {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: top;
@@ -476,12 +559,7 @@ a{
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-50px); }
     100% { transform: translateY(0); }
-}
-
-
-  .map-world img {
-    width: 100%;
-  }
+}*/
 
   .map-world_text {
     margin-top: -110px;
