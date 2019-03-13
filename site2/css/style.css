@@ -749,6 +749,10 @@ a{
     height: 560px;
   }
 
+  .content-universe_bg {
+    height: 560px;
+}
+
   .content-universe img:last-child {
     margin-top: 55px;
 }
