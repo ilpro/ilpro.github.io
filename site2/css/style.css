@@ -59,21 +59,21 @@ a{
   }
 
   .igl-animation {
-    animation: pulsing 2s infinite;
+    animation: pulsing 4s infinite;
   }
 
   @keyframes pulsing {
   0% {
     -webkit-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7)
+    transform: scale(1.0, 1.0)
   }
   50% {
     -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.0, 1.0);
+    transform: scale(1.5, 1.5);
   }
   100% {
     -webkit-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
+    transform: scale(1.0, 1.0);
   }
 }
 
@@ -98,7 +98,7 @@ a{
     width: 100%;
     margin: 10px auto 0 auto;
     animation-name: fadeIn;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-timing-function: ease-in-out;
     visibility: visible !important;
   }
@@ -161,6 +161,22 @@ a{
     background: url(../img/bg-igl1.png)no-repeat center;
     background-size: 150%;
   }
+
+  .content-universe_bg {
+    width: 100%;
+    height: 430px;
+    background: url(../img/bg-universe.png)repeat center;
+    animation: animatedBgUniverse 60s linear infinite;
+  }
+
+  @keyframes animatedBgUniverse {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+  }
   
   .likel1 {
     position: relative;
@@ -168,7 +184,7 @@ a{
     left: 80px;
     width: 54px;
     height: 48px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: left;
   }
@@ -187,11 +203,11 @@ a{
 
   .likel2 {
     position: relative;
-    top: 180px;
-    left: 50px;
+    top: 182px;
+    left: 40px;
     width: 32px;
     height: 30px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: left;
   }
@@ -214,7 +230,7 @@ a{
     right: 25px;
     width: 41px;
     height: 39px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: left;
   }
@@ -234,11 +250,11 @@ a{
 
   .liker1 {
     position: relative;
-    top: -390px;
+    top: -375px;
     left: 200px;
     width: 59px;
     height: 55px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
   }
@@ -257,10 +273,10 @@ a{
   .liker2 {
     position: relative;
     top: -370px;
-    left: 115px;
+    left: 130px;
     width: 41px;
     height: 39px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: left;
   }
@@ -272,7 +288,7 @@ a{
 
   @keyframes anliker2 {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-10px); }
+    50%  { transform: translateX(-10px); }
     100% { transform: translateY(0); }
   }
 
@@ -283,7 +299,7 @@ a{
     left: 115px;
     width: 32px;
     height: 30px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: left;
   }
@@ -304,6 +320,7 @@ a{
   
 
   .mobile {
+    width: 100%;
     margin-top: -125px;
   }
 
@@ -323,7 +340,18 @@ a{
     background: url(../img/bg-igl2.png)no-repeat center;
     background-attachment: fixed;
     background-color: #ffffff;
+    animation: animatedBgFriends 60s linear infinite;
   }
+
+  @keyframes animatedBgFriends {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+  }
+
 
   .new-friends_img {
     width: 300px;
@@ -334,7 +362,7 @@ a{
     width: 74px;
     height: 60px;
     margin: -70px 0 100px 200px;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: top;
   }
@@ -372,6 +400,21 @@ a{
     background-attachment: fixed;
   }
 
+  .translator-bg {
+    width: 100%;
+    background:url(../img/bg-translator.png)no-repeat center;
+    animation: animatedBgTranslator 60s linear infinite;
+  }
+
+  @keyframes animatedBgTranslator {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+}
+
   
 
   .translator img {
@@ -405,11 +448,21 @@ a{
     background: url(../img/bg-igl4.png) no-repeat center;
     background-attachment: fixed;
     background-color:#ffffff;
+    animation: animatedBgWorld 60s linear infinite;
+  }
+
+  @keyframes animatedBgWorld {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
   }
   
 
   .mobile4 {
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     transform-origin: top;
   }
@@ -651,6 +704,23 @@ a{
   .content-universe {
     height: 480px;
   }
+
+  .content-universe_bg {
+    height: 480px;
+  }
+
+  .liker1 {
+    left: 225px;
+  }
+
+  .liker2 {
+    left: 155px;
+  }
+
+  .liker3 {
+    top: -355px;
+    left: 150px;
+  }
 }
 
 @media screen and (min-width: 375px){
@@ -670,20 +740,6 @@ a{
   header {
       background-position: 64%; 
   }
-
-  .grid-item--height3 p{
-    position: absolute;
-    top: 156px;
-  }
-  
-  .grid-item--width2 {
-    width: 94.25px;
-    height: 92.25px;
-  }
-    .grid-item--height3 {
-    width: 188.5px;
-    height: 185.5px;
-
 
 }
   
@@ -713,50 +769,36 @@ a{
       background-position: 62%;
   }
 
-  .grid-item--width2 p {
-    position: absolute;
-      top: 70px;
+  .liker1 {
+    left: 275px;
+  }
+
+  .liker2 {
+    top: -385px;
+    left: 195px;
+  }
+
+  .liker3 {
+    top: -355px;
+    left: 185px;
   }
 
 
-  .grid-item--width3 p {
-    position: absolute;
-    top: 70px;
+  .likel1 {
+    top: 310px;
+    left: 105px;
   }
 
-  
-  .grid-item--height2 p {
-    position: absolute;
-    top: 160px;
+  .likel2 {
+    top: 270px;
   }
 
-
-
-  .grid-item--height3 p{
-    position: absolute;
-    top: 151px;
+  .likel3 {
+    top: 280px;
+    right: -3px;
   }
 
-
-  .grid-item--width2 {
-    width: 108.25px;
-      height: 109.25px;
-  }
-
-  .grid-item--width3 {
-    height: 102.35px;
-      width: 103.13px;
-  }
-  
-  .grid-item--height2 {
-    height: 190px;
-      width: 212px;
-  }
-
-  .grid-item--height3 {
-    width: 213.75px;
-      height: 183.5px;
-  }
+ } 
 
 
 @media screen and (min-width: 568px){
