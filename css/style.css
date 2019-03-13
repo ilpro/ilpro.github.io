@@ -27029,18 +27029,47 @@ body {
   margin-right: 0;
 }
 .landing-new .ln-header {
-  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
-  background: url("../public/img/bg-landing-igl.png") no-repeat center;
-  background-attachment: fixed;
+  background: url("../img/bg-landing.png") center;
 }
+
+
+@keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+}
+
+
+
+.landing-new .ln-header .ln-header_bg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url("../img//bg-landing2.png") center;
+  background-attachment: fixed;
+  animation: animatedBackgroundHeader 60s linear infinite;
+}
+
+@keyframes animatedBackgroundHeader {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+}
+
+
 
 .landing-new .ln-header .text_img {
   display: flex;
 }
-
 
 
 
@@ -27711,11 +27740,20 @@ body {
 }
 .landing-new .ln-text-ico .map_app {
   padding: 10rem 0;
-  background: url(../public/img/bg-landing-nf.png);
+  background: url(../img/bg-landing-nf.png);
+  animation: animatedBackground 60s linear infinite;
   background-attachment: fixed;
   color: #fff;
 }
 
+@keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+}
 
 
 
@@ -27779,18 +27817,20 @@ body {
 
 .landing-new .ln-text-ico .world-map {
   position: relative;
-  background: url(../public/img/bg-landing-maplocator.png) no-repeat center/cover;
+  background: url(../img/bg-landing-maplocator.png) no-repeat center/cover;
   background-attachment: fixed;
+  animation: animatedBackgroundMap 60s linear infinite;
 }
 
-/*.landing-new .ln-text-ico .world-map img{
-  transition: 1s;
-  cursor: pointer;
+@keyframes animatedBackgroundMap {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
 }
 
-.landing-new .ln-text-ico .world-map img:hover{
-  transform: rotateY(35deg);
-}*/
 
 .anmobile3 {
   width: 100%;
@@ -27832,30 +27872,52 @@ body {
 
 
 
-.landing-new .ln-text-ico .yellow {
+.landing-new .ln-text-ico .translator {
   position: relative;
   height: 650px;
-  background: url("../public/img/bg-landing-igl2.png") no-repeat center/cover;
+  background: url("../img/translator-bg.png") no-repeat center/cover;
   background-attachment: fixed;
+  /*animation: animatedBackgroundTranslator 60s linear infinite;*/
 }
 
-.landing-new .ln-text-ico .yellow svg {
+
+.landing-new .ln-text-ico .translator .translator-bg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url("../img/translator-bg2.png") center;
+  background-attachment: fixed;
+  animation: animatedBackgroundTranslator 60s linear infinite;
+}
+
+
+
+@keyframes animatedBackgroundTranslator {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+}
+
+.landing-new .ln-text-ico .translator svg {
   width: 100px;
   margin-right: -70px;
 }
 
-.landing-new .ln-text-ico .yellow p::before {
+.landing-new .ln-text-ico .translator p::before {
   display: none;
 }
 
-.landing-new .ln-text-ico .yellow .container {
+.landing-new .ln-text-ico .translator .container {
   position: relative;
   min-height: 765px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.landing-new .ln-text-ico .yellow .container .laptop {
+.landing-new .ln-text-ico .translator .container .laptop {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -27864,7 +27926,7 @@ body {
   top: 0;
   right: 0;
 }
-.landing-new .ln-text-ico .yellow .container .info_text {
+.landing-new .ln-text-ico .translator .container .info_text {
   background: #00011C;
   border-radius: 10px;
   color: #fff;
@@ -27880,7 +27942,7 @@ body {
 
 
 .landing-new .ln-text-ico .map-world {
-  background: url("../public/img/bg-landing-igl2.png") no-repeat center/cover;
+  background: url("../img/bg-landing-igl2.png") no-repeat center/cover;
   position: relative;
 }
 .landing-new .ln-text-ico .map-world .container {
