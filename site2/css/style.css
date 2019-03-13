@@ -544,6 +544,11 @@ a{
     }
   }
 
+
+  .mobile4 {
+    width: 100%;
+  }
+
 /*  .mobile4 {
     animation-duration: 5s;
     animation-iteration-count: infinite;
