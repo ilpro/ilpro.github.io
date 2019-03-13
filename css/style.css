@@ -2064,11 +2064,7 @@ pre code {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .form-control {
-    transition: none;
-  }
-}
+
 .form-control::-ms-expand {
   background-color: transparent;
   border: 0;
@@ -2504,11 +2500,7 @@ select.form-control:focus::-ms-value {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .btn {
-    transition: none;
-  }
-}
+
 .btn:focus, .btn:hover {
   text-decoration: none;
 }
@@ -3101,11 +3093,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   transition: opacity .15s linear;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .fade {
-    transition: none;
-  }
-}
+
 .fade:not(.show) {
   opacity: 0;
 }
@@ -3121,11 +3109,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   transition: height .35s ease;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .collapsing {
-    transition: none;
-  }
-}
+
 .dropdown, .dropleft, .dropright, .dropup {
   position: relative;
 }
@@ -5108,11 +5092,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   transition: width .6s ease;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .progress-bar {
-    transition: none;
-  }
-}
+
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
@@ -5403,11 +5383,7 @@ button.close {
   transform: translate(0, -25%);
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    transition: none;
-  }
-}
+
 .modal.show .modal-dialog {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
@@ -5836,11 +5812,7 @@ button.close {
   perspective: 1000px;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .carousel-item {
-    transition: none;
-  }
-}
+
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   display: block;
 }
@@ -27085,6 +27057,7 @@ body {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
+  z-index: 2;
 }
 
 .anliker1 {
@@ -32855,36 +32828,36 @@ body {
 
 
 
-/*
+
 @media screen and (max-width: 1280px) {
   .liker1 {
-    top: 270px;
-    left: 420px;
+    top: 270px !important;
+    left: 420px !important;
   }
 
   .liker2 {
-    top: 360px;
-    left: 405px;
+    top: 360px !important;
+    left: 405px !important;
   }
 
   .liker3 {
-    top: 395px;
-    left: 485px;
+    top: 395px !important;
+    left: 485px !important;
   }
 
   .likel1 {
-    left: 145px;
+    left: 145px !important;
   }
 
   .likel2 {
-    left: 195px;
+    left: 195px !important;
   }
   
   .likel3 {
-    top: 545px;
-    left: 105px;
+    top: 545px !important;
+    left: 105px !important;
   }
-}*/
+}
 
 
 @media screen and (max-width: 1366px) {
@@ -32920,15 +32893,15 @@ body {
 
 
 
-/*@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .liker1 {
-    top: 270px;
-    left: 495px;
+    top: 270px ;
+    left: 520px;
   }
 
   .liker2 {
-    top: 345px;
-    left: 460px;
+    top: 330px;
+    left: 480px;
   }
 
   .liker3 {
@@ -32937,22 +32910,22 @@ body {
   }
 
   .likel1 {
-    left: 220px;
+    left: 225px;
   }
 
   .likel2 {
-    top: 535px;
-    left: 270px;
+    top: 555px;
+    left: 275px;
   }
   
   .likel3 {
-    top: 545px;
-    left: 185px;
+    top: 555px;
+    left: 175px;
   }
-}*/
+}
 
 
-/*@media screen and (min-width: 1680px) {
+/*@media screen and (max-width: 1680px) {
   .liker1 {
     top: 270px;
     left: 620px;
@@ -32981,8 +32954,8 @@ body {
     top: 540px;
     left: 300px;
   }
-}*/
-
+}
+*/
 
 
 
