@@ -27243,15 +27243,15 @@ body {
 @keyframes pulsing {
   0% {
     -webkit-transform: scale(0.7, 0.7);
-    transform: scale(0.9, 0.9)
+    transform: scale(0.7, 0.7)
   }
   50% {
     -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.5, 1.5);
+    transform: scale(1.0, 1.0);
   }
   100% {
     -webkit-transform: scale(0.7, 0.7);
-    transform: scale(0.9, 0.9);
+    transform: scale(0.7, 0.7);
   }
 }
 
@@ -27808,7 +27808,7 @@ body {
 }
 
 
-.anmobile3 {
+/*.anmobile3 {
   animation-duration: 7s;
   animation-iteration-count: infinite;
   transform-origin: 100% 0;
@@ -27825,10 +27825,119 @@ body {
   0%   { transform: rotateY(10deg)}
   50%  { transform: rotateY(25deg)}
   100% { transform: rotateY(10deg)}
+}*/
+
+.locator1 {
+  position: relative;
+  top: 100px;
+  left: 370px;
+  animation: loc1Anime 3s linear infinite;
+}
+
+@keyframes loc1Anime {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+.locator2 {
+  position: relative;
+  top: 80px;
+  right: 30px;
+  animation: loc2Anime 5s linear infinite;
+}
+
+@keyframes loc2Anime {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+.locator3 {
+  position: relative;
+  bottom: 630px;
+  left: 340px;
+  animation: loc3Anime 7s linear infinite;
+}
+
+@keyframes loc3Anime {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+.locator4 {
+  position: relative;
+  bottom: 725px;
+  left: 35px;
+  animation: loc4Anime 4s linear infinite;
+}
+
+@keyframes loc4Anime {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
 }
 
 
+.locator5 {
+  position: relative;
+  bottom: 700px;
+  right: 300px;
+  animation: loc5Anime 5s linear infinite;
+}
 
+
+@keyframes loc5Anime {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
 
 
 
@@ -27879,6 +27988,7 @@ body {
 
 .landing-new .ln-text-ico .translator svg {
   width: 100px;
+  height: 100px;
   margin-right: -70px;
 }
 
