@@ -27049,9 +27049,9 @@ body {
 
 
 .liker1 {
-  position: absolute;
-  top: 300px;
-  left: 750px;
+  position: relative;
+  top: 280px;
+  left: 680px;
   width: 129px;
   height: 120px;
   animation-duration: 5s;
@@ -27072,9 +27072,9 @@ body {
 }
 
 .liker2 {
-  position: absolute;
-  top: 390px;
-  left: 725px;
+  position: relative;
+  top: 365px;
+  left: 530px;
   width: 89px;
   height: 84px;
   animation-duration: 5s;
@@ -27097,9 +27097,9 @@ body {
 
 
 .liker3 {
-  position: absolute;
-  top: 420px;
-  left: 805px;
+  position: relative;
+  top: 395px;
+  left: 520px;
   width: 69px;
   height: 64px;
   animation-duration: 3s;
@@ -27155,11 +27155,11 @@ body {
 
 
 .likel1 {
+  position: relative;
+  top: 600px;
+  right: 500px;
   width: 118px;
   height: 104px;
-  position: absolute;
-  top: 600px;
-  left: 465px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: left;
@@ -27182,11 +27182,11 @@ body {
 
 
 .likel2 {
+  position: relative;
+  top: 540px;
+  right: 570px;
   width: 70px;
   height: 65px;
-  position: absolute;
-  top: 540px;
-  left: 515px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: left;
@@ -27207,11 +27207,11 @@ body {
 
 
 .likel3 {
+  position: relative;
+  top: 550px;
+  right: 705px;
   width: 89px;
   height: 84px;
-  position: absolute;
-  top: 535px;
-  left: 435px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: left;
@@ -27233,6 +27233,7 @@ body {
 
 .landing-new .ln-header .text_img .igl {
   margin-top: 100px;
+  margin-left: -250px;
 }
 
 .igl-animation {
