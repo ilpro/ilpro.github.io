@@ -482,30 +482,31 @@ a{
 
   .locator1 {
     position: absolute;
-    top: 120px;
-    animation: locAn 10s linear infinite;
+    top: 135px;
+    left: 75px;
+    animation: locAn 5s linear infinite;
   }
 
   @keyframes locAn {
     0% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
 
     50% {
-      transform: translateX(100px);
+      transform: translateY(-15px);
     }
 
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 
 
   .locator2 {
     position: absolute;
-    top: 5px;
+    top: 50px;
     right: 30px;
-    animation: loc2An 5s linear infinite;
+    animation: loc2An 7s linear infinite;
   }
 
   @keyframes loc2An {
@@ -514,7 +515,7 @@ a{
     }
 
     50% {
-      transform: translateY(50px);
+      transform: translateY(-15px);
     }
 
     100% {
@@ -525,28 +526,28 @@ a{
 
   .locator3 {
     position: absolute;
-    top: 170px;
+    top: 175px;
     right: 40px;
-    animation: loc3An 5s linear infinite;
+    animation: loc3An 3s linear infinite;
   }
 
   @keyframes loc3An {
     0% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
 
     50% {
-      transform: translateX(50px);
+      transform: translateY(-10px);
     }
 
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 
 
   .mobile4 {
-    width: 100%;
+    max-width: 100%;
   }
 
 /*  .mobile4 {
@@ -803,6 +804,18 @@ a{
   .liker3 {
     top: -355px;
     left: 150px;
+  }
+
+  .locator1 {
+    left: 85px;
+  }
+
+  .locator2 {
+    right: 35px;
+  }
+
+  .locator3 {
+    right: 50px;
   }
 }
 
