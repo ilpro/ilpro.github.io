@@ -27990,6 +27990,21 @@ body {
   width: 100px;
   height: 100px;
   margin-right: -70px;
+  animation: translatorAnime 7s linear infinite;
+}
+
+@keyframes translatorAnime {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(45px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .landing-new .ln-text-ico .translator p::before {
