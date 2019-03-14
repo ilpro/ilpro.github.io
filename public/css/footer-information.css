@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$open-sans".
-        on line 3 of D:\work\IGL\public\css\footer-information.scss
+        on line 3 of D:\my\ilpro.github.io\public\css\footer-information.scss
 
 1: //mobile app page __________________________________________________________________
 2: .googleplay-appstore-page {
@@ -12,7 +12,7 @@ Error: Undefined variable: "$open-sans".
 8:     font-size: 22px;
 
 Backtrace:
-D:\work\IGL\public\css\footer-information.scss:3
+D:\my\ilpro.github.io\public\css\footer-information.scss:3
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -59,4 +59,4 @@ C:/Ruby25-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$open-sans\".\A         on line 3 of D:\work\IGL\public\css\footer-information.scss\A \A 1: //mobile app page __________________________________________________________________\A 2: .googleplay-appstore-page {\A 3:   font-family: $open-sans;\A 4:   padding-left: 15px;\A 5: \A 6:   .title{\A 7:     text-align: center;\A 8:     font-size: 22px;"; }
+  content: "Error: Undefined variable: \"$open-sans\".\A         on line 3 of D:\my\ilpro.github.io\public\css\footer-information.scss\A \A 1: //mobile app page __________________________________________________________________\A 2: .googleplay-appstore-page {\A 3:   font-family: $open-sans;\A 4:   padding-left: 15px;\A 5: \A 6:   .title{\A 7:     text-align: center;\A 8:     font-size: 22px;"; }

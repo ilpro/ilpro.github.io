@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'align-items-center'.
-        on line 28 of D:\work\IGL\public\css\sidebar.sass, in `align-items-center'
-        from line 28 of D:\work\IGL\public\css\sidebar.sass
+        on line 28 of D:\my\ilpro.github.io\public\css\sidebar.sass, in `align-items-center'
+        from line 28 of D:\my\ilpro.github.io\public\css\sidebar.sass
 
 23: 						&:last-of-type
 24: 							display: block
@@ -16,8 +16,8 @@ Error: Undefined mixin 'align-items-center'.
 33: 			border-radius: 5px
 
 Backtrace:
-D:\work\IGL\public\css\sidebar.sass:28:in `align-items-center'
-D:\work\IGL\public\css\sidebar.sass:28
+D:\my\ilpro.github.io\public\css\sidebar.sass:28:in `align-items-center'
+D:\my\ilpro.github.io\public\css\sidebar.sass:28
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
@@ -88,4 +88,4 @@ C:/Ruby25-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'align-items-center'.\A         on line 28 of D:\work\IGL\public\css\sidebar.sass, in `align-items-center'\A         from line 28 of D:\work\IGL\public\css\sidebar.sass\A \A 23: 						&:last-of-type\A 24: 							display: block\A 25: 				&.sound\A 26: 					cursor: pointer\A 27: 		a \A 28: 			@include align-items-center\A 29: 			text-decoration: none !important\A 30: 			position: relative\A 31: 			width: auto\A 32: 			padding: 5px\A 33: 			border-radius: 5px"; }
+  content: "Error: Undefined mixin 'align-items-center'.\A         on line 28 of D:\my\ilpro.github.io\public\css\sidebar.sass, in `align-items-center'\A         from line 28 of D:\my\ilpro.github.io\public\css\sidebar.sass\A \A 23: 						&:last-of-type\A 24: 							display: block\A 25: 				&.sound\A 26: 					cursor: pointer\A 27: 		a \A 28: 			@include align-items-center\A 29: 			text-decoration: none !important\A 30: 			position: relative\A 31: 			width: auto\A 32: 			padding: 5px\A 33: 			border-radius: 5px"; }

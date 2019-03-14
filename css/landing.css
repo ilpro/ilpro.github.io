@@ -1,22 +1,32 @@
 /*
-Error: File to import not found or unreadable: font-base&colors-variables.
-       Load path: D:/my/ilpro.github.io/public/css
-        on line 1 of D:\my\ilpro.github.io\public\css\jquery.chosen.scss
+Error: Invalid CSS after "...xt,vietnamese')": expected selector or at-rule, was "$open-sans: 'Op..."
+        on line 5 of D:/my/ilpro.github.io/css/_vars.scss
+        from line 1 of D:\my\ilpro.github.io\css\landing.scss
 
-1: @import "font-base&colors-variables";
+1: //fonts__________________________________________________
 2: 
-3: 
-4:  //Chosen
-5: @mixin user-select($val){
-6:   -webkit-user-select: $val;
+3: @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese')
+4: 
+5: $open-sans: 'Open Sans', sans-serif
+6: 
+7: 
+8: 
+9: //collors__________________________________________________
+10: 
 
 Backtrace:
-D:\my\ilpro.github.io\public\css\jquery.chosen.scss:1
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+D:/my/ilpro.github.io/css/_vars.scss:5
+D:\my\ilpro.github.io\css\landing.scss:1
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
@@ -49,4 +59,4 @@ C:/Ruby25-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: font-base&colors-variables.\A        Load path: D:/my/ilpro.github.io/public/css\A         on line 1 of D:\my\ilpro.github.io\public\css\jquery.chosen.scss\A \A 1: @import \"font-base&colors-variables\";\A 2: \A 3: \A 4:  //Chosen\A 5: @mixin user-select($val){\A 6:   -webkit-user-select: $val;"; }
+  content: "Error: Invalid CSS after \"...xt,vietnamese')\": expected selector or at-rule, was \"$open-sans: 'Op...\"\A         on line 5 of D:/my/ilpro.github.io/css/_vars.scss\A         from line 1 of D:\my\ilpro.github.io\css\landing.scss\A \A 1: //fonts__________________________________________________\A 2: \A 3: @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese')\A 4: \A 5: $open-sans: 'Open Sans', sans-serif\A 6: \A 7: \A 8: \A 9: //collors__________________________________________________\A 10: "; }
