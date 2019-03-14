@@ -837,6 +837,18 @@ a{
       background-position: 64%; 
   }
 
+  .locator1 {
+    left: 90px;
+  }
+
+  .locator2 {
+    right: 45px;
+  }
+
+  .locator3 {
+    right: 60px;
+  }
+
 }
   
 @media screen and (min-width: 411px){
@@ -896,6 +908,18 @@ a{
   .likel3 {
     top: 280px;
     right: -3px;
+  }
+
+  .locator1 {
+    left: 90px
+  }
+
+  .locator2 {
+    right: 80px;
+  }
+
+  .locator3 {
+    right: 95px;
   }
 
  } 
