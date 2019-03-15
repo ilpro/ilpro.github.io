@@ -199,7 +199,6 @@ a {
   .content-universe {
     width: 100%;
     height: 430px;
-    padding-top: 1px;
     background: url(../img/bg-igl1.png) no-repeat center;
     background-size: 150%; }
 
@@ -493,9 +492,6 @@ a {
       transform: translateY(-10px); }
     100% {
       transform: translateY(0); } }
-  .mobile4 {
-    max-width: 100%; }
-
   /*  .mobile4 {
       animation-duration: 5s;
       animation-iteration-count: infinite;
@@ -552,38 +548,6 @@ a {
       font-weight: 800; }
     .footer-about p {
       font-family: SegoeUI-SemiBold; }
-
-  .partners {
-    display: block;
-    width: 215px;
-    height: 170px;
-    margin: 20px auto 30px auto;
-    padding-top: 1px;
-    border-radius: 15px;
-    background-color: #ffffff; }
-    .partners p {
-      font-size: 21px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #000000; }
-
-  .new-partners {
-    display: block;
-    width: 215px;
-    height: 170px;
-    margin: 20px auto 30px auto;
-    padding-top: 1px;
-    border-radius: 15px;
-    background-color: #ffffff; }
-    .new-partners p {
-      font-size: 25px;
-      color: #000000;
-      margin: -7px 0 0 20px;
-      text-transform: uppercase; }
-    .new-partners img {
-      width: 100px;
-      height: auto;
-      margin: 35px 0 0 0; }
 
   .praid {
     font-weight: bold; }
@@ -669,7 +633,7 @@ a {
   .subheading h2 {
     font-size: 19px; }
 
-  .content-universe, .content-universe_bg {
+  .content-universe_bg {
     height: 480px; }
 
   .liker1 {
