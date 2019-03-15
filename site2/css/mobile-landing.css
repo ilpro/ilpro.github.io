@@ -279,7 +279,6 @@ a {
     }
   }
   .mobile {
-    width: 100%;
     margin-top: -125px;
   }
 
@@ -415,6 +414,11 @@ a {
     background-attachment: fixed;
     background-color: #ffffff;
     animation: animatedBgWorld 60s linear infinite;
+  }
+  .map-world .map-world_image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   @keyframes animatedBgWorld {
