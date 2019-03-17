@@ -193,7 +193,7 @@ li {
     	left: 45px;
     	width: 59px;
     	height: 55px;
-    	animation: anliker1 9s linear infinite;
+    	animation: anliker1 7s linear infinite;
 	}
 
 	@keyframes anliker1 {
@@ -202,7 +202,7 @@ li {
     }
 
     50% {
-      transform: translateY(-25px);
+      transform: translateY(-15px);
     }
 
     100% {
@@ -221,7 +221,7 @@ li {
 
   @keyframes anliker2 {
     0% {
-      transform: translateY(0);
+      transform: translateX(0);
     }
 
     50% {
@@ -229,7 +229,7 @@ li {
     }
 
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 
@@ -239,16 +239,16 @@ li {
     right: 25px;
     width: 32px;
     height: 30px;
-	  animation: anliker2 5s linear infinite;
+	  animation: anliker3 5s linear infinite;
   }
 
-   @keyframes anliker2 {
+   @keyframes anliker3 {
     0% {
       transform: translateY(0);
     }
 
     50% {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
     }
 
     100% {
@@ -348,7 +348,7 @@ li {
     }
 
     50% {
-      transform: translateX(30px);
+      transform: translateX(15px);
     }
 
     100% {
@@ -359,7 +359,6 @@ li {
   	.world-map {
   		position: relative;
     	width: 100%;
-    	padding: 1px;
     	background: url(../img/bg-igl4.png) no-repeat center;
     	background-size: cover;
     	background-color: $white;
