@@ -193,7 +193,7 @@ li {
     	left: 45px;
     	width: 59px;
     	height: 55px;
-    	animation: anliker1 5s linear infinite;
+    	animation: anliker1 9s linear infinite;
 	}
 
 	@keyframes anliker1 {
@@ -216,7 +216,7 @@ li {
     right: 20px;    
     width: 41px;
     height: 39px;
-    animation: anliker2 5s linear infinite;
+    animation: anliker2 7s linear infinite;
   }
 
   @keyframes anliker2 {
@@ -239,10 +239,10 @@ li {
     right: 25px;
     width: 32px;
     height: 30px;
-	animation: anliker2 5s linear infinite;
+	  animation: anliker2 5s linear infinite;
   }
 
-   @keyframes anliker3 {
+   @keyframes anliker2 {
     0% {
       transform: translateY(0);
     }
@@ -338,6 +338,7 @@ li {
 	}
 
 	.translator .translator-bg .translator-text .translate {
+    margin-right: 30px;
 		animation: translateAnime 5s linear infinite;
 	}
 
@@ -347,7 +348,7 @@ li {
     }
 
     50% {
-      transform: translateX(50px);
+      transform: translateX(30px);
     }
 
     100% {
