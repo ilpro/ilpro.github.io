@@ -102,6 +102,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	text-align: center;
 }
 
+.number-people svg {
+	width: 32px;
+	height: 32px;
+	margin-left: 20px;
+}
+
 
 
 
@@ -202,9 +208,41 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	overflow-y: scroll;
 }
 
+.table-data_info::-webkit-scrollbar {
+  	width: 5px;
+}
 
-.table-data table {
+.table-data_info::-webkit-scrollbar-track{
+
+  background-color: #E6E6E6;
+}
+
+.table-data_info::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: #5D5D5D;
+}
+
+
+
+.table-data_info table {
 	margin: 0 auto;
+}
+
+.table-data_info table caption {
+	caption-side: top;
+	font-size: 35px;
+    width: 275px;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #E5C12D;
+}
+
+.table-data_info table caption svg{
+	width: 32px;
+	height: 32px;
+	margin: -5px 10px;
 }
 
 
