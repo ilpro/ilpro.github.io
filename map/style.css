@@ -193,9 +193,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .table-data button {
 	position: relative;
-	bottom: 20px;
-	width: 120px;
-	height: 45px;
+	bottom: 30px;
+	width: 57px;
+	height: 57px;
 	background: url(img/table-button.png)no-repeat;
 	border: none;
 	outline: none;
@@ -247,11 +247,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 .activeBottom {
-	bottom: 483px;
+	bottom: 495px;
 	transition: all 1000ms ease-in-out;
 }
 
 .bot2 {
+
 	background: url(img/table-button2.png)no-repeat !important;
 }
 
