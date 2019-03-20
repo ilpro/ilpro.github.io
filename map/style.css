@@ -414,6 +414,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	font-size: 35px;
     width: 275px;
     margin: 0 auto;
+    padding: 7px;
     border-radius: 30px;
     font-weight: bold;
     color: #ffffff;
