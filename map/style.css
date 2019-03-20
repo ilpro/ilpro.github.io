@@ -3,6 +3,10 @@ html, body {
 	padding: 0;
 }
 
+body {
+	font-family: Roboto, sans-serif;
+}
+
 
 ul {
 	margin: 0;
@@ -11,6 +15,13 @@ ul {
 
 li {
 	list-style: none;
+}
+
+
+input[type=file] {
+	width: 20px;
+	height: 20px;
+	background: url(img/noun-file.png) no-repeat;
 }
 
 
@@ -25,8 +36,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .map {
 	width: 100%;
-	height: 800px;
-	border: 1px solid black;
+	height: 100vh;
 	overflow: hidden;
 }
 
@@ -102,7 +112,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	text-align: center;
 }
 
+.number-people a {
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
 .number-people svg {
+	display: block;
 	width: 32px;
 	height: 32px;
 	margin-left: 20px;
@@ -145,6 +162,22 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     box-sizing: border-box;
     width: 350px;
     margin-top: 20px;
+}
+
+.population-rating ul li:nth-child(2) {
+	width: 330px;
+}
+
+.population-rating ul li:nth-child(3) {
+	width: 310px;
+}
+
+.population-rating ul li:nth-child(4) {
+	width: 290px;
+}
+
+.population-rating ul li:nth-child(5) {
+	width: 270px;
 }
 
 
@@ -225,8 +258,30 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 .table-data_info table {
+	border-collapse: collapse;
 	margin: 0 auto;
+	border-spacing: 0;
 }
+
+
+.table-data_info table tr:nth-child(2n) {
+	border-bottom: 1px solid black;
+}
+
+.table-data_info table tr td {
+	padding: 10px;
+
+}
+
+.table-data_info table tr td span {
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #E4E4E4;
+}
+
+
 
 .table-data_info table caption {
 	caption-side: top;
@@ -242,7 +297,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .table-data_info table caption svg{
 	width: 32px;
 	height: 32px;
-	margin: -5px 10px;
 }
 
 
@@ -256,17 +310,3 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	background: url(img/table-button2.png)no-repeat !important;
 }
 
-
-
-
-
-
-
-
-
-
-.map2 {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-}
