@@ -34,7 +34,18 @@ $('.arrowTop2').click(function(){
 });
 
 
+$('.arrowRight').click(function(){
+	$('.diagram').toggleClass('activeRight');
+	$('.arrowRight2').css('display', 'block');
+	$(this).css('display','none');
+});
 
+
+$('.arrowRight2').click(function(){
+	$('.diagram').toggleClass('activeRight');
+	$('.arrowRight').css('display','block');
+	$(this).css('display', 'none');
+});
 
 
 

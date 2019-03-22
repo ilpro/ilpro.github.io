@@ -541,6 +541,45 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
+.diagram {
+	position: absolute;
+    top: 90px;
+    right: -400px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 425px;
+    padding: 20px 0 20px 20px;
+    margin-top: 50px;
+    border-radius: 60px 0 0 60px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    z-index: 2;
+    transition: all 1000ms ease-in-out;
+}
+
+
+.arrowRight {
+	position: relative;
+	right: 45px;
+	transform: rotate(180deg);
+}
+
+.arrowRight2 {
+	display: none;
+	position: relative;
+	right: 100px;
+}
+
+
+
+
+
+
+
+
+
 .activeBottom {
 	bottom: 490px;
 	transition: all 1000ms ease-in-out;
