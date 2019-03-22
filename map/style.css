@@ -483,7 +483,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	align-items: center;
 	justify-content: center;
 	border-radius: 10px;
-	padding: 0 5px;
+	padding: 5px;
 	background-color: #E4E4E4;
 }
 
