@@ -528,7 +528,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 .activeBottom {
-	bottom: 495px;
+	bottom: 490px;
 	transition: all 1000ms ease-in-out;
 }
 
