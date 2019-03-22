@@ -246,7 +246,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .population-rating {
 	position: absolute;
-	top: 131px;
+	top: 90px;
 	left: -400px; 
 	display: flex;
 	justify-content: space-between;
@@ -299,8 +299,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .population-rating ul li:first-child {
 	margin-top: 0;
-}
-*/
+}*/
+
 .population-rating ul li span:first-child {
 	background-color: #E4E4E4;
 	padding: 5px;
