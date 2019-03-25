@@ -50,3 +50,36 @@ $('.arrowRight2').click(function(){
 
 
 
+// ChartsJs
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: ['line'],
+
+    // The data for our dataset
+    data: {
+        labels: [12, 19, 26, 33, 40, 47, 54, 61, 68],
+        datasets: [{
+            label: 'Жінки',
+            backgroundColor: 'transparent',
+            pointBackgroundColor: '#FF0080',
+            borderColor: '#FF0080',
+            data: [40, 22, 43, 16, 20, 38, 35]
+        },
+
+        {
+        	label: 'Чоловіки',
+            backgroundColor: 'transparent',
+            pointBackgroundColor: '#0090FF',
+            borderColor: '#0090FF',
+            data: [12, 20, 32, 39, 32, 28, 32, 34, 24 ]
+        }]
+    },
+
+
+
+    // Configuration options go here
+    options: {}
+});
