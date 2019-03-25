@@ -544,7 +544,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .diagram {
 	position: absolute;
     top: 90px;
-    right: -400px;
+    right: -600px;
     display: flex;
     align-items: center;
     width: 670px;
@@ -565,6 +565,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	justify-content: center;
 }
 
+.range p:first-child {
+	margin-right: 5px;
+}
+
+.range p:last-child {
+	margin-left: 5px;
+}
+
+
 .range input[type='range']{
 	width: 400px;
 }
@@ -574,6 +583,33 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	position: relative;
 	top: 25px;
 	left: 380px;
+}
+
+.charts-controll input[type='submit'],input[type='reset'] {
+	width: 81px;
+	height: 30px;
+	font-weight: bold;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	background-color: #5D5D5D;
+	cursor: pointer;
+}
+
+.charts-controll input[type='submit']:hover {
+	background-color: #A5A5A5;
+}
+
+.charts-controll input[type='reset']:hover {
+	background-color: #A5A5A5;
+}
+
+.charts-controll input[type='submit']:active {
+	background-color: #E5C12D;
+}
+
+.charts-controll input[type='reset']:active {
+	background-color: #E5C12D;
 }
 
 
