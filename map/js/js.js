@@ -83,3 +83,18 @@ var chart = new Chart(ctx, {
     // Configuration options go here
     options: {}
 });
+
+
+
+
+
+// Input Range
+
+
+$('#range').on('input', function(){
+
+	var a = $(this).val();
+
+	$('.ageFirst').text(a);
+
+});
