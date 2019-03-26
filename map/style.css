@@ -259,11 +259,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .population-rating {
 	position: absolute;
 	top: 90px;
-	left: -400px; 
+	left: -670px; 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 500px;
+	width: 670px;
 	padding: 20px 0 20px 20px;
 	margin-top: 50px;
 	border-radius: 0 60px 60px 0;
@@ -288,36 +288,36 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     align-items: center;
     padding: 5px;
     box-sizing: border-box;
-    width: 380px;
+    width: 485px;
     margin-top: 20px;
 }
 
 .population-rating ul li:nth-child(2) {
-	width: 330px;
+	width: 415px;
 }
 
 .population-rating ul li:nth-child(3) {
-	width: 310px;
+	width: 355px;
 }
 
 .population-rating ul li:nth-child(4) {
-	width: 290px;
+	width: 435px;
 }
 
 .population-rating ul li:nth-child(5) {
-	width: 275px;
+	width: 340px;
 }
 
 .population-rating ul li:nth-child(6) {
-	width: 310px;
+	width: 375px;
 }
 
 .population-rating ul li:nth-child(7) {
-	width: 275px;
+	width: 440px;
 }
 
 .population-rating ul li:nth-child(8) {
-	width: 240px;
+	width: 375px;
 }
 
 
@@ -350,7 +350,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .arrowLeft {
 	position: relative;
-    left: 25px;
+    left: 60px;
     cursor: pointer;
     fill:#e5c12d;
 }
@@ -368,7 +368,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .arrowLeft2 {
 	display: none;
     position: relative;
-    left: 25px;
+    left: 60px;
     cursor: pointer;
     fill: #5d5d5d;
 }
@@ -393,7 +393,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .table-data {
 	position: relative;
-    bottom: 115px;
+    bottom: 0;
     width: 80%;
 	margin: 0 auto;
 	border: 1px solid grey;
@@ -405,7 +405,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .table-data .arrowTop {
 	position: relative;
-	bottom: 30px;
+	bottom: 65px;
 	margin: 0 auto;
 	fill: #e5c12d;
 	transform: rotate(90deg);
@@ -423,7 +423,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .table-data .arrowTop2 {
 	display: none;
 	position: relative;
-	bottom: 30px;
+	bottom: 63px;
 	margin: 0 auto;
 	fill: #5d5d5d;
 	transform: rotate(90deg);
@@ -543,12 +543,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .diagram {
 	position: absolute;
-    top: 90px;
-    right: -600px;
+    top: 93px;
+    right: -670px;
     display: flex;
     align-items: center;
     width: 670px;
-    height: 425px;
+    height: 510px;
     padding: 20px 0 20px 20px;
     margin-top: 50px;
     border-radius: 60px 0 0 60px;
@@ -560,18 +560,53 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
+/*RANGE-SLIDER*/
+
+
+#slider-range {
+	width: 400px;
+	height: 10px;
+	background-color: #E4E4E4;
+	border-radius: 10px;
+}
+
+.ui-slider-range {
+	background-color: #E5C12D !important;
+	border: none;
+}
+
+.ui-slider-handle {
+	top: -10px !important;
+	width: 30px !important;
+	height: 30px !important;
+	border-radius: 50% !important;
+	border: none;
+	outline: none;
+	box-shadow: 0 0 2px 0 #cccccc;
+	cursor: pointer !important;
+}
+
+.ui-state-default {
+	background: #E5C12D !important;
+	border: #E5C12D !important;
+}
+
+.ui-state-active {
+	border:none !important;
+	background: #E5C12D !important;
+}
+
+
+
+
+
+
 .range {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
-.range p:first-child {
-	margin-right: 5px;
-}
-
-.range p:last-child {
-	margin-left: 5px;
-}
 
 
 .range input[type='range']{
@@ -581,8 +616,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .charts-controll {
 	position: relative;
-	top: 25px;
-	left: 380px;
+	top: 30px;
+	left: 385px;
 }
 
 .charts-controll input[type='submit'],input[type='reset'] {
@@ -621,7 +656,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .arrowRight {
 	position: relative;
-	right: 45px;
+	right: 80px;
 	fill: #e5c12d;
 	transform: rotate(180deg);
 	cursor: pointer;
@@ -638,7 +673,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .arrowRight2 {
 	display: none;
 	position: relative;
-	right: 45px;
+	right: 80px;
 	fill:#5d5d5d;
 	cursor: pointer;
 }

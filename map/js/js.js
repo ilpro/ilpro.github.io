@@ -78,8 +78,6 @@ var chart = new Chart(ctx, {
         }]
     },
 
-
-
     // Configuration options go here
     options: {}
 });
@@ -88,13 +86,22 @@ var chart = new Chart(ctx, {
 
 
 
-// Input Range
+// RANGE SLIDER
 
 
-$('#range').on('input', function(){
+// $( function() {
+//     	$( "#slider-range" ).slider({
+//       		range: true,
+//       		min: 0,
+//       		max: 100,
+//       		values: [ 18, 74 ],
+//       		slide: function( event, ui ) {
+//         $( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
 
-	var a = $(this).val();
+//       }
+//     });
+//     $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+//       " - " + $( "#slider-range" ).slider( "values", 1 ) );
+//   } );
 
-	$('.ageFirst').text(a);
 
-});

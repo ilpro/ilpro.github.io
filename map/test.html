@@ -12,10 +12,11 @@
     	$( "#slider-range" ).slider({
       		range: true,
       		min: 0,
-      		max: 500,
-      		values: [ 75, 300 ],
+      		max: 100,
+      		values: [ 18, 74 ],
       		slide: function( event, ui ) {
         $( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+
       }
     });
     $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
@@ -28,6 +29,8 @@
 
 		#slider-range {
 			width: 400px;
+			background-color: #E4E4E4;
+			border-radius: 10px;
 		}
 
 		.ui-slider-range {
@@ -36,11 +39,14 @@
 		}
 
 		.ui-slider-handle {
-			width: 22px !important;
-			height: 22px !important;
+			top: -10px !important;
+			width: 30px !important;
+			height: 30px !important;
 			border-radius: 50%;
 			border: none;
 			outline: none;
+			box-shadow: 0 0 2px 0 #cccccc;
+			cursor: pointer !important;
 		}
 
 		.ui-state-default {
@@ -57,7 +63,7 @@
 
 	<p>
   <label for="amount">Price range:</label>
-  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  <input type="text" id="amount" readonly style="border:0; color:#000; font-weight:bold;">
 </p>
  
 <div id="slider-range"></div>
