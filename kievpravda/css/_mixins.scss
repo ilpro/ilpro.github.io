@@ -1,0 +1,26 @@
+@mixin dflex($df, $ai, $sb){
+	display: $df;
+	align-items: $ai;
+	justify-content: $sb;
+}
+
+@mixin dflex($df, $ai, $jcc){
+	display: $df;
+	align-items: $ai;
+	justify-content: $jcc;
+}
+
+@mixin dflexa($df, $sarnd){
+	display: $df;
+	justify-content: $sarnd;
+}
+
+@mixin dflexb($df, $sb){
+	display: $df;
+	justify-content: $sb;
+}
+
+@mixin dflexb($df, $jcc){
+	display: $df;
+	justify-content: $jcc;
+}

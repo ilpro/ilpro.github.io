@@ -1,0 +1,107 @@
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUI.ttf);
+}
+@font-face {
+  font-family: SegoeUI-Bold;
+  src: url(../fonts/SegoeUI-Bold.ttf);
+}
+@font-face {
+  font-family: SegoeUI-SemiBold;
+  src: url(../fonts/SegoeUI-SemiBold.ttf);
+}
+/* GENERAL STYLE */
+body {
+  font-family: SegoeUI, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* IE 10+ */
+/* HEADER */
+header {
+  width: 85%;
+  margin: 0 auto;
+  padding: 24px 0;
+  border-bottom: 1px solid #E1E1E1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .social-icon .icon-top {
+  display: flex;
+}
+header .social-icon .icon-top li {
+  margin-right: 25px;
+}
+header .social-icon .icon-top li:last-child {
+  margin-right: 0;
+}
+header .search input {
+  width: 430px;
+  height: 50px;
+  border: 3px solid #DCDCDC;
+  border-radius: 25px;
+  outline: none;
+  text-indent: 1em;
+}
+
+nav {
+  width: 85%;
+  margin: 0 auto;
+}
+nav .top-nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .top-nav li a {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header.css.map */
