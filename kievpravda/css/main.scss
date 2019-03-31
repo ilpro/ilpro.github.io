@@ -7,14 +7,14 @@ main {
 	width: 85%;
 	margin: 0 auto;
 	.main-news {
-		height: 585px;
+		height: 430px;
 		@include dflexb($df,$sb);
 	section {
 		width: 72%;
 	}
 	aside {
 		width: 28%;
-		height: 450px;
+		height: 100%;
 		background-color: $as-color;
 		padding-left: 20px;
 		box-sizing: $bb;
@@ -25,7 +25,7 @@ main {
 			text-transform: uppercase;
 		}
 		ul {
-			height: 475px;
+			height: 335px;
 			overflow-y: scroll;
 			&::-webkit-scrollbar {
       			width: 5px;
@@ -72,27 +72,34 @@ main {
 	.dirt {
 		.dirt-container {
 			@include dflexb($df, $sb);
-			figure {
+			.dirt-image{
 				position: relative;
+				width: 240px;
+				height: 240px;
 				cursor: pointer;
-				.bg-photo {
+				.dirt-bg_photo {
 					position: absolute;
 					top: 0;
 					width: 100%;
-					height: 240px;
+					height: 100%;
 					background-color: $black;
 					opacity: 0.5;
 				}
-				figcaption {
+				.dirt-description {
 					display: none;
 					position: absolute;
-    				bottom: 3px;
-    				background-color: #F5F5F5;
-    				height: 100px;
-    				width: 100%;
+					bottom: 0;
+					background-color: #F5F5F5;
+					height: 100px;
+					width: 100%;
 				}
 			}
-
+			.dirt-image:hover .dirt-description {
+				display: block;
+			}
+			.dirt-image:hover .dirt-bg_photo {
+				display: none;
+			}
 		}
 	}
 
