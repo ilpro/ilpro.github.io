@@ -56,6 +56,48 @@ main {
 		}
 	}
 }
+	/* SWIPER SLIDER*/
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		.swiper-button-next, .swiper-button-prev {
+			width: 50px;
+			height: 50px;
+			background-image: none;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: 2;
+		}
+		.swiper-button-prev {
+			transform: rotate(180deg);
+		}
+		.swiper-button-next {
+			margin-top: 0 !important;
+		}
+	  }
+	  .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	  }
+
+	/* Dirt */
+
+
 	.description-dirt {
 		margin: 15px 0;
 		a {
@@ -74,7 +116,7 @@ main {
 			@include dflexb($df, $sb);
 			.dirt-image{
 				position: relative;
-				width: 240px;
+				width: 18% !important;
 				height: 240px;
 				cursor: pointer;
 				.dirt-bg_photo {
@@ -89,11 +131,18 @@ main {
 					display: none;
 					position: absolute;
 					bottom: 0;
-					background-color: #F5F5F5;
 					height: 100px;
 					width: 100%;
+					background-color: #F5F5F5;
+					text-align: left;
+					padding-right: 50px;
+					box-sizing: border-box;
 				}
 			}
+			.dirt-image:hover {
+				box-shadow: 0 0 7px black;
+			}
+
 			.dirt-image:hover .dirt-description {
 				display: block;
 			}
