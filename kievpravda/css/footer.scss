@@ -1,2 +1,39 @@
 @import 'vars';
 @import 'mixins';
+
+footer {
+	display: $df;
+	flex-direction: column;
+	margin-top: 120px;
+	padding: 45px 0;
+	text-align: center;
+	background-color: $as-color;
+	.footer-social {
+		@include dflexb($df,$sb);
+		width: 20%;
+		margin: 25px auto;
+		li {
+			a {
+				svg {
+					width: 35px;
+    				height: 35px;
+				}
+			}
+		}
+	}
+	.rights-reserved {
+		@include dflexb($df,$sb);
+		margin: 0 auto;
+		li {
+			font-size: 20px;
+			svg {
+				margin: 0 20px;
+			}
+		}
+	}
+	p {
+		a {
+			color: $color-link;
+		}
+	}
+}
