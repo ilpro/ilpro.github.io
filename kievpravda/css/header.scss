@@ -60,6 +60,14 @@ header {
 				&:last-child {
 					margin-right: 0;
 				}
+				a {
+					&:hover {
+						fill: $color-link;
+					}
+					&:active {
+						fill: $grey;
+					}
+				}
 			}
 		}
 	}
@@ -87,6 +95,12 @@ nav {
 				font-family: $ffb;
 				font-size: 23px;
 				font-weight: bold;
+				&:hover {
+					color: $color-link;
+				}
+				&:active {
+					color: $grey;
+				}
 			}
 		}
 	}

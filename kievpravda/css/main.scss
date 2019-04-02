@@ -53,9 +53,13 @@ main {
 					height: 78px;
 				}
 				.section-news_item-description {
+					position: relative;
 					width: 70%;
 					color: $white;
 					.date {
+						position: absolute;
+						top: 0;
+						right: 0;
 						display: $df;
 						justify-content: flex-end;
 						font-size: 10px;
@@ -164,6 +168,9 @@ main {
 			&:hover {
 				background-color: $color-link;
 			}
+			&:active {
+				background-color: $as-color;
+			}
 		}
 	}
 	.dirt {
@@ -233,15 +240,19 @@ main {
 						}
 					}
 					.news-feed_description {
+						position: relative;
 						padding: 0 10px;
 						h4 {
 							font-family: $ffb;
-							font-size: 20px;
+							font-size: 1.3em;
 						}
 						p {
-							font-size: 18px;
+							font-size: 1em;
 						}
 						.date {
+							position: absolute;
+							top:0;
+							right: 0;
 							display: $df;
 							justify-content: flex-end;
 							color: $grey;
@@ -283,6 +294,7 @@ main {
 						}
 					}
 					.news-feed_description {
+						position: relative;
 						padding: 0 10px;
 						h4 {
 							font-family: $ffb;
@@ -292,6 +304,9 @@ main {
 							font-size: 18px;
 						}
 						.date {
+							position: absolute;
+							top: 0;
+							right: 0;
 							display: $df;
 							justify-content: flex-end;
 							color: $grey;

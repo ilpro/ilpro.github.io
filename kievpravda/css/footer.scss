@@ -14,9 +14,16 @@ footer {
 		margin: 25px auto;
 		li {
 			a {
+				display: block;
+				&:hover {
+					fill: $color-link;
+				}
 				svg {
 					width: 35px;
     				height: 35px;
+    				&:hover {
+						fill: blue;
+					}
 				}
 			}
 		}

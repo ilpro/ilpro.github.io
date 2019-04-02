@@ -10,9 +10,15 @@ footer {
     justify-content: space-between;
     width: 20%;
     margin: 25px auto; }
-    footer .footer-social li a svg {
-      width: 35px;
-      height: 35px; }
+    footer .footer-social li a {
+      display: block; }
+      footer .footer-social li a:hover {
+        fill: #FF0000; }
+      footer .footer-social li a svg {
+        width: 35px;
+        height: 35px; }
+        footer .footer-social li a svg:hover {
+          fill: blue; }
   footer .rights-reserved {
     display: flex;
     justify-content: space-between;
