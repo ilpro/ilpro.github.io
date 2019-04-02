@@ -43,15 +43,25 @@ main {
 			flex-flow: row wrap;
 			width: 80%;
 			height: 40%;
+			background-image: inherit;
 			&:before {
 				content: '';
+    			position: absolute;
+    			display: block;
+    			width: 100%;
+    			height: 100%;
+    			overflow: hidden;
+    			background-position: 75% 100%;
+    			background-size: 150%;
+    			background-image: inherit;
+    			filter: blur(3px) contrast(0.9) brightness(.9);
 			}
 			.section-news_item {
 				display: $df;
 				align-items: center;
 				justify-content: space-around;
 				width: 325px;
-				border: 1px solid red;
+				z-index: 2;
 				.section-news_item-image {
 					width: 132px;
 					height: 78px;
@@ -132,6 +142,7 @@ main {
 		}
 		.swiper-button-prev {
 			transform: rotate(180deg);
+			margin-top: 0 !important;
 		}
 		.swiper-button-next {
 			margin-top: 0 !important;
