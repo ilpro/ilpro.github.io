@@ -99,6 +99,9 @@ nav {
   background-color: #000;
   opacity: 0.5; }
 
+h4 {
+  margin: 0; }
+
 main {
   width: 85%;
   margin: 0 auto;
@@ -126,14 +129,14 @@ main {
         justify-content: flex-end;
         flex-flow: row wrap;
         width: 80%;
-        height: 50%; }
+        height: 40%; }
         main .main-news section .section-news:before {
           content: ''; }
         main .main-news section .section-news .section-news_item {
           display: flex;
           align-items: center;
           justify-content: space-around;
-          width: 460px;
+          width: 325px;
           border: 1px solid red; }
           main .main-news section .section-news .section-news_item .section-news_item-image {
             width: 132px;
@@ -144,7 +147,7 @@ main {
             color: #fff; }
             main .main-news section .section-news .section-news_item .section-news_item-description .date {
               position: absolute;
-              top: 0;
+              bottom: 0;
               right: 0;
               display: flex;
               justify-content: flex-end;
@@ -156,12 +159,13 @@ main {
       padding-left: 20px;
       box-sizing: border-box; }
       main .main-news aside h4 {
+        margin: 20px;
         font-family: SegoeUI-Bold, Arial, sans-serif;
         font-size: 25px;
         text-align: center;
         text-transform: uppercase; }
       main .main-news aside ul {
-        height: 400px;
+        height: 425px;
         overflow-y: scroll; }
         main .main-news aside ul::-webkit-scrollbar {
           width: 5px; }
@@ -234,7 +238,8 @@ main {
         background-color: #F5F5F5; }
   main .dirt .dirt-container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 5px; }
     main .dirt .dirt-container .dirt-image {
       position: relative;
       height: 240px;
@@ -275,8 +280,10 @@ main {
         main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item {
           display: flex;
           justify-content: space-between;
-          height: 196px;
-          margin-bottom: 15px; }
+          height: 190px;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #E1E1E1; }
           main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_image {
             position: relative;
             width: 650px;
@@ -290,7 +297,7 @@ main {
               opacity: 0.5; }
           main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_description {
             position: relative;
-            padding: 0 10px; }
+            padding: 5px 10px 0 10px; }
             main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_description h4 {
               font-family: SegoeUI-Bold, Arial, sans-serif;
               font-size: 1.3em; }
@@ -298,7 +305,7 @@ main {
               font-size: 1em; }
             main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_description .date {
               position: absolute;
-              top: 0;
+              bottom: 0;
               right: 0;
               display: flex;
               justify-content: flex-end;
@@ -310,15 +317,17 @@ main {
             width: 100%; }
           main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) .news-feed_description {
             position: absolute;
-            bottom: 0;
+            bottom: 30px;
             color: #fff; }
       main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar {
         width: 49%; }
         main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item {
           display: flex;
           justify-content: space-between;
-          height: 196px;
-          margin-bottom: 15px; }
+          height: 190px;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #E1E1E1; }
           main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_image {
             position: relative;
             width: 650px;
@@ -332,7 +341,7 @@ main {
               opacity: 0.5; }
           main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description {
             position: relative;
-            padding: 0 10px; }
+            padding: 5px 10px 0 10px; }
             main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description h4 {
               font-family: SegoeUI-Bold, Arial, sans-serif;
               font-size: 20px; }
@@ -340,7 +349,7 @@ main {
               font-size: 18px; }
             main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description .date {
               position: absolute;
-              top: 0;
+              bottom: 0;
               right: 0;
               display: flex;
               justify-content: flex-end;
@@ -352,7 +361,7 @@ main {
             width: 100%; }
           main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) .news-feed_description {
             position: absolute;
-            bottom: 0;
+            bottom: 30px;
             color: #fff; }
     main .main-popular_news-feed .cont2 .news-feed_item:nth-child(3) {
       position: relative;
@@ -361,7 +370,7 @@ main {
         width: 100%; }
       main .main-popular_news-feed .cont2 .news-feed_item:nth-child(3) .news-feed_description {
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
         color: #fff; }
     main .main-popular_news-feed .side2 .news-feed_item:nth-child(1) {
       position: relative;
@@ -370,13 +379,13 @@ main {
         width: 100%; }
       main .main-popular_news-feed .side2 .news-feed_item:nth-child(1) .news-feed_description {
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
         color: #fff; }
 
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 180px;
   padding: 45px 0;
   text-align: center;
   background-color: #F5F5F5; }
