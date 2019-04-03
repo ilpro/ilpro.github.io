@@ -99,6 +99,14 @@ nav {
   background-color: #000;
   opacity: 0.5; }
 
+.date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: #A8A8A8; }
+
 h4 {
   margin: 0; }
 
@@ -128,8 +136,10 @@ main {
         display: flex;
         justify-content: flex-end;
         flex-flow: row wrap;
-        width: 80%;
+        width: 710px;
         height: 40%;
+        padding-bottom: 20px;
+        box-sizing: border-box;
         background-image: inherit; }
         main .main-news section .section-news:before {
           content: '';
@@ -146,7 +156,10 @@ main {
           display: flex;
           align-items: center;
           justify-content: space-around;
-          width: 325px;
+          width: 340px;
+          margin-right: 10px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #fff;
           z-index: 2; }
           main .main-news section .section-news .section-news_item .section-news_item-image {
             width: 132px;
@@ -157,8 +170,8 @@ main {
             color: #fff; }
             main .main-news section .section-news .section-news_item .section-news_item-description .date {
               position: absolute;
-              bottom: 0;
-              right: 0;
+              top: 0;
+              right: 10px;
               display: flex;
               justify-content: flex-end;
               font-size: 10px; }
@@ -292,9 +305,16 @@ main {
           display: flex;
           justify-content: space-between;
           height: 190px;
-          margin-bottom: 15px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #E1E1E1; }
+          margin-bottom: 15px; }
+          main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) {
+            position: relative;
+            height: 405px; }
+            main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) .news-feed_image {
+              width: 100%; }
+            main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) .news-feed_description {
+              position: absolute;
+              bottom: 30px;
+              color: #fff; }
           main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_image {
             position: relative;
             width: 650px;
@@ -314,31 +334,25 @@ main {
               font-size: 1.3em; }
             main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_description p {
               font-size: 1em; }
-            main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item .news-feed_description .date {
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              display: flex;
-              justify-content: flex-end;
-              color: #A8A8A8; }
-        main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) {
-          position: relative;
-          height: 405px; }
-          main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) .news-feed_image {
-            width: 100%; }
-          main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) .news-feed_description {
-            position: absolute;
-            bottom: 30px;
-            color: #fff; }
       main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar {
         width: 49%; }
         main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item {
           display: flex;
           justify-content: space-between;
           height: 190px;
-          margin-bottom: 15px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #E1E1E1; }
+          margin-bottom: 15px; }
+          main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(3) {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #E1E1E1; }
+          main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) {
+            position: relative;
+            height: 405px; }
+            main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) .news-feed_image {
+              width: 100%; }
+            main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) .news-feed_description {
+              position: absolute;
+              bottom: 30px;
+              color: #fff; }
           main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_image {
             position: relative;
             width: 650px;
@@ -358,22 +372,9 @@ main {
               font-size: 20px; }
             main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description p {
               font-size: 18px; }
-            main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description .date {
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              display: flex;
-              justify-content: flex-end;
-              color: #A8A8A8; }
-        main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) {
-          position: relative;
-          height: 405px; }
-          main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) .news-feed_image {
-            width: 100%; }
-          main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) .news-feed_description {
-            position: absolute;
-            bottom: 30px;
-            color: #fff; }
+    main .main-popular_news-feed .cont2 .news-feed_item:nth-child(1) {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #E1E1E1; }
     main .main-popular_news-feed .cont2 .news-feed_item:nth-child(3) {
       position: relative;
       height: 423px; }
@@ -392,6 +393,9 @@ main {
         position: absolute;
         bottom: 30px;
         color: #fff; }
+    main .main-popular_news-feed .side2 .news-feed_item:nth-child(2) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #E1E1E1; }
 
 footer {
   display: flex;
