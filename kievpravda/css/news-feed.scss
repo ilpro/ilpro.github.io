@@ -51,7 +51,6 @@
 				}
 			}
 			.feed-news_item-headline {
-				margin-top: 25px;
 				font-family: $ffb;
 				h4 {
 					font-size: 23px;
@@ -65,9 +64,9 @@
 				}
 			}
 			.feed-news_item-subheadline {
-				p {
-					font-size: 18px;
-				}
+				width: 650px;
+				font-size: 18px;
+				font-style: italic;
 			}
 			.date {
 				bottom: 15px;

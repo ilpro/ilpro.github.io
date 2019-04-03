@@ -49,7 +49,6 @@
   background-color: #FF0000;
 }
 .feed-news .feed-news_item .feed-news_item-text .feed-news_item-headline {
-  margin-top: 25px;
   font-family: SegoeUI-Bold, Arial, sans-serif;
 }
 .feed-news .feed-news_item .feed-news_item-text .feed-news_item-headline h4 {
@@ -62,8 +61,10 @@
 .feed-news .feed-news_item .feed-news_item-text .feed-news_item-headline h4:active {
   color: #A8A8A8;
 }
-.feed-news .feed-news_item .feed-news_item-text .feed-news_item-subheadline p {
+.feed-news .feed-news_item .feed-news_item-text .feed-news_item-subheadline {
+  width: 650px;
   font-size: 18px;
+  font-style: italic;
 }
 .feed-news .feed-news_item .feed-news_item-text .date {
   bottom: 15px;
