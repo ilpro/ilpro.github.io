@@ -55,6 +55,7 @@ main .main-news section .section-news {
   padding-bottom: 20px;
   box-sizing: border-box;
   background-image: inherit;
+  overflow: hidden;
 }
 main .main-news section .section-news:before {
   content: '';
@@ -74,7 +75,7 @@ main .main-news section .section-news .section-news_item {
   justify-content: space-around;
   width: 340px;
   margin-right: 10px;
-  padding-bottom: 5px;
+  padding: 5px 0;
   border-bottom: 1px solid #fff;
   z-index: 2;
 }
@@ -225,9 +226,10 @@ main .dirt .dirt-container .dirt-image .dirt-description {
   bottom: 0;
   height: 100px;
   width: 100%;
+  font-family: SegoeUI-Bold, Arial, sans-serif;
   background-color: #F5F5F5;
   text-align: left;
-  padding-right: 130px;
+  padding: 10px 130px 0 10px;
   box-sizing: border-box;
 }
 main .dirt .dirt-container .dirt-image:hover {
