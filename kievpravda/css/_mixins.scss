@@ -4,7 +4,7 @@
 	justify-content: $sb;
 }
 
-@mixin dflex($df, $ai, $jcc){
+@mixin dflexc($df, $ai, $jcc){
 	display: $df;
 	align-items: $ai;
 	justify-content: $jcc;

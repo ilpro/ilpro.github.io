@@ -1,0 +1,52 @@
+.alphabet {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 42px;
+  margin: 0 auto;
+  background-color: #FF0000;
+}
+.alphabet .alphabet-letter {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alphabet .alphabet-letter li a {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+  font-size: 23px;
+  color: #fff;
+}
+
+.people-alphabetically {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+}
+.people-alphabetically ul {
+  margin-right: 50px;
+}
+.people-alphabetically ul:last-child {
+  margin-right: 0;
+}
+.people-alphabetically ul li {
+  margin-bottom: 25px;
+}
+.people-alphabetically ul li a {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+}
+.people-alphabetically .letter {
+  width: 100%;
+  margin: 15px 0;
+}
+.people-alphabetically .letter a {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+  font-size: 23px;
+  color: #FF0000;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=alphabet.css.map */

@@ -1,0 +1,53 @@
+@import 'vars';
+@import 'mixins';
+
+
+.alphabet {
+	display: $df;
+	align-items: $ai;
+	width: 85%;
+	height: 42px;
+	margin: 0 auto;
+	background-color: $color-link;
+	.alphabet-letter {
+		width: 90%;
+		margin: 0 auto;
+		@include dflex($df, $ai, $sb);
+		li {
+			a {
+				font-family: $ffb;
+				font-size: 23px;
+				color: $white;
+			}
+		}
+	}
+}
+
+.people-alphabetically {
+	@include dflexb($df, $sb);
+	flex-wrap: wrap;
+	width: 85%;
+	margin: 0 auto;
+	ul {
+		margin-right: 50px;
+		&:last-child {
+			margin-right: 0;
+		}
+		li {
+			margin-bottom: 25px;
+			a {
+				font-family: $ffb;
+			}
+		}
+	}
+	.letter {
+		width: 100%;
+		margin: 15px 0;
+		a {
+			font-family: $ffb;
+			font-size: 23px;
+			color: $color-link;
+			text-decoration: underline;
+		}
+	}
+}
