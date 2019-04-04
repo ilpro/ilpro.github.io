@@ -1,0 +1,33 @@
+@import 'vars';
+@import 'mixins';
+
+
+.about {
+	display: $df;
+	width: 85%;
+	margin: 25px auto;
+	.about-text {
+		width: 55%;
+		text-align: center;
+		h3 {
+			font-family: $ffb;
+		}
+		h5 {
+			font-family: $ffb;
+		}
+		span {
+			font-family: $ffb;
+		}
+		.write-us {
+			svg {
+				margin-right: 10px;
+			}
+			a {
+				font-family: $ffb;
+			}
+		}
+	}
+	.about-image {
+		width: 40%;
+	}
+}

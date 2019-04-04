@@ -658,6 +658,34 @@ main .main-popular_news-feed .side2 .news-feed_item:nth-child(2) {
   text-decoration: underline;
 }
 
+.about {
+  display: flex;
+  width: 85%;
+  margin: 25px auto;
+}
+.about .about-text {
+  width: 55%;
+  text-align: center;
+}
+.about .about-text h3 {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+}
+.about .about-text h5 {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+}
+.about .about-text span {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+}
+.about .about-text .write-us svg {
+  margin-right: 10px;
+}
+.about .about-text .write-us a {
+  font-family: SegoeUI-Bold, Arial, sans-serif;
+}
+.about .about-image {
+  width: 40%;
+}
+
 footer {
   display: flex;
   flex-direction: column;
