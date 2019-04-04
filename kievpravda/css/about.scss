@@ -24,6 +24,12 @@
 			}
 			a {
 				font-family: $ffb;
+				&:hover {
+					color: $color-link;
+				}
+				&:active {
+					color: $grey;
+				}
 			}
 		}
 	}

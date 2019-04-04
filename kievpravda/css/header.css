@@ -32,6 +32,21 @@ figure {
   margin: 0;
   padding: 0; }
 
+.hashtag {
+  display: flex;
+  flex-wrap: wrap; }
+  .hashtag li {
+    margin-bottom: 5px; }
+    .hashtag li a {
+      display: block;
+      font-family: SegoeUI-Bold, Arial, sans-serif;
+      margin-right: 5px;
+      padding: 0 5px;
+      color: #fff;
+      background-color: #FF0000; }
+      .hashtag li a:hover {
+        background-color: #A8A8A8; }
+
 input:focus::-webkit-input-placeholder {
   color: transparent; }
 

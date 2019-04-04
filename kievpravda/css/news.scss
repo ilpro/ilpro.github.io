@@ -1,2 +1,33 @@
 @import 'vars';
 @import 'mixins';
+
+
+
+.news-headline {
+	width: 85%;
+	margin: 0 auto;
+	font-family: $ffb;
+	h2 {
+		font-size: 44px;
+	}
+	p {
+		font-size: 22px;
+	}
+}
+
+.news {
+	@include dflexb ($df, $sb);
+	width: 85%;
+	margin: 0 auto;
+	.news-text {
+		width: 72%;
+		.news-image {
+			position: relative;
+			width: 100%;
+			height: 480px;
+		}
+	}
+	aside {
+		width: 28%;
+	}
+}

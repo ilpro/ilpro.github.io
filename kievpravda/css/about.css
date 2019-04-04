@@ -22,6 +22,12 @@
 .about .about-text .write-us a {
   font-family: SegoeUI-Bold, Arial, sans-serif;
 }
+.about .about-text .write-us a:hover {
+  color: #FF0000;
+}
+.about .about-text .write-us a:active {
+  color: #A8A8A8;
+}
 .about .about-image {
   width: 40%;
 }

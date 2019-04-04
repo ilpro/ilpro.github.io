@@ -37,6 +37,26 @@ figure {
 }
 
 
+.hashtag {
+	display: $df;
+	flex-wrap: wrap;
+	li {
+		margin-bottom: 5px;
+	a {
+		display: block;
+		font-family: $ffb;
+		margin-right: 5px;
+		padding: 0 5px;
+		color: $white;
+		background-color: $color-link;
+		&:hover {
+			background-color: $grey; 
+		}
+	}
+	}
+}
+
+
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
