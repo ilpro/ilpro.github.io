@@ -4,6 +4,12 @@
 	justify-content: $sb;
 }
 
+@mixin dflex($df, $ai, $sarnd){
+	display: $df;
+	align-items: $ai;
+	justify-content: $sarnd;
+}
+
 @mixin dflexc($df, $ai, $jcc){
 	display: $df;
 	align-items: $ai;
