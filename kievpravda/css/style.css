@@ -198,6 +198,7 @@ main .main-news section .section-description {
   color: #fff;
 }
 main .main-news section .section-description h2 {
+  font-size: 1.2em;
   cursor: pointer;
 }
 main .main-news section .section-description h2:hover {
@@ -357,6 +358,8 @@ main .swiper-container .swiper-button-next {
   margin-top: 0 !important;
 }
 main .swiper-slide {
+  width: 240px !important;
+  margin: 0 15px 0 14px;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -403,6 +406,7 @@ main .dirt .dirt-container {
 }
 main .dirt .dirt-container .dirt-image {
   position: relative;
+  width: 240px;
   height: 240px;
   cursor: pointer;
 }

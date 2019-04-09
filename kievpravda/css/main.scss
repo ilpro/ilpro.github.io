@@ -43,6 +43,7 @@ main {
 			font-size: 26px;
 			color: $white;
 			h2 {
+				font-size: 1.2em;
 				cursor: pointer;
 				&:hover {
 					color: $color-link;
@@ -206,6 +207,8 @@ main {
 		}
 	  }
 	  .swiper-slide {
+	  	width: 240px !important;
+	  	margin: 0 15px 0 14px;
 		text-align: center;
 		font-size: 18px;
 		background: #fff;
@@ -253,6 +256,7 @@ main {
 			margin: 5px 0;
 			.dirt-image{
 				position: relative;
+				width: 240px;
 				height: 240px;
 				cursor: pointer;
 				&:last-child {
