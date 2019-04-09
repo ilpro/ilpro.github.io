@@ -69,6 +69,15 @@
 			.feed-news_item-subheadline {
 				font-size: 18px;
 				font-style: italic;
+				p {
+					cursor: pointer;
+					&:hover {
+						color: $color-link;
+					}
+					&:active {
+						color: $grey;
+					}
+				}
 			}
 			.date {
 				bottom: 15px;

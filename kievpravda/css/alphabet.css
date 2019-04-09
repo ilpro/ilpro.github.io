@@ -18,6 +18,9 @@
   font-size: 23px;
   color: #fff;
 }
+.alphabet .alphabet-letter li a:hover {
+  color: #A8A8A8;
+}
 
 .people-alphabetically {
   display: flex;
@@ -37,6 +40,12 @@
 }
 .people-alphabetically ul li a {
   font-family: SegoeUI-Bold, Arial, sans-serif;
+}
+.people-alphabetically ul li a:hover {
+  color: #FF0000;
+}
+.people-alphabetically ul li a:active {
+  color: #A8A8A8;
 }
 .people-alphabetically .letter {
   width: 100%;

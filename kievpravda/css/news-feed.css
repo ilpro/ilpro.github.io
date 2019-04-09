@@ -69,6 +69,15 @@
   font-size: 18px;
   font-style: italic;
 }
+.feed-news .feed-news_item .feed-news_item-text .feed-news_item-subheadline p {
+  cursor: pointer;
+}
+.feed-news .feed-news_item .feed-news_item-text .feed-news_item-subheadline p:hover {
+  color: #FF0000;
+}
+.feed-news .feed-news_item .feed-news_item-text .feed-news_item-subheadline p:active {
+  color: #A8A8A8;
+}
 .feed-news .feed-news_item .feed-news_item-text .date {
   bottom: 15px;
 }

@@ -18,6 +18,9 @@
 				font-family: $ffb;
 				font-size: 23px;
 				color: $white;
+				&:hover {
+					color: $grey;
+				}
 			}
 		}
 	}
@@ -37,6 +40,12 @@
 			margin-bottom: 25px;
 			a {
 				font-family: $ffb;
+				&:hover {
+					color: $color-link;
+				}
+				&:active {
+					color: $grey;
+				}
 			}
 		}
 	}

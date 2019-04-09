@@ -16,9 +16,10 @@ footer {
         fill: #FF0000; }
       footer .footer-social li a svg {
         width: 35px;
-        height: 35px; }
+        height: 35px;
+        fill: #A8A8A8; }
         footer .footer-social li a svg:hover {
-          fill: blue; }
+          fill: #FF0000; }
   footer .rights-reserved {
     display: flex;
     justify-content: space-between;

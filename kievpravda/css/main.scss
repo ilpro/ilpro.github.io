@@ -42,6 +42,15 @@ main {
 			width: 75%; 
 			font-size: 26px;
 			color: $white;
+			h2 {
+				cursor: pointer;
+				&:hover {
+					color: $color-link;
+				}
+				&:active {
+					color: $grey;
+				}
+			}
 		}
 		.section-news {
 			position: absolute;
@@ -80,6 +89,7 @@ main {
 				.section-news_item-image {
 					width: 132px;
 					height: 78px;
+					margin-right: 5px;
 				}
 				.section-news_item-description {
 					position: relative;
@@ -92,6 +102,15 @@ main {
 						display: $df;
 						justify-content: flex-end;
 						font-size: 10px;
+					}
+					p {
+						cursor: pointer;
+						&:hover {
+							color: $color-link;
+						}
+						&:active {
+							color: $grey;
+						}
 					}
 				}
 			}
@@ -137,12 +156,35 @@ main {
     			}
     			a {
     				font-size: 20px;
+    				&:hover {
+    					color: $color-link;
+    				}
+    				&:active {
+    					color: $grey;
+    				}
     			}
     		}
 		}
 	}
 }
 	/* SWIPER SLIDER*/
+	.slider-container {
+		position: relative;
+		.swiper-button-prev {
+			transform: rotate(180deg);
+			background: none;
+			border: none;
+			outline: none;
+			left: -35px;
+		}
+		.swiper-button-next {
+			background: none;
+			border: none;
+			outline: none;
+			margin-top: 0;
+			right: -35px;
+		}
+	}
 	.swiper-container {
 		width: 100%;
 		height: 100%;
@@ -200,6 +242,7 @@ main {
 				background-color: $color-link;
 			}
 			&:active {
+				color: $color-link;
 				background-color: $as-color;
 			}
 		}
@@ -207,7 +250,7 @@ main {
 	.dirt {
 		.dirt-container {
 			@include dflexb($df, $sb);
-			padding: 5px;
+			margin: 5px 0;
 			.dirt-image{
 				position: relative;
 				height: 240px;
@@ -236,15 +279,24 @@ main {
 					box-sizing: border-box;
 				}
 			}
-			.dirt-image:hover {
-				box-shadow: 0 0 7px black;
-			}
-
-			.dirt-image:hover .dirt-description {
-				display: block;
-			}
-			.dirt-image:hover .dirt-bg_photo {
-				display: none;
+			.dirt-image {
+				&:hover {
+					box-shadow: 0 0 7px black;
+					.dirt-description {
+						display: block;
+						a {
+							&:hover {
+								color: $color-link;
+							}
+							&:active {
+								color: $grey;
+							}
+						}
+					}
+					.dirt-bg_photo {
+						display: none;
+					}
+				}
 			}
 		}
 	}
@@ -290,9 +342,23 @@ main {
 						h4 {
 							font-family: $ffb;
 							font-size: 1.3em;
+							cursor: pointer;
+							&:hover {
+								color: $color-link;
+							}
+							&:active {
+								color: $grey;
+							}
 						}
 						p {
 							font-size: 1em;
+							cursor: pointer;
+							&:hover {
+								color: $color-link;
+							}
+							&:active {
+								color: $grey;
+							}
 						}
 					}
 				}
@@ -340,9 +406,23 @@ main {
 						h4 {
 							font-family: $ffb;
 							font-size: 20px;
+							cursor: pointer;
+							&:hover {
+								color: $color-link;
+							}
+							&:active {
+								color: $grey;
+							}
 						}
 						p {
 							font-size: 18px;
+							cursor: pointer;
+							&:hover {
+								color: $color-link;
+							}
+							&:active {
+								color: $grey;
+							}
 						}
 					}
 				}

@@ -6,6 +6,7 @@
 .about .about-text {
   width: 55%;
   text-align: center;
+  padding: 0 10px;
 }
 .about .about-text h3 {
   font-family: SegoeUI-Bold, Arial, sans-serif;
