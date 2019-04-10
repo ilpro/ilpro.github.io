@@ -1,0 +1,370 @@
+
+/* GENERAL STYLE*/
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+body {
+	height: 100vh;
+	font-family: $ff;
+	font-size: 25px;
+	background: url(../img/bg.png)no-repeat center;
+	background-size: cover;
+	header {
+		width: 100%;
+		nav {
+			width: 80%;
+			margin: 0 auto;
+			ul {
+				display: $df;
+				justify-content: space-between;
+				li {
+					a {
+						display: block;
+						padding-bottom: 25px;
+						color:$grey;
+						&:hover {
+							border-bottom: 6px solid $red;
+						}
+					}
+				}
+			}
+		}
+	}
+	main {
+		width: 90%;
+		margin: 0 auto;
+		.main-block {
+			height: 600px;
+			margin: 0 auto;
+			padding-bottom: 100px;
+			display: $df;
+			justify-content: space-around;
+			align-items: center;
+			background: url(../img/superman.png)no-repeat left;
+			.web-marketing {
+				width: 600px;
+				margin-left: 600px;
+				text-align: center;
+				h3 {
+					font-family: $ffb;
+					font-size: 35px;
+					color: $red;
+				}
+				p {
+					font-family: $ffsb;
+					font-size: 30px;
+					color: $grey;
+				}
+				a {
+					display: block;
+					width: 140px;
+					margin: 0 auto;
+					padding: 13px 75px;
+					background: url(../img/bg-link.png) no-repeat;
+					border-radius: 35px;
+					border: none;
+					outline: none;
+					color: $white;
+				}
+			}
+		}
+		.development {
+			display: $df;
+			justify-content: space-between;
+			padding-top: 100px;
+			.development-site {
+				display: $df;
+    			justify-content: center;
+    			flex-direction: column;
+    			width: 670px;
+    			align-items: center;
+    			text-align: center;
+    			h3 {
+    				font-family: $ffb;
+					font-size: 35px;
+					color: $red;
+    			}
+    			p {
+    				font-family: $ffsb;
+					font-size: 30px;
+					color: $grey;
+    			}
+			}
+			.services-development {
+				display: $df;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				width: 950px;
+				.block-service {
+					display: $df;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					width: 415px;
+					height: 440px;
+					margin-top: 20px;
+					text-align: center;
+					box-shadow: 0 0 10px $grey;
+					cursor: pointer;
+					p {
+						font-family: $ffb;
+						font-size: 25px;
+						color: $grey;
+					}
+					&:hover {
+						background: url(../img/serv-bg.png) no-repeat center;
+						background-size: cover;
+						height: 540px;
+						p {
+							color: $white;
+						}
+					}
+					.img-serv {
+						position: relative;
+						top: -100px;
+						left: -100px;
+						width: 115px;
+						height: 115px;
+						background-color: $white;
+						border-radius: 50%;
+						box-shadow: 0 0 5px 0 $grey;
+						img {
+							position: absolute;
+							top: 18%;
+							left: 27px;
+						}
+					}
+				}
+				.designer {
+					margin-right: 20px;
+				}
+			}
+		}
+		.seo-service {
+			.site-advances {
+				width: 615px;
+				h3 {
+					font-family: $ffb;
+					font-size: 35px;
+					color: $red;
+				}
+				p {
+					font-family: $ffb;
+					font-size: 25px;
+					color: $grey;
+				}
+			}
+			.seo-img {
+				display: $df;
+				justify-content: center;
+			}
+			.seo-price_list {
+				display: $df;
+				justify-content: space-between;
+				ul {
+					li {
+						display: $df;
+						align-items: center;
+						height: 155px;
+						width: 715px;
+						margin-bottom: 50px;
+						padding-left: 35px;
+						cursor: pointer;
+						font-family: $ffb;
+						font-size: 25px;
+						color: $grey;
+						&:hover {
+							box-shadow: 0 0 5px 0 $grey;
+							img {
+								background-color: #FFB700;
+							}
+						}
+						img {
+							padding: 25px 35px;
+							margin-right: 50px;
+							border-radius: 50%;
+							box-shadow: 0 0 5px 0 $grey;
+						}
+					}
+				}
+			}
+		}
+
+		.smm-marketing {
+			display: $df;
+			justify-content: space-between;
+			ul {
+				li {
+					display: $df;
+					align-items: center;
+					width: 840px;
+					height: 125px;
+					margin-bottom: 25px;
+					padding-left: 25px;
+					box-shadow: 0 0 5px 0 $grey;
+					cursor: pointer;
+					&:hover {
+						color: $white;
+						background-color: #FFB700; 
+					}
+					img {
+						margin-right: 20px;
+					}
+				}
+			}
+			.smm-marketing_text {
+				width: 700px;
+				h3 {
+					font-family: $ffb;
+					font-size: 35px;
+					color: $red;
+				}
+				p {
+					font-family: $ffb;
+					font-size: 25px;
+					color: $grey;
+				}
+				img {
+					margin-top: 200px;
+				}
+			}
+		}
+
+		.about-us {
+			width: 80%;
+			margin: 0 auto 50px auto;
+			text-align: center;
+			h4 {
+				font-family: $ffb;
+				font-size: 25px;
+				color: $red;
+			}
+			.about-us_text {
+				padding: 50px;
+				box-sizing: border-box;
+				box-shadow: 0 0 5px 0 $grey;
+				span {
+					font-family: $ffb;
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	padding-top: 1px;
+	height: 270px;
+	background: url(../img/footer.png) no-repeat center;
+	.footer-info {
+		width: 75%;
+		display: $df;
+		justify-content: space-around;
+		margin: 55px auto 0 auto;
+		ul {
+			li {
+				color: $white;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1280px){
+	.development {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seo-price_list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.site-advances {
+		width: 1000px !important;
+		text-align: center;
+	}
+
+	.smm-marketing {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+@media (max-width: 1366px){
+	.development {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seo-price_list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.site-advances {
+		width: 1000px !important;
+		text-align: center;
+	}
+
+	.smm-marketing {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+@media (max-width: 1440px){
+	.development {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seo-price_list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.site-advances {
+		width: 1000px !important;
+		text-align: center;
+	}
+
+	.smm-marketing {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+@media (max-width: 1680px){
+	.development {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seo-price_list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.site-advances {
+		width: 1000px !important;
+		text-align: center;
+	}
+
+	.smm-marketing {
+		flex-direction: column;
+		align-items: center;
+	}
+}
