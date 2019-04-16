@@ -21,7 +21,7 @@ h4 {
 }
 
 main {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   /* SWIPER SLIDER*/
   /* Dirt */
@@ -81,8 +81,10 @@ main .main-news section .section-news .section-news_item {
   align-items: center;
   justify-content: space-around;
   width: 340px;
+  height: 85px;
   margin-right: 10px;
   padding: 5px 0;
+  overflow-y: hidden;
   border-bottom: 1px solid #fff;
   z-index: 2;
 }
@@ -94,6 +96,7 @@ main .main-news section .section-news .section-news_item .section-news_item-imag
 main .main-news section .section-news .section-news_item .section-news_item-description {
   position: relative;
   width: 70%;
+  height: 90px;
   color: #fff;
 }
 main .main-news section .section-news .section-news_item .section-news_item-description .date {
@@ -297,6 +300,14 @@ main .main-popular_news-feed .news-feed-container {
   justify-content: space-between;
   /* Second sidebar */
 }
+main .main-popular_news-feed .news-feed-container .news-feed_description {
+  width: 100%;
+}
+main .main-popular_news-feed .news-feed-container .news-feed_description p {
+  font-size: 1em;
+  font-style: italic;
+  cursor: pointer;
+}
 main .main-popular_news-feed .news-feed-container .news-feed_sidebar {
   width: 49%;
 }
@@ -410,7 +421,7 @@ main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .new
   color: #A8A8A8;
 }
 main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description p {
-  font-size: 18px;
+  font-size: 1em;
   cursor: pointer;
 }
 main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_description p:hover {

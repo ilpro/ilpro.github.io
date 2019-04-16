@@ -4,7 +4,7 @@
 
 
 .news-headline {
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	font-family: $ffb;
 	h2 {
@@ -19,7 +19,7 @@
 
 .news {
 	@include dflexb ($df, $sb);
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	.news-text {
 		width: 64%;
@@ -154,6 +154,7 @@
 				position: relative;
 				display: $df;
 				align-items: $ai;
+				height: 130px;
 				padding: 18px 0;
 				border-bottom: 1px solid $br-color;
 				.photo-news {
@@ -162,6 +163,7 @@
 					margin-right: 40px;
 				}
 				a {
+					width: 100%;
 					font-family: $ffb;
 					font-size: 15px;
 					&:hover {

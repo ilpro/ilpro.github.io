@@ -27,7 +27,7 @@ h4 {
 
 
 main {
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	.main-news {
 		height: 495px;
@@ -80,8 +80,10 @@ main {
 				align-items: center;
 				justify-content: space-around;
 				width: 340px;
+				height: 85px;
 				margin-right: 10px;
 				padding: 5px 0;
+				overflow-y: hidden;
 				border-bottom: 1px solid $white;
 				z-index: 2;
 				.section-news_item-image {
@@ -92,6 +94,7 @@ main {
 				.section-news_item-description {
 					position: relative;
 					width: 70%;
+					height: 90px;
 					color: $white;
 					.date {
 						position: absolute;
@@ -306,6 +309,14 @@ main {
 		height: 2145px;
 		.news-feed-container {
 			@include dflexb($df, $sb);
+			.news-feed_description {
+				width: 100%;
+				p {
+					font-size: 1em;
+					font-style: italic;
+					cursor: pointer;
+				}
+			}
 			.news-feed_sidebar {
 				width: 49%;
 				.news-feed_item {
@@ -416,7 +427,7 @@ main {
 							}
 						}
 						p {
-							font-size: 18px;
+							font-size: 1em;
 							cursor: pointer;
 							&:hover {
 								color: $color-link;

@@ -6,7 +6,7 @@
 
 .description-feed {
 	@include dflex($df, $ai, $jcc);
-	width: 85%;
+	width: 90%;
 	height: 50px;
 	margin: 0 auto;
 	font-size: 23px;
@@ -17,7 +17,7 @@
 
 
 .feed-news {
-	width: 85%;
+	width: 90%;
 	margin: 15px auto 0 auto;
 	.feed-news_item {
 		position: relative;
@@ -91,7 +91,7 @@
 
 .result-search {
 	position: relative;
-	width: 85%;
+	width: 90%;
 	margin: 25px auto;
 	input[type=search] {
 		width: 100%;

@@ -1,5 +1,5 @@
 .news-headline {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   font-family: SegoeUI-Bold, Arial, sans-serif; }
   .news-headline h2 {
@@ -12,7 +12,7 @@
 .news {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 90%;
   margin: 0 auto; }
   .news .news-text {
     width: 64%; }
@@ -128,6 +128,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        height: 130px;
         padding: 18px 0;
         border-bottom: 1px solid #E1E1E1; }
         .news aside ul li .photo-news {
@@ -135,6 +136,7 @@
           width: 152px;
           margin-right: 40px; }
         .news aside ul li a {
+          width: 100%;
           font-family: SegoeUI-Bold, Arial, sans-serif;
           font-size: 15px; }
           .news aside ul li a:hover {

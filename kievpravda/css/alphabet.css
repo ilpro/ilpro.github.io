@@ -1,7 +1,7 @@
 .alphabet {
   display: flex;
   align-items: center;
-  width: 85%;
+  width: 90%;
   height: 42px;
   margin: 0 auto;
   background-color: #FF0000;
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 .people-alphabetically ul {
