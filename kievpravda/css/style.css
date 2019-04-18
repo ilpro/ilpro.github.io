@@ -404,7 +404,7 @@ main .dirt .dirt-container {
 }
 main .dirt .dirt-container .dirt-image {
   position: relative;
-  width: 240px;
+  width: 85%;
   height: 240px;
   cursor: pointer;
 }

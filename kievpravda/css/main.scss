@@ -256,7 +256,8 @@ main {
 			height: 250px;
 			.dirt-image{
 				position: relative;
-				width: 240px;
+				// width: 240px;
+				width: 85%;
 				height: 240px;
 				cursor: pointer;
 				&:last-child {
