@@ -64,7 +64,6 @@ main .main-news section .section-news {
   height: 40%;
   padding-bottom: 20px;
   box-sizing: border-box;
-  background: #b0b5b5;
   overflow: hidden;
 }
 main .main-news section .section-news:before {
@@ -73,7 +72,7 @@ main .main-news section .section-news:before {
   height: 100%;
   background: inherit;
   position: absolute;
-  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 200px #A8A8A8;
   filter: blur(20px);
 }
 main .main-news section .section-news .section-news_item {
@@ -326,6 +325,7 @@ main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_
 }
 main .main-popular_news-feed .news-feed-container .news-feed_sidebar .news-feed_item:nth-child(4) .news-feed_description {
   position: absolute;
+  width: 95%;
   bottom: 30px;
   color: #fff;
 }
@@ -390,6 +390,7 @@ main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .new
 main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item:nth-child(2) .news-feed_description {
   position: absolute;
   bottom: 30px;
+  width: 95%;
   color: #fff;
 }
 main .main-popular_news-feed .news-feed-container .news-feed_second-sidebar .news-feed_item .news-feed_image {
@@ -444,6 +445,7 @@ main .main-popular_news-feed .cont2 .news-feed_item:nth-child(3) .news-feed_imag
 main .main-popular_news-feed .cont2 .news-feed_item:nth-child(3) .news-feed_description {
   position: absolute;
   bottom: 30px;
+  width: 95%;
   color: #fff;
 }
 main .main-popular_news-feed .side2 .news-feed_item:nth-child(1) {
@@ -456,6 +458,7 @@ main .main-popular_news-feed .side2 .news-feed_item:nth-child(1) .news-feed_imag
 main .main-popular_news-feed .side2 .news-feed_item:nth-child(1) .news-feed_description {
   position: absolute;
   bottom: 30px;
+  width: 95%;
   color: #fff;
 }
 main .main-popular_news-feed .side2 .news-feed_item:nth-child(2) {
