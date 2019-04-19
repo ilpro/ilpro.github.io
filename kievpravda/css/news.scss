@@ -18,9 +18,9 @@
 }
 
 .news {
-	@include dflexb ($df, $sb);
 	width: 90%;
 	margin: 0 auto;
+	@include dflexb ($df, $sb);
 	.news-text {
 		width: 64%;
 		.news-image {

@@ -635,10 +635,10 @@ main .main-popular_news-feed .side2 .news-feed_item:nth-child(2) {
 }
 
 .news {
-  display: flex;
-  justify-content: space-between;
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .news .news-text {
   width: 64%;
