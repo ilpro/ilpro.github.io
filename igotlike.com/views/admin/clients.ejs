@@ -1,0 +1,119 @@
+<%- include('../header') %>
+<%- include('sidemenu-admin') %>
+<div class="emails center-content page-users" style="margin-top: 50px">
+    <div class="col-7 search-container-wrap">
+        <div class="search-container">
+            <svg class="search-ico" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24.88 24.88">
+                <path fill="#000" d="M24.66,23.61l-6-6a10.62,10.62,0,1,0-1,1l6,6a.75.75,0,0,0,.52.22.73.73,0,0,0,.52-.22.75.75,0,0,0,0-1Zm-23.18-13a9.12,9.12,0,1,1,9.12,9.12,9.13,9.13,0,0,1-9.12-9.12Zm0,0"></path>
+            </svg>
+            <input id="user-search" placeholder="id">
+            <svg id="user-search-cancel" class="close" xmlns="http://www.w3.org/2000/svg" width="20.354" height="20.354" viewBox="0 0 20.354 20.354"><title>close</title><line x1="0.177" y1="0.177" x2="20.177" y2="20.177" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"></line><line x1="19.72" y1="0.634" x2="0.634" y2="19.72" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"></line></svg>
+        </div>
+        <section class="sub-list">
+            <div class="people-help">
+                <p class="help-tag">#tag1</p>
+                <p class="help-tag">#tag1</p>
+                <p class="help-tag">#tag1</p>
+                <p class="help-tag">#tag1</p>
+            </div>
+            <!-- search users list -->
+        </section>
+
+    </div>
+    <div class="emails-outer-wrapper">
+        <div class="emails-inner-wrapper" style="text-align: center;">
+            <ul class="emails-wrapper">
+				<% users.forEach(function(row){ %>
+                <li class="single-email" data-userId="<%=row.userId%>">
+					<div class="single-cell">
+                        <p class="user-id">ID: <span><%= row.userId %></span></p>
+						<a href="/profile/<%= row.userId %>" class="user-avatar" target="_blank">
+                            <img src="<%= row.userPhoto %>" alt="user" class="" style="max-width: 100%;">
+                        </a>
+						<a href="https://airybay.com/profile/<%= row.userId %>" class="user-nickname" target="_blank">
+							<%= row.userNickname %><%= (row.userFrom) ? " [" + row.userFrom + "]" : "" %>
+						</a>
+                        <div class="location"
+                             title="<% if (row.userCity) { %>
+                              <%= row.userCity%>, <%= row.userCountry %>
+                            <% } %>">
+                            <% if (row.userCity) { %>
+                              <%= row.userCity%>, <%= row.userCountry %>
+                            <% } %>
+                        </div>
+                        <div class="visit"
+                             title="<% if(row.userWantToVisit){%>
+                              <% row.userWantToVisit.split(", ").forEach(place => {%>
+                                <%=place.split(":")[1]%>;
+                              <% })%>
+                            <% }%>">
+                            <% if(row.userWantToVisit){%>
+                              <% row.userWantToVisit.split(", ").forEach(place => {%>
+                                <span><%=place.split(":")[1]%></span>;&nbsp;
+                              <% })%>
+                            <% }%>
+                        </div>
+						<div class="messages-amount">
+							<select name="userGenderId" style="width: 65px;">
+								<option value="0">---</option>
+								<option value="1" <%= (row.userGenderId == 1) ? "selected" : "" %>>Female</option>
+								<option value="2" <%= (row.userGenderId == 2) ? "selected" : "" %>>Male</option>
+							</select>
+							&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="last-active">
+                            <div class="online-status <% if (row.userLastActive == 'online') { %> online <% } else { %> offline <% } %><%= row.paramEn %>"><%= row.userLastActive %></div>
+                        </div>
+                        <div class="register-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1000 1000">
+                                <path fill="#22416d" d="M684.8 378.7h139v139H685v-139zM684.8 549.2h139v139H685V549zM786
+                                50.7c0-22.3-18.3-40.7-40.6-40.7H738c-22.2 0-40.6 18.4-40.6 40.7V128H786V50.6zM515.2
+                                375h139v139h-139V375zM309 50.7c0-22.3-18.4-40.7-41-40.7h-7c-22.4 0-40.8 18.4-40.8
+                                40.7V128H309V50.6zM345.5 377h138.8v139H345.5V377zM172 722.6h138.8v139H172v-139zM175.6
+                                551h139v139h-139V551z"/>
+                                <path fill="#22416d" d="M851.8 128H786v85.7c0 22.3-18.4 40.7-40.7 40.7H738c-22.3
+                                0-40.7-18.4-40.7-40.7V128H309v85.7c0 22.3-18.4 40.7-41 40.7h-7c-22.4
+                                0-40.8-18.4-40.8-40.7V128h-72c-43.5 0-79 35.4-79 79v704c0 43.4 35.5 79 79
+                                79h526L931 729V207c-.2-43.6-35.6-79-79.2-79zm40.7 605l-155-.6c-43.6-.3-70.8
+                                28.5-70.5 71.8l.8 147h-522c-19.7 0-40.4-13-40.4-36.4V288.3l787-.3v445z"/>
+                                <path fill="#22416d" d="M345.5 547.2h138.8v139.2H345.5V547.2zM175.6 380.5h139v139h-139v-139zM515.2
+                                545.3h139v139h-139v-139zM341.6 719h139v139h-139V719z"/>
+                            </svg>
+                            <span><%= row.userRegister %></span>
+                        </div>
+                        <div class="coins-amount">
+                            <button class="delete-user">delete</button>
+                        </div>
+                        <div class="verify-user">
+                            <input class="approve-user" type="checkbox" id="approve-<%= row.userId %>" <%=+row.userApproved ? "checked": ""%>>
+                            <label for="approve-<%= row.userId %>" style="border: 1px solid gainsboro; padding: 2px">approve</label>
+                        </div>
+						<div class="verify-user">
+                            <input class="in-feed-user" type="checkbox" id="in-feed-<%= row.userId %>" <%=+row.userInFeed ? "checked": ""%>>
+                            <label for="in-feed-<%= row.userId %>" style="border: 1px solid gainsboro; padding: 2px">in feed</label>
+                        </div>
+                        <div class="messages-amount" style="width: 40px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41 39">
+                                <path fill="#22416d" d="M41 17c0-9.4-9.2-17-20.5-17S0 7.6 0 17s8.2 17 19.5 17c1 0
+                                2-.2 3-.4C25.8 36.6 33 39 33 39c-2-2.3-3.5-5.6-3.7-6.6C36.3 29.7 41 23.8 41 17zm-29.2
+                                2.6c-1.5 0-2.7-1.3-2.7-2.8S10.4 14 12 14c1.5 0 2.7 1.3 2.7 2.8s-1.2 2.8-2.7 2.8zm8.2
+                                0c-1.5 0-2.7-1.3-2.7-2.8S18.5 14 20 14c1.5 0 2.8 1.3 2.8 2.8s-1.3 2.8-2.8 2.8zm8
+                                0c-1.5 0-2.8-1.3-2.8-2.8S26.5 14 28 14c1.5 0 2.7 1.3 2.7 2.8s-1.2 2.8-2.7 2.8z"/>
+                            </svg>
+                            <span><%= row.chatCount %></span>
+                        </div>
+						<div class="verify-user">
+							<a href="/models/edit/<%= row.userId %>">Edit</a>
+						</div>
+					</div>
+                </li>
+				<% }); %>
+            </ul>
+
+            <div id="loader" style="display: none; margin-top: 20px;">Loading...</div>
+            <button id="load-more" style="margin: 20px 0; width: 200px; height: 50px; font-weight: bold; text-transform: uppercase; background: #1c1b17; color: #fff; border: 1px solid #000; border-radius: 10px; cursor: pointer">Load more</button>
+        </div>
+    </div>
+</div>
+
+<%- include('../footer') %>

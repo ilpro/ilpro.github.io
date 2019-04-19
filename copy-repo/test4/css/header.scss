@@ -1,0 +1,48 @@
+@import 'vars';
+@import 'fonts';
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+	html, body {
+      position: relative;
+      height: 100%;
+    }
+    
+
+/* HEADER */
+
+@media screen and (min-width: 320px) {
+	
+	header {
+		display: $df;
+		align-items: flex-end;
+		width: 100%;
+		min-height: 195px;
+		background: url(../img/header_bg.png) no-repeat 38% 100%;
+		background-size: cover;
+}
+.button-down {
+	width: 100%;
+	display: $df;
+	justify-content: center; 
+	a {
+		display: block;
+		width: 57px;
+    	height: 57px;
+    	background: url("../img/arrow_down.png") no-repeat center;
+	}
+}
+}
+
+@media screen and (min-width: 411px) {
+
+	header {
+		background-size: 85%;
+	}
+}

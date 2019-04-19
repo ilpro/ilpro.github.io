@@ -1,0 +1,107 @@
+<%- include('../header') %>
+<%- include('sidemenu-admin') %>
+
+<style>
+  .online-switcher {
+    min-width: 60px;
+    min-height: 50px;
+    margin-right: 20px;
+    background: red;
+    border-radius: 10px;
+    border: 1px solid grey;
+  }
+
+  .online-switcher.on {
+    background: green;
+  }
+
+  .randomize-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .bots-to-randomize {
+    width: 150px;
+    font-size: 36px;
+    border: none;
+    text-align: center;
+  }
+
+  .randomize-online {
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #e6c12e;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: -0 -1px 0 #000000,
+    0 -1px 0 #000000,
+    -0 1px 0 #000000,
+    0 1px 0 #000000,
+    -1px -0 0 #000000,
+    1px -0 0 #000000,
+    -1px 0 0 #000000,
+    1px 0 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  }
+
+</style>
+
+<!--start page chat-list-->
+<div class="page-messages-list" style="display: none;">
+
+</div>
+<!--end page chat-list-->
+
+<!--start page chat-->
+<div class="page-chat" data-user-id="<%= userId %>" style="display: none;">
+  <div class="load-more">Load more</div>
+  <div class="messages-wrapper">
+
+  </div>
+
+  <div class="send-box">
+    <div class="enter-text-field" contenteditable="true" placeholder="hello"></div>
+    <div class="send-message-button clickable">
+      <svg class="chat-send-button-ico" xmlns="http://www.w3.org/2000/svg" width="13" height="25" viewBox="0 0 13 25">
+        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" stroke-miterlimit="10"
+              d="M.7.7l11.8 12m0 0L1 24.4"/>
+      </svg>
+    </div>
+    <svg class="open-chat-smiles-ico clickable" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+         viewBox="4 -4 39 39">
+      <path fill="#ccc" d="M37.3 1.7c-7.6-7.6-20-7.6-27.6 0-7.6 7.6-7.6 20 0 27.6 7.6 7.6 20 7.6 27.6 0
+                                7.6-7.6 7.6-20 0-27.6zm-2.13 25.47c-6.44 6.43-16.9 6.43-23.34 0-6.43-6.44-6.43-16.9 0-23.34 6.44-6.43
+                                16.9-6.43 23.34 0 6.43 6.44 6.43 16.9 0 23.34zM16.22 10.22c0-1.26 1.02-2.28 2.28-2.28 1.26 0 2.28
+                                1.02 2.28 2.28 0 1.26-1.02 2.28-2.28 2.28-1.26 0-2.28-1.02-2.28-2.28zm10.34 0c0-1.26 1.02-2.28
+                                2.28-2.28s2.28 1.02 2.28 2.28c0 1.26-1.02 2.28-2.28 2.28-1.26 0-2.28-1.02-2.28-2.28zm5.4 9.34c-1.42
+                                3.27-4.73 5.38-8.44 5.38-3.8 0-7.1-2.12-8.48-5.4-.23-.57.03-1.22.6-1.45.13-.07.28-.1.42-.1.43 0
+                                .84.26 1.02.7 1.02 2.44 3.55 4.03 6.44 4.03 2.83 0 5.34-1.6 6.4-4.05.25-.56.9-.8 1.46-.57.56.25.82.9.57 1.46z"/>
+    </svg>
+    <svg class="close-chat-smiles-ico clickable opened" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+         viewBox="0 0 20 20">
+      <path fill="none" stroke="#CCC" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+            d="M3 3l14 14M3 17L17 3"/>
+    </svg>
+
+    <div class="smiles-wrapper">
+
+    </div>
+  </div>
+</div>
+<!--end page chat-list-->
+<%- include('../footer') %>
+
+
+

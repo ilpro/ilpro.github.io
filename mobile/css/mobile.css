@@ -1,0 +1,611 @@
+/* GENERAL STYLE */
+
+@font-face{
+	font-family: SegoeUI;
+	src: url(../fonts/SegoeUI.ttf);
+}
+
+@font-face{
+	font-family: SegoeUI-Bold;
+	src: url(../fonts/SegoeUI-Bold.ttf);
+}
+
+@font-face{
+	font-family: SegoeUI-SemiBold;
+	src: url(../fonts/SegoeUI-SemiBold.ttf);
+}
+
+body{
+	font-family: SegoeUI,sans-serif;
+	font-size: 16px;
+	color:#000000;
+	background-color: #F2F2F2;
+	overflow-x: hidden;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* MEDIA */
+
+@media screen and (min-width: 320px){
+
+	/* HEADER */
+	header{
+		width:100%;
+		height:515px;
+		background: url(../img/bg-header.jpg)no-repeat 65% -20%;
+	}
+
+	.wrapper-top{
+		max-width: 80%;
+		margin:0 auto;
+	}
+
+	.logo{
+		margin-top:5px;
+	}
+
+	.caption-top{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.captions{
+		line-height:0.2;
+	}
+
+	.captions h1{
+		font-family: SegoeUI, sans-serif;
+		font-size:45px;
+	}
+
+	.captions p{
+		font-family: SegoeUI, sans-serif;
+		font-size:13px;
+		font-weight:bold; 
+		text-transform: uppercase;
+		margin-left:5px;
+	}
+
+	.subheading{
+		max-width:90%;
+		margin:0 auto;
+	}
+	
+	.subheading h2{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size: 27px;
+		margin-top:-5px;
+		color:#ff00f8;
+		text-transform:uppercase;
+	}
+
+
+	/*BUTTONS TOP*/
+
+	.buttons-top{
+		width: 305px;
+		margin:320px auto;
+	}
+
+	.buttons-top button{
+		border:none;
+		outline:none;
+	}
+
+	.but-top{
+		height: 50px;
+		width: 150px;
+		background:url(../img/button-top.png)no-repeat ;
+	}
+
+	.but-googleplay{
+		background-position:-152px 0;
+	}
+
+	/* COMMUNITY */
+
+	.comunity-lgbt{
+		width: 100%;
+		height:53px;
+		background-color:#00d0ff;
+		text-align: center;
+		text-transform: uppercase;
+		padding:5px 0 17px 0;
+	}
+
+	.comunity-lgbt h3{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:22px;
+		color:#ffffff;
+	}
+	
+
+
+	/*KINDERED SPIRIT*/
+
+	.kindred-spirit{
+		width: 100%;
+		height: 620px;
+		padding-top:1px;
+		background: url(../img/kindred.png)no-repeat 20% -185%;
+		background-color:#9500ff;
+		color:#ffffff;
+	}
+
+	.wrapper-kindred_spirit{
+		width:100%;
+	}
+
+	.caption-kindred_spirit{
+		max-width:80%;
+		margin:0 auto;
+	}
+
+	.text-about_kindred-spirit{
+		max-width:80%;
+		margin:0 auto;
+	}
+
+
+	.caption-kindred_spirit h3{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:24px;
+		text-transform: uppercase;
+		line-height:1.3;
+	}
+	
+	.text-about_kindred-spirit p{
+		font-family: SegoeUI, sans-serif;
+		font-size:18px;
+		color:#ffffff;
+	}
+
+	.kindred-spirit_image{
+		margin-bottom: 470px;
+	}
+
+	.be-proud{
+		font-size:20px;
+		font-weight:bold;
+	}
+
+	/* OFFER */
+
+	.offer{
+		width: 100%;
+		height:568px;
+		margin-top:-16px;
+		background:url(../img/bg-offer.png)no-repeat 52% 25%;
+	}
+
+	.offer-content{
+		float: right;
+		width: 330px;
+	}
+
+	.offer-list_item li{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:16px;
+		text-transform: uppercase;
+		margin-top:18px;
+		background-color:#000000;
+		color:#ffffff;
+		padding:8px 0 8px 9px;
+		line-height:1.5;
+		border-radius:5px 0 0 5px; 
+	}
+
+	/* LOCATOR */
+
+	.locator{
+		width: 100%;
+		height: 668px;
+		padding-top:30px;
+		background:url(../img/bg-locator.png)no-repeat 75% 100% #008dff;
+	}
+
+	.locator-wrapper{
+		max-width:86%;
+		margin:0 auto;
+	}
+
+	.locator p{
+		color:#ffffff;
+	}
+
+	.locator-caption{
+		margin-top:-30px;
+		text-align: center;
+	}
+
+	.locator-caption h2{
+		font-family: SegoeUI, sans-serif;
+		font-size:49px;
+		color:#ffffff;
+	}
+
+	/*LOCATOR USE*/
+
+	.locator-use{
+		display:flex;
+		margin-top:-15px;
+	}
+
+	.locator-use img{
+		margin:20px 50px 0 0;
+	}
+
+	.locator-use p{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:18px;
+		color:#ffffff;
+		text-transform:uppercase;
+		line-height:1.3; 
+	}
+	
+
+	.locator-use_description p{
+		font-family: SegoeUI-SemiBold, sans-serif;
+		font-size:14px;
+	}
+
+
+
+	/*LOCATOR FRIENDLY*/
+
+	.locator-friendly{
+		display: flex;
+		justify-content: flex-end;
+		margin-top:20px;
+	}
+
+	.locator-friendly img{
+
+	}
+
+	.locator-friendly p{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:18px;
+		text-transform:uppercase;
+	}
+
+	.locator-friendly_description{
+		width:84%;
+		float:right;
+	}
+
+	.locator-friendly_description{
+		font-family: SegoeUI-SemiBold, sans-serif;
+		font-size:14px;
+	}
+
+
+	/*LOCATOR EVENTS*/
+
+	.locator-events{
+		display:flex;
+		margin-top:100px;
+	}
+
+	.locator-events img{
+		margin-right:10px;
+	}
+
+	.locator-events p{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:18px;
+		text-transform:uppercase;
+	}
+
+	.locator-events_description p{
+		font-family: SegoeUI-SemiBold, sans-serif;
+		font-size:14px;
+	}
+
+
+
+	/* DOWNLOAD */
+
+	.mw100{
+		min-width:100%;
+	}
+	
+	.download{
+		width:100%;
+		height:235px;
+		padding:1px;
+		background-color:#020217;
+	}
+
+	.download-wrapper{
+		max-width:89%;
+		display:flex;
+		margin:0 auto;
+	}
+	
+	.download-description{
+		max-width: 45%;
+		margin:34px auto;
+	}
+
+	
+	.download-description p{
+		font-family: SegoeUI-SemiBold, sans-serif;
+		font-size:14px;
+		color:#ffffff;
+	}
+
+	.download-button{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.download-button button{
+		margin-bottom:11px;
+		border:none;
+		outline:none;
+	}
+
+
+	.download-image{
+		margin-top:12px;
+	}
+
+	.down-icon{
+		height: 43px;
+		width: 130px;
+		background:url(../img/buttondown.png)no-repeat;
+	}
+
+	.down-googleplay{
+		background-position:0 -50px;
+	}
+
+	/* VIDEO */
+
+	.w100{
+		min-width:100%;
+	}
+
+	.video{
+		width:100%;
+		height:290px;
+		background:url(../img/video.png) no-repeat;
+		background-size:100%;
+	}
+
+
+	/* FOOTER */
+
+	footer{
+		width: 100%;
+		padding:1px;
+		background-color:#00011c;
+		text-align: center;
+	}
+
+	.footer-information p{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:16px;
+		color:#ffffff;
+	}
+
+	.footer-information a{
+		font-family: SegoeUI, sans-serif;
+		text-decoration:underline;
+		color:#ffffff;
+	}
+	
+	.footer-information ul{
+		margin:0;
+		padding:0;
+	}
+
+	.footer-information li{
+		margin-bottom:30px;
+	}
+
+	.footer-social p{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:16px;
+		color:#ffffff;
+	}
+
+	/*FOOTER SOCIAL ICON*/
+
+	.footer-social_icon{
+		display:flex;
+		justify-content:center;
+		max-width:80%;
+		margin:35px auto;
+	}
+
+	.icon{
+		width: 60px;
+		height: 60px;
+		background: url(../img/social-icon.png)no-repeat;
+	}
+
+	.icon-facebook{
+		background-position:-70px 0;
+	}
+
+	.icon-twitter{
+		background-position:-140px 0;
+	}
+
+	.icon-google_plus{
+		background-position:-210px 0;
+	}
+	
+
+	/*FOOTER DOWNLOAD*/
+
+	.footer-download{
+		margin-top:38px;
+	}
+
+	.footer-download p{
+		font-family: SegoeUI-Bold, sans-serif;
+		font-size:16px;
+		color:#ffffff;
+	}
+
+	.footer-download_button{
+		margin:32px 0 32px 0;
+	}
+
+	.footer-download_button button{
+		border:none;
+		outline:none;
+	}
+
+	.down{
+		height: 43px;
+		width: 130px;
+		background:url(../img/buttondown2.png)no-repeat;
+	}
+	
+	.googleplay{
+		background-position:-133px 0;
+	}
+}
+
+@media screen and (min-width: 360px){
+	
+	.offer{
+		background-size: 266% 132%;
+    	background-position: 52% 31%;
+	}
+
+	.download-wrapper{
+		margin: 0 11%;
+	}
+
+}
+
+@media screen and (min-width: 375px){
+
+	.footer-social_icon li {
+		margin-right:10px;
+	}
+}
+
+
+@media screen and (min-width: 411px){
+	
+	.download{
+		background-position:0 -35px;
+	}
+
+	.footer-social_icon li{
+		margin-right:15px;
+	}
+
+}
+
+
+@media screen and (min-width: 568px){
+	
+	header{
+		background-size:100%;
+		background-position:50% 50%;
+	}
+
+	.caption-top{
+		justify-content: center;
+	}
+
+	.subheading{
+		text-align:center;
+	}
+
+	.video{
+		height:530px;
+	}
+
+	.offer{
+		background-size:  270% 132%;
+	}
+}
+
+
+@media screen and (min-width: 768px){
+	
+	.mw100{
+		min-width:130%;
+	}
+
+	header{
+		background-size:100%;
+		background-position:0 35%;
+	}
+
+	.download{
+		height: 300px;
+	}
+
+	.video{
+		height:668px;
+	}
+
+	.caption-top{
+		justify-content: center;
+	}
+
+	.subheading{
+		text-align:center;
+	}
+
+	.kindred-spirit{
+		background-size: 60%;
+    	background-position: 50% 20px;
+	}
+
+	.footer-social_icon {
+		margin:34px auto 0;
+	}
+
+}
+
+@media screen and (min-width: 823px){
+	.offer{
+		background-size:100%;
+	}
+}
+
+@media screen and (min-width: 1024px){
+
+	.kindred-spirit{
+		background-size:45%;
+	}
+}
+
+@media screen and (min-width: 1366px){
+	
+	header{
+		height: 815px;
+	}
+
+	.buttons-top{
+		margin: 620px auto;
+	}
+
+	.kindred-spirit{
+		background-size:34%;
+	}
+
+	.video{
+		height:1200px;
+	}
+
+}

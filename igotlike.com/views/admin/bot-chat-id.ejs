@@ -1,0 +1,223 @@
+<%- include('../header') %>
+<%- include('sidemenu-admin') %>
+
+<style>
+  .bot-info, .bot-info-toggle {
+    position: absolute;
+    top: 77px;
+  }
+
+  .bot-info {
+    display: none;
+    width: 100%;
+    background: antiquewhite;
+    overflow: auto;
+    height: 70vh;
+  }
+
+  .bot-info-toggle {
+    width: 42px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.62);
+    left: -42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .load-more {
+    display: block;
+    background-color: #ff7000;
+    z-index: 10;
+    position: relative;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+
+  .bot-arrow-svg {
+    transition: transform 250ms;
+    transform: rotate(90deg);
+  }
+
+  .rotated {
+    transform: rotate(270deg);
+  }
+
+</style>
+<div class="user-search-holder">
+  <input type="text" class="user-search" placeholder="Search profile...">
+  <svg class="user-search-cancel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9"><path d="M14.1 11.3c-.2-.2-.2-.5 0-.7l7.5-7.5c.2-.2.3-.5.3-.7s-.1-.5-.3-.7L20.2.3c-.2-.2-.5-.3-.7-.3-.3 0-.5.1-.7.3l-7.5 7.5c-.2.2-.5.2-.7 0L3.1.3C2.9.1 2.6 0 2.4 0s-.5.1-.7.3L.3 1.7c-.2.2-.3.5-.3.7s.1.5.3.7l7.5 7.5c.2.2.2.5 0 .7L.3 18.8c-.2.2-.3.5-.3.7s.1.5.3.7l1.4 1.4c.2.2.5.3.7.3s.5-.1.7-.3l7.5-7.5c.2-.2.5-.2.7 0l7.5 7.5c.2.2.5.3.7.3s.5-.1.7-.3l1.4-1.4c.2-.2.3-.5.3-.7s-.1-.5-.3-.7l-7.5-7.5z"/></svg>
+</div>
+<!--start page chat-list-->
+<div class="page-messages-list" style="display: none;">
+
+</div>
+<!--end page chat-list-->
+
+<!--start page chat-->
+<div class="page-chat" data-user-id="<%= userId %>" data-bot-hash="<%= botHash %>" data-bot-id="<%= botId %>" style="display: none;">
+  <div class="messages-wrapper">
+
+  </div>
+
+  <div id="attachments" class="pictures-holder" style="display: none"></div>
+
+  <div class="send-box">
+
+    <div class="translator-activator" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 17.15 16.87">
+        <path d="M16.047,3.076H8.8L8.047,5.993,7.776,7.911l1.451,4.048.233,4.912h6.586a1.1,1.1,0,0,0,1.1-1.1V4.179a1.1,1.1,0,0,0-1.1-1.1Z"
+              fill="#ededed"/>
+        <polygon points="12.35 13.795 9.461 16.87 8.437 13.795 8.855 12.673 12.35 13.795 12.35 13.795" fill="#4555a1"/>
+        <path d="M15.729,8.039v-.7H13.072V6.361h-.7V7.34H9.979v.7h3.882a15.366,15.366,0,0,1-1.1,1.944c-.473-.591-.772-1-.776-1.007l-.205-.283-.566.41.205.283c.016.022.364.5.916,1.182-.376.461-1.065,1.209-1.429,1.573l.494.494c.314-.314.964-1.012,1.388-1.518.551.655,1.089,1.246,1.6,1.759l.247.247.494-.494-.247-.247c-.531-.531-1.089-1.148-1.663-1.836a15.737,15.737,0,0,0,1.414-2.508Z"
+              fill="#898583"/>
+        <path d="M11.7,11.836l.649,1.959H1.1a1.1,1.1,0,0,1-1.1-1.1V1.1A1.1,1.1,0,0,1,1.1,0h6.68L8.8,3.076,10.329,7.69,11.7,11.836Z"
+              fill="#6788c5"/>
+        <path d="M5,9.486A2.6,2.6,0,1,1,6.838,5.051l-.494.495a1.9,1.9,0,1,0,.524,1.692H5v-.7H7.6v.35A2.6,2.6,0,0,1,5,9.486Z"
+              fill="#fff"/>
+      </svg>
+    </div>
+    <div class="translator-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17.263" height="17.008" viewBox="0 0 17.263 17.008">
+        <path d="M16.152,3.1H8.859L10.28,7.388h2.174V6.4h.7v.985h2.674v.7h-1.1A15.844,15.844,0,0,1,13.3,10.616c.578.692,1.14,1.314,1.674,1.848l.249.249-.5.5-.249-.249c-.517-.517-1.059-1.112-1.613-1.771-.281.335-.654.746-.97,1.083l.534,1.612-2.909,3.1h6.63a1.11,1.11,0,0,0,1.11-1.11V4.206A1.11,1.11,0,0,0,16.152,3.1Z"
+              fill="#a3a3a3"/>
+        <path d="M11.489,9.448l-.207-.285.57-.413.207.285s.3.419.781,1.014a15.469,15.469,0,0,0,1.112-1.957H10.513l1.132,3.42c.281-.306.567-.629.766-.874C11.856,9.952,11.506,9.47,11.489,9.448Z"
+              fill="#a3a3a3"/>
+        <polygon points="8.493 13.912 9.523 17.008 9.376 13.912 8.493 13.912" fill="#cecccc"/>
+        <polygon points="9.376 13.885 9.523 16.981 12.431 13.885 9.376 13.885" fill="#cecccc"/>
+        <path d="M9.329,12.89l-.04-.853L7.827,7.963,8.1,6.033,8.859,3.1,7.834,0H1.11A1.11,1.11,0,0,0,0,1.11V12.775a1.11,1.11,0,0,0,1.11,1.11H8.493l.42-1.129ZM7.649,6.933a2.615,2.615,0,1,1-.766-1.849l-.5.5a1.912,1.912,0,1,0,.527,1.7H5.034v-.7H7.649Z"
+              fill="#a3a3a3"/>
+        <path d="M7.827,7.963l1.461,4.074.04.853,3.1,1L11.9,12.273c-.165.176-.318.337-.427.445l-.5-.5c.173-.173.42-.435.672-.709l-1.132-3.42h-.468v-.7h.235L8.859,3.1,8.1,6.033Z"
+              fill="#a3a3a3"/>
+        <polygon points="9.329 12.89 8.913 12.756 8.493 13.885 9.376 13.885 9.329 12.89" fill="#a3a3a3"/>
+        <polygon points="9.376 13.885 12.431 13.885 9.329 12.89 9.376 13.885" fill="#a3a3a3"/>
+        <path d="M11.645,11.512c-.252.275-.5.536-.672.709l.5.5c.108-.108.262-.269.427-.445l-.119-.36Z" fill="#a3a3a3"/>
+        <polygon points="10.045 8.092 10.513 8.092 10.397 7.74 10.28 7.388 10.045 7.388 10.045 8.092" fill="#a3a3a3"/>
+      </svg>
+      Close
+    </div>
+    <div id="translate" class="translate-button">Translate</div>
+
+    <div id="message-field" data-text-field="main" class="enter-text-field enter-text-field-default" contenteditable="true" placeholder="Hello"></div>
+    <!--<div class="enter-text-field only-smile"></div>-->
+
+    <div class="send-message-button clickable">
+      <svg class="chat-send-button-ico" xmlns="http://www.w3.org/2000/svg" width="13" height="25" viewBox="0 0 13 25">
+        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" stroke-miterlimit="10"
+              d="M.7.7l11.8 12m0 0L1 24.4"/>
+      </svg>
+    </div>
+    <svg class="open-chat-smiles-ico clickable" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+         viewBox="4 -4 39 39">
+      <path fill="#ccc" d="M37.3 1.7c-7.6-7.6-20-7.6-27.6 0-7.6 7.6-7.6 20 0 27.6 7.6 7.6 20 7.6 27.6 0
+                                7.6-7.6 7.6-20 0-27.6zm-2.13 25.47c-6.44 6.43-16.9 6.43-23.34 0-6.43-6.44-6.43-16.9 0-23.34 6.44-6.43
+                                16.9-6.43 23.34 0 6.43 6.44 6.43 16.9 0 23.34zM16.22 10.22c0-1.26 1.02-2.28 2.28-2.28 1.26 0 2.28
+                                1.02 2.28 2.28 0 1.26-1.02 2.28-2.28 2.28-1.26 0-2.28-1.02-2.28-2.28zm10.34 0c0-1.26 1.02-2.28
+                                2.28-2.28s2.28 1.02 2.28 2.28c0 1.26-1.02 2.28-2.28 2.28-1.26 0-2.28-1.02-2.28-2.28zm5.4 9.34c-1.42
+                                3.27-4.73 5.38-8.44 5.38-3.8 0-7.1-2.12-8.48-5.4-.23-.57.03-1.22.6-1.45.13-.07.28-.1.42-.1.43 0
+                                .84.26 1.02.7 1.02 2.44 3.55 4.03 6.44 4.03 2.83 0 5.34-1.6 6.4-4.05.25-.56.9-.8 1.46-.57.56.25.82.9.57 1.46z"/>
+    </svg>
+    <svg class="close-chat-smiles-ico clickable opened" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+         viewBox="0 0 20 20">
+      <path fill="none" stroke="#CCC" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+            d="M3 3l14 14M3 17L17 3"/>
+    </svg>
+    <div id="email-attachment" class="item-attach-wrapper">
+      <svg  class="add-item-to-message-ico clickable" xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+        <path fill="#999" d="M5.9 4.6c-1 0-1.9.4-2.6 1.1-1.5 1.5-1.5 4.4 0 5.9.7.7 1.7
+                                        1.1 2.6 1.1h10.3c1.9 0 2.6-2.4 1.9-3.9-.4-.8-1.1-1.4-1.9-1.4H7.1c-.8 0-.8 1.3 0
+                                        1.3h9.1c1.3 0 1.3 2.7 0 2.7H5.9c-2.2 0-3.1-2.9-1.9-4.5.4-.6 1.1-1 1.9-1H18c1.3
+                                        0 2.4 1.1 2.4 2.4v3.6c0 1.3-1.1 2.4-2.4 2.4H6.8c-.8 0-.8 1.3 0 1.3H18c2 0
+                                        3.6-1.7 3.6-3.7V8.3c0-2-1.7-3.6-3.7-3.6l-12-.1z"></path>
+      </svg>
+    </div>
+    <div class="smiles-wrapper">
+
+    </div>
+    <div class="translator-wrapper">
+      <div class="translate-options">
+        <select id="translate-from">
+          <option value="en" selected>English</option>
+          <option value="ru">Русский</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="it">Italiano</option>
+          <option value="fr">Français</option>
+          <option value="ar">العربية</option>
+          <option value="zh-TW">中國</option>
+        </select>
+        <div class="translate-reverse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 13 11.264">
+            <line y1="2.992" x2="8.695" y2="2.992" fill="none" stroke="gray" stroke-miterlimit="10" stroke-width="2"/>
+            <polygon points="7.819 5.983 13 2.992 7.819 0 7.819 5.983" fill="gray"/>
+            <line x1="13" y1="8.273" x2="4.305" y2="8.273" fill="none" stroke="gray" stroke-miterlimit="10"
+                  stroke-width="2"/>
+            <polygon points="5.181 5.281 0 8.273 5.181 11.264 5.181 5.281" fill="gray"/>
+          </svg>
+        </div>
+        <select id="translate-to">
+          <option value="en">English</option>
+          <option value="ru" selected>Русский</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="it">Italiano</option>
+          <option value="fr">Français</option>
+          <option value="ar">العربية</option>
+          <option value="zh-TW">中國</option>
+        </select>
+      </div>
+      <div class="translator-textarea" data-text-field="translate-from" contenteditable="true" placeholder="Message" style="border-bottom: solid 1px #808080;"></div>
+      <div class="translator-textarea" data-text-field="secondary" contenteditable="true" placeholder="Translate"></div>
+    </div>
+    <div class="delete-panel">
+      <div class="btn-delete">Delete message</div>
+      <div class="btn-cancel">Cancel</div>
+    </div>
+  </div>
+</div>
+<!--end page chat-list-->
+
+<div id="modal-user" class="modal-keeper">
+  <div class="bg-shadow"></div>
+  <div class="chat-status-notification">
+    <!--<p>The user has <span>don't write me</span> <svg xmlns="http://www.w3.org/2000/svg" width="16.239" height="16.239" viewBox="0 0 16.239 16.239">
+            <circle cx="8.119" cy="8.119" r="8.119" fill="red"/>
+            <rect x="3.057" y="6.484" width="10.125" height="3.271" fill="#fff"/>
+        </svg> status. <br> Try again later.</p>-->
+    <p>You are unable to write while having <span>don't write me</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16.239" height="16.239" viewBox="0 0 16.239 16.239">
+        <circle cx="8.119" cy="8.119" r="8.119" fill="red"/>
+        <rect x="3.057" y="6.484" width="10.125" height="3.271" fill="#fff"/>
+      </svg>
+      status. <br> Choose <span>ready to talk</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16.225" height="16.225" viewBox="0 0 16.225 16.225">
+        <circle cx="8.112" cy="8.112" r="8.112" fill="#39b54a"/>
+        <path d="M7.567,14a1.287,1.287,0,0,1-1.082-.59L2.518,7.241,4.681,5.85,7.48,10.2,11.5,2.894l2.254,1.239-5.059,9.2A1.285,1.285,0,0,1,7.611,14Z"
+              fill="#fff"/>
+      </svg>
+      in order to join conversation.
+    </p>
+    <div class="ok-btn">Ok</div>
+  </div>
+</div>
+<div id="modal-receiver" class="modal-keeper">
+  <div class="bg-shadow"></div>
+  <div class="chat-status-notification">
+    <p>The user has <span>don't write me</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16.239" height="16.239" viewBox="0 0 16.239 16.239">
+        <circle cx="8.119" cy="8.119" r="8.119" fill="red"/>
+        <rect x="3.057" y="6.484" width="10.125" height="3.271" fill="#fff"/>
+      </svg>
+      status. <br> Try again later.</p>
+    <div class="ok-btn">Ok</div>
+  </div>
+</div>
+
+<%- include('../footer') %>
+
+
+

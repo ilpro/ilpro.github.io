@@ -1,0 +1,691 @@
+<%- include('../header') %>
+<%- include('sidemenu-admin') %>
+<div class="cabinet-edit-page new-user-creator transactions-user center-content page-profile-edit">
+    <div class="profile-block-wrapper transactions-user-outer-wrapper">
+        <div class="profile-information-block">
+
+            <div class="other-info">
+
+                <div class="other-info-title" onclick="$(this).next().next().next().toggle();">admin</div>
+
+                <a href="<%= backlink %>" class="save clickable">Back to Models</a>
+                <div class="horizontal-divider"></div>
+
+                <div class="info-items-container special">
+                    <div class="info-item clearfix">
+                        <div class="info-name ">Пользователь активирован</div>
+                        <div class="info-parameter clickable">
+                            <div class="check-container">
+                                <input name="userActive" type="checkbox" id="userActive" <%- (user.userActive == 1) ? 'checked="checked"' : '' %>>
+                                <label for="userActive"><i class="ico check-img"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item clearfix">
+                        <div class="info-name ">Эмейл подтвержден</div>
+                        <div class="info-parameter clickable">
+                            <div class="check-container">
+                                <input name="userConfirm" type="checkbox" id="userConfirm" <%- (user.userConfirm == 1) ? 'checked="checked"' : '' %>>
+                                <label for="userConfirm"><i class="ico check-img"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item clearfix">
+                        <div class="info-name">User type</div>
+                        <div class="info-parameter">
+                            <select name="userRole" data-placeholder="Choose type..."
+                                    class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value=""></option>
+                                <option class="one-option-item" value="100"
+                                        <% if (user.userRole == 100) { %>selected="selected"
+                                        <% } %>
+                                >Админ
+                                </option>
+                                <option class="one-option-item" value="40"
+                                        <% if (user.userRole == 40) { %>selected="selected"
+                                        <% } %>
+                                >Партнер
+                                </option>
+                                <option class="one-option-item" value="30"
+                                        <% if (user.userRole == 30) { %>selected="selected"
+                                        <% } %>
+                                >Агентство
+                                </option>
+                                <option class="one-option-item" value="20"
+                                        <% if (user.userRole == 20) { %>selected="selected"
+                                        <% } %>
+                                >Переводчик
+                                </option>
+                                <option class="one-option-item" value="19"
+                                        <% if (user.userRole == 19) { %>selected="selected"
+                                        <% } %>
+                                >Модель
+                                </option>
+                                <option class="one-option-item" value="10"
+                                        <% if (user.userRole == 10) { %>selected="selected"
+                                        <% } %>
+                                >Пользователь
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item clearfix">
+                        <div class="info-name">Birthdate</div>
+                        <div class="info-parameter">
+                            <select name="birthDay" class="one-option-select chosen-select-birthday">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% for(var i = 1; i <= 31; i++){ %>
+                                <option class="one-option-item" value="<%= i %>"
+                                        <% if (user.userBdate[0] == i) { %>selected="selected"
+                                        <% } %>
+                                ><%= i %></option>
+                                <% } %>
+                            </select>
+                            <select name="birthMonth" class="one-option-select chosen-select-birthmonth">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <option class="one-option-item" value="1"
+                                        <% if (user.userBdate[1] == 1) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthJanuary %></option>
+                                <option class="one-option-item" value="2"
+                                        <% if (user.userBdate[1] == 2) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthFebruary %></option>
+                                <option class="one-option-item" value="3"
+                                        <% if (user.userBdate[1] == 3) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthMarch %></option>
+                                <option class="one-option-item" value="4"
+                                        <% if (user.userBdate[1] == 4) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthApril %></option>
+                                <option class="one-option-item" value="5"
+                                        <% if (user.userBdate[1] == 5) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthMay %></option>
+                                <option class="one-option-item" value="6"
+                                        <% if (user.userBdate[1] == 6) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthJune %></option>
+                                <option class="one-option-item" value="7"
+                                        <% if (user.userBdate[1] == 7) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthJuly %></option>
+                                <option class="one-option-item" value="8"
+                                        <% if (user.userBdate[1] == 8) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthAugust %></option>
+                                <option class="one-option-item" value="9"
+                                        <% if (user.userBdate[1] == 9) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthSeptember %></option>
+                                <option class="one-option-item" value="10"
+                                        <% if (user.userBdate[1] == 10) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthOctober %></option>
+                                <option class="one-option-item" value="11"
+                                        <% if (user.userBdate[1] == 11) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthNovember %></option>
+                                <option class="one-option-item" value="12"
+                                        <% if (user.userBdate[1] == 12) { %>selected="selected"
+                                        <% } %>
+                                ><%= lang.lMonthDecember %></option>
+                            </select>
+                            <select name="birthYear" class="one-option-select chosen-select-birthyear">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% for(var i = 1940; i <= 2005; i++){ %>
+                                <option class="one-option-item" value="<%= i %>"
+                                        <% if (user.userBdate[2] == i) { %>selected="selected"
+                                        <% } %>
+                                ><%= i %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-info-title">Photos</div>
+                <div class="horizontal-divider"></div>
+                <div class="gallery-edit-section">
+                    <div id="photos-container" class="img-grid">
+                        <% imagesGeneral.reverse().forEach(function(row, i){%>
+                          <div class="img-holder <% if(row.main){ %>main-photo<% } %>" data-imageid="<%=row.id%>">
+                              <svg class="delete-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9"><path d="M14.1 11.3c-.2-.2-.2-.5 0-.7l7.5-7.5c.2-.2.3-.5.3-.7s-.1-.5-.3-.7L20.2.3c-.2-.2-.5-.3-.7-.3-.3 0-.5.1-.7.3l-7.5 7.5c-.2.2-.5.2-.7 0L3.1.3C2.9.1 2.6 0 2.4 0s-.5.1-.7.3L.3 1.7c-.2.2-.3.5-.3.7s.1.5.3.7l7.5 7.5c.2.2.2.5 0 .7L.3 18.8c-.2.2-.3.5-.3.7s.1.5.3.7l1.4 1.4c.2.2.5.3.7.3s.5-.1.7-.3l7.5-7.5c.2-.2.5-.2.7 0l7.5 7.5c.2.2.5.3.7.3s.5-.1.7-.3l1.4-1.4c.2-.2.3-.5.3-.7s-.1-.5-.3-.7l-7.5-7.5z"/></svg>
+                              <img src="<%=row.path%>">
+                              <div class="btn-main">Make main</div>
+                          </div>
+                        <% });%>
+                    </div>
+                    <div class="profile-photo-btn-wrap">
+                        <div class="add-common-photo-button">Add photo</div>
+                    </div>
+                </div>
+
+                <div class="info-items-container">
+                    <div class="other-info-title">Login</div>
+                    <div class="horizontal-divider"></div>
+
+                    <div class="info-item bot-login-mail clearfix">
+                        <div class="info-name ">Email</div>
+                        <div class="parameter-field">
+                            <div class="parameter-text info-parameter changeable" contenteditable="true"
+                                 placeholder="is not filled..." data-name="userEmail"><%= user.userEmail %></div>
+                            <div class="save-button-holder clearfix" style="display: none;">
+                                <div class="save-status-btn">save</div>
+                                <div class="cancel-status-btn">cancel</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item bot-login-pass clearfix">
+                        <div class="info-name">Password</div>
+                        <div class="parameter-field">
+                            <div class="parameter-text info-parameter changeable" contenteditable="true"
+                                 placeholder="is not filled..." data-name="userPass"></div>
+                            <div class="save-button-holder clearfix" style="display: none;">
+                                <div class="save-status-btn">save</div>
+                                <div class="cancel-status-btn">cancel</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-item bot-login-mail clearfix">
+                        <div class="info-name ">Phone</div>
+                        <div class="parameter-field">
+                            <div class="parameter-text info-parameter changeable phone" contenteditable="true"
+                                 placeholder="is not filled..." data-name="userPhone"><%= user.userPhone %></div>
+                            <div class="save-button-holder clearfix" style="display: none;">
+                                <div class="save-status-btn">save</div>
+                                <div class="cancel-status-btn">cancel</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-item empty-placeholder clearfix">
+                        <div class="info-name">Generate password</div>
+                        <div class="parameter-field">
+                            <div class="field-button login-pass-generate">Generate Magic</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-items-container">
+                    <div class="info-item nickname clearfix">
+                        <div class="info-name ">Nickname</div>
+                        <div class="parameter-field">
+                            <div class="parameter-text info-parameter changeable" contenteditable="true"
+                                 placeholder="is not filled..." data-name="userNickname"><%= user.userNickname %></div>
+                            <div class="save-button-holder clearfix" style="display: none;">
+                                <div class="save-status-btn">save</div>
+                                <div class="cancel-status-btn">cancel</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!--user lives in-->
+                    <div class="wtv-container country-old" style="padding: 10px 0;">
+                        <svg style="left: 10px;" class="search__icosearch " xmlns="http://www.w3.org/2000/svg"
+                             width="15" height="15" viewBox="0 0 24.88 24.88">
+                            <path fill="gray"
+                                  d="M24.66,23.61l-6-6a10.62,10.62,0,1,0-1,1l6,6a.75.75,0,0,0,.52.22.73.73,0,0,0,.52-.22.75.75,0,0,0,0-1Zm-23.18-13a9.12,9.12,0,1,1,9.12,9.12,9.13,9.13,0,0,1-9.12-9.12Zm0,0"></path>
+                        </svg>
+                        <div id="country-to-visit" style="display: none;"></div>
+                        <input id="i-live-in" class="google-places-input" style=" width: 100%" type="text"
+                               placeholder="I live in...">
+                        <svg style="right: 10px;" class="close" xmlns="http://www.w3.org/2000/svg" width="20.354"
+                             height="20.354" viewBox="0 0 20.354 20.354"><title>close</title>
+                            <line x1="0.177" y1="0.177" x2="20.177" y2="20.177" fill="none" stroke="gray"
+                                  stroke-miterlimit="10" stroke-width="1.5"></line>
+                            <line x1="19.72" y1="0.634" x2="0.634" y2="19.72" fill="none" stroke="#4d4d4d"
+                                  stroke-miterlimit="10" stroke-width="1.5"></line>
+                        </svg>
+                    </div>
+                    <div id="i-live-in-container" style="padding: 10px 0;" class="tag-place-container">
+                        <% if(user.userCity){ %>
+                        <div class="tag-place" style="text-transform: capitalize">
+                            <%= user.userCity %>, <%= user.userCountry %>
+                        </div>
+                        <% } %>
+                    </div>
+                    <!--<div class="info-item clearfix">
+
+
+
+                    </div>-->
+
+                    <!--user wants to visit-->
+                    <div class="wtv-container country-old" style="padding: 10px 0;">
+                        <svg class="search__icosearch " xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24.88 24.88">
+                            <path fill="gray" d="M24.66,23.61l-6-6a10.62,10.62,0,1,0-1,1l6,6a.75.75,0,0,0,.52.22.73.73,0,0,0,.52-.22.75.75,0,0,0,0-1Zm-23.18-13a9.12,9.12,0,1,1,9.12,9.12,9.13,9.13,0,0,1-9.12-9.12Zm0,0"></path>
+                        </svg>
+                        <div id="country-to-visit" style="display: none;"></div>
+                        <input class="google-places-input place-visit" style=" width: 100%" type="text" placeholder="I want to visit...">
+                        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20.354" height="20.354" viewBox="0 0 20.354 20.354"><title>close</title><line x1="0.177" y1="0.177" x2="20.177" y2="20.177" fill="none" stroke="gray" stroke-miterlimit="10" stroke-width="1.5"></line><line x1="19.72" y1="0.634" x2="0.634" y2="19.72" fill="none" stroke="#4d4d4d" stroke-miterlimit="10" stroke-width="1.5"></line></svg>
+                    </div>
+                    <div class="tag-place-container want-to-visit-container" style="padding: 10px 0;" >
+                        <% if(user.userWantToVisit){%>
+                        <% user.userWantToVisit.split(", ").forEach(function(item, i){%>
+                        <div class="tag-place"  data-id="<%=item%>" style="text-transform: capitalize">
+                            <span  class="place-name"><%=item%></span>
+                            <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20.354" height="20.354" viewBox="0 0 20.354 20.354"><title>close</title><line x1="0.177" y1="0.177" x2="20.177" y2="20.177" fill="none" stroke="#4d4d4d" stroke-miterlimit="10" stroke-width="1.5"></line><line x1="19.72" y1="0.634" x2="0.634" y2="19.72" fill="none" stroke="#4d4d4d" stroke-miterlimit="10" stroke-width="1.5"></line></svg>
+                        </div>
+                        <% })%>
+                        <% }%>
+                    </div>
+
+                    <!--user pay for ..-->
+                    <div style="display:block; width: 100vw;">
+                        <div class="cpf-container">
+                            <div class="cpf-button">
+                                I can pay for...
+                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16.391" height="8.196"
+                                     viewBox="0 0 16.391 8.196">
+                                    <polyline points="16.391 0 8.196 8.196 0 0" fill="#666"/>
+                                </svg>
+                            </div>
+                            <div class="cpf-list">
+                                <div class="pay-type-item two" data-type="1">I can pay for both
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <title>pay-type-2</title>
+                                        <path d="M23.181,20.455a1.364,1.364,0,1,1,1.364-1.364,1.365,1.365,0,0,1-1.364,1.364ZM27.954,15H23.181a4.091,4.091,0,1,0,0,8.182h4.773A2.048,2.048,0,0,0,30,21.137V17.046A2.048,2.048,0,0,0,27.954,15Z"
+                                              fill="#fff"/>
+                                        <path d="M23.181,13.637h4.773a.681.681,0,0,0,.682-.682V10.909A2.721,2.721,0,0,0,26.126,8.2L22.21,1.365a2.7,2.7,0,0,0-3.7-1L5.085,8.182H2.727A2.73,2.73,0,0,0,0,10.909V27.273A2.73,2.73,0,0,0,2.727,30H25.909a2.73,2.73,0,0,0,2.727-2.727V25.227a.681.681,0,0,0-.682-.682H23.181a5.454,5.454,0,1,1,0-10.909ZM8.1,20.345l.367.368.5.5L7.212,22.97,5.09,20.848,2.969,22.97,1.212,21.213l.869-.868.369-.369.885-.885L1.212,16.971l1.757-1.759L5.09,17.336l2.122-2.124L8.97,16.971,6.849,19.092Zm7.854,2.321H10.969v-1l.909-.822c1.536-1.373,2.283-2.163,2.3-2.985,0-.573-.346-1.027-1.158-1.027a2.549,2.549,0,0,0-1.5.584l-.465-1.179a3.891,3.891,0,0,1,2.3-.725,2.185,2.185,0,0,1,2.467,2.206c0,1.179-.854,2.12-1.872,3.028l-.648.541v.022h2.65ZM10.487,8.182H7.8l11.4-6.636a1.319,1.319,0,0,1,1.013-.136,1.336,1.336,0,0,1,.819.633v0ZM23.056,5.587l1.486,2.595H18.6Z"
+                                              fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <div class="pay-type-item one" data-type="2">I can pay only for myself
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29.999" height="30"
+                                         viewBox="0 0 29.999 30"><title>pay-type-1</title>
+                                        <path d="M23.181,20.455a1.364,1.364,0,1,1,1.364-1.364,1.365,1.365,0,0,1-1.364,1.364ZM27.954,15H23.181a4.091,4.091,0,1,0,0,8.182h4.773A2.048,2.048,0,0,0,30,21.136V17.046A2.048,2.048,0,0,0,27.954,15Z"
+                                              fill="#fff"/>
+                                        <path d="M23.181,13.637h4.773a.681.681,0,0,0,.682-.682V10.909A2.721,2.721,0,0,0,26.126,8.2L22.21,1.365a2.7,2.7,0,0,0-3.7-1L5.085,8.182H2.727A2.73,2.73,0,0,0,0,10.909V27.273A2.73,2.73,0,0,0,2.727,30H25.909a2.73,2.73,0,0,0,2.727-2.727V25.227a.681.681,0,0,0-.682-.682H23.181a5.454,5.454,0,1,1,0-10.909ZM8.1,20.345l.367.368.5.5L7.212,22.97,5.09,20.848,2.969,22.97,1.212,21.213l.869-.868.369-.369.885-.885L1.212,16.971l1.757-1.759L5.09,17.336l2.122-2.124L8.97,16.971,6.849,19.092Zm6.634,2.321H13.049V16.76h-.023l-1.422.676-.287-1.307,1.972-.917h1.446ZM10.487,8.182H7.8l11.4-6.636a1.319,1.319,0,0,1,1.013-.137,1.337,1.337,0,0,1,.819.633v0ZM23.056,5.587l1.486,2.595H18.6Z"
+                                              fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <div class="pay-type-item none" data-type="3">I can not pay
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <title>pay-type-3</title>
+                                        <path d="M23.181,20.455a1.364,1.364,0,1,1,1.364-1.364,1.365,1.365,0,0,1-1.364,1.364ZM27.954,15H23.181a4.091,4.091,0,1,0,0,8.182h4.773A2.048,2.048,0,0,0,30,21.137V17.046A2.048,2.048,0,0,0,27.954,15Z"
+                                              fill="#fff"/>
+                                        <path d="M23.181,13.637h4.773a.681.681,0,0,0,.682-.682V10.909A2.722,2.722,0,0,0,26.126,8.2L22.21,1.365a2.7,2.7,0,0,0-3.7-1L5.085,8.182H2.727A2.73,2.73,0,0,0,0,10.909V27.273A2.73,2.73,0,0,0,2.727,30H25.909a2.73,2.73,0,0,0,2.727-2.727V25.227a.682.682,0,0,0-.682-.682H23.181a5.454,5.454,0,0,1,0-10.909Zm-8.776,7.813.477.478.651.649L13.25,24.858,10.495,22.1,7.74,24.858,5.458,22.577l1.128-1.127.479-.479,1.149-1.149L5.458,17.066,7.74,14.782l2.755,2.758,2.755-2.758,2.283,2.284-2.755,2.755ZM10.487,8.182H7.795l11.4-6.636a1.319,1.319,0,0,1,1.013-.136,1.337,1.337,0,0,1,.819.633v0ZM23.056,5.587l1.486,2.595H18.6Z"
+                                              fill="#fff"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="pay-type-container" style="margin-top:-38px; <%= +user.userPayFor ? 'display: block;' : 'display: none;'%>">
+                                <% if(user.userPayFor == 1){%>
+                                <div class="pay-type-item two">I can pay for both
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><title>pay-type-2</title><path d="M23.181,20.455a1.364,1.364,0,1,1,1.364-1.364,1.365,1.365,0,0,1-1.364,1.364ZM27.954,15H23.181a4.091,4.091,0,1,0,0,8.182h4.773A2.048,2.048,0,0,0,30,21.137V17.046A2.048,2.048,0,0,0,27.954,15Z" fill="#fff"/><path d="M23.181,13.637h4.773a.681.681,0,0,0,.682-.682V10.909A2.721,2.721,0,0,0,26.126,8.2L22.21,1.365a2.7,2.7,0,0,0-3.7-1L5.085,8.182H2.727A2.73,2.73,0,0,0,0,10.909V27.273A2.73,2.73,0,0,0,2.727,30H25.909a2.73,2.73,0,0,0,2.727-2.727V25.227a.681.681,0,0,0-.682-.682H23.181a5.454,5.454,0,1,1,0-10.909ZM8.1,20.345l.367.368.5.5L7.212,22.97,5.09,20.848,2.969,22.97,1.212,21.213l.869-.868.369-.369.885-.885L1.212,16.971l1.757-1.759L5.09,17.336l2.122-2.124L8.97,16.971,6.849,19.092Zm7.854,2.321H10.969v-1l.909-.822c1.536-1.373,2.283-2.163,2.3-2.985,0-.573-.346-1.027-1.158-1.027a2.549,2.549,0,0,0-1.5.584l-.465-1.179a3.891,3.891,0,0,1,2.3-.725,2.185,2.185,0,0,1,2.467,2.206c0,1.179-.854,2.12-1.872,3.028l-.648.541v.022h2.65ZM10.487,8.182H7.8l11.4-6.636a1.319,1.319,0,0,1,1.013-.136,1.336,1.336,0,0,1,.819.633v0ZM23.056,5.587l1.486,2.595H18.6Z" fill="#fff"/></svg>
+                                </div>
+                                <% } else if(user.userPayFor == 2) {%>
+                                <div class="pay-type-item one">I can pay only for myself
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29.999" height="30" viewBox="0 0 29.999 30"><title>pay-type-1</title><path d="M23.181,20.455a1.364,1.364,0,1,1,1.364-1.364,1.365,1.365,0,0,1-1.364,1.364ZM27.954,15H23.181a4.091,4.091,0,1,0,0,8.182h4.773A2.048,2.048,0,0,0,30,21.136V17.046A2.048,2.048,0,0,0,27.954,15Z" fill="#fff"/><path d="M23.181,13.637h4.773a.681.681,0,0,0,.682-.682V10.909A2.721,2.721,0,0,0,26.126,8.2L22.21,1.365a2.7,2.7,0,0,0-3.7-1L5.085,8.182H2.727A2.73,2.73,0,0,0,0,10.909V27.273A2.73,2.73,0,0,0,2.727,30H25.909a2.73,2.73,0,0,0,2.727-2.727V25.227a.681.681,0,0,0-.682-.682H23.181a5.454,5.454,0,1,1,0-10.909ZM8.1,20.345l.367.368.5.5L7.212,22.97,5.09,20.848,2.969,22.97,1.212,21.213l.869-.868.369-.369.885-.885L1.212,16.971l1.757-1.759L5.09,17.336l2.122-2.124L8.97,16.971,6.849,19.092Zm6.634,2.321H13.049V16.76h-.023l-1.422.676-.287-1.307,1.972-.917h1.446ZM10.487,8.182H7.8l11.4-6.636a1.319,1.319,0,0,1,1.013-.137,1.337,1.337,0,0,1,.819.633v0ZM23.056,5.587l1.486,2.595H18.6Z" fill="#fff"/></svg>
+                                </div>
+                                <% } else if(user.userPayFor == 3) {%>
+                                <div class="pay-type-item none">I can not pay
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><title>pay-type-3</title><path d="M23.181,20.455a1.364,1.364,0,1,1,1.364-1.364,1.365,1.365,0,0,1-1.364,1.364ZM27.954,15H23.181a4.091,4.091,0,1,0,0,8.182h4.773A2.048,2.048,0,0,0,30,21.137V17.046A2.048,2.048,0,0,0,27.954,15Z" fill="#fff"/><path d="M23.181,13.637h4.773a.681.681,0,0,0,.682-.682V10.909A2.722,2.722,0,0,0,26.126,8.2L22.21,1.365a2.7,2.7,0,0,0-3.7-1L5.085,8.182H2.727A2.73,2.73,0,0,0,0,10.909V27.273A2.73,2.73,0,0,0,2.727,30H25.909a2.73,2.73,0,0,0,2.727-2.727V25.227a.682.682,0,0,0-.682-.682H23.181a5.454,5.454,0,0,1,0-10.909Zm-8.776,7.813.477.478.651.649L13.25,24.858,10.495,22.1,7.74,24.858,5.458,22.577l1.128-1.127.479-.479,1.149-1.149L5.458,17.066,7.74,14.782l2.755,2.758,2.755-2.758,2.283,2.284-2.755,2.755ZM10.487,8.182H7.795l11.4-6.636a1.319,1.319,0,0,1,1.013-.136,1.337,1.337,0,0,1,.819.633v0ZM23.056,5.587l1.486,2.595H18.6Z" fill="#fff"/></svg>
+                                </div>
+                                <% }%>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--user about-->
+                    <div class="info-items-container single-row">
+                        <div class="about-text info-item flexcol clearfix gallery-include">
+                            <div class="about-text-title">About myself</div>
+                            <div class="horizontal-divider"></div>
+                            <div class="parameter-field">
+                                <div class="parameter-text info-parameter about-text-content changeable"
+                                     contenteditable="true" placeholder="is not filled..."
+                                     data-name="userAboutMyself"><%= user.userAboutMyself %></div>
+                                <div class="save-button-holder clearfix" style="display: none;">
+                                    <div class="save-status-btn">save</div>
+                                    <div class="cancel-status-btn">cancel</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item flexcol clearfix gallery-include">
+                            <div class="profile-photos-block">
+                                <div class="profile-photos-title">passport</div>
+                                <div class="horizontal-divider"></div>
+                                <div class="info-item passport-num clearfix">
+                                    <div class="info-name">Passport number</div>
+                                    <div class="parameter-field">
+                                        <div class="parameter-text info-parameter changeable" contenteditable="true"
+                                             placeholder="is not filled..."
+                                             data-name="modelPassport"><%= user.modelPassport %></div>
+                                        <div class="save-button-holder clearfix" style="display: none;">
+                                            <div class="save-status-btn">save</div>
+                                            <div class="cancel-status-btn">cancel</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-text info-item flexcol clearfix gallery-include">
+                        </div>
+                        <div class="info-item flexcol clearfix gallery-include">
+                            <div class="profile-photos-block">
+                                <div class="profile-photos-title">Videos</div>
+                                <div class="horizontal-divider"></div>
+                                <div class="photos-wrapper">
+                                    <% if( typeof video === 'object' && video.length > 0)
+                                    video.forEach(function(row, i){ %>
+                                    <div class="single-photo">
+                                        <img class="profile-img" src="<%= row.path %>" data-id="<%= row.id %>"
+                                             alt="video">
+                                        <div class="single-photo-edit">
+                                            <svg class="single-photo-edit-ico svg-ico"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 width="14px" height="14px" viewBox="0 0 11 11">
+                                                <path fill="#2E5894" d="M10.934 2.176L9.91 3.198l-2.086-2.08-.79.79L9.12 3.985l-5.115 5.1-2.085-2.08-.792.79
+                    2.085 2.08-.51.507-.01-.01c-.055.093-.147.16-.256.185l-1.945.432c-.03.007-.058.01-.088.01-.106
+                    0-.21-.042-.285-.118-.1-.098-.14-.238-.11-.373l.433-1.94c.025-.108.093-.2.185-.256l-.01-.01L8.848.097c.12-.12.317-.12.437
+                    0l1.648 1.643c.122.12.122.316 0 .436z"/>
+                                            </svg>
+                                            <ul class="edit-img-menu">
+                                                <li class="option to-trash">delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <% }); %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-items-container single-row">
+                    <div class="info-item user-status clearfix">
+                        <div class="info-name">Status</div>
+                        <div class="parameter-field">
+                            <div class="parameter-text info-parameter changeable" contenteditable="true"
+                                 placeholder="is not filled..." data-name="userStatus"><%= user.userStatus %></div>
+                            <div class="save-button-holder clearfix" style="display: none;">
+                                <div class="save-status-btn">Save</div>
+                                <div class="cancel-status-btn">Cancel</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item gender clearfix">
+                        <div class="info-name">Gender</div>
+                        <div class="info-parameter">
+                            <select name="userGenderId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% gender.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userGenderId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item eyes clearfix">
+                        <div class="info-name">Eyes</div>
+                        <div class="info-parameter">
+                            <select name="userEyesId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% eyes.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userEyesId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="info-item hair clearfix">
+                        <div class="info-name">Hair</div>
+                        <div class="info-parameter">
+                            <select name="userHairId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% hair.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userHairId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item body-type clearfix">
+                        <div class="info-name">Body type</div>
+                        <div class="info-parameter">
+                            <select name="userBodyId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% body.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userBodyId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item weight clearfix">
+                        <div class="info-name">Weight</div>
+                        <div class="info-parameter changeable decimals kg" contenteditable="true" placeholder="0?.."
+                             data-name="userWeight"><%= user.userWeight %></div>
+                        <div class="info-parameter units">kg</div>
+                    </div>
+                    <div class="info-item height clearfix">
+                        <div class="info-name">Height</div>
+                        <div class="info-parameter changeable decimals sm" contenteditable="true" placeholder="0?.."
+                             data-name="userHeight"><%= user.userHeight %></div>
+                        <div class="info-parameter units">cm</div>
+                    </div>
+                    <div class="info-item religion clearfix">
+                        <div class="info-name">Religion</div>
+                        <div class="info-parameter">
+                            <select name="userReligionId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% religion.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userReligionId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item education clearfix">
+                        <div class="info-name">Education</div>
+                        <div class="info-parameter">
+                            <select name="userEducationId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% education.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userEducationId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item occupation clearfix">
+                        <div class="info-name">Occupation</div>
+                        <div class="parameter-field">
+                            <div class="parameter-text info-parameter changeable" contenteditable="true"
+                                 placeholder="is not filled..."
+                                 data-name="userOccupation"><%= user.userOccupation %></div>
+                            <div class="save-button-holder clearfix" style="display: none;">
+                                <div class="save-status-btn">Save</div>
+                                <div class="cancel-status-btn">Cancel</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item marital-status clearfix">
+                        <div class="info-name">Marital status</div>
+                        <div class="info-parameter">
+                            <select name="userMaritalStatusId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% marital_status.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userMaritalStatusId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item children clearfix">
+                        <div class="info-name">Children</div>
+                        <div class="info-parameter">
+                            <select name="userChildren" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% for(var i = 0; i <= 10; i++){ %>
+                                <option class="one-option-item" value="<%= i %>"
+                                        <% if (user.userChildren == i) { %>selected="selected"
+                                        <% } %>
+                                ><%= i %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item smoke clearfix">
+                        <div class="info-name">Smoke</div>
+                        <div class="info-parameter">
+                            <select name="userSmokeId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% smoke.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userSmokeId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                                <!-- <option class="one-option-item" value="Да" <% if (user.userSmoke == "Да") { %>selected="selected"<% } %>><%= lang.lInfoEditOptionYes %></option>
+                        <option class="one-option-item" value="Нет" <% if (user.userSmoke == "Нет") { %>selected="selected"<% } %>><%= lang.lInfoEditOptionNo %></option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item drink clearfix">
+                        <div class="info-name">Drink</div>
+                        <div class="info-parameter">
+                            <select name="userDrinkId" class="one-option-select chosen-select-deselect">
+                                <option class="one-option-item" value="">--Choose--</option>
+                                <% drink.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userDrinkId == row.paramId) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                                <!-- <option class="one-option-item" value="Да" <% if (user.userDrink == "Да") { %>selected="selected"<% } %>><%= lang.lInfoEditOptionYes %></option>
+                        <option class="one-option-item" value="Нет" <% if (user.userDrink == "Нет") { %>selected="selected"<% } %>><%= lang.lInfoEditOptionNo %></option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-items-container single-row">
+                    <div class="info-item hobbies clearfix">
+                        <div class="info-name">Hobbies</div>
+                        <div class="info-parameter">
+                            <select name="userHobbiesId" multiple class="one-option-select chosen-select-deselect">
+                                <% hobbie.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userHobbiesId.indexOf(row.paramId.toString()) !== -1) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item favorite-color clearfix">
+                        <div class="info-name">Favorite color</div>
+                        <div class="info-parameter">
+                            <select name="userFavoriteColorId" multiple
+                                    class="one-option-select chosen-select-deselect">
+                                <% color.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userFavoriteColorId.indexOf(row.paramId.toString()) !== -1) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item sport clearfix">
+                        <div class="info-name">Sport</div>
+                        <div class="info-parameter">
+                            <select name="userSportId" multiple class="one-option-select chosen-select-deselect">
+                                <% sport.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userSportId.indexOf(row.paramId.toString()) !== -1) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item been-abroad clearfix">
+                        <div class="info-name">Been aboard</div>
+                        <div class="info-parameter">
+                            <select name="userBeenAbroadId" multiple class="one-option-select chosen-select-deselect">
+                                <% country.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userBeenAbroadId.indexOf(row.paramId.toString()) !== -1) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item interests clearfix">
+                        <div class="info-name">Interests</div>
+                        <div class="info-parameter">
+                            <select name="userInterestId" multiple class="one-option-select chosen-select-deselect">
+                                <% interest.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userInterestId.indexOf(row.paramId.toString()) !== -1) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item character-traits clearfix">
+                        <div class="info-name">Character traits</div>
+                        <div class="info-parameter">
+                            <select name="userCharacterId" multiple class="one-option-select chosen-select-deselect">
+                                <% character.forEach(function(row){ %>
+                                <option class="one-option-item" value="<%= row.paramId %>"
+                                        <% if (user.userCharacterId.indexOf(row.paramId.toString()) !== -1) { %>selected="selected"
+                                        <% } %>
+                                ><%= row.paramName %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrapper">
+        <div id="croppic-modal" class="crop-modal"></div>
+    </div>
+
+    <div class="popup-modal-wrapper modal-wrapper-style">
+        <div class="popup-modal modal-style">
+            <div class="popup-bg modal-bg-style"></div>
+            <div class="image-control modal-popup-style">
+                <div class="menu-item make-main-option">
+                    <div class="item-title"><%=lang.lProfilePhotoMain%></div>
+                </div>
+                <div class="menu-item delete-option">
+                    <div class="item-title"><%=lang.lProfilePhotoDeleteBtn%></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>var editUserHash = "<%= hash %>";</script>
+
+<%- include('../footer') %>

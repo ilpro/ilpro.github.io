@@ -1,0 +1,92 @@
+<% for(var i = 0; i < posts.length; i++) { %>
+        <div class="single-photo" data-profileid="<%= posts[i].userId %>" data-postId="<%= posts[i].postId %>"
+             data-claim="<%= (posts[i].claim)?1:0 %>" data-avatar="<%= (posts[i].photo != null) %>">
+            <a href="/profile/<%= posts[i].userId %>" class="main-info">
+                <div class="avatar-holder">
+                    <div class="user-avatar" title="">
+                        <img src="<%= posts[i].userPhoto %>" alt="user" style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="info-holder">
+                    <div class="main-info-row">
+                        <div class="name"><%= posts[i].userName %></div>
+                    </div>
+                    <%var postSettings = ''
+                        if (page === 'feed') {
+                            postSettings = +posts[i].userId === +userId ? 'delete-my' : 'claim-other'
+                    } else if (page === 'profile') {
+                            postSettings = 'delete-my'
+                    } else if (page === 'profile-id') {
+                            postSettings = 'claim-other'
+                    }%>
+                    <div class="settings-dots <%= postSettings %>">
+                        <div class="settings-dot"></div>
+                        <div class="settings-dot"></div>
+                        <div class="settings-dot"></div>
+                    </div>
+                    <div class="publish-date"><%= posts[i].time ==='online' ? 'Just now': posts[i].time %></div>
+                </div>
+            </a>
+            <div class="post-text"><%- posts[i].text %></div>
+            <% if(posts[i].photo != null){ %>
+            <% var imageGalleryWidth, imageGalleryHeight, imageGalleryNumber, photo = posts[i].photo.split(',');
+                if (photo.length > 2) {
+                    imageGalleryWidth = 'w30';
+                    imageGalleryHeight = 'h150';
+                } else if (photo.length === 2) {
+                    imageGalleryWidth = 'w45';
+                    imageGalleryHeight = 'h200';
+                } else if (photo.length === 1) {
+                    imageGalleryWidth = 'w90';
+                    imageGalleryHeight = 'h300';
+                } %>
+            <% for(var j = 0; j < photo.length; j++) { %>
+            <img class="profile-img <%= imageGalleryWidth %> <%= imageGalleryHeight %>" src="<%= photo[j] %>" alt="photo">
+            <% } %>
+            <% } else if(posts[i].video != null) {
+                var filePath = posts[i].video;
+                var fileNameSplitted = filePath.split(".");
+                var fileEx = fileNameSplitted[fileNameSplitted.length - 1];
+            %>
+            <video class="vid" style="width:100%;" controls="">
+                <source src="<%= filePath %>" type="video/<%= fileEx %>">
+            </video>
+            <% } %>
+            <div class="photo-info">
+                <div class="like <%= (posts[i].mylike)?"active":"" %>">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 17 16">
+                        <path fill="#313133" d="M8.5 2.94C9.16 1.28 10.55 0 12.28 0c1.45 0 2.66.76 3.6 1.83 1.32 1.46 1.9
+                            4.67-.5 7.02-1.25 1.2-6.85 7.13-6.85 7.13s-5.6-5.94-6.84-7.13C-.75 6.53-.2 3.32 1.16 1.83 2.12.77
+                            3.32 0 4.75 0c1.74 0 3.1 1.28 3.75 2.94"></path>
+                    </svg>
+                    <div class="like-amount"><%= posts[i].like %></div>
+                </div>
+                <div class="likes-wrap">
+                    <div class="likes-arrow tt"></div>
+                </div>
+            </div>
+            <div class="who-likes">
+                <div style="text-align: center; padding: 5px; border-bottom: 1px solid #ccc;">Поки що нікому не сподобалось
+                </div>
+                <!--like-person-->
+            </div>
+            <div class="photo-options">
+                <div class="like <%= (posts[i].mylike)?"active":"" %>">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="-1 0 20 16">
+                        <path fill="none" stroke="#313133" stroke-miterlimit="10" d="M8.5 2.94C9.16 1.28 10.55 0 12.28 0c1.45 0 2.66.76 3.6 1.83 1.32 1.46 1.9
+                        4.67-.5 7.02-1.25 1.2-6.85 7.13-6.85 7.13s-5.6-5.94-6.84-7.13C-.75 6.53-.2 3.32 1.16 1.83 2.12.77
+                        3.32 0 4.75 0c1.74 0 3.1 1.28 3.75 2.94"></path>
+                    </svg>
+                    <%= lang.lProfilePhotoLike %>
+                </div>
+                <!--<div class="share">-->
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="34" height="26"-->
+                         <!--viewBox="0 0 17.151 14.559">-->
+                        <!--<path d="M.662,9.493c-.011.03-.021.056-.032.086-.035.084-.067.168-.1.254-.071.19-.136.381-.19.572a7.773,7.773,0,0,0-.3,3.013l.17,1.142.618-.974a8.978,8.978,0,0,1,8.615-4.02v3.868l2.091-1.8,1.068-.92.654-.563L17,6.926l.153-.149-.011-.415L9.441,0V3.907h0c-.17,0-.335,0-.507.01A9.268,9.268,0,0,0,1.075,8.634Z"-->
+                              <!--fill="none" stroke="#313133" stroke-miterlimit="10" stroke-width="0.8px"/>-->
+                    <!--</svg>-->
+                    <!--Share-->
+                <!--</div>-->
+            </div>
+        </div>
+<% } %>

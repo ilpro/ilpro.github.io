@@ -1,0 +1,398 @@
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUI.ttf);
+}
+@font-face {
+  font-family: SegoeUI-Bold;
+  src: url(../fonts/SegoeUI-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUI.ttf);
+}
+@font-face {
+  font-family: SegoeUI-Bold;
+  src: url(../fonts/SegoeUI-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: SegoeUI, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.mw-100 {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  /* HEADER */
+  header {
+    width: 100%;
+    padding: 60px 0;
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+  }
+
+  nav {
+    width: 100%;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px #a3a3a4;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li {
+    padding: 20px;
+  }
+  nav ul li:hover {
+    border-bottom: 2px solid #000000;
+  }
+  nav ul a {
+    color: #a8a8a8;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 15px;
+  }
+  nav ul a:hover {
+    color: #000000;
+  }
+
+  .logo {
+    width: 286px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 65px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  .logo img {
+    margin-right: 16px;
+  }
+  .logo h1 {
+    font-family: SegoeUI, sans-serif;
+  }
+}
+@media screen and (min-width: 375px) {
+  .navigation nav li a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 731px) {
+  .navigation nav li a {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 480px;
+    height: 145px;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 320px) {
+  .ribbon {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .ribbon button {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 17px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 13px 50px 9px 50px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .ribbon button:hover {
+    background-color: #2b2a2c;
+    color: #ffffff;
+  }
+  .ribbon figure {
+    margin-bottom: 35px;
+    box-shadow: 0 0 6px #a3a3a4;
+  }
+  .ribbon figure:last-child {
+    margin-bottom: none;
+  }
+  .ribbon figure figcaption {
+    padding: 15px 20px 10px 10px;
+    border-radius: 0 0 5px 5px;
+    text-transform: uppercase;
+  }
+  .ribbon figure figcaption h4 {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 12px;
+    line-height: 2.5;
+  }
+  .ribbon figure figcaption p {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 16px;
+  }
+
+  /* CONTACT */
+  .contact {
+    margin-top: 30px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-social_icon {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .contact-social_icon ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-social_icon ul li {
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+    background: url(../img/soc-cont.png) no-repeat;
+    background-position: 0px -66px;
+  }
+  .contact-social_icon .vb {
+    background-position: 0 0;
+  }
+  .contact-social_icon .inst {
+    background-position: 0 -264px;
+  }
+  .contact-social_icon .fas {
+    background-position: 0 -198px;
+  }
+
+  /* ABOUT */
+  .about {
+    margin: 30px auto 0 auto;
+    padding: 17px;
+  }
+  .about h2 {
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 45px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .about h3 {
+    margin: 0 0 40px 20px;
+    font-family: SegoeUI-Bold, sans-serif;
+    font-size: 65px;
+    color: #dedede;
+    text-transform: uppercase;
+  }
+  .about p {
+    font-family: SegoeUI, sans-serif;
+    font-size: 18px;
+    color: #6a696b;
+  }
+}
+@media screen and (min-width: 360px) {
+  .contact-social_icon {
+    width: 97%;
+  }
+  .contact-social_icon ul {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 375px) {
+  .contact-social_icon {
+    width: 97%;
+  }
+  .contact-social_icon ul {
+    width: 86%;
+  }
+}
+@media screen and (min-width: 411px) {
+  .ribbon button {
+    font-size: 24px;
+  }
+
+  .contact-social_icon {
+    width: 98%;
+  }
+  .contact-social_icon ul {
+    width: 78%;
+  }
+}
+@media screen and (min-width: 568px) {
+  figure figcaption {
+    border-radius: 20px;
+  }
+  figure figcaption img {
+    border-radius: 20px 20px 0 0;
+  }
+  figure figcaption h4 {
+    font-size: 18px;
+  }
+  figure figcaption p {
+    font-size: 22px;
+  }
+
+  .contact-social_icon ul {
+    width: 57%;
+  }
+}
+@media screen and (min-width: 640px) {
+  .contact-social_icon ul {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 667px) {
+  .contact-social_icon ul {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 731px) {
+  .contact-social_icon ul {
+    width: 44%;
+  }
+}
+@media screen and (min-width: 768px) {
+  figure figcaption h4 {
+    font-size: 24px;
+  }
+  figure figcaption p {
+    font-size: 28px;
+  }
+
+  .contact-social_icon {
+    width: 98%;
+  }
+  .contact-social_icon ul {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 812px) {
+  .contact-social_icon ul {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 823px) {
+  .contact-social_icon ul {
+    width: 39%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-social_icon ul {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .contact-social_icon ul {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 320px) {
+  footer {
+    width: 100%;
+    margin-top: 37px;
+    background-color: #2b2a2c;
+    padding: 20px 0 14px 0;
+  }
+
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-navigation p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 14px;
+    color: #8d8d8e;
+  }
+
+  .social-icon {
+    border-left: 1px solid #413f41;
+    padding-left: 10%;
+  }
+
+  .icon {
+    display: flex;
+  }
+  .icon li {
+    margin-right: 20px;
+  }
+  .icon li:last-child {
+    margin-right: 0;
+  }
+  .icon li a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 411px) {
+  .footer-navigation p {
+    font-size: 18px;
+  }
+
+  .icon a {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-navigation p {
+    font-size: 24px;
+  }
+
+  .icon a {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

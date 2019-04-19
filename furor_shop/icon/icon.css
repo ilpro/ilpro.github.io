@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?php1z4');
+  src:  url('fonts/icomoon.eot?php1z4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?php1z4') format('truetype'),
+    url('fonts/icomoon.woff?php1z4') format('woff'),
+    url('fonts/icomoon.svg?php1z4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+  content: "\e900";
+  color: #868688;
+}
+.icon-instgrm:before {
+  content: "\e901";
+  color: #868688;
+}
+.icon-tlgrm:before {
+  content: "\e902";
+  color: #868688;
+}
+.icon-viber:before {
+  content: "\e903";
+  color: #868688;
+}
+.icon-wsp:before {
+  content: "\e904";
+  color: #868688;
+}
