@@ -1,0 +1,7 @@
+{
+  "PORT": 11000,
+  "DB_URI": "localhost",
+  "DB_user": "root",
+  "DB_password": "Gh6M54Bk",
+  "DB_name": "partiyanashi.com"
+}

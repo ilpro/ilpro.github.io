@@ -1,0 +1,138 @@
+@import 'vars';
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	background-color: #1478bf;
+	padding: 14px 0 58px 0;
+}
+
+.footer-info {
+	width: 1180px;
+	margin: 0 auto 70px;
+	text-align: center;
+	text-transform: uppercase;
+	p {
+		font-family: $ffer;
+		font-size: 24px;
+		color: $white;
+		line-height: 1.5;
+	}
+	img {
+		margin-bottom: 40px;
+	}
+}
+
+.our {
+	font-family: $ffeb;
+	font-weight: bold;
+}
+
+.contacts {
+	width: 1170px;
+	margin: 0 auto;
+	display: $df;
+	justify-content: space-between;
+	h4 {
+		font-family: $ffeb;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: $white;
+		margin-bottom: 20px;
+	}
+}
+
+
+.join-in {
+	ul {
+		display: $df;
+		justify-content: space-around;
+		li {
+			a {
+				font-size: 40px;
+				color: #312c30;
+				&:hover {
+					color: #6ebdf9;
+				}
+			}
+		}
+	}
+
+}
+
+.number {
+	text-align: center;
+}
+
+
+
+.number-mobile {
+	width: 215px;
+	img {
+		margin-right: 7px;
+	}
+	a {	
+		font-family: $ffer;
+		font-size: 18px;
+		color: $white;
+	}
+}
+
+.number-mobile_tel {
+	display: $df;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.telegram {
+	text-align: center;
+	p {
+		font-family: $ffeb;
+		font-weight: bold;
+		color: $white;
+	}
+}
+
+.tg {
+	display: block;
+	margin:10px 0 0 0;
+	font-size: 40px !important;
+	color: #312c30 !important;
+	&:hover {
+		color: #6ebdf9 !important;
+	}
+}
+
+.social {
+	text-align: center;
+	line-height: 1.7;
+	p {
+		font-family: $ffer;
+		font-size: 18px;
+		color: $white;
+		margin-bottom: 20px;
+	}
+	ul{
+		width: 100px;
+		display: $df;
+		justify-content: space-between;
+		margin:0 auto;
+		li{
+			a {	
+			display: block;
+			font-size: 40px;
+			color: #312c30;
+			&:hover{
+				color: #6ebdf9;
+			}
+	}
+		}
+	}
+}
+
+.name {
+	font-family: $ffeb;
+	font-weight: bold;
+}
