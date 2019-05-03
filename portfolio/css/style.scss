@@ -42,59 +42,15 @@ li {
             background: url(../img/1.png) no-repeat center;
             background-size: cover;
         }
-        .button-menu {
-            .open-button {
-                display: block;
-                margin-right: 10px;
-                font-size: 40px;
-                color: $white;
-            }
-            .close-button {
-                display: none;
-                margin-right: 10px;
-                font-size: 40px;
-                color: $white;
-            }
-        }
         nav {
-            display: none;
-        }
-    }
-    main {
-        margin-top: -21px;
-        .about {
-            padding-top: 1px;
-            background: url(../img/code.png) no-repeat center;
-            background-size: cover;
-            .about-myself {
-                width: 50%;
-                background-color: $green;
-            }
-        }
-    }
-
-
-}
-
-
-@media (min-width: 1280px) {
-    header {
-        padding: 0 100px;
-        box-sizing: border-box;
-        .button-menu {
-            display: none !important;
-        }
-        nav {
-            display: block !important;
-            width: 600px;
-            padding: 0 20px;
-            box-sizing: border-box;
+            margin-right: 10px;
             ul {
-                @include dflex(flex,space-between,center);
+                display: $df;
+                flex-direction: column;
+                flex-wrap: wrap;
                 li {
                     a {
                         color: $white;
-                        font-size: 20px;
                         &:hover {
                             color: $green;
                         }
@@ -103,4 +59,75 @@ li {
             }
         }
     }
+    main {
+        margin-top: -21px;
+        .about {
+            height: 100vh;
+            padding-top: 1px;
+            background: url(../img/code.png) no-repeat center;
+            background-size: cover;
+            .about-myself {
+                width: 50%;
+                background-color: $green;
+            }
+        }
+        .my-skill {
+            margin: 20px 0;
+            text-align: center;
+            h2 {
+                margin-bottom: 20px;
+                font-weight: normal;
+                text-transform: uppercase;
+                span {
+                    font-weight: bold;
+                }
+                &:before {
+                    content: '';
+                    width: 60%;
+                    height: 8px;
+                    background-color: $green;
+                }
+            }
+            .skill {
+                width: 80%;
+                margin: 0 auto;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 0 $black;
+            }
+        }
+        .my-work {
+            margin-bottom: 20px;
+            text-align: center;
+            h2 {
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-weight: normal;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .work {
+                width: 80%;
+                margin: 0 auto;
+                display: $df;
+                justify-content: $sb;
+                flex-wrap: wrap;
+                div {
+                    width: 30%;
+                    height: 70px;
+                    margin-bottom: 10px;
+                    background: url(../img/work.png)no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $grey;
+    }
+
+
 }
+
+

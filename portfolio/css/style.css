@@ -1,22 +1,18 @@
 /* General style */
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   font-family: Poppins-Regular, Arial, sans-serif;
   font-size: 16px;
-  color: #000000;
-}
+  color: #000000; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 @media (min-width: 320px) {
   /* header */
@@ -26,74 +22,80 @@ li {
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: #333333;
-  }
-  header .top-bg {
-    display: none;
-    width: 45%;
-    height: 100%;
-    transform: skew(-50deg);
-    -webkit-transform: skew(-50deg);
-    -moz-transform: skew(-50deg);
-    -o-transform: skew(-50deg);
-    background: url(../img/1.png) no-repeat center;
-    background-size: cover;
-  }
-  header .button-menu .open-button {
-    display: block;
-    margin-right: 10px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  header .button-menu .close-button {
-    display: none;
-    margin-right: 10px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  header nav {
-    display: none;
-  }
+    background-color: #333333; }
+    header .top-bg {
+      display: none;
+      width: 45%;
+      height: 100%;
+      transform: skew(-50deg);
+      -webkit-transform: skew(-50deg);
+      -moz-transform: skew(-50deg);
+      -o-transform: skew(-50deg);
+      background: url(../img/1.png) no-repeat center;
+      background-size: cover; }
+    header nav {
+      margin-right: 10px; }
+      header nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; }
+        header nav ul li a {
+          color: #ffffff; }
+          header nav ul li a:hover {
+            color: #6F9522; }
 
   main {
-    margin-top: -21px;
-  }
-  main .about {
-    padding-top: 1px;
-    background: url(../img/code.png) no-repeat center;
-    background-size: cover;
-  }
-  main .about .about-myself {
-    width: 50%;
-    background-color: #6F9522;
-  }
-}
-@media (min-width: 1280px) {
-  header {
-    padding: 0 100px;
-    box-sizing: border-box;
-  }
-  header .button-menu {
-    display: none !important;
-  }
-  header nav {
-    display: block !important;
-    width: 600px;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header nav ul li a {
-    color: #ffffff;
-    font-size: 20px;
-  }
-  header nav ul li a:hover {
-    color: #6F9522;
-  }
-}
+    margin-top: -21px; }
+    main .about {
+      height: 100vh;
+      padding-top: 1px;
+      background: url(../img/code.png) no-repeat center;
+      background-size: cover; }
+      main .about .about-myself {
+        width: 50%;
+        background-color: #6F9522; }
+    main .my-skill {
+      margin: 20px 0;
+      text-align: center; }
+      main .my-skill h2 {
+        margin-bottom: 20px;
+        font-weight: normal;
+        text-transform: uppercase; }
+        main .my-skill h2 span {
+          font-weight: bold; }
+        main .my-skill h2:before {
+          content: '';
+          width: 60%;
+          height: 8px;
+          background-color: #6F9522; }
+      main .my-skill .skill {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 0 #000000; }
+    main .my-work {
+      margin-bottom: 20px;
+      text-align: center; }
+      main .my-work h2 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: normal; }
+        main .my-work h2 span {
+          font-weight: bold; }
+      main .my-work .work {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        main .my-work .work div {
+          width: 30%;
+          height: 70px;
+          margin-bottom: 10px;
+          background: url(../img/work.png) no-repeat center;
+          background-size: cover; }
+
+  footer {
+    background-color: #646464; } }
 
 /*# sourceMappingURL=style.css.map */
