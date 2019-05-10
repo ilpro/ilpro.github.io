@@ -34,6 +34,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 1500px;
 }
 .main-wrapper .page-content {
+  position: relative;
   padding-top: 20px;
 }
 .main-wrapper .page-content .date ul {
@@ -120,13 +121,15 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .main-wrapper .page-content .creat-company_items .creat-company_data input {
   width: 47%;
+  height: 30px;
   border-radius: 10px;
   border: 1px solid #E6C12E;
+  outline: none;
 }
 .main-wrapper .page-content .creat-company_items .creat-company_button {
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin: 20px;
 }
 .main-wrapper .page-content .creat-company_items .creat-company_button button {
   width: 125px;
@@ -215,9 +218,13 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 .main-wrapper .page-content .formats-table {
+  width: 858px;
+  position: absolute;
+  top: 0;
   display: none;
   border-top: 1px solid #6E6E6E;
   border-bottom: 1px solid #6E6E6E;
+  margin-top: 50px;
 }
 .main-wrapper .page-content .formats-table .formats-table_button {
   display: flex;

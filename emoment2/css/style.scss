@@ -34,6 +34,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	width: 855px;
 	height: 1500px;
 	.page-content {
+		position: relative;
 		padding-top: 20px;
 		.date {
 			ul {
@@ -119,14 +120,16 @@ input[type="search"]::-webkit-search-cancel-button {
 				justify-content: space-between;
 				input {
 					width: 47%;
+					height: 30px;
 					border-radius: 10px;
     				border: 1px solid #E6C12E;
+    				outline: none;
 				}
 			}
 			.creat-company_button {
 				display: flex;
 				justify-content: flex-end;
-				margin-top: 20px;
+				margin: 20px;
 				button {
 					width: 125px;
 					height: 25px;
@@ -218,9 +221,13 @@ input[type="search"]::-webkit-search-cancel-button {
 			}
 		}
 		.formats-table {
+			width: 858px;
+			position: absolute;
+			top: 0;
 			display: none;
 			border-top: 1px solid #6E6E6E;
 			border-bottom: 1px solid #6E6E6E;
+			margin-top: 50px ;
 			.formats-table_button {
 				display: flex;
 				button {
