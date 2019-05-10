@@ -29,6 +29,16 @@ $('button.but').click(function(){
 	$('.but').removeClass('active-button');
 	$(this).addClass('active-button');
 
+	if($('button.but:eq(1)').hasClass('active-button')){
+		$('.formats').show();
+		$('.domains').hide();
+	}
+
+	else {
+		$('.formats').hide();
+		$('.domains').show();
+	}
+
 });
 
 
@@ -39,6 +49,40 @@ $('button.but-tab').click(function(){
 
 });
 
+
+$('button.buttons-act').click(function(){
+
+	$('.buttons-act').removeClass('active-button2');
+	$(this).addClass('active-button2');
+
+
+	if($('button.buttons-act:eq(0)').hasClass('active-button2')){
+		$('.table-domains').css('display','flex');
+		$('.table-formats').hide();
+		$('.table-devices').hide();
+	}
+
+	else if ($('button.buttons-act:eq(1)').hasClass('active-button2')){
+		$('.table-formats').show();
+		$('.table-domains').hide();
+		$('.table-devices').hide();
+	}
+
+	else {
+		$('.table-formats').hide();
+		$('.table-domains').hide();
+		$('.table-devices').show();
+	}
+
+});
+
+
+$('li.list-active').click(function(){
+
+	$('.list-active').removeClass('active');
+	$(this).addClass('active');
+
+});
 
 
 });

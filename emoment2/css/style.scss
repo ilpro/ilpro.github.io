@@ -35,7 +35,9 @@ a {
 }
 
 .active-button2 {
-	display: none;
+	display: block !important;
+	background-color: #313133 !important;
+	color: #E6C12E !important;
 }
 
 .active-buttons_table {
@@ -98,6 +100,7 @@ input[type="search"]::-webkit-search-cancel-button {
 					outline: none;
 					border-radius: 10px;
 					padding: 5px 0;
+					text-indent: 1em;
 				}
 				.formats-table_search-button {
 					display: flex;
@@ -167,6 +170,7 @@ input[type="search"]::-webkit-search-cancel-button {
 			
 			.table-devices {
 				display: none;
+				margin: 30px 0;
 				.table-devices_item {
 					width: 300px;
 					display: flex;
@@ -192,7 +196,7 @@ input[type="search"]::-webkit-search-cancel-button {
 			}
 			.table-domains {
 				display: none;/*flex*/
-				margin-bottom: 20px;
+				margin: 20px 0;
 				.table-domains_item {
 					width: 426px;
 					height: 337px;
