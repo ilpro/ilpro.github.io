@@ -24,8 +24,16 @@ a {
 }
 
 .active {
-	border-bottom: 3px solid #E6C12E;
-	z-index: 1;
+	&:after {
+		content:'';
+		display: block;
+		position: absolute;
+		top: 38px;
+		width: 100%;
+		height: 3px;
+		background-color: #E6C12E; 
+    	z-index: 1;
+	}
 }
 
 .active-button {
@@ -250,12 +258,13 @@ input[type="search"]::-webkit-search-cancel-button {
 				left: -40px;
 				display: flex;
 				justify-content: space-between;
-				li {
+				.list-active {
+					position: relative;
 					font-size: 20px;
 					font-weight: bold;
 					color: #6E6E6E;
 					cursor: pointer;
-					padding-bottom: 5px;
+					/*padding-bottom: 5px;*/
 					&:last-child {
 						display: flex;
 						flex-direction: column;
