@@ -61,7 +61,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .main-wrapper {
   position: relative;
   margin: 0 auto;
-  width: 855px;
+  width: 975px;
   height: 1500px;
 }
 .main-wrapper .formats-table {
@@ -273,20 +273,19 @@ input[type="search"]::-webkit-search-cancel-button {
   content: '';
   position: absolute;
   top: 38px;
-  width: 855px;
+  width: 975px;
   height: 3px;
   background-color: #D4D4D4;
 }
 .main-wrapper .page-content .content-panel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .main-wrapper .page-content .content-panel button {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 200px;
+  justify-content: center;
+  width: 300px;
   height: 25px;
   overflow: visible;
   text-transform: none;
@@ -302,19 +301,23 @@ input[type="search"]::-webkit-search-cancel-button {
   outline: none;
   border-radius: 3px;
 }
+.main-wrapper .page-content .content-panel button svg {
+  margin-right: 20px;
+}
 .main-wrapper .page-content .content-panel .panel-item {
-  width: 700px;
+  width: 54.5%;
+  margin-left: 20px;
 }
 .main-wrapper .page-content .content-panel .panel-item ul {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 .main-wrapper .page-content .content-panel .panel-item ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-left: 1px solid #D4D4D4;
-  padding: 0 5px;
+  padding: 0 8px;
   box-sizing: border-box;
   font-size: 11px;
   cursor: pointer;
@@ -379,13 +382,17 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .main-wrapper .page-content .company .company-item ul {
   display: flex;
-  width: 100%;
+  width: 56%;
   justify-content: space-between;
+  margin-left: 40px;
+}
+.main-wrapper .page-content .company .company-item ul li {
+  font-size: 13px;
 }
 .main-wrapper .page-content .company .company-item .switch {
   position: relative;
   display: inline-block;
-  width: 55px;
+  width: 38px;
   height: 16px;
   border-radius: 45px;
   margin-right: 10px;
@@ -473,7 +480,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .main-wrapper .page-content .tab-selection .tab-selection_item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 29px;
   background-color: #F1EEEE;
   margin-bottom: 10px;
@@ -488,11 +495,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .main-wrapper .page-content .tab-selection .tab-selection_item p svg {
   margin-right: 5px;
+  margin-left: -30px;
 }
 .main-wrapper .page-content .tab-selection .tab-selection_item ul {
-  width: 67%;
+  width: 56%;
   display: flex;
   justify-content: space-between;
+  margin-left: 50px;
+}
+.main-wrapper .page-content .tab-selection .tab-selection_item ul li {
+  font-size: 13px;
 }
 .main-wrapper .page-content .tab-selection .formats {
   display: none;
