@@ -526,7 +526,11 @@ input[type="search"]::-webkit-search-cancel-button {
 			}
 			.formats {
 				display: none;
+				ul {
+					margin-left: 95px;
+				}
 			}
+
 		}
 		.buttons-table {
 			display: flex;
