@@ -15,6 +15,13 @@ $('.creat-company').click(function(){
 	$('svg:eq(0)').toggleClass('svg-active2');
 });
 
+$('.delete-company').click(function(){
+	$(this).toggleClass('delete-company_active');
+	$('.check-active').toggleClass('check-active2');
+	$('svg:eq(3)').toggleClass('svg-active');
+	$('svg:eq(2)').toggleClass('svg-active2');
+});
+
 
 $('.cross').click(function(){
 

@@ -15,6 +15,10 @@ a {
   color: #E6C12E !important;
 }
 
+.delete-company_active {
+  background-color: #E10000 !important;
+}
+
 .svg-active {
   display: block !important;
 }
@@ -285,7 +289,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 140px;
   height: 25px;
   overflow: visible;
   text-transform: none;
@@ -367,6 +371,14 @@ input[type="search"]::-webkit-search-cancel-button {
 .main-wrapper .page-content .company .company-item:last-child {
   margin-bottom: 20px;
 }
+.main-wrapper .page-content .company .company-item .check-active {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+.main-wrapper .page-content .company .company-item .check-active2 {
+  display: block;
+}
 .main-wrapper .page-content .company .company-item a {
   background-color: #E6C12E;
   padding: 5px;
@@ -384,7 +396,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: flex;
   width: 56%;
   justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 15px;
 }
 .main-wrapper .page-content .company .company-item ul li {
   font-size: 13px;
@@ -395,7 +407,7 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 38px;
   height: 16px;
   border-radius: 45px;
-  margin-right: 10px;
+  margin: 0 10px 0 20px;
 }
 .main-wrapper .page-content .company .company-item .switch input {
   display: none;
@@ -501,7 +513,7 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 56%;
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .main-wrapper .page-content .tab-selection .tab-selection_item ul li {
   font-size: 13px;
