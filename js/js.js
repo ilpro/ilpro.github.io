@@ -7,6 +7,13 @@ $('.company-item_link').click(function(){
 });
 
 
+$('.cross').click(function(){
+
+	$('.formats-table').hide();
+	$('.page-content').show();	
+
+});
+
 $('.creat-company').click(function(){
 
 	$('.creat-company_items').toggleClass('active-company');
@@ -23,12 +30,6 @@ $('.delete-company').click(function(){
 });
 
 
-$('.cross').click(function(){
-
-	$('.formats-table').hide();
-	$('.page-content').show();	
-
-});
 
 
 $('button.but').click(function(){
@@ -53,6 +54,13 @@ $('button.but-tab').click(function(){
 
 	$('.but-tab').removeClass('active-buttons_table');
 	$(this).addClass('active-buttons_table');
+
+});
+
+$('.panel-item td svg').click(function(){
+
+	$('svg').removeClass('panel-item_active');
+	$(this).addClass('panel-item_active');
 
 });
 
@@ -90,6 +98,8 @@ $('li.list-active').click(function(){
 	$(this).addClass('active');
 
 });
+
+
 
 
 });
