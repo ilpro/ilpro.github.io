@@ -578,6 +578,7 @@ svg {
 
 .table-devices {
   display: none;
+  margin: 20px 0;
 }
 
 .table-devices .table-devices_item {
