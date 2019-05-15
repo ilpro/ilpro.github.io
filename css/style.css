@@ -384,7 +384,7 @@ input:checked + .slider:before {
   justify-content: flex-end;
     display: flex;
     width: 98%;
-    margin: 20px 0;
+    margin: 10px 0;
     background-color: #fff;
 }
 
