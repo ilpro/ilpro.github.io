@@ -64,8 +64,8 @@ table {
       display: block;
       position: absolute;
       right: 10px;
-      height: 25px;
-      width: 2px;
+      height: 20px;
+      width: 1px;
       background-color: black;
     }
 
@@ -398,7 +398,7 @@ input:checked + .slider:before {
   position: absolute;
   width: 98.5%;
   height: 1px;
-  background-color: #6E6E6E;
+  background-color: #cccccc;
 }
 
 .formats {
@@ -410,8 +410,8 @@ input:checked + .slider:before {
   display: block;
   position: absolute;
   width: 98.5%;
-  height: 2px;
-  background-color: #6E6E6E;
+  height: 1px;
+  background-color: #cccccc;
 }
 
 
@@ -428,7 +428,7 @@ input:checked + .slider:before {
   left: -14px;
   width: 103%;
   height: 1px;
-  background-color: #6E6E6E;
+  background-color: #cccccc;
   z-index: 1;
 }
 
@@ -457,7 +457,7 @@ input:checked + .slider:before {
   position: relative;
   display: flex;
   width: 275px;
-  margin: -9px auto 20px -25px;
+  margin: -10px auto 20px -25px;
 }
 
 .but {
