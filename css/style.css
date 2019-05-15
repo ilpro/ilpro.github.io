@@ -42,7 +42,7 @@ table {
       position: relative;
 			display: flex;
 			align-items: center;
-      justify-content: space-around;
+      /*justify-content: space-around;*/
 			/*border-left: 1px solid black;*/
 			padding: 0 10px;
 			width: 100px;
@@ -403,7 +403,8 @@ input:checked + .slider:before {
   content: '';
   display: block;
   position: absolute;
-  width: 98.5%;
+  left: -5px;
+  width: 101%;
   height: 2px;
   background-color: #6E6E6E;
 }
@@ -432,8 +433,8 @@ input:checked + .slider:before {
 .tabs-item {
   position: relative;
   display: flex;
-  width: 300px;
-  margin: 0 auto 20px auto;
+  width: 295px;
+  margin: 0 auto 20px -24px;
 }
 
 .but {
@@ -553,6 +554,10 @@ svg {
     border-radius: 10px;
     border: 1px solid #D4D4D4;
     text-indent: 1em;
+}
+
+.formats-table_item img {
+  margin: 0 -80px 0 25px;
 }
 
 .formats-table_item-button {
