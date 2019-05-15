@@ -1,3 +1,9 @@
+body {
+  font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 13px;
+}
+
 
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -34,8 +40,9 @@ table {
 		tr {
 			display: flex;
 			align-items: center;
-      background-color: #F1EEEE;
+      background-color: #f2f2f2;
       margin-bottom: 10px;
+      border-radius: 5px;
 		}
 
 		td {
@@ -44,16 +51,19 @@ table {
 			align-items: center;
       /*justify-content: space-around;*/
 			/*border-left: 1px solid black;*/
-			padding: 0 10px;
+			/*padding: 0 10px;*/
+      font-size: 13px;
 			width: 100px;
-      background-color: #F1EEEE;
+      height: 25px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
 		}
 
     td:after {
       content: '';
       display: block;
       position: absolute;
-      right: 0px;
+      right: 10px;
       height: 25px;
       width: 2px;
       background-color: black;
@@ -142,7 +152,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .check-active {
   position: absolute;
-  top: 16px;
+  top: 3px;
   left: 0;
   display: none;
   cursor: pointer;
@@ -165,7 +175,7 @@ input[type="search"]::-webkit-search-cancel-button {
   top: -15px;
   right: 0;
   width: 101.7%;
-  height: 2px;
+  height: 1px;
   background-color: #6E6E6E;
 }
 
@@ -188,11 +198,15 @@ input[type="search"]::-webkit-search-cancel-button {
     box-shadow: 0 2px 8px -3px #000000;
 }
 
+p:last-child {
+  margin-left: 10px;
+}
+
 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 144px;
+  width: 135px;
   height: 25px;
   overflow: visible;
   text-transform: none;
@@ -289,7 +303,7 @@ input:checked + .slider:before {
 }
 
 .date {
-  width: 1080px;
+  width: 1000px;
   margin: 60px auto -60px auto;
 }
 
@@ -305,7 +319,7 @@ input:checked + .slider:before {
   content: '';
   position: absolute;
   top: 38px;
-  width: 1080px;
+  width: 1000px;
   height: 3px;
   background-color: #D4D4D4;
 }
@@ -316,6 +330,13 @@ input:checked + .slider:before {
     font-weight: bold;
     color: #6E6E6E;
     cursor: pointer;
+}
+
+.company-item {
+  width: 300px;
+  border-left: none;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .company-item_link {
@@ -335,11 +356,12 @@ input:checked + .slider:before {
 .creat-company_items {
   display: none;
   flex-direction: column;
+  margin-top: 20px;
   background-color: #fff;
 }
 
 .creat-company_data {
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -361,7 +383,7 @@ input:checked + .slider:before {
 .creat-company_button {
   justify-content: flex-end;
     display: flex;
-    width: 100%;
+    width: 98%;
     margin: 20px 0;
     background-color: #fff;
 }
@@ -375,7 +397,7 @@ input:checked + .slider:before {
   display: block;
   position: absolute;
   width: 98.5%;
-  height: 2px;
+  height: 1px;
   background-color: #6E6E6E;
 }
 
@@ -403,10 +425,11 @@ input:checked + .slider:before {
   content: '';
   display: block;
   position: absolute;
-  left: -5px;
-  width: 101%;
-  height: 2px;
+  left: -14px;
+  width: 103%;
+  height: 1px;
   background-color: #6E6E6E;
+  z-index: 1;
 }
 
 .tabs tr {
@@ -433,8 +456,8 @@ input:checked + .slider:before {
 .tabs-item {
   position: relative;
   display: flex;
-  width: 295px;
-  margin: -8px auto 20px -25px;
+  width: 275px;
+  margin: -9px auto 20px -25px;
 }
 
 .but {
@@ -540,7 +563,7 @@ svg {
 
 .formats-table_item {
     margin-bottom: 10px;
-    height: 65px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
