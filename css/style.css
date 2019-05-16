@@ -324,6 +324,22 @@ input:checked + .slider:before {
   background-color: #D4D4D4;
 }
 
+
+.date ul li:last-child {
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date ul li:last-child span {
+  font-size: 13px;
+}
+
+.date ul li:last-child .active {
+  top: 48px;
+}
+
 .list-active {
   position: relative;
     font-size: 20px;
