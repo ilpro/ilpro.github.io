@@ -1,0 +1,66 @@
+@charset "utf-8";
+// Base
+$font-family-base: 'PT Sans', sans-serif;
+$font-size-base: 13px;
+$font-size-large: 15px;
+$standard-ribbon-width: 1020px;
+$menu-width: 150px;
+
+$w-light: 300;
+
+$z-header: 10;
+$z-stations-list: -1;
+
+
+//Colors
+$body-color: #efefef;
+$main-color: #313133;
+$main-color-antagonist: #e6c12e;
+$main-color-complement: #345e91;
+$complement-color: #cccccc;
+$complement-color-darker: #5C5C5E;
+
+$border-color-main: #fff;
+$border-color-main-inverse: $main-color;
+$border-color-complement: #cccccc;
+
+$background-color-main: #fff;
+$background-color-main-inverse: $main-color;
+$background-color-complement: $complement-color;
+$background-color-complement-darker: $complement-color-darker;
+$background-color-antagonist: #e6c12e;
+
+$font-color-main: $main-color;
+$font-color-main-inverse: #fff;
+$font-color-complement: #B3B4B4;
+$font-color-antagonist: #e6c12e;
+
+$rating-star-active: $main-color-antagonist;
+
+//old
+$font-color--dark: #222222;
+$font-color--middle: #999;// #999999
+$font-color--light: #313133;//#ffffff
+$font-color--orange: #4A4A4D;//#ED1E79 /#ffae2e
+$font-color--white: #fff;
+$font-color--soft-light: #666666;
+
+$border-color--black: #000;//#ED1E79/#000
+$border-color--orange: #4A4A4D;//#ffae2e/#ED1E79
+$border-color--dark: #333333;
+$border-color--white: #fff;
+$border-color-complement: #B3B4B4;
+
+$bg-color--orange: #4A4A4D;//#ffae2e/#ED1E79
+$bg-color--lighter: #f2f2f2;//#333333
+$bg-color--soft-light: #666666;
+$bg-color--very-light: #999999;
+$bg-color--darker: #F2F2F2;//#242424
+$bg-color--normal: #fff;//#222222
+$bg-color--light-grey: #e0e0e0;
+$bg-color--white: #fff;
+$bg-color--dark-orange: rgba(255, 174, 46, .7);
+$bg-color--allow: #39B54A;
+$bg-color--not-allow: #FF0000;
+$bg-color-complement: #B3B4B4;
+$bg-color-dark-grey: #cccccc;

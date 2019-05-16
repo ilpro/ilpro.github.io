@@ -1,0 +1,87 @@
+.company-site-page {
+  width: 854px; }
+  .company-site-page .company-site-divider {
+    width: 700px;
+    height: 1px;
+    background-color: #cccccc;
+    margin-left: 124px;
+    position: relative; }
+    .company-site-page .company-site-divider p {
+      position: absolute;
+      left: -70px;
+      top: -7px;
+      color: #000;
+      font-size: 14px;
+      text-transform: uppercase;
+      z-index: 10; }
+  .company-site-page .company-name-padding svg {
+    margin-right: 10px;
+    margin-left: 10px; }
+  .company-site-page .company-name-width {
+    /*width: 292px;*/ }
+  .company-site-page .right-content-fill-head {
+    margin-right: 0; }
+  .company-site-page .body-row .row-content-part .right-content-fill {
+    width: 540px;
+    margin-left: 5px; }
+  .company-site-page .table-heading .right-content-fill-head {
+    width: 540px; }
+  .company-site-page .title-block {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+    color: #313133;
+    background-color: #e6c12e;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block; }
+  .company-site-page .page-content {
+    padding: 10px 30px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0); }
+    .company-site-page .page-content .delete-button {
+      background-color: #fff; }
+    .company-site-page .page-content .check-container {
+      width: 100%;
+      border-radius: 2px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: relative; }
+      .company-site-page .page-content .check-container:hover {
+        background-color: rgba(251, 173, 48, 0.5); }
+      .company-site-page .page-content .check-container input {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+        z-index: -1; }
+      .company-site-page .page-content .check-container input[type=checkbox]:checked + label .check-img {
+        background-position: 0px -16px; }
+      .company-site-page .page-content .check-container label {
+        position: relative;
+        height: 100%;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      .company-site-page .page-content .check-container .check-img {
+        width: 15px;
+        height: 15px;
+        display: block;
+        background: url(../img/checkbox-commercial-ico.svg) no-repeat 0 0; }
+
+/*# sourceMappingURL=2.2.26.page-company-site.css.map */

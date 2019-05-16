@@ -1,0 +1,679 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.miss-city-page{
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  padding: 7px 5px;
+  .radio-page__list-container{
+    background-color: #fff;
+    .radio-page__block.ui-sortable-handle{
+      &.active{
+        background-color: #F05644;
+      }
+    }
+  }
+  .sort-menu-block.second-sort.site-start.clearfix{
+    padding: 10px 5px;
+    width: 870px;
+    .filter-menu-button{
+      width: 212.5px;
+    }
+  }
+  .search {
+    width: 850px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 5;
+    padding: 15px 10px 10px;
+    border-bottom: solid 1px #B3B4B4;
+    margin: 0 auto;
+
+    &__input {
+      color: #808080;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      position: relative;
+      border: none;
+      width: 790px;
+      left: 8px;
+    }
+    &__input:active, &__input:hover, &__input:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+    &__icosearch {
+      position: relative;
+      top: 2px;
+      cursor: pointer;
+    }
+    &__close {
+      position: relative;
+      top: 1px;
+      float: right;
+      cursor: pointer;
+    }
+    &-result {
+      width: 100%;
+      position: absolute;
+      top: 43px;
+      left: 0;
+      z-index: 3;
+      max-height: 100%;
+      background-color: #FFFFFF;
+      box-shadow: 0 10px 40px -10px #000;
+      overflow-y: auto;
+      display: none;
+    }
+  }
+
+  .miss-list {
+    width: 850px;
+    margin: 20px auto 0;
+    li {
+      list-style-type: none;
+    }
+
+    .miss {
+      @include flexbox;
+      @include align-items-center;
+      margin: 5px;
+      background-color: #F2F2F2;
+      position: relative;
+
+      .progress{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        margin: 0;
+        height: 100%;
+        width: 60%;
+        background-color: #CCCCCC;
+      }
+
+      & > * {
+        margin: 0 3px;
+
+        svg {
+          margin: 0 3px;
+        }
+      }
+      .position {
+        font-weight:bold;
+        font-size: 21px;
+        color: #fff;
+        background-color: #E6C12E;
+        padding: 12px;
+        margin: 0;
+        z-index: 1;
+      }
+      .user{
+        @include flex(0 420px);
+        @include align-items-center;
+        @include flexbox;
+        z-index: 1;
+        cursor: pointer;
+
+        .id{
+          font-size: 13px;
+          color: #fff;
+          background-color: #313133;
+          padding: 2px 4px;
+          margin: 0 5px;
+        }
+        .info{
+          @include flexbox;
+          flex-direction: column;
+          align-items: left;
+          font-size: 12px;
+          .nick{
+            color: #333333;
+            font-weight: bold;
+          }
+          .age-city{
+            color: #616161;
+          }
+        }
+      }
+      .miss-sub-container{
+        @include flex(0 100px);
+        @include align-items-center;
+        @include flexbox;
+        justify-content: center;
+        z-index: 1;
+        .sub-button{
+          flex: 0;
+          font-size: 10px;
+          padding: 2px 4px;
+        }
+      }
+      .poll{
+        @include flex(0 150px);
+        @include align-items-center;
+        @include flexbox;
+        z-index: 1;
+        .text{
+          color: #616161;
+          font-size: 12px;
+          margin-right: 5px;
+        }
+        .rep-action{
+          display: flex;
+          align-items:center;
+          justify-content: center;
+          padding: 10px 5px;
+          border-radius: 3px;
+          background-color: #fff;
+          cursor: pointer;
+          margin-right: 5px;
+          &.plus.active{
+            svg{
+              path{
+                fill: #FBB03B;
+              }
+            }
+          }
+          &.minus.active{
+            svg{
+              path{
+                fill: #616161;
+              }
+            }
+          }
+        }
+      }
+      .result{
+        @include align-items-center;
+        @include flexbox;
+        color: #616161;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1;
+      }
+    }
+  }
+  .today-view{
+    display: none;
+    &.active-filter{
+      display: block;
+    }
+  }
+  .yesterday-view{
+    display: none;
+    &.active-filter{
+      display: block;
+    }
+    .miss-list{
+      .miss{
+        .user {
+          @include flex(0 500px);
+        }
+        .poll{
+          @include flex(0 90px);
+          .rep-status{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            padding: 10px 5px;
+            border-radius: 3px;
+            background-color: #fff;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .week-view{
+    display: none;
+    &.active-filter{
+      display: block;
+    }
+    .miss-list{
+      .miss{
+        .user {
+          @include flex(0 180px);
+        }
+        .week-days {
+          @include flex(0 150px);
+          @include align-items-center;
+          @include flexbox;
+          z-index: 1;
+          .week-day{
+            background-color: #B3B3B3;
+            width: 40px;
+            height: 48px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 21px;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 4px;
+            &.active{
+              background-color: #616161;
+            }
+          }
+        }
+        .poll{
+          @include flex(0 90px);
+          .rep-status{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            padding: 10px 5px;
+            border-radius: 3px;
+            background-color: #fff;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .total-view{
+    display: none;
+    &.active-filter{
+      display: block;
+    }
+    .miss-list{
+      .miss{
+        .user {
+          @include flex(0 395px);
+        }
+        .days{
+          @include flex(0 100px);
+          @include align-items-center;
+          @include flexbox;
+          z-index: 1;
+          .text{
+            color: #616161;
+            font-size: 12px;
+            margin-right: 5px;
+          }
+          .amount{
+            background-color: #B3B3B3;
+            width: 50px;
+            height: 48px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .poll{
+          @include flex(0 90px);
+          .rep-status{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            padding: 10px 5px;
+            border-radius: 3px;
+            background-color: #fff;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.miss-city-settings-page{
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  padding: 75px 0 7px;
+  .settings-block-title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 10px;
+    font-size: $font-size-large;
+    color: $font-color-main;
+    background-color: $background-color-antagonist;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .2);
+  }
+
+  .settings-block-status {
+    position: absolute;
+    @include flexbox;
+    @include align-items-center;
+    top: 10px;
+    right: 15px;
+    width: 730px;
+    height: 38px;
+    color: white;
+    padding-left: 15px;
+    background-color: #FF0000;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+    &.allowed {
+      content: "Вітаємо! Ви зареєстровані в конкурсі!";
+      background-color: #39B54A;
+    }
+  }
+  .settings-item{
+    display: flex;
+    align-items: center;
+    padding:10px;
+    position: relative;
+    .note{
+      font-size: 12px;
+      color: #808080;
+      margin-left: 3px;
+    }
+    .status{
+      color: $main-color;
+      font-size: 14px;
+      text-transform: uppercase;
+      position: absolute;
+      right: 20px;
+    }
+    .text{
+      color: $main-color;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    .status-indicator{
+      position: absolute;
+      right: 33px;
+    }
+    input{
+      border: 1px solid #666666;
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: $main-color;
+      padding: 4px 5px;
+      outline: none;
+    }
+    &.name{
+      .text{
+        margin-right: 10px;
+      }
+      input{
+        width: 160px;
+        margin-right: 20px;
+      }
+    }
+    &.date{
+      .text{
+        margin: 0 10px 0 15px;
+      }
+    }
+    &.location{
+      padding-left: 25px;
+      .text{
+        margin-right: 10px;
+      }
+      input{
+        width: 60px;
+        margin-right: 20px;
+      }
+      .street{
+        width: 210px;
+      }
+      .info-parameter{
+        margin-right: 27px;
+
+      }
+    }
+    &.gender{
+      .text{
+        @include flex(0 435px);
+      }
+    }
+    &.phone{
+      .text{
+        @include flex(0 310px);
+      }
+      span{
+        color: $main-color;
+        font-size: 14px;
+        margin-right: 3px;
+      }
+      input{
+        width: 210px;
+      }
+    }
+    &.education{
+      .text{
+        @include flex(0 345px);
+      }
+    }
+
+
+    .check-container {
+      width: 100%;
+      border-radius: 2px;
+      @include not-selectable;
+      position: relative;
+
+      &.radio-button {
+        .check-img {
+          background: url(../img/radio-ms-ico.svg) no-repeat 0 0;
+        }
+      }
+
+      input {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      input:checked + label .check-img {
+        background-position: 0px -21px;
+      }
+
+      label {
+        position: relative;
+        height: 100%;
+        cursor: pointer;
+        @include flexbox;
+      }
+
+      .check-img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        vertical-align: middle;
+        background: url(../img/checkbox-ms-ico.svg) no-repeat 0 0;
+      }
+
+    }
+    &.check-question{
+      .text{
+        @include flex(0 970px);
+      }
+      .check-container .info-name{
+        color: $main-color;
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+
+  .photos-wrapper {
+    background: $bg-color--lighter;
+    padding: 7px 7px 17px 7px;
+    margin-top: 13px;
+    text-align: center;
+    display: block;
+    margin-bottom: 13px;
+
+    &:before {
+      content: '';
+      @include bg-fill;
+      display: none;
+      background-color: $bg-color--orange;
+      z-index: 1;
+    }
+
+    &:after {
+      content: 'Drop image here';
+      font-size: 19px;
+      color: $font-color--light;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: none;
+      @include transform(translate(-50%, -50%));
+      z-index: 2;
+    }
+
+    &.is-dragover {
+      &:before, &:after {
+        display: block;
+      }
+    }
+
+    .single-photo {
+      position: relative;
+      display: inline-block;
+      width: auto;
+      height: 90px;
+      margin: 3px 1px;
+      vertical-align: middle;
+
+      &:hover {
+        .single-photo-edit {
+          opacity: 1;
+        }
+
+      }
+
+      .profile-img {
+        width: auto;
+        height: 90px;
+        cursor: pointer;
+      }
+
+      .single-photo-edit {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        background-color: $bg-color--lighter;
+        border: 1px solid $border-color--orange;
+        opacity: 0;
+        @include transition(all .2s ease);
+
+        &:hover {
+          .edit-img-menu {
+            display: block;
+          }
+        }
+
+        .edit-img-menu {
+          position: absolute;
+          display: none;
+          top: 130%;
+          right: 25%;
+          background-color: $bg-color--lighter;
+          line-height: normal;
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .75);
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 90%;
+            width: 0;
+            height: 0;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 5px solid $bg-color--lighter;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            top: -10px;
+            left: 0;
+          }
+
+          .option {
+            display: block;
+            cursor: pointer;
+            padding: 5px 13px;
+            color: $font-color--light;
+            white-space: nowrap;
+            text-transform: uppercase;
+            line-height: 13px;
+
+            &:hover {
+              background-color: $bg-color--soft-light;
+              color: #FBAD30;
+            }
+
+          }
+        }
+
+        .single-photo-edit-ico {
+          margin-top: 4px;
+        }
+
+      }
+
+    }
+
+    .fs-upload-target {
+      @extend .single-photo;
+      border: 1px solid $border-color--black;
+      height: 90px;
+      width: 90px;
+
+      .add-photo-ico {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .settings-button-container{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .miss-city-check{
+      width: 200px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $main-color;
+      font-size: 16px;
+      background-color: #E6C12E;
+      border-radius: 5px;
+      cursor: pointer;
+      &.checking{
+        background-color: #E6E6E6;
+      }
+      &.canceled{
+        background-color: #FF0000;
+        color: #fff;
+      }
+      &.accepted{
+        background-color: #24D134;
+        color: #fff;
+      }
+    }
+  }
+}

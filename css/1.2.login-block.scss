@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.profile {
+  @include flexbox;
+  @include align-items-center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  height: 100%;
+
+
+  .user-avatar {
+    @include user-avatar(32px);
+    border-radius: 50%;
+  }
+
+  //TODO variables!
+  .profile-name {
+    margin: 0 10px 0 20px;
+    max-width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    padding: 0 1px;
+    color: $font-color-main-inverse;
+  }
+
+  .profile-menu-head {
+    position: absolute;
+    display: none;
+    top: 115%;
+    right: 0;
+    left: 0;
+    background-color: $background-color-main;
+    line-height: normal;
+    border: 1px solid #CCCCCC;
+    text-align: left;
+    padding: 5px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: -11px;
+      right: 7%;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-bottom: 6px solid $border-color-main;
+    }
+
+    &:before {
+      top: -12px;
+      border-bottom: 6px solid #CCCCCC;
+    }
+
+    .option {
+      display: block;
+      cursor: pointer;
+
+
+      &:hover {
+        background-color: #CCCCCC;
+        color: $font-color-main-inverse;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        padding: 8px 20px;
+        width: 100%;
+      }
+    }
+  }
+
+  .profile-cover {
+    @include bg-fill;
+
+    &.hovered {
+      background-color: rgba(153, 153, 153, 0.2);
+    }
+  }
+}
+
+.not-auth {
+  @include flexbox;
+  @include align-items-center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  height: 100%;
+  color: $font-color-main-inverse;
+  font-size: 15px;
+
+  .enter-ico {
+    margin-right: 10px;
+  }
+}

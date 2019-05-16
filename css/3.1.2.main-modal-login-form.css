@@ -1,0 +1,139 @@
+.login-form__container {
+  position: relative;
+  width: 284px;
+  padding: 10px;
+  background-color: #fff; }
+  .login-form__container .close-login {
+    position: absolute;
+    top: 2px;
+    right: -25px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer; }
+  .login-form__container .login-form {
+    margin-top: 48px; }
+    .login-form__container .login-form input::-webkit-input-placeholder {
+      color: #7D7F80;
+      font-size: 14px; }
+    .login-form__container .login-form input::-moz-placeholder {
+      color: #7D7F80;
+      font-size: 14px; }
+    .login-form__container .login-form input:-moz-placeholder {
+      color: #7D7F80;
+      font-size: 14px; }
+    .login-form__container .login-form input:-ms-input-placeholder {
+      color: #7D7F80;
+      font-size: 14px; }
+  .login-form__container .login-form__header {
+    width: 100%;
+    height: 48px;
+    background: #4a4a4d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    padding: 13px; }
+  .login-form__container label {
+    display: block;
+    margin: 5px 0;
+    position: relative; }
+  .login-form__container .login-form__field {
+    display: block;
+    width: 100%;
+    height: 29px;
+    margin: 0; }
+  .login-form__container .submit-btn {
+    width: 100%;
+    margin: 0;
+    text-align: center; }
+    .login-form__container .submit-btn:hover {
+      opacity: 0.85; }
+    .login-form__container .submit-btn * {
+      position: static;
+      display: inline-block;
+      vertical-align: middle; }
+  .login-form__container .change-form {
+    padding: 3px 3px 3px 0;
+    margin: 14px auto 0;
+    font: 400 14px/14px "PT Sans", sans-serif;
+    color: #7D7F80; }
+    .login-form__container .change-form:hover {
+      opacity: 0.85;
+      color: #E6C12E; }
+  .login-form__container .submitted input:invalid ~ .toolTip-err {
+    visibility: visible;
+    opacity: 1; }
+  .login-form__container .toolTip-err {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0 5px 2px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    opacity: 0;
+    font-size: 15px;
+    line-height: 19px;
+    color: #E60013;
+    border: 1px solid rgba(230, 0, 19, 0.6);
+    box-shadow: 0 0 4px rgba(230, 0, 19, 0.6);
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  .login-form__container .toolTip-err-serv {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0 5px 2px;
+    position: absolute;
+    top: 3px;
+    left: 270px;
+    opacity: 0;
+    font-size: 15px;
+    line-height: 19px;
+    color: #E60013;
+    border: 1px solid rgba(230, 0, 19, 0.6);
+    box-shadow: 0 0 4px rgba(230, 0, 19, 0.6);
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    width: 100%; }
+  .login-form__container .social-auth {
+    display: block;
+    margin-top: 35px;
+    font: 400 14px/14px "PT Sans", sans-serif;
+    color: #7D7F80;
+    text-align: center; }
+    .login-form__container .social-auth .social-auth-header {
+      margin-bottom: 10px; }
+    .login-form__container .social-auth button {
+      display: inline-block;
+      margin-right: 7px; }
+      .login-form__container .social-auth button:hover {
+        opacity: 0.85; }
+  .login-form__container .filter-element input[type=checkbox] {
+    width: 90px;
+    position: relative;
+    z-index: 2;
+    margin: 10px 0; }
+  .login-form__container .filter-element input[type=checkbox] + label {
+    position: absolute;
+    left: 10px;
+    margin: 10px 0;
+    padding: 0; }
+  .login-form__container .filter-element span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+    width: 240px; }
+  .login-form__container .filter-element a {
+    text-decoration: none;
+    color: #E6C12E; }
+  .login-form__container #register-form {
+    margin-top: 48px; }
+
+/*# sourceMappingURL=3.1.2.main-modal-login-form.css.map */

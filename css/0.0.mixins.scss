@@ -1,0 +1,478 @@
+@charset "utf-8";
+@import "0.1.font-colors-variables";
+
+//Mixin`s
+@mixin bg-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin align-items-top {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@mixin align-items-center {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin align-items-end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+
+@mixin align-content-center {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+@mixin align-content-start {
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+@mixin justify-content-center {
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin justify-content-end {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+
+@mixin space-between {
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin space-around {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@mixin flex-flow($var1,$var2) {
+  -webkit-flex-flow: $var1 $var2;
+  -ms-flex-flow: $var1 $var2;
+  flex-flow: $var1 $var2;
+}
+
+@mixin stretch-height {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin perspective($value){
+  -webkit-perspective: $value;
+  -moz-perspective: $value;
+  -ms-perspective: $value;
+  perspective: $value;
+}
+
+@mixin backface-hidden{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@mixin transition($value...){
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+  transition: $value;
+}
+
+@mixin preserve-3d{
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@mixin transform($value){
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+
+@mixin transform-origin ($valueX,$valueY) {
+  -ms-transform-origin: $valueX $valueY; /* IE 9 */
+  -webkit-transform-origin: $valueX $valueY; /* Chrome, Safari, Opera */
+  transform-origin: $valueX $valueY;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin not-selectable {
+  -webkit-user-select: none;  //* Chrome all / Safari all */
+  -moz-user-select: none;     //* Firefox all */
+  -ms-user-select: none;      //* IE 10+ */
+  user-select: none;          //* Likely future */
+}
+
+@mixin user-avatar($size) {
+  position: relative;
+  min-width: $size;
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  z-index: 0;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    vertical-align: middle;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@mixin main-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: $font-color--light;
+  text-transform: uppercase;
+}
+
+@mixin options-button-style {
+  border: 1px solid $border-color--black;
+  background-color: $bg-color--orange;
+  color: $font-color--dark;
+}
+
+@mixin chat-send-box {
+  @include flexbox;
+  position: relative;
+  border-left: 1px solid $border-color--black;
+  border-right: 1px solid $border-color--black;
+
+  .enter-text-field {
+    @include flex(1 0px);
+    color: $font-color--light;
+    padding: 3px 37px 3px 3px;
+  }
+
+  .send-message-button {
+    @include flex(0 50px);
+    background-color: $bg-color--orange;
+    position: relative;
+
+    .chat-send-button-ico {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%,-50%))
+    }
+  }
+
+  .open-chat-smiles-ico {
+    position: absolute;
+    top: 15px;
+    right: 65px;
+  }
+}
+
+@mixin related-comment-construct {
+  width: 100%;
+  margin: 0;
+  font: 400 12px/13px "PT Sans", sans-serif;
+  color: #313133;
+
+  &.appear {
+    animation: smooth-bg-fade-appear 1s;
+  }
+
+  .comment-body {
+    padding: 5px 10px;
+  }
+
+  .comment-user {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-top: 4px;
+    color: #9B9C9E;
+    position: relative;
+
+    .user-avatar {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 41px;
+      height: 41px;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid #808080;
+      background: white;
+      margin: 0 5px 0 0;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        vertical-align: middle;
+        min-height: 105%;
+        min-width: 105%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .user-info {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+      position: relative;
+      text-align: left;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 14px;
+      color: #005fa6;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .achievement-rating {
+      display: inline-block;
+      position: relative;
+
+      &.top-rating {
+        float: right;
+      }
+
+      .comment-time {
+        font: 400 13px/13px "PT Sans", sans-serif;
+        display: block;
+        text-align: right;
+        color: #9b9c9e;
+        margin: 0;
+      }
+    }
+
+    .comment-message {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      width: calc(100% - 46px);
+      margin: 0;
+
+      .msg {
+        font: 400 13px/14px "PT Sans", sans-serif;
+        overflow: hidden;
+        position: relative;
+        color: #404040;
+        margin: 0 0 -3px;
+        max-width: 790px;
+
+        img[alt="sticker-msg"] {
+          max-width: 80px;
+          max-height: 80px;
+        }
+      }
+    }
+  }
+
+  .relative-comment-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 5px 0;
+    padding: 7px;
+    text-decoration: none;
+    background-color: rgba(188, 188, 188, 0.17);
+
+    .donor {
+      display: block;
+      color: #005fa6;
+      font: bold 15px/16px "PT Sans", sans-serif;
+      text-decoration: none;
+      margin-bottom: 4px;
+      margin-left: 5px;
+    }
+
+    .comment {
+      width: 100%;
+      margin: 0;
+      font: 400 12px/13px "PT Sans", sans-serif;
+
+      &.message-box {
+        background-color: #fff;
+        padding: 5px;
+        color: #313133;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@mixin gift-user {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid $border-color--orange;
+  padding: 2px 5px;
+  background: rgba(255,255,255,.9);
+  @include space-between;
+  width: 200px;
+
+  &.active {
+    @include flexbox;
+    z-index: 1;
+  }
+
+  .avatar-holder {
+    @include flexbox;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex(1 auto);
+    padding: 0;
+    background-color: transparent;
+    min-width: auto;
+    height: auto;
+
+    .user-avatar {
+      @include user-avatar(70px);
+      border: .3px solid #808080;
+      border-radius: 50%;
+    }
+  }
+
+  .info-holder {
+    @include flex(3 auto);
+    padding-left: 10px;
+    max-width: 80%;
+    overflow: hidden;
+
+    .main-info-row {
+      @include flexbox;
+      @include flex-flow(row, wrap);
+      @include align-items-center;
+
+      .id {
+        @include main-title;
+        color: $font-color--white;
+        background-color: $main-color;
+        padding: 0 3px;
+      }
+
+      .name {
+        @include main-title;
+        text-transform: none;
+        color: #005fa6;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        @include flex(1 auto);
+        text-align: left;
+      }
+
+      .age-city-holder {
+        @include flexbox;
+        font-weight: bold;
+      }
+
+      .city {
+        color: $font-color--light;
+        margin-right: 3px;
+      }
+
+      .age {
+        @extend .city;
+        margin-left: 0;
+
+        &:after {
+          content: ',';
+        }
+      }
+
+    }
+
+    .gift-time {
+      color: $font-color--middle;
+
+    }
+  }
+}
+
+@mixin buy-button($width,$height,$font-size) {
+  @include flexbox;
+  @include align-items-center;
+  @include justify-content-center;
+  width:$width;
+  height:$height;
+  font-size: $font-size;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid $border-color--white;
+  color: $font-color--white;
+  background-color: $main-color;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
+  cursor: pointer;
+}

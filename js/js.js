@@ -1,4 +1,3 @@
-
 $(function(){
 
 $('.company-item_link').click(function(){
@@ -15,7 +14,6 @@ $('.cross').click(function(){
 });
 
 $('.creat-company').click(function(){
-
 	$('.creat-company_items').toggleClass('active-company');
 	$(this).toggleClass('creat-company_active');
 	$('svg:eq(1)').toggleClass('svg-active');
@@ -57,11 +55,10 @@ $('button.but-tab').click(function(){
 
 });
 
-$('.panel-item td svg').click(function(){
-
-	$('svg').removeClass('panel-item_active');
-	$(this).addClass('panel-item_active');
-
+$('.heading-item').click(function(){
+	$('.heading-item svg').removeClass("panel-item_active");
+	$(this).find("svg").addClass('panel-item_active');
+	// $('this').addClass('panel-item_active');
 });
 
 
@@ -92,14 +89,19 @@ $('button.buttons-act').click(function(){
 });
 
 
-$('li.list-active').click(function(){
+$('li.filter-item').click(function(){
 
-	$('.list-active').removeClass('active');
+	$('.filter-item').removeClass('active');
 	$(this).addClass('active');
 
 });
 
+$('.clickable').click(function(){
+	$('.clickable').removeClass('active');
+	$(this).addClass('active');
+	$('.company-item_link svg path').toggleClass('svg-col');
 
+});
 
 
 });

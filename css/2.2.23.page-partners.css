@@ -1,0 +1,542 @@
+.partners-page {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  padding: 7px 5px;
+  position: relative; }
+  .partners-page .emails-wrapper .single-email {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 2px 5px;
+    padding: 2px 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+    /*      .inner-row {
+            @include flexbox;
+            @include align-items-center;
+            @include space-between;
+            @include flex(1);
+            padding: 2px 7px;
+            background-color: $bg-color--white;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+            width: 100%;
+          }
+    
+          .online-status-lamp {
+            width: 15px;
+            height: 15px;
+            position: relative;
+    
+            &:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              @include transform(translate(-50%, -50%));
+              width: 9px;
+              height: 9px;
+              border-radius: 50%;
+            }
+          }
+    
+          .favour-mail-svg-ico {
+            width: 15px;
+            height: 15px;
+          }
+    
+          .user-avatar {
+            @include user-avatar(27px);
+            border-radius: 50%;
+            background: transparent;
+            margin: 0 3px;
+          }
+    
+          .user-nickname {
+            @include flex(0 auto);
+            color: #005fa6;
+            width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+    
+          .user-message {
+            @include flex(1 auto);
+            color: $font-color--soft-light;
+            width: 430px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 16px;
+    
+            img[alt='smile'] {
+              max-height: 16px;
+              max-width: 16px;
+            }
+          }
+          .attachment-mail-svg-ico {
+            width: 18px;
+            height: 15px;
+            opacity: 0;
+    
+            path, g {
+              fill: $bg-color--very-light;
+            }
+          }
+    
+          .message-status {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+            position: relative;
+            display: none;
+    
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              transition: all .1s ease;
+            }
+          }
+    
+          .readed-mail-svg-ico {
+            width: 16px;
+            height: 18px;
+            display: none;
+    
+            path, g {
+              fill: $bg-color--very-light;
+            }
+          }
+    
+          .unreaded-mail-svg-ico {
+            width: 16px;
+            height: 12px;
+            display: block;
+    
+            path, g {
+              fill: $bg-color--very-light;
+            }
+          }
+    
+          .reply-mail-svg-ico {
+            width: 18px;
+            height: 14px;
+            display: none;
+    
+            path, g {
+              fill: $bg-color--very-light;
+            }
+          }
+    
+          .date {
+            color: $bg-color--very-light;
+          }
+    
+          .msg-counter {
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            font-size: 9px;
+            line-height: 19px;
+            text-align: center;
+            background-color: $bg-color--very-light;
+            color: $font-color--white;
+          }
+    
+          .online-status {
+            position: relative;
+            color: $font-color--middle;
+            float: right;
+            margin: var(main-info-edit--margin-top) var(main-info-edit--margin-right) 0 0;
+    
+            &:before {
+              content: '';
+              background-color: transparent;
+              position: absolute;
+              width: 5px;
+              height: 5px;
+              left: -7px;
+              top: 5px;
+              border-radius: 50%;
+            }
+    
+            &.online:before {
+              background-color: $bg-color--allow;
+            }
+    
+            &.offline:before {
+              background-color: $bg-color--not-allow;
+            }
+          }
+    
+          //conditions control
+    
+          &.online {
+            .online-status-lamp:before {
+              background-color: $bg-color--allow;
+            }
+          }
+    
+          &.offline {
+            .online-status-lamp:before {
+              background-color: $bg-color--not-allow;
+            }
+          }
+    
+          &.readed {
+    
+            .inner-row {
+              background-color: $bg-color--lighter;
+            }
+    
+            .favour-mail-svg-ico {
+              path, g {
+                fill: $bg-color--very-light;
+              }
+            }
+    
+            .readed-mail-svg-ico {
+              display: block;
+            }
+    
+            .unreaded-mail-svg-ico {
+              display: none;
+            }
+    
+            .user-message {
+              color: $bg-color--very-light;
+            }
+          }
+    
+          &.delivered-to-me {
+            .inner-row {
+              background-color: $bg-color--lighter;
+            }
+    
+            .message-status {
+              display: block;
+    
+              &:before, &:after {
+                top: 0;
+                left: 0;
+                width: 12px;
+                height: 8px;
+                border-left: 2px solid #999;
+                border-bottom: 2px solid #999;
+                @include transform(rotate(-45deg));
+              }
+    
+              &:after {
+                top: 6px;
+                left: 8px;
+                height: 1px;
+              }
+            }
+    
+            .unreaded-mail-svg-ico, .readed-mail-svg-ico {
+              display: none;
+            }
+          }
+    
+          &.delivered {
+            .inner-row {
+              background-color: $bg-color--lighter;
+            }
+    
+            .message-status {
+              display: block;
+    
+              &:before {
+                top: 0;
+                left: 0;
+                width: 12px;
+                height: 8px;
+                border-left: 2px solid #999;
+                border-bottom: 2px solid #999;
+                @include transform(rotate(-45deg));
+              }
+            }
+    
+            .unreaded-mail-svg-ico, .readed-mail-svg-ico {
+              display: none;
+            }
+          }
+    
+          &.replied {
+            .reply-mail-svg-ico {
+              display: block;
+            }
+          }
+    
+          &.is-favour {
+            .favour-mail-svg-ico {
+              path {
+                fill: #E90E8B !important;
+              }
+            }
+          }
+    
+          &.has-attachment {
+            .attachment-mail-svg-ico {
+              opacity: 1;
+            }
+          }*/ }
+    .partners-page .emails-wrapper .single-email:nth-child(odd) {
+      background: #fafafa; }
+    .partners-page .emails-wrapper .single-email > * {
+      margin: 0 3px; }
+    .partners-page .emails-wrapper .single-email a {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-flex: 1 auto;
+      -moz-box-flex: 1 auto;
+      -webkit-flex: 1 auto;
+      -ms-flex: 1 auto;
+      flex: 1 auto; }
+      .partners-page .emails-wrapper .single-email a > * {
+        margin: 0 3px; }
+        .partners-page .emails-wrapper .single-email a > * svg {
+          margin: 0 3px; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > :not(.user-avatar) {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-flex: 1 auto;
+        -moz-box-flex: 1 auto;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > .preferences {
+        -webkit-box-flex: 0 85px;
+        -moz-box-flex: 0 85px;
+        -webkit-flex: 0 85px;
+        -ms-flex: 0 85px;
+        flex: 0 85px; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > .last-active {
+        -webkit-box-flex: 0 85px;
+        -moz-box-flex: 0 85px;
+        -webkit-flex: 0 85px;
+        -ms-flex: 0 85px;
+        flex: 0 85px; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > .register-date {
+        -webkit-box-flex: 0 95px;
+        -moz-box-flex: 0 95px;
+        -webkit-flex: 0 95px;
+        -ms-flex: 0 95px;
+        flex: 0 95px; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > .coins-amount {
+        -webkit-box-flex: 0 130px;
+        -moz-box-flex: 0 130px;
+        -webkit-flex: 0 130px;
+        -ms-flex: 0 130px;
+        flex: 0 130px; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > .messages-amount {
+        -webkit-box-flex: 0 65px;
+        -moz-box-flex: 0 65px;
+        -webkit-flex: 0 65px;
+        -ms-flex: 0 65px;
+        flex: 0 65px; }
+      .partners-page .emails-wrapper .single-email a[href^="/profile"] > .mails-amount {
+        -webkit-box-flex: 0 60px;
+        -moz-box-flex: 0 60px;
+        -webkit-flex: 0 60px;
+        -ms-flex: 0 60px;
+        flex: 0 60px; }
+    .partners-page .emails-wrapper .single-email .user-avatar {
+      position: relative;
+      min-width: 27px;
+      width: 27px;
+      height: 27px;
+      overflow: hidden;
+      text-align: center;
+      margin: 0;
+      z-index: 0;
+      border-radius: 50%;
+      background: transparent;
+      margin: 0 3px; }
+      .partners-page .emails-wrapper .single-email .user-avatar img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        vertical-align: middle;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%; }
+    .partners-page .emails-wrapper .single-email .user-nickname {
+      text-decoration: none;
+      -webkit-box-flex: 0 700px;
+      -moz-box-flex: 0 700px;
+      -webkit-flex: 0 700px;
+      -ms-flex: 0 700px;
+      flex: 0 700px;
+      color: #005fa6;
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .partners-page .emails-wrapper .single-email .user-msg {
+      cursor: pointer;
+      margin: 0 50px; }
+      .partners-page .emails-wrapper .single-email .user-msg:hover g {
+        fill: #313133; }
+      .partners-page .emails-wrapper .single-email .user-msg:active g {
+        fill: #e6c12e; }
+    .partners-page .emails-wrapper .single-email .user-email {
+      color: #999999;
+      font-size: 14px;
+      text-decoration: underline;
+      margin: 0 50px 0 0;
+      flex: 0 300px; }
+      .partners-page .emails-wrapper .single-email .user-email:hover {
+        color: #313133; }
+      .partners-page .emails-wrapper .single-email .user-email:active {
+        color: #e6c12e; }
+    .partners-page .emails-wrapper .single-email .edition-holder {
+      display: flex;
+      align-items: center;
+      flex: 0 300px; }
+      .partners-page .emails-wrapper .single-email .edition-holder .edition-button {
+        padding: 5px 10px;
+        background-color: #999999;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer; }
+        .partners-page .emails-wrapper .single-email .edition-holder .edition-button:hover {
+          background-color: #B3B4B4; }
+        .partners-page .emails-wrapper .single-email .edition-holder .edition-button:active {
+          background-color: #e6c12e; }
+    .partners-page .emails-wrapper .single-email .coins-amount-holder {
+      flex: 0 150px; }
+    .partners-page .emails-wrapper .single-email .coins-amount {
+      text-decoration: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #313133; }
+  .partners-page .edition-list {
+    display: none; }
+    .partners-page .edition-list .close-cross {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 30px;
+      height: 30px;
+      background-color: #313133;
+      border-radius: 50%;
+      box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.6);
+      z-index: 10;
+      cursor: pointer; }
+      .partners-page .edition-list .close-cross:hover {
+        background-color: #4A4A4D; }
+      .partners-page .edition-list .close-cross:active {
+        background-color: #e6c12e; }
+    .partners-page .edition-list .title {
+      color: #222222;
+      font-size: 16px;
+      padding-bottom: 10px; }
+    .partners-page .edition-list ul {
+      max-height: 260px;
+      overflow: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .partners-page .edition-list ul a {
+        text-decoration: none; }
+      .partners-page .edition-list ul li {
+        display: flex;
+        align-items: center;
+        padding: 5px 0; }
+        .partners-page .edition-list ul li .logo-holder {
+          width: 15px;
+          height: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px; }
+          .partners-page .edition-list ul li .logo-holder img {
+            width: 100%;
+            height: 100%; }
+        .partners-page .edition-list ul li .edition-name {
+          color: #222222;
+          font-size: 14px; }
+          .partners-page .edition-list ul li .edition-name:hover {
+            color: #999999; }
+          .partners-page .edition-list ul li .edition-name:active {
+            color: #e6c12e; }
+    .partners-page .edition-list.active {
+      position: fixed;
+      left: 50%;
+      margin-left: -100px;
+      top: 50%;
+      margin-top: -159px;
+      z-index: 5;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+      padding: 15px 0; }
+
+/*# sourceMappingURL=2.2.23.page-partners.css.map */

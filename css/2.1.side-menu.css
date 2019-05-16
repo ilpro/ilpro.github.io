@@ -1,0 +1,91 @@
+.side-menu {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 150px;
+  padding: 10px 20px 10px 10px; }
+  .side-menu .menu-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    color: #313133;
+    padding: 2px 0;
+    cursor: pointer;
+    margin: 1px 0;
+    line-height: 21px;
+    text-decoration: none;
+    position: relative; }
+    .side-menu .menu-item:hover {
+      background-color: rgba(26, 26, 26, 0.2); }
+    .side-menu .menu-item.active {
+      background-color: #e6c12e; }
+    .side-menu .menu-item.has-messages:before {
+      content: attr(data-amount);
+      position: absolute;
+      background-color: #e6c12e;
+      border-radius: 50%;
+      font-size: 10px;
+      color: #fff;
+      left: -18px;
+      width: 17px;
+      height: 17px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 17px;
+      -webkit-animation: pulsar 0.3s linear infinite;
+      animation: pulsar 0.3s linear infinite;
+      opacity: 0.5; }
+@-webkit-keyframes pulsar {
+  50% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    opacity: 1; } }
+@keyframes pulsar {
+  50% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    opacity: 1; } }
+    .side-menu .menu-item .ico-container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 20%;
+      min-width: 20%; }
+      .side-menu .menu-item .ico-container svg {
+        height: 14px; }
+  .side-menu .divider {
+    height: 1px;
+    width: 100%;
+    background-color: #cccccc;
+    margin: 15px 0; }
+
+/*# sourceMappingURL=2.1.side-menu.css.map */

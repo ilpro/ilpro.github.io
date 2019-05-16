@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+$tile-width: 195px;
+
+.main-page.center-content {
+  padding: 16px 0;
+
+  .all-videos-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .preview-tile {
+      position: relative;
+      display: inline-block;
+      width: $tile-width;
+      margin: 0 7px 14px;
+      color: $font-color--middle;
+      box-shadow: 0 1px 12px 2px rgba(0, 0, 0, 0.3);
+
+      //todo variables
+      .profile-nickname {
+        position: relative;
+        text-align: left;
+        font-size: 20px;
+        max-width: $tile-width;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 3px 50px 3px 5px;
+        min-height: 30px;
+      }
+
+      .age-status-holder{
+        @include flexbox;
+        @include space-between;
+        @include align-items-center;
+        padding: 0 5px 5px;
+        min-height: 23px;
+
+        .profile-age{
+          font-size: 15px;
+        }
+
+        .online-status {
+          font-size: 10px;
+          position: relative;
+
+          &:before{
+            content: '';
+            background-color: $bg-color--allow;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            left: -7px;
+            top: 4px;
+            border-radius: 50%;
+          }
+
+          &.offline:before {
+            background-color: $bg-color--not-allow;
+          }
+        }
+      }
+
+
+      .camera-thumb-image {
+        position: relative;
+        width: 100%;
+        height: $tile-width;
+        overflow: hidden;
+
+        .rating-container {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 5px;
+          right: 0;
+          background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .3) 100%);
+          background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .3) 100%);
+          background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .3) 100%);
+
+          .rating-title {
+            color: $font-color--white;
+          }
+          .rating-star {
+            path {
+              fill: $bg-color--white;
+            }
+          }
+        }
+      }
+
+      .preview-title-menu{
+        @include flexbox;
+        @include align-items-center;
+
+        &-item {
+          @include flexbox;
+          @include space-between;
+          @include align-items-center;
+          @include justify-content-center;
+          width: 50%;
+          padding: 10px;
+          cursor: pointer;
+
+          &:hover {
+            svg g, svg path {
+              fill: $bg-color--orange;
+            }
+          }
+        }
+
+        &-divider {
+          width: 1px;
+          background-color: $bg-color--light-grey;
+          height: 30px;
+        }
+
+        svg.active{
+          g, path{
+            fill: #FBAD30;
+          }
+        }
+      }
+
+      .other-info {
+        //-------/new/-------
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        font-size: 11px;
+        z-index: 1;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.85);
+        text-align: left;
+        padding: 5px;
+        //-------/new/-------
+
+
+        //todo unify (delete font sizes)
+        .main-info {
+
+          & > * {
+            display: inline-block;
+          }
+
+          .id {
+            @include main-title;
+            color: $font-color--white;
+            background-color: $bg-color--orange;
+            padding: 0 3px;
+            font-size: 11px;
+          }
+
+          .name {
+            @include main-title;
+            text-transform: none;
+            font-size: 11px;
+            color: $font-color-main;
+          }
+
+          .age-city-holder, .status-holder {
+            display: block;
+          }
+
+          .city {
+            color: $font-color--middle;
+            font-size: 11px;
+          }
+
+          .age {
+            @extend .city;
+
+            &:after {
+              content: ',';
+            }
+          }
+
+          .user-status {
+            color: $font-color--light;
+          }
+
+          .online-status {
+            display: none;
+            color: $font-color--middle;
+            float: right;
+            margin: 5px 5px 0 0;
+          }
+
+        }
+
+        .other-info-title {
+          @include main-title;
+          margin-top: 15px;
+          display: inline-block;
+          //-------/new/-------
+          font-size: 11px;
+          //-------/new/-------
+        }
+
+        .info-items-container {
+          @include flexbox;
+          @include flex-flow(row, wrap);
+
+          .info-item {
+            @include flexbox;
+            @include flex(1 100%);
+            padding: 1px 0;
+            margin: 0;
+
+            &.height {
+              .info-parameter {
+                &.feet,&.inch, &.sm{
+                  margin: 0 2px 0 5px;
+                }
+              }
+            }
+
+            &.weight {
+              .info-parameter {
+                &.lbs,&.kg{
+                  margin: 0 2px 0 5px;
+                }
+              }
+            }
+
+            .info-name {
+              @include flex(1 auto);
+              color: $font-color--light;
+              margin-right: 0;
+              white-space: nowrap;
+            }
+
+            .info-parameter {
+              @include flex(0 auto);
+              color: $font-color--middle;
+              text-align: right;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}

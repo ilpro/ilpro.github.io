@@ -1,0 +1,519 @@
+.copy-song-btn {
+  position: relative;
+  display: inline-block; }
+
+.radio-page__header {
+  margin: 0;
+  padding: 4px 0 10px 0;
+  font: 400 20px/20px "PT Sans", sans-serif;
+  color: #313133;
+  text-align: center; }
+
+.radio-page__control {
+  position: relative;
+  padding: 10px 0 0 0;
+  height: 126px;
+  background-color: #313133;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .radio-page__control .player-control {
+    width: 42px;
+    height: 73px;
+    margin-left: 14px;
+    background: #313133;
+    border-radius: 5px;
+    cursor: pointer; }
+    .radio-page__control .player-control:hover {
+      opacity: 0.85; }
+    .radio-page__control .player-control .ico {
+      display: block;
+      width: 42px;
+      height: 73px;
+      background-position: -166px -163px; }
+    .radio-page__control .player-control.playing .ico {
+      width: 34px;
+      height: 62px;
+      background: url("../img/sprite-common.png") -431px -154px no-repeat; }
+  .radio-page__control .copy-link-btn {
+    position: absolute;
+    top: 52px;
+    right: 300px;
+    width: 26px;
+    height: 34px; }
+  .radio-page__control .track-info {
+    font: 20px/22px "PT Sans", sans-serif;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-right: 70px;
+    width: 400px; }
+    .radio-page__control .track-info .artist, .radio-page__control .track-info .track-name {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .radio-page__control .track-info .artist {
+      position: relative;
+      text-transform: uppercase;
+      padding-right: 20px; }
+      .radio-page__control .track-info .artist::after {
+        position: absolute;
+        content: '-';
+        right: 5px;
+        top: 0;
+        height: 100%;
+        width: 5px;
+        color: #FFFFFF; }
+  .radio-page__control .find-track {
+    width: 205px;
+    text-align: center; }
+    .radio-page__control .find-track .find-track-title {
+      font: 14px/15px "PT Sans", sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 5px; }
+    .radio-page__control .find-track .ico {
+      margin: 0 5px; }
+      .radio-page__control .find-track .ico:hover {
+        opacity: 0.85; }
+  .radio-page__control .volume-control .volume-title {
+    font: 14px/14px "PT Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; }
+  .radio-page__control .volume-control .jp-volume-bar {
+    position: relative;
+    background: #B3B3B3;
+    width: 74px;
+    height: 18px;
+    margin: 3px auto 0 auto;
+    border: none;
+    border-radius: 0;
+    cursor: pointer; }
+    .radio-page__control .volume-control .jp-volume-bar .radio-volume-mask {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .radio-page__control .volume-control .jp-volume-bar:hover {
+    opacity: 0.85; }
+  .radio-page__control .volume-control .jp-volume-bar .ui-slider-range {
+    background: #fff;
+    height: 18px;
+    margin-left: 0;
+    border: none;
+    border-radius: 0; }
+  .radio-page__control .ui-slider-handle {
+    display: none; }
+  .radio-page__control i.radio-info-ico {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1; }
+    .radio-page__control i.radio-info-ico:hover img {
+      display: block; }
+    .radio-page__control i.radio-info-ico img {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+
+.radio-list-wrapper {
+  background-color: #868789;
+  border-radius: 6px; }
+  .radio-list-wrapper .control-block {
+    position: relative; }
+    .radio-list-wrapper .control-block .icon-holder {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 29px;
+      height: 29px;
+      background: #4d4d4d;
+      text-align: center;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px; }
+    .radio-list-wrapper .control-block .search-field__box, .radio-list-wrapper .control-block .genre-sort, .radio-list-wrapper .control-block .region-sort {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 272px;
+      background: #5D5D5D;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+      height: 29px;
+      margin: 6px;
+      font-family: "PT Sans", sans-serif;
+      font-size: 19px;
+      color: #FFFFFF;
+      cursor: pointer;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      transition: all 0.25s ease; }
+      .radio-list-wrapper .control-block .search-field__box .icon-holder, .radio-list-wrapper .control-block .genre-sort .icon-holder, .radio-list-wrapper .control-block .region-sort .icon-holder {
+        padding-left: 1px; }
+        .radio-list-wrapper .control-block .search-field__box .icon-holder svg, .radio-list-wrapper .control-block .genre-sort .icon-holder svg, .radio-list-wrapper .control-block .region-sort .icon-holder svg {
+          margin-top: 4px; }
+      .radio-list-wrapper .control-block .search-field__box .common-name, .radio-list-wrapper .control-block .genre-sort .common-name, .radio-list-wrapper .control-block .region-sort .common-name {
+        display: inline-block;
+        margin-left: 36px;
+        vertical-align: middle; }
+      .radio-list-wrapper .control-block .search-field__box .amount, .radio-list-wrapper .control-block .genre-sort .amount, .radio-list-wrapper .control-block .region-sort .amount {
+        float: right;
+        margin: 2px 35px 0 0; }
+      .radio-list-wrapper .control-block .search-field__box input, .radio-list-wrapper .control-block .genre-sort input, .radio-list-wrapper .control-block .region-sort input {
+        background: #5D5D5D;
+        border: none;
+        margin-left: 30px;
+        height: 29px;
+        outline: none; }
+      .radio-list-wrapper .control-block .search-field__box .cross, .radio-list-wrapper .control-block .genre-sort .cross, .radio-list-wrapper .control-block .region-sort .cross {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 33px;
+        height: 29px;
+        cursor: pointer; }
+        .radio-list-wrapper .control-block .search-field__box .cross:before, .radio-list-wrapper .control-block .genre-sort .cross:before, .radio-list-wrapper .control-block .region-sort .cross:before {
+          content: '';
+          position: absolute;
+          right: 5px;
+          top: 14px;
+          width: 26px;
+          height: 1px;
+          background: white;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        .radio-list-wrapper .control-block .search-field__box .cross:after, .radio-list-wrapper .control-block .genre-sort .cross:after, .radio-list-wrapper .control-block .region-sort .cross:after {
+          content: '';
+          position: absolute;
+          right: 5px;
+          top: 14px;
+          width: 26px;
+          height: 1px;
+          background: white;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+      .radio-list-wrapper .control-block .search-field__box .list-wrapper, .radio-list-wrapper .control-block .genre-sort .list-wrapper, .radio-list-wrapper .control-block .region-sort .list-wrapper {
+        position: absolute;
+        top: 50px;
+        right: -295px;
+        width: 860px;
+        padding: 5px;
+        text-align: center;
+        background-color: #5d5d5d;
+        border-radius: 6px;
+        z-index: 2;
+        display: none; }
+        .radio-list-wrapper .control-block .search-field__box .list-wrapper:before, .radio-list-wrapper .control-block .genre-sort .list-wrapper:before, .radio-list-wrapper .control-block .region-sort .list-wrapper:before {
+          content: '';
+          position: absolute;
+          left: 293px;
+          top: -15px;
+          width: 30px;
+          height: 30px;
+          background-color: #5d5d5d;
+          box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          z-index: -1; }
+        .radio-list-wrapper .control-block .search-field__box .list-wrapper:after, .radio-list-wrapper .control-block .genre-sort .list-wrapper:after, .radio-list-wrapper .control-block .region-sort .list-wrapper:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 50px;
+          background-color: #5d5d5d;
+          z-index: -1;
+          border-radius: 6px; }
+        .radio-list-wrapper .control-block .search-field__box .list-wrapper .close-list, .radio-list-wrapper .control-block .genre-sort .list-wrapper .close-list, .radio-list-wrapper .control-block .region-sort .list-wrapper .close-list {
+          position: absolute;
+          top: 10px;
+          right: 10px; }
+        .radio-list-wrapper .control-block .search-field__box .list-wrapper .list, .radio-list-wrapper .control-block .genre-sort .list-wrapper .list, .radio-list-wrapper .control-block .region-sort .list-wrapper .list {
+          list-style: none;
+          margin: 30px 0 0 0;
+          padding: 0; }
+          .radio-list-wrapper .control-block .search-field__box .list-wrapper .list:before, .radio-list-wrapper .control-block .genre-sort .list-wrapper .list:before, .radio-list-wrapper .control-block .region-sort .list-wrapper .list:before {
+            content: '';
+            position: absolute;
+            top: -26px;
+            left: 0;
+            width: 850px;
+            height: 30px;
+            background: transparent; }
+          .radio-list-wrapper .control-block .search-field__box .list-wrapper .list .list-item, .radio-list-wrapper .control-block .genre-sort .list-wrapper .list .list-item, .radio-list-wrapper .control-block .region-sort .list-wrapper .list .list-item {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            width: 202px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            margin: 5px;
+            cursor: pointer; }
+            .radio-list-wrapper .control-block .search-field__box .list-wrapper .list .list-item:hover, .radio-list-wrapper .control-block .genre-sort .list-wrapper .list .list-item:hover, .radio-list-wrapper .control-block .region-sort .list-wrapper .list .list-item:hover {
+              opacity: .7; }
+            .radio-list-wrapper .control-block .search-field__box .list-wrapper .list .list-item.active, .radio-list-wrapper .control-block .genre-sort .list-wrapper .list .list-item.active, .radio-list-wrapper .control-block .region-sort .list-wrapper .list .list-item.active {
+              background: #f05644; }
+    .radio-list-wrapper .control-block #genrehover, .radio-list-wrapper .control-block #regionhover {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
+    .radio-list-wrapper .control-block .region-sort .list-wrapper {
+      right: -8px; }
+      .radio-list-wrapper .control-block .region-sort .list-wrapper:before {
+        right: 250px;
+        left: auto; }
+    .radio-list-wrapper .control-block .genre-sort.active, .radio-list-wrapper .control-block .region-sort.active {
+      background: #f05644; }
+  .radio-list-wrapper .song-history {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 850px;
+    padding: 15px 0;
+    font-family: "PT Sans", sans-serif;
+    background: #313133;
+    z-index: 3;
+    text-align: left;
+    cursor: auto !important; }
+    .radio-list-wrapper .song-history .spike {
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      width: 30px;
+      height: 30px;
+      background-color: #313133;
+      box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      z-index: -1; }
+    .radio-list-wrapper .song-history:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -24px;
+      width: 100%;
+      height: 25px;
+      background-color: transparent;
+      border-radius: 6px; }
+    .radio-list-wrapper .song-history:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #313133;
+      z-index: -1;
+      border-radius: 6px; }
+    .radio-list-wrapper .song-history .song-history-title {
+      font-size: 19px;
+      color: #FFFFFF;
+      padding: 0 15px; }
+    .radio-list-wrapper .song-history .song-history-title.played-old {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      padding-top: 5px;
+      margin-top: 10px;
+      padding-bottom: 5px; }
+    .radio-list-wrapper .song-history .song-control {
+      display: inline-block;
+      float: right;
+      padding: 0 15px; }
+      .radio-list-wrapper .song-history .song-control svg {
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 5px; }
+      .radio-list-wrapper .song-history .song-control a {
+        margin: 0 5px; }
+    .radio-list-wrapper .song-history .song-history-list {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .radio-list-wrapper .song-history .song-history-list .song-history-list-item {
+        position: relative;
+        padding: 2px 0; }
+        .radio-list-wrapper .song-history .song-history-list .song-history-list-item:hover {
+          background: #B03C2E !important; }
+        .radio-list-wrapper .song-history .song-history-list .song-history-list-item:nth-child(2n) {
+          background: rgba(255, 255, 255, 0.2); }
+    .radio-list-wrapper .song-history .playing-song-title, .radio-list-wrapper .song-history .song-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0 15px; }
+      .radio-list-wrapper .song-history .playing-song-title .playing-author-name, .radio-list-wrapper .song-history .playing-song-title .author-name, .radio-list-wrapper .song-history .song-title .playing-author-name, .radio-list-wrapper .song-history .song-title .author-name {
+        color: white;
+        display: inline-block; }
+      .radio-list-wrapper .song-history .playing-song-title .playing-song-name, .radio-list-wrapper .song-history .playing-song-title .song-name, .radio-list-wrapper .song-history .song-title .playing-song-name, .radio-list-wrapper .song-history .song-title .song-name {
+        color: #B3B3B3;
+        display: inline-block; }
+
+.radio-page__list-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  background-color: #868789;
+  border-radius: 6px; }
+  .radio-page__list-container::-webkit-scrollbar {
+    width: 4px;
+    background-color: #868789; }
+  .radio-page__list-container::-webkit-scrollbar-thumb {
+    background-color: #4A4A4D; }
+  .radio-page__list-container .radio-page__block {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 133px;
+    height: 133px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    margin: 5px;
+    cursor: pointer;
+    padding: 15px; }
+    .radio-page__list-container .radio-page__block:hover {
+      background-color: #E4E5E5; }
+    .radio-page__list-container .radio-page__block:nth-of-type(-n+6) {
+      background-color: #4A4A4D; }
+      .radio-page__list-container .radio-page__block:nth-of-type(-n+6) .chanel-name {
+        color: #fff; }
+      .radio-page__list-container .radio-page__block:nth-of-type(-n+6) > svg path, .radio-page__list-container .radio-page__block:nth-of-type(-n+6) > svg polygon,
+      .radio-page__list-container .radio-page__block:nth-of-type(-n+6) .histoty-song-list > svg path,
+      .radio-page__list-container .radio-page__block:nth-of-type(-n+6) .histoty-song-list > svg polygon {
+        fill: #fff !important; }
+    .radio-page__list-container .radio-page__block:nth-of-type(6n+1) .song-history {
+      border-top-left-radius: 0; }
+    .radio-page__list-container .radio-page__block.hidden {
+      display: none; }
+    .radio-page__list-container .radio-page__block .current-playing-song {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: "PT Sans", sans-serif;
+      font-size: 13px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #5D5D5D;
+      border-bottom: 1px solid rgba(93, 93, 93, 0.3);
+      width: 155px;
+      overflow: hidden;
+      padding: 0 0 0 5px;
+      white-space: nowrap;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      transition: all 0.25s ease; }
+    .radio-page__list-container .radio-page__block > svg {
+      position: absolute;
+      display: block;
+      width: 140px;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      .radio-page__list-container .radio-page__block > svg path, .radio-page__list-container .radio-page__block > svg polygon {
+        fill: #4A4A4D !important; }
+    .radio-page__list-container .radio-page__block .chanel-name {
+      margin-top: 55px;
+      text-align: center;
+      font: 400 13px/13px "PT Sans", sans-serif;
+      color: #4A4A4D; }
+    .radio-page__list-container .radio-page__block .histoty-song-list {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 26px;
+      height: 21px; }
+      .radio-page__list-container .radio-page__block .histoty-song-list:hover .song-history {
+        display: block; }
+      .radio-page__list-container .radio-page__block .histoty-song-list .history-list-ico {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        width: 26px; }
+  .radio-page__list-container li.active {
+    background-color: #F05644 !important; }
+    .radio-page__list-container li.active > svg path, .radio-page__list-container li.active > svg polygon, .radio-page__list-container li.active .history-list-ico {
+      fill: #fff !important; }
+    .radio-page__list-container li.active .chanel-name {
+      color: #fff; }
+
+.radio-seo-container {
+  margin: 0;
+  padding: 10px;
+  list-style: none; }
+  .radio-seo-container li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23%;
+    margin: 5px;
+    overflow: hidden; }
+    .radio-seo-container li a {
+      display: block;
+      width: 100%;
+      font: 400 13px/15px "PT Sans", sans-serif;
+      color: #313133;
+      text-align: center;
+      text-decoration: none; }
+
+.promo-radio {
+  z-index: 1;
+  position: relative;
+  opacity: 0; }
+  .promo-radio .popup-video-large {
+    top: -100px;
+    left: 20px;
+    border: 1px solid #e5c12d;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0px 0px 10px 1px #e5c12d;
+    display: block;
+    position: static;
+    margin: 15px auto 10px auto;
+    width: 490px;
+    height: auto; }
+    .promo-radio .popup-video-large .wrapper-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25px;
+      height: 0;
+      z-index: 1;
+      background: black; }
+      .promo-radio .popup-video-large .wrapper-video .popupframe {
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+
+/*# sourceMappingURL=2.2.07.page-radio.css.map */

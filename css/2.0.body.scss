@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+body>a{display: none !important;}
+
+.body-all {
+  @include flexbox;
+  @include space-between;
+  width: $standard-ribbon-width;
+  @include calc(min-height, '100vh - 42px');
+  margin: 0 auto;
+}
+
+@import "2.1.side-menu";
+@import "2.2.0.main-ribbon";

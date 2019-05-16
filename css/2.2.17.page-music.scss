@@ -1,0 +1,516 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+
+.page-music {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 95px;
+  right: 0;
+
+  .search {
+    width: 824px;
+    position: absolute;
+    left: 23px;
+    background-color: #ffffff;
+    z-index: 2;
+    top: 20px;
+    opacity: 0;
+
+    &__space {
+      height: 10px;
+      border-top: solid 1px #808080;
+      width: 824px;
+    }
+
+    &__input {
+      color: #808080;
+      font-size: 13px;
+      position: relative;
+      bottom: 4px;
+      border: none;
+      width: 790px;
+      left: 8px;
+
+      &:active,
+      &:hover,
+      &:focus {
+        outline: 0;
+        outline-offset: 0;
+      }
+    }
+
+    &__icosearch {
+      position: relative;
+      width: 17px;
+      height: 17px;
+    }
+
+    &__close {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      bottom: -5px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+//upload
+
+.upload {
+  position: relative;
+  cursor: pointer;
+  padding: {
+    top: 20px;
+    bottom: 15px;
+  };
+  text-align: center;
+  @include transition(all .2s ease);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    background-color: $background-color-antagonist;
+    z-index: 1;
+  }
+
+  &:after {
+    content: attr(data-title);
+    font-size: 19px;
+    color: $font-color-main-inverse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    @include transform(translate(-50%, -50%));
+    z-index: 2;
+  }
+
+  &.is-dragover {
+    &:before, &:after {
+      display: block;
+    }
+  }
+
+  &.loading {
+
+    & .fs-upload-target > * {
+      opacity: 0;
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+  &__icoupload {
+    vertical-align: middle;
+  }
+
+  &__text {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #cccccc;
+    margin: {
+      left: 20px;
+      right: 50px;
+    };
+  }
+
+  &__button {
+    text-decoration: none;
+    font-size: 16px;
+    color: #313133;
+    background-color: #E6C12E;
+    padding: 10px 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    @include flexbox;
+    background-color: $background-color-main;
+    @include justify-content-center;
+    @include align-items-center;
+    @include transition(all .2s ease);
+    width: 870px;
+    height: 60px;
+    font-size: 15px;
+
+    img {
+      width: 35px;
+    }
+  }
+}
+
+//tracklist
+
+.tracklist {
+  margin-left: 25px;
+  margin-right: -22px;
+  @include calc('height', '100% - 240px');
+  @include calc('height', '100% - 170px');//nosearch
+  overflow: auto;
+  padding-right: 29px;
+}
+
+.headerlist {
+  padding: 0 23px 5px 12px;
+  border-bottom: 1px solid #cccccc;
+  margin: 0 25px;
+
+  &__caption {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333333;
+    position: relative;
+    bottom: 2px;
+  }
+
+  &__icon {
+    float: right;
+    position: relative;
+    bottom: 2px;
+  }
+}
+
+.track {
+  border-bottom: solid 1px #cccccc;
+  position: relative;
+  padding: 4px;
+  width: 820px;
+  cursor: pointer;
+
+  &:hover {
+    .track__time {
+      display: none;
+    }
+    .track__delete {
+      display: block;
+    }
+  }
+
+
+  &.active {
+    background-color: #e9e9ea;
+  }
+
+  .track__cover {
+    @include user-avatar(50px);
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 13px;
+    color: #313133;
+    position: relative;
+    top: 18px;
+    left: 10px;
+    width: 480px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__play-cover {
+    display: inline-block;
+  }
+
+  &__time, &__delete {
+    font-size: 12.3px;
+    color: #313133;
+    float: right;
+    position: relative;
+    top: 17px;
+    right: 10px;
+    width: 32px;
+    text-align: right;
+  }
+
+  &__text,
+  &__headphones,
+  &__soundcloud,
+  &__youtube,
+  &__download {
+    position: relative;
+    top: 15px;
+    float: right;
+  }
+
+  &__download {
+    right: 20px;
+  }
+
+  &__youtube {
+    right: 0;
+  }
+
+  &__soundcloud {
+    right: 85px;
+  }
+
+  &__headphones {
+    right: 160px;
+  }
+
+  &__text {
+    right: 0;
+    top: 0;
+  }
+
+  &__delete {
+    display: none;
+
+    svg{
+      width: 13px;
+    }
+  }
+}
+
+//player
+.player {
+  width: 870px;
+  margin: {
+    left: auto;
+    right: auto;
+  };
+  position: fixed;
+  bottom: 0;
+  background-color: #F2F2F2;
+  height: 89px;
+  z-index: 2;
+
+  .player__cover {
+    @include user-avatar(84px);
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .timeline {
+    width: 100%;
+    height: 5px;
+    background-color: #cbcbcb;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      @include transform(translateY(-50%) scale(5));
+      transform-origin: center center;
+      height: 5px;
+    }
+
+    &:hover {
+      &:before {
+        @include transform(translateY(-50%) scale(8));
+      }
+
+      .timeline__progress:after {
+        @include transform(translateY(-50%) scale(1.7));
+      }
+    }
+
+    &__progress {
+      width: 0;
+      height: 5px;
+      background-color: $background-color-antagonist;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        @include transform(translateY(-50%));
+        transform-origin: center center;
+        background-color: $background-color-antagonist;
+        @include transition(all .2s ease);
+        border-radius: 50%;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+      }
+    }
+  }
+
+  &__title {
+    color: #313133;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 105px;
+    width: 270px;
+    @include transform(translateY(-50%));
+    max-height: 70px;
+    overflow: hidden;
+  }
+
+  .control {
+    &__prev {
+      position: absolute;
+      bottom: 30px;
+      left: 375px;
+    }
+
+    &__play {
+      position: absolute;
+      bottom: 20px;
+      left: 413px;
+      width: 47px;
+      height: 47px;
+
+      &.pause {
+        .play-state {
+          opacity: 0;
+        }
+
+        .pause-state {
+          opacity: 1;
+
+          path {
+            fill: $background-color-main-inverse;
+            @include transition(all .15s ease);
+          }
+        }
+      }
+
+      .pause-state, .play-state {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        @include transform(translate(-50%,-50%));
+        @include transition(all .15s ease)
+      }
+
+      .pause-state {
+        opacity: 0;
+      }
+    }
+
+    &__next {
+      position: absolute;
+      bottom: 30px;
+      left: 475px;
+    }
+
+    &__loop {
+      position: absolute;
+      bottom: 30px;
+      right: 230px;
+    }
+
+    &__loop-once {
+      position: absolute;
+      bottom: 30px;
+      right: 170px;
+    }
+
+    &__mix {
+      position: absolute;
+      bottom: 30px;
+      right: 110px;
+    }
+  }
+
+  [class^='control__'] {
+    cursor: pointer;
+
+    &.active {
+      svg {
+        path {
+          fill: $background-color-antagonist;
+          @include transition(all .15s ease);
+        }
+      }
+
+      .svg-number {
+        stroke: $background-color-antagonist;
+        @include transition(all .15s ease);
+      }
+    }
+  }
+
+  &__time {
+    color: #808080;
+    font-size: 12.3px;
+    position: absolute;
+    bottom: 60px;
+    right: 13px;
+  }
+}
+
+.space {
+  height: 50px;
+}
+
+.space-plus {
+  height: 70px;
+}
+
+//search-active
+
+.search__icosearch-active {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.search__input-active {
+  width: 775px;
+  bottom: 7px;
+  left: 8px;
+}
+
+.search__close-active {
+  width: 19px;
+  height: 19px;
+}
+
+.hidden {
+  display: none;
+}
+
+.addtrack {
+  margin-left: 25px;
+  margin-right: -22px;
+  @include calc('height', '100% - 190px');
+  overflow: auto;
+  padding-right: 29px;
+
+  &__space {
+    height: 30px;
+  }
+}
+
+.play_icon {
+  position: absolute;
+  left: 10px;
+  bottom: 13px;
+  z-index: 1;
+}

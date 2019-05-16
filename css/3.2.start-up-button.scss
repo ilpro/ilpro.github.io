@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+//*** BUTTON "TO UP" ****
+.up-btn {
+  position: fixed;
+  display: none;
+  width: 70px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(26, 23, 27, 0.1);
+  transition: background 150ms linear;
+
+  .up-btn-img {
+    display: block;
+    width: 24px;
+    height: 14px;
+    margin-bottom: 50%;
+    margin-left: 22px;
+    background: url("../img/sprite-common.png") no-repeat -100px -359px;
+  }
+
+  &:hover {
+    background: rgba(26, 23, 27, 0.5);
+
+    .up-btn-img {
+      background: url("../img/sprite-common.png") no-repeat -76px -359px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.animation-loading {
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  margin: 10px auto; }
+  .animation-loading img {
+    height: 100%;
+    width: 100%;
+    /*    animation: loading 2s steps(43) infinite;
+        -webkit-animation: loading 2s steps(43) infinite;*/ }
+
+@keyframes loading {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(-11180px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+.comment-btn.comments-have-msg i {
+  animation: smooth-blink 1.5s infinite;
+  -webkit-animation: smooth-blink 1.5s infinite; }
+
+@keyframes smooth-blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.3; }
+  100% {
+    opacity: 1; } }
+.copy-link-popup {
+  animation: popup 1300ms linear;
+  -webkit-animation: popup 1300ms linear; }
+
+@keyframes popup {
+  0% {
+    top: 0;
+    opacity: 0; }
+  33% {
+    top: -6px;
+    opacity: 1; }
+  100% {
+    top: -18px;
+    opacity: 0; } }
+@keyframes arrow-move {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    transform: translate(0, 10px); } }
+
+/*# sourceMappingURL=3.5.animations.css.map */

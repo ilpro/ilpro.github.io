@@ -1,0 +1,734 @@
+.private-messages.center-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 5px 5px 0 5px;
+  overflow: hidden; }
+  .private-messages.center-content .private-messages-outer-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-flex: 0 auto;
+        -moz-box-flex: 0 auto;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background-color: #f2f2f2;
+        z-index: 1;
+        position: relative;
+        max-height: 180px;
+        overflow: auto; }
+        .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user {
+          position: relative;
+          padding: 5px 3.55px;
+          cursor: pointer;
+          background-color: transparent;
+          -webkit-transition: all 0.1s ease;
+          -moz-transition: all 0.1s ease;
+          -o-transition: all 0.1s ease;
+          -ms-transition: all 0.1s ease;
+          transition: all 0.1s ease; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user:hover {
+            background-color: rgba(153, 153, 153, 0.5); }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user.active {
+            background-color: rgba(230, 193, 46, 0.2);
+            color: #fff !important; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user.active:before {
+              content: '';
+              position: absolute;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              height: 2%;
+              background-color: #e6c12e; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .favour-avatar {
+            position: relative;
+            min-width: 49px;
+            width: 49px;
+            height: 49px;
+            overflow: hidden;
+            text-align: center;
+            margin: 0;
+            z-index: 0;
+            margin: 0 auto; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .favour-avatar img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              vertical-align: middle;
+              min-height: 100%;
+              min-width: 100%;
+              max-width: 100%; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .favour-avatar .avatar-image {
+              max-width: 100%; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .favour-nickname:before {
+            content: '';
+            position: absolute;
+            bottom: 6px;
+            left: 4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #313133;
+            border: 1px solid #fff; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .favour-nickname.online:before {
+            background-color: #39B54A; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .unreaded-messages {
+            display: none;
+            position: absolute;
+            background-color: #e6c12e;
+            border-radius: 50%;
+            font-size: 10px;
+            color: #fff;
+            right: 0;
+            top: 0;
+            width: 17px;
+            height: 17px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 17px; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .unreaded-messages.has {
+              display: block; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .checkbox-container {
+            position: absolute;
+            right: 2.5px;
+            bottom: 4.5px; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .checkbox-container input {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 15px;
+              height: 15px;
+              z-index: -1; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .checkbox-container input[type=checkbox]:checked + label .check-img {
+              background-position: 0px -16px; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .checkbox-container label {
+              position: relative;
+              height: 100%;
+              cursor: pointer; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .favour-users-block .favour-user .checkbox-container .check-img {
+              width: 15px;
+              height: 15px;
+              display: block;
+              vertical-align: middle;
+              background: url("../img/mail-checkbox.svg") no-repeat 0 0; }
+      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-messages-title {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-box-flex: 0 auto;
+        -moz-box-flex: 0 auto;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+        background-color: #f2f2f2;
+        padding: 5px;
+        position: relative;
+        z-index: 1; }
+        .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-messages-title .nickname {
+          color: #2875b5;
+          white-space: nowrap; }
+        .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-messages-title .other-info {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-box-flex: 1 auto;
+        -moz-box-flex: 1 auto;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
+        padding-top: 5px; }
+        .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap {
+          -webkit-box-flex: 0 170px;
+          -moz-box-flex: 0 170px;
+          -webkit-flex: 0 170px;
+          -ms-flex: 0 170px;
+          flex: 0 170px;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          position: relative;
+          border-right: 1px solid #000; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .searchfield-wrapper {
+            background-color: #f2f2f2;
+            margin-right: 5px;
+            padding: 10px;
+            position: relative; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .searchfield-wrapper .searchfield {
+              background-color: #fff;
+              border: 1px solid rgba(153, 153, 153, 0.53);
+              line-height: 28px;
+              padding-left: 20px;
+              height: 30px;
+              max-width: 144px; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .searchfield-wrapper .searchfield:before {
+                color: #999; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .searchfield-wrapper .recent-msg-search-ico {
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              width: 13px;
+              height: 13px;
+              left: 15px; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .searchfield-wrapper .recent-msg-search-ico path {
+                fill: #999; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: 55px;
+            right: 0;
+            overflow: auto; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .recent-users {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-justify-content: center;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              padding: 6px;
+              font-size: 12px;
+              color: #4A4A4D;
+              background-color: #f2f2f2;
+              margin-bottom: 10px;
+              display: none; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: space-between;
+              -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              padding: 3px 5px 3px 3px;
+              border-bottom: 1px solid #000;
+              position: relative;
+              cursor: pointer;
+              height: 50px; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person:nth-of-type(1) {
+                border-top: 1px solid #000; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person.has-messages:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 15% !important;
+                background-color: #e6c12e; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person.has-messages:after {
+                content: attr(data-amount);
+                position: absolute;
+                top: 50%;
+                right: 0;
+                -webkit-transform: translate(-25%, -50%);
+                -moz-transform: translate(-25%, -50%);
+                -o-transform: translate(-25%, -50%);
+                -ms-transform: translate(-25%, -50%);
+                transform: translate(-25%, -50%);
+                font-size: 10px;
+                width: 17px;
+                height: 17px;
+                line-height: 17px;
+                border-radius: 50%;
+                color: #e6c12e;
+                background-color: #fff;
+                text-align: center; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person:hover {
+                background-color: #f2f2f2; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person.active {
+                background-color: rgba(44, 149, 219, 0.2); }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person.active:before {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  bottom: 0;
+                  width: 1%;
+                  background-color: #2c95db; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .message-person-avatar {
+                position: relative;
+                min-width: 33px;
+                width: 33px;
+                height: 33px;
+                overflow: hidden;
+                text-align: center;
+                margin: 0;
+                z-index: 0;
+                border: solid 1px #808080; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .message-person-avatar img {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -moz-transform: translate(-50%, -50%);
+                  -o-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+                  vertical-align: middle;
+                  min-height: 100%;
+                  min-width: 100%;
+                  max-width: 100%; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .name-status-holder {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-shrink: 1;
+                -ms-flex-negative: 1;
+                flex-shrink: 1;
+                text-align: left;
+                width: 55%; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .name-status-holder .user-nickname {
+                  font-size: 14px;
+                  color: #005fa6;
+                  font-weight: bold;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .name-status-holder .user-online-status {
+                  font-size: 9px;
+                  color: #999; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .name-status-holder .user-online-status.online {
+                    color: #39B54A; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .user-favour {
+                cursor: pointer; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .user-favour path {
+                  fill: #999999; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .private-message-users-wrap .private-message-users .message-person .user-favour.active path {
+                  fill: #e6c12e; }
+        .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles {
+          -webkit-box-flex: 1 auto;
+          -moz-box-flex: 1 auto;
+          -webkit-flex: 1 auto;
+          -ms-flex: 1 auto;
+          flex: 1 auto;
+          position: relative; }
+          .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            overflow: hidden; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body {
+              -webkit-box-flex: 1 auto;
+              -moz-box-flex: 1 auto;
+              -webkit-flex: 1 auto;
+              -ms-flex: 1 auto;
+              flex: 1 auto;
+              height: 100%;
+              position: relative; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body.opened .chat {
+                right: 5px;
+                border-right: 1px solid #000; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body.opened .send-box {
+                right: 5px;
+                border-right: 1px solid #000; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-shrink: 1;
+                -ms-flex-negative: 1;
+                flex-shrink: 1;
+                -webkit-justify-content: space-between;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                font-size: 12px;
+                padding: 0 9px 0 7px;
+                background-color: #f2f2f2;
+                height: 50px;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                -ms-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+                margin: 0 5px; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title .nick-photo-wrapper {
+                  display: -webkit-box;
+                  display: -moz-box;
+                  display: -ms-flexbox;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-flex-shrink: 1;
+                  -ms-flex-negative: 1;
+                  flex-shrink: 1;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title .nick-photo-wrapper .user-avatar {
+                    position: relative;
+                    min-width: 33px;
+                    width: 33px;
+                    height: 33px;
+                    overflow: hidden;
+                    text-align: center;
+                    margin: 0;
+                    z-index: 0;
+                    margin-right: 11px; }
+                    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title .nick-photo-wrapper .user-avatar img {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      -webkit-transform: translate(-50%, -50%);
+                      -moz-transform: translate(-50%, -50%);
+                      -o-transform: translate(-50%, -50%);
+                      -ms-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%);
+                      vertical-align: middle;
+                      min-height: 100%;
+                      min-width: 100%;
+                      max-width: 100%; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title .nick-photo-wrapper .user-nickname {
+                    color: #2875b5;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: bold; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title .online-status {
+                  color: #ED1E79; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat-user-title .online-status.online {
+                    color: #39B54A; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat {
+                position: absolute;
+                top: 55px;
+                bottom: 50px;
+                left: 0;
+                right: 0;
+                overflow: auto;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                -ms-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+                border-right: 1px solid transparent; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat .chat-single-block {
+                  color: #313133; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat .chat-single-block .user-nickname {
+                    color: #2875b5;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 270px; }
+                    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat .chat-single-block .user-nickname:after {
+                      content: '' !important; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat .chat-single-block .message-text img[src*="/media/sticker/"] {
+                    width: 72px; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .chat .chat-single-block .delete-button {
+                    color: #2875b5; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-shrink: 1;
+                -ms-flex-negative: 1;
+                flex-shrink: 1;
+                position: relative;
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                min-height: 50px;
+                border-left: none;
+                border-right: none;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                -ms-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+                border-right: 1px solid transparent;
+                border-top: 1px solid #f2f2f2;
+                background-color: #fff; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .enter-text-field {
+                  -webkit-box-flex: 1 0px;
+                  -moz-box-flex: 1 0px;
+                  -webkit-flex: 1 0px;
+                  -ms-flex: 1 0px;
+                  flex: 1 0px;
+                  color: #313133;
+                  padding: 3px 37px 3px 3px; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .send-message-button {
+                  -webkit-box-flex: 0 50px;
+                  -moz-box-flex: 0 50px;
+                  -webkit-flex: 0 50px;
+                  -ms-flex: 0 50px;
+                  flex: 0 50px;
+                  background-color: #4A4A4D;
+                  position: relative; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .send-message-button .chat-send-button-ico {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%); }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .open-chat-smiles-ico {
+                  position: absolute;
+                  top: 15px;
+                  right: 65px; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .enter-text-field {
+                  background-color: #fff;
+                  margin: 10px;
+                  line-height: 20px;
+                  outline: none; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .enter-text-field:before {
+                    color: #999;
+                    line-height: 22px; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .open-chat-smiles-ico {
+                  right: 65px;
+                  top: 15px; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-body .send-box .send-message-button {
+                  background-color: #999999; }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles {
+              -webkit-box-flex: 0 175px;
+              -moz-box-flex: 0 175px;
+              -webkit-flex: 0 175px;
+              -ms-flex: 0 175px;
+              flex: 0 175px;
+              min-width: 175px;
+              max-width: 175px;
+              display: block;
+              position: absolute;
+              height: 100%;
+              top: 0;
+              right: -175px;
+              transition: all .2s ease;
+              background-color: #fff;
+              z-index: 1; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles.opened {
+                right: 0; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift {
+                position: absolute;
+                height: 100%;
+                width: 175px;
+                right: 0;
+                top: 0;
+                text-align: center; }
+                .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 175px;
+                  height: 100%;
+                  -webkit-transition: height 300ms ease-in-out, width 300ms ease-in-out;
+                  -moz-transition: height 300ms ease-in-out, width 300ms ease-in-out;
+                  -o-transition: height 300ms ease-in-out, width 300ms ease-in-out;
+                  -ms-transition: height 300ms ease-in-out, width 300ms ease-in-out;
+                  transition: height 300ms ease-in-out, width 300ms ease-in-out; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-set-btn-container {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-shrink: 1;
+                    -ms-flex-negative: 1;
+                    flex-shrink: 1;
+                    -webkit-flex-flow: row wrap;
+                    -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+                    -webkit-justify-content: space-around;
+                    -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                    width: 175px;
+                    padding: 5px 0;
+                    background-color: #f2f2f2; }
+                    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-set-btn-container .sticker-set-btn {
+                      border-bottom: 2px solid transparent;
+                      border-radius: 1px;
+                      cursor: pointer;
+                      -webkit-box-flex: 1 25%;
+                      -moz-box-flex: 1 25%;
+                      -webkit-flex: 1 25%;
+                      -ms-flex: 1 25%;
+                      flex: 1 25%;
+                      margin-bottom: 5px; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-set-btn-container .sticker-set-btn:hover {
+                        border-bottom: 2px solid #999999; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-set-btn-container .sticker-set-btn.active {
+                        border-bottom: 2px solid #2c95db; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-set-btn-container .sticker-set-btn img {
+                        max-width: 35px;
+                        max-height: 35px; }
+                  .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top: 100px;
+                    bottom: 0;
+                    padding: 5px 5px 35px;
+                    width: 100%;
+                    overflow-x: hidden;
+                    overflow-y: auto; }
+                    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .recent-smiles-stickers-divider {
+                      width: 100%;
+                      height: 1px;
+                      background: #dedede;
+                      margin: 5px 0; }
+                    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sticker {
+                      position: relative;
+                      display: inline-block;
+                      vertical-align: middle;
+                      width: 72px;
+                      height: 72px;
+                      cursor: pointer;
+                      border-radius: 9px;
+                      text-align: center;
+                      overflow: hidden;
+                      margin: 5px 0; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sticker:hover {
+                        background-color: #ffebc7; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sticker:active {
+                        background-color: #2c95db; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sticker img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        vertical-align: middle;
+                        max-width: 72px;
+                        max-height: 72px; }
+                    .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sprite-smile {
+                      cursor: pointer;
+                      margin: 2px;
+                      border-radius: 3px;
+                      opacity: .7; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sprite-smile:hover {
+                        opacity: 1; }
+                      .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .chat-smiles .sticker-lift .sticker-wrapper .sticker-container .sprite-smile:active {
+                        background-color: #2c95db;
+                        transform: scale(0.9); }
+            .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .cam-fans-favour-block {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-box-flex: 0 auto;
+              -moz-box-flex: 0 auto;
+              -webkit-flex: 0 auto;
+              -ms-flex: 0 auto;
+              flex: 0 auto;
+              -webkit-flex-flow: column nowrap;
+              -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+              min-width: 0;
+              max-width: 0;
+              width: 0;
+              position: relative;
+              height: 100%;
+              transition: all .2s ease; }
+              .private-messages.center-content .private-messages-outer-wrapper .private-messages-inner-wrapper .private-message-chat-wrapper .chat-body-smiles .body-smiles-wrapper .cam-fans-favour-block.opened {
+                min-width: 175px;
+                max-width: 175px;
+                width: 175px; }
+
+/*# sourceMappingURL=2.2.08.page-messages.css.map */

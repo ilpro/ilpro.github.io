@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.side-menu {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 150px;
+  padding: 10px 20px 10px 10px;
+
+  .menu-item {
+    @include flexbox;
+    @include align-items-center;
+    width: 100%;
+    color: $font-color-main;
+    padding: 2px 0;
+    cursor: pointer;
+    margin: 1px 0;
+    line-height: 21px;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      background-color: rgba(26, 26, 26, 0.2);
+    }
+
+    &.active {
+      background-color: $background-color-antagonist;
+    }
+
+    &.has-messages:before {
+      content: attr(data-amount);
+      position: absolute;
+      background-color: $background-color-antagonist;
+      border-radius: 50%;
+      font-size: 10px;
+      color: #fff;
+      left: -18px;
+      width: 17px;
+      height: 17px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 17px;
+      -webkit-animation: pulsar 0.3s linear infinite;
+      animation: pulsar 0.3s linear infinite;
+      opacity: 0.5;
+    }
+
+    @-webkit-keyframes pulsar {
+      50% { @include transform(scale(1.25)); opacity: 1;}
+    }
+    @keyframes pulsar {
+      50% { @include transform(scale(1.25)); opacity: 1;}
+    }
+
+    .ico-container{
+      @include flexbox;
+      @include align-items-center;
+      @include justify-content-center;
+      width: 20%;
+      min-width: 20%;
+
+      svg {
+        height: 14px;
+      }
+    }
+    .item-name {}
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: $background-color-complement;
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,12 @@
+.terms.center-content {
+  padding: 20px; }
+  .terms.center-content ol {
+    list-style: none;
+    counter-reset: li; }
+  .terms.center-content li {
+    margin: 20px 0; }
+    .terms.center-content li:before {
+      counter-increment: li;
+      content: counters(li,".") ". "; }
+
+/*# sourceMappingURL=2.2.20.page-terms.css.map */

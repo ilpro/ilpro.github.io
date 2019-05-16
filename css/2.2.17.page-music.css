@@ -1,0 +1,462 @@
+.page-music {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 95px;
+  right: 0; }
+  .page-music .search {
+    width: 824px;
+    position: absolute;
+    left: 23px;
+    background-color: #ffffff;
+    z-index: 2;
+    top: 20px;
+    opacity: 0; }
+    .page-music .search__space {
+      height: 10px;
+      border-top: solid 1px #808080;
+      width: 824px; }
+    .page-music .search__input {
+      color: #808080;
+      font-size: 13px;
+      position: relative;
+      bottom: 4px;
+      border: none;
+      width: 790px;
+      left: 8px; }
+      .page-music .search__input:active, .page-music .search__input:hover, .page-music .search__input:focus {
+        outline: 0;
+        outline-offset: 0; }
+    .page-music .search__icosearch {
+      position: relative;
+      width: 17px;
+      height: 17px; }
+    .page-music .search__close {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      bottom: -5px;
+      float: right;
+      cursor: pointer; }
+
+.upload {
+  position: relative;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .upload:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    background-color: #e6c12e;
+    z-index: 1; }
+  .upload:after {
+    content: attr(data-title);
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  .upload.is-dragover:before, .upload.is-dragover:after {
+    display: block; }
+  .upload.loading .fs-upload-target > * {
+    opacity: 0; }
+  .upload.loading .overlay {
+    opacity: 1; }
+  .upload__icoupload {
+    vertical-align: middle; }
+  .upload__text {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #cccccc;
+    margin-left: 20px;
+    margin-right: 50px; }
+  .upload__button {
+    text-decoration: none;
+    font-size: 16px;
+    color: #313133;
+    background-color: #E6C12E;
+    padding: 10px 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block; }
+  .upload .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    background-color: #fff;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 870px;
+    height: 60px;
+    font-size: 15px; }
+    .upload .overlay img {
+      width: 35px; }
+
+.tracklist {
+  margin-left: 25px;
+  margin-right: -22px;
+  height: -moz-calc(100% - 240px);
+  height: -webkit-calc(100% - 240px);
+  height: calc(100% - 240px);
+  height: -moz-calc(100% - 170px);
+  height: -webkit-calc(100% - 170px);
+  height: calc(100% - 170px);
+  overflow: auto;
+  padding-right: 29px; }
+
+.headerlist {
+  padding: 0 23px 5px 12px;
+  border-bottom: 1px solid #cccccc;
+  margin: 0 25px; }
+  .headerlist__caption {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333333;
+    position: relative;
+    bottom: 2px; }
+  .headerlist__icon {
+    float: right;
+    position: relative;
+    bottom: 2px; }
+
+.track {
+  border-bottom: solid 1px #cccccc;
+  position: relative;
+  padding: 4px;
+  width: 820px;
+  cursor: pointer; }
+  .track:hover .track__time {
+    display: none; }
+  .track:hover .track__delete {
+    display: block; }
+  .track.active {
+    background-color: #e9e9ea; }
+  .track .track__cover {
+    position: relative;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    z-index: 0;
+    display: inline-block;
+    vertical-align: top; }
+    .track .track__cover img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      vertical-align: middle;
+      min-height: 100%;
+      min-width: 100%;
+      max-width: 100%; }
+  .track__name {
+    display: inline-block;
+    font-size: 13px;
+    color: #313133;
+    position: relative;
+    top: 18px;
+    left: 10px;
+    width: 480px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .track__play-cover {
+    display: inline-block; }
+  .track__time, .track__delete {
+    font-size: 12.3px;
+    color: #313133;
+    float: right;
+    position: relative;
+    top: 17px;
+    right: 10px;
+    width: 32px;
+    text-align: right; }
+  .track__text, .track__headphones, .track__soundcloud, .track__youtube, .track__download {
+    position: relative;
+    top: 15px;
+    float: right; }
+  .track__download {
+    right: 20px; }
+  .track__youtube {
+    right: 0; }
+  .track__soundcloud {
+    right: 85px; }
+  .track__headphones {
+    right: 160px; }
+  .track__text {
+    right: 0;
+    top: 0; }
+  .track__delete {
+    display: none; }
+    .track__delete svg {
+      width: 13px; }
+
+.player {
+  width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  bottom: 0;
+  background-color: #F2F2F2;
+  height: 89px;
+  z-index: 2; }
+  .player .player__cover {
+    position: relative;
+    min-width: 84px;
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    z-index: 0;
+    display: inline-block;
+    vertical-align: top; }
+    .player .player__cover img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      vertical-align: middle;
+      min-height: 100%;
+      min-width: 100%;
+      max-width: 100%; }
+  .player .timeline {
+    width: 100%;
+    height: 5px;
+    background-color: #cbcbcb;
+    position: relative;
+    cursor: pointer;
+    z-index: 1; }
+    .player .timeline:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%) scale(5);
+      -moz-transform: translateY(-50%) scale(5);
+      -o-transform: translateY(-50%) scale(5);
+      -ms-transform: translateY(-50%) scale(5);
+      transform: translateY(-50%) scale(5);
+      transform-origin: center center;
+      height: 5px; }
+    .player .timeline:hover:before {
+      -webkit-transform: translateY(-50%) scale(8);
+      -moz-transform: translateY(-50%) scale(8);
+      -o-transform: translateY(-50%) scale(8);
+      -ms-transform: translateY(-50%) scale(8);
+      transform: translateY(-50%) scale(8); }
+    .player .timeline:hover .timeline__progress:after {
+      -webkit-transform: translateY(-50%) scale(1.7);
+      -moz-transform: translateY(-50%) scale(1.7);
+      -o-transform: translateY(-50%) scale(1.7);
+      -ms-transform: translateY(-50%) scale(1.7);
+      transform: translateY(-50%) scale(1.7); }
+    .player .timeline__progress {
+      width: 0;
+      height: 5px;
+      background-color: #e6c12e;
+      position: relative; }
+      .player .timeline__progress:after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transform-origin: center center;
+        background-color: #e6c12e;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-radius: 50%;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); }
+  .player__title {
+    color: #313133;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 105px;
+    width: 270px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: 70px;
+    overflow: hidden; }
+  .player .control__prev {
+    position: absolute;
+    bottom: 30px;
+    left: 375px; }
+  .player .control__play {
+    position: absolute;
+    bottom: 20px;
+    left: 413px;
+    width: 47px;
+    height: 47px; }
+    .player .control__play.pause .play-state {
+      opacity: 0; }
+    .player .control__play.pause .pause-state {
+      opacity: 1; }
+      .player .control__play.pause .pause-state path {
+        fill: #313133;
+        -webkit-transition: all 0.15s ease;
+        -moz-transition: all 0.15s ease;
+        -o-transition: all 0.15s ease;
+        -ms-transition: all 0.15s ease;
+        transition: all 0.15s ease; }
+    .player .control__play .pause-state, .player .control__play .play-state {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      transition: all 0.15s ease; }
+    .player .control__play .pause-state {
+      opacity: 0; }
+  .player .control__next {
+    position: absolute;
+    bottom: 30px;
+    left: 475px; }
+  .player .control__loop {
+    position: absolute;
+    bottom: 30px;
+    right: 230px; }
+  .player .control__loop-once {
+    position: absolute;
+    bottom: 30px;
+    right: 170px; }
+  .player .control__mix {
+    position: absolute;
+    bottom: 30px;
+    right: 110px; }
+  .player [class^='control__'] {
+    cursor: pointer; }
+    .player [class^='control__'].active svg path {
+      fill: #e6c12e;
+      -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      transition: all 0.15s ease; }
+    .player [class^='control__'].active .svg-number {
+      stroke: #e6c12e;
+      -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      transition: all 0.15s ease; }
+  .player__time {
+    color: #808080;
+    font-size: 12.3px;
+    position: absolute;
+    bottom: 60px;
+    right: 13px; }
+
+.space {
+  height: 50px; }
+
+.space-plus {
+  height: 70px; }
+
+.search__icosearch-active {
+  width: 25px;
+  height: 25px;
+  cursor: pointer; }
+
+.search__input-active {
+  width: 775px;
+  bottom: 7px;
+  left: 8px; }
+
+.search__close-active {
+  width: 19px;
+  height: 19px; }
+
+.hidden {
+  display: none; }
+
+.addtrack {
+  margin-left: 25px;
+  margin-right: -22px;
+  height: -moz-calc(100% - 190px);
+  height: -webkit-calc(100% - 190px);
+  height: calc(100% - 190px);
+  overflow: auto;
+  padding-right: 29px; }
+  .addtrack__space {
+    height: 30px; }
+
+.play_icon {
+  position: absolute;
+  left: 10px;
+  bottom: 13px;
+  z-index: 1; }
+
+/*# sourceMappingURL=2.2.17.page-music.css.map */

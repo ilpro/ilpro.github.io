@@ -1,0 +1,101 @@
+.alert {
+  padding: 10px 15px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.alert-info {
+  color: #277399;
+  background-color: #d7eef9;
+  border-color: #b8ebf5; }
+
+.alert-success {
+  color: #fff;
+  background-color: #95d215;
+  border-color: transparent; }
+
+.alert-warning {
+  color: #947031;
+  background-color: #fef9e1;
+  border-color: #fdecc9; }
+
+.alert-danger {
+  color: #b53936;
+  background-color: #f4dcdc;
+  border-color: #f3a2b1; }
+
+button {
+  overflow: visible;
+  text-transform: none;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  -webkit-appearance: button;
+  cursor: pointer;
+  line-height: inherit; }
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2; }
+
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+@keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+
+/*# sourceMappingURL=3.4.notiny-module-styles.css.map */

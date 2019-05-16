@@ -1,0 +1,657 @@
+@charset "UTF-8";
+.miss-city-page {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  padding: 7px 5px; }
+  .miss-city-page .radio-page__list-container {
+    background-color: #fff; }
+    .miss-city-page .radio-page__list-container .radio-page__block.ui-sortable-handle.active {
+      background-color: #F05644; }
+  .miss-city-page .sort-menu-block.second-sort.site-start.clearfix {
+    padding: 10px 5px;
+    width: 870px; }
+    .miss-city-page .sort-menu-block.second-sort.site-start.clearfix .filter-menu-button {
+      width: 212.5px; }
+  .miss-city-page .search {
+    width: 850px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 5;
+    padding: 15px 10px 10px;
+    border-bottom: solid 1px #B3B4B4;
+    margin: 0 auto; }
+    .miss-city-page .search__input {
+      color: #808080;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      position: relative;
+      border: none;
+      width: 790px;
+      left: 8px; }
+    .miss-city-page .search__input:active, .miss-city-page .search__input:hover, .miss-city-page .search__input:focus {
+      outline: 0;
+      outline-offset: 0; }
+    .miss-city-page .search__icosearch {
+      position: relative;
+      top: 2px;
+      cursor: pointer; }
+    .miss-city-page .search__close {
+      position: relative;
+      top: 1px;
+      float: right;
+      cursor: pointer; }
+    .miss-city-page .search-result {
+      width: 100%;
+      position: absolute;
+      top: 43px;
+      left: 0;
+      z-index: 3;
+      max-height: 100%;
+      background-color: #FFFFFF;
+      box-shadow: 0 10px 40px -10px #000;
+      overflow-y: auto;
+      display: none; }
+  .miss-city-page .miss-list {
+    width: 850px;
+    margin: 20px auto 0; }
+    .miss-city-page .miss-list li {
+      list-style-type: none; }
+    .miss-city-page .miss-list .miss {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 5px;
+      background-color: #F2F2F2;
+      position: relative; }
+      .miss-city-page .miss-list .miss .progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        margin: 0;
+        height: 100%;
+        width: 60%;
+        background-color: #CCCCCC; }
+      .miss-city-page .miss-list .miss > * {
+        margin: 0 3px; }
+        .miss-city-page .miss-list .miss > * svg {
+          margin: 0 3px; }
+      .miss-city-page .miss-list .miss .position {
+        font-weight: bold;
+        font-size: 21px;
+        color: #fff;
+        background-color: #E6C12E;
+        padding: 12px;
+        margin: 0;
+        z-index: 1; }
+      .miss-city-page .miss-list .miss .user {
+        -webkit-box-flex: 0 420px;
+        -moz-box-flex: 0 420px;
+        -webkit-flex: 0 420px;
+        -ms-flex: 0 420px;
+        flex: 0 420px;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        z-index: 1;
+        cursor: pointer; }
+        .miss-city-page .miss-list .miss .user .id {
+          font-size: 13px;
+          color: #fff;
+          background-color: #313133;
+          padding: 2px 4px;
+          margin: 0 5px; }
+        .miss-city-page .miss-list .miss .user .info {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          flex-direction: column;
+          align-items: left;
+          font-size: 12px; }
+          .miss-city-page .miss-list .miss .user .info .nick {
+            color: #333333;
+            font-weight: bold; }
+          .miss-city-page .miss-list .miss .user .info .age-city {
+            color: #616161; }
+      .miss-city-page .miss-list .miss .miss-sub-container {
+        -webkit-box-flex: 0 100px;
+        -moz-box-flex: 0 100px;
+        -webkit-flex: 0 100px;
+        -ms-flex: 0 100px;
+        flex: 0 100px;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        justify-content: center;
+        z-index: 1; }
+        .miss-city-page .miss-list .miss .miss-sub-container .sub-button {
+          flex: 0;
+          font-size: 10px;
+          padding: 2px 4px; }
+      .miss-city-page .miss-list .miss .poll {
+        -webkit-box-flex: 0 150px;
+        -moz-box-flex: 0 150px;
+        -webkit-flex: 0 150px;
+        -ms-flex: 0 150px;
+        flex: 0 150px;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        z-index: 1; }
+        .miss-city-page .miss-list .miss .poll .text {
+          color: #616161;
+          font-size: 12px;
+          margin-right: 5px; }
+        .miss-city-page .miss-list .miss .poll .rep-action {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 5px;
+          border-radius: 3px;
+          background-color: #fff;
+          cursor: pointer;
+          margin-right: 5px; }
+          .miss-city-page .miss-list .miss .poll .rep-action.plus.active svg path {
+            fill: #FBB03B; }
+          .miss-city-page .miss-list .miss .poll .rep-action.minus.active svg path {
+            fill: #616161; }
+      .miss-city-page .miss-list .miss .result {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        color: #616161;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1; }
+  .miss-city-page .today-view {
+    display: none; }
+    .miss-city-page .today-view.active-filter {
+      display: block; }
+  .miss-city-page .yesterday-view {
+    display: none; }
+    .miss-city-page .yesterday-view.active-filter {
+      display: block; }
+    .miss-city-page .yesterday-view .miss-list .miss .user {
+      -webkit-box-flex: 0 500px;
+      -moz-box-flex: 0 500px;
+      -webkit-flex: 0 500px;
+      -ms-flex: 0 500px;
+      flex: 0 500px; }
+    .miss-city-page .yesterday-view .miss-list .miss .poll {
+      -webkit-box-flex: 0 90px;
+      -moz-box-flex: 0 90px;
+      -webkit-flex: 0 90px;
+      -ms-flex: 0 90px;
+      flex: 0 90px; }
+      .miss-city-page .yesterday-view .miss-list .miss .poll .rep-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 5px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-right: 5px; }
+  .miss-city-page .week-view {
+    display: none; }
+    .miss-city-page .week-view.active-filter {
+      display: block; }
+    .miss-city-page .week-view .miss-list .miss .user {
+      -webkit-box-flex: 0 180px;
+      -moz-box-flex: 0 180px;
+      -webkit-flex: 0 180px;
+      -ms-flex: 0 180px;
+      flex: 0 180px; }
+    .miss-city-page .week-view .miss-list .miss .week-days {
+      -webkit-box-flex: 0 150px;
+      -moz-box-flex: 0 150px;
+      -webkit-flex: 0 150px;
+      -ms-flex: 0 150px;
+      flex: 0 150px;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      z-index: 1; }
+      .miss-city-page .week-view .miss-list .miss .week-days .week-day {
+        background-color: #B3B3B3;
+        width: 40px;
+        height: 48px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 21px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 4px; }
+        .miss-city-page .week-view .miss-list .miss .week-days .week-day.active {
+          background-color: #616161; }
+    .miss-city-page .week-view .miss-list .miss .poll {
+      -webkit-box-flex: 0 90px;
+      -moz-box-flex: 0 90px;
+      -webkit-flex: 0 90px;
+      -ms-flex: 0 90px;
+      flex: 0 90px; }
+      .miss-city-page .week-view .miss-list .miss .poll .rep-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 5px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-right: 5px; }
+  .miss-city-page .total-view {
+    display: none; }
+    .miss-city-page .total-view.active-filter {
+      display: block; }
+    .miss-city-page .total-view .miss-list .miss .user {
+      -webkit-box-flex: 0 395px;
+      -moz-box-flex: 0 395px;
+      -webkit-flex: 0 395px;
+      -ms-flex: 0 395px;
+      flex: 0 395px; }
+    .miss-city-page .total-view .miss-list .miss .days {
+      -webkit-box-flex: 0 100px;
+      -moz-box-flex: 0 100px;
+      -webkit-flex: 0 100px;
+      -ms-flex: 0 100px;
+      flex: 0 100px;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      z-index: 1; }
+      .miss-city-page .total-view .miss-list .miss .days .text {
+        color: #616161;
+        font-size: 12px;
+        margin-right: 5px; }
+      .miss-city-page .total-view .miss-list .miss .days .amount {
+        background-color: #B3B3B3;
+        width: 50px;
+        height: 48px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .miss-city-page .total-view .miss-list .miss .poll {
+      -webkit-box-flex: 0 90px;
+      -moz-box-flex: 0 90px;
+      -webkit-flex: 0 90px;
+      -ms-flex: 0 90px;
+      flex: 0 90px; }
+      .miss-city-page .total-view .miss-list .miss .poll .rep-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 5px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-right: 5px; }
+
+.miss-city-settings-page {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  padding: 75px 0 7px; }
+  .miss-city-settings-page .settings-block-title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 10px;
+    font-size: 15px;
+    color: #313133;
+    background-color: #e6c12e;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+  .miss-city-settings-page .settings-block-status {
+    position: absolute;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 10px;
+    right: 15px;
+    width: 730px;
+    height: 38px;
+    color: white;
+    padding-left: 15px;
+    background-color: #FF0000;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+    .miss-city-settings-page .settings-block-status.allowed {
+      content: "Вітаємо! Ви зареєстровані в конкурсі!";
+      background-color: #39B54A; }
+  .miss-city-settings-page .settings-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative; }
+    .miss-city-settings-page .settings-item .note {
+      font-size: 12px;
+      color: #808080;
+      margin-left: 3px; }
+    .miss-city-settings-page .settings-item .status {
+      color: #313133;
+      font-size: 14px;
+      text-transform: uppercase;
+      position: absolute;
+      right: 20px; }
+    .miss-city-settings-page .settings-item .text {
+      color: #313133;
+      font-size: 14px;
+      text-transform: uppercase; }
+    .miss-city-settings-page .settings-item .status-indicator {
+      position: absolute;
+      right: 33px; }
+    .miss-city-settings-page .settings-item input {
+      border: 1px solid #666666;
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: #313133;
+      padding: 4px 5px;
+      outline: none; }
+    .miss-city-settings-page .settings-item.name .text {
+      margin-right: 10px; }
+    .miss-city-settings-page .settings-item.name input {
+      width: 160px;
+      margin-right: 20px; }
+    .miss-city-settings-page .settings-item.date .text {
+      margin: 0 10px 0 15px; }
+    .miss-city-settings-page .settings-item.location {
+      padding-left: 25px; }
+      .miss-city-settings-page .settings-item.location .text {
+        margin-right: 10px; }
+      .miss-city-settings-page .settings-item.location input {
+        width: 60px;
+        margin-right: 20px; }
+      .miss-city-settings-page .settings-item.location .street {
+        width: 210px; }
+      .miss-city-settings-page .settings-item.location .info-parameter {
+        margin-right: 27px; }
+    .miss-city-settings-page .settings-item.gender .text {
+      -webkit-box-flex: 0 435px;
+      -moz-box-flex: 0 435px;
+      -webkit-flex: 0 435px;
+      -ms-flex: 0 435px;
+      flex: 0 435px; }
+    .miss-city-settings-page .settings-item.phone .text {
+      -webkit-box-flex: 0 310px;
+      -moz-box-flex: 0 310px;
+      -webkit-flex: 0 310px;
+      -ms-flex: 0 310px;
+      flex: 0 310px; }
+    .miss-city-settings-page .settings-item.phone span {
+      color: #313133;
+      font-size: 14px;
+      margin-right: 3px; }
+    .miss-city-settings-page .settings-item.phone input {
+      width: 210px; }
+    .miss-city-settings-page .settings-item.education .text {
+      -webkit-box-flex: 0 345px;
+      -moz-box-flex: 0 345px;
+      -webkit-flex: 0 345px;
+      -ms-flex: 0 345px;
+      flex: 0 345px; }
+    .miss-city-settings-page .settings-item .check-container {
+      width: 100%;
+      border-radius: 2px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: relative; }
+      .miss-city-settings-page .settings-item .check-container.radio-button .check-img {
+        background: url(../img/radio-ms-ico.svg) no-repeat 0 0; }
+      .miss-city-settings-page .settings-item .check-container input {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+        z-index: -1; }
+      .miss-city-settings-page .settings-item .check-container input:checked + label .check-img {
+        background-position: 0px -21px; }
+      .miss-city-settings-page .settings-item .check-container label {
+        position: relative;
+        height: 100%;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1; }
+      .miss-city-settings-page .settings-item .check-container .check-img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        vertical-align: middle;
+        background: url(../img/checkbox-ms-ico.svg) no-repeat 0 0; }
+    .miss-city-settings-page .settings-item.check-question .text {
+      -webkit-box-flex: 0 970px;
+      -moz-box-flex: 0 970px;
+      -webkit-flex: 0 970px;
+      -ms-flex: 0 970px;
+      flex: 0 970px; }
+    .miss-city-settings-page .settings-item.check-question .check-container .info-name {
+      color: #313133;
+      font-size: 14px;
+      padding-left: 10px; }
+  .miss-city-settings-page .photos-wrapper {
+    background: #f2f2f2;
+    padding: 7px 7px 17px 7px;
+    margin-top: 13px;
+    text-align: center;
+    display: block;
+    margin-bottom: 13px; }
+    .miss-city-settings-page .photos-wrapper:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      display: none;
+      background-color: #4A4A4D;
+      z-index: 1; }
+    .miss-city-settings-page .photos-wrapper:after {
+      content: 'Drop image here';
+      font-size: 19px;
+      color: #313133;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: none;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 2; }
+    .miss-city-settings-page .photos-wrapper.is-dragover:before, .miss-city-settings-page .photos-wrapper.is-dragover:after {
+      display: block; }
+    .miss-city-settings-page .photos-wrapper .single-photo, .miss-city-settings-page .photos-wrapper .fs-upload-target {
+      position: relative;
+      display: inline-block;
+      width: auto;
+      height: 90px;
+      margin: 3px 1px;
+      vertical-align: middle; }
+      .miss-city-settings-page .photos-wrapper .single-photo:hover .single-photo-edit, .miss-city-settings-page .photos-wrapper .fs-upload-target:hover .single-photo-edit {
+        opacity: 1; }
+      .miss-city-settings-page .photos-wrapper .single-photo .profile-img, .miss-city-settings-page .photos-wrapper .fs-upload-target .profile-img {
+        width: auto;
+        height: 90px;
+        cursor: pointer; }
+      .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        background-color: #f2f2f2;
+        border: 1px solid #4A4A4D;
+        opacity: 0;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit:hover .edit-img-menu, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit:hover .edit-img-menu {
+          display: block; }
+        .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit .edit-img-menu, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit .edit-img-menu {
+          position: absolute;
+          display: none;
+          top: 130%;
+          right: 25%;
+          background-color: #f2f2f2;
+          line-height: normal;
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.75); }
+          .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit .edit-img-menu:before, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit .edit-img-menu:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 90%;
+            width: 0;
+            height: 0;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 5px solid #f2f2f2; }
+          .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit .edit-img-menu:after, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit .edit-img-menu:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            top: -10px;
+            left: 0; }
+          .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit .edit-img-menu .option, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit .edit-img-menu .option {
+            display: block;
+            cursor: pointer;
+            padding: 5px 13px;
+            color: #313133;
+            white-space: nowrap;
+            text-transform: uppercase;
+            line-height: 13px; }
+            .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit .edit-img-menu .option:hover, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit .edit-img-menu .option:hover {
+              background-color: #666666;
+              color: #FBAD30; }
+        .miss-city-settings-page .photos-wrapper .single-photo .single-photo-edit .single-photo-edit-ico, .miss-city-settings-page .photos-wrapper .fs-upload-target .single-photo-edit .single-photo-edit-ico {
+          margin-top: 4px; }
+    .miss-city-settings-page .photos-wrapper .fs-upload-target {
+      border: 1px solid #000;
+      height: 90px;
+      width: 90px; }
+      .miss-city-settings-page .photos-wrapper .fs-upload-target .add-photo-ico {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .miss-city-settings-page .settings-button-container {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .miss-city-settings-page .settings-button-container .miss-city-check {
+      width: 200px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #313133;
+      font-size: 16px;
+      background-color: #E6C12E;
+      border-radius: 5px;
+      cursor: pointer; }
+      .miss-city-settings-page .settings-button-container .miss-city-check.checking {
+        background-color: #E6E6E6; }
+      .miss-city-settings-page .settings-button-container .miss-city-check.canceled {
+        background-color: #FF0000;
+        color: #fff; }
+      .miss-city-settings-page .settings-button-container .miss-city-check.accepted {
+        background-color: #24D134;
+        color: #fff; }
+
+/*# sourceMappingURL=2.2.22.page-miss-city.css.map */

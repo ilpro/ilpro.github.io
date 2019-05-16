@@ -1,0 +1,233 @@
+.notification.center-content {
+  position: relative; }
+  .notification.center-content .user-comments__block {
+    background-color: rgba(255, 255, 255, 0.95); }
+    .notification.center-content .user-comments__block header {
+      padding: 6px 12px 2px 12px;
+      font-size: 13px;
+      line-height: 13px;
+      color: #313133;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .notification.center-content .user-comments__block header .make-all-readed {
+        padding: 4px 7px 4px 0;
+        color: #2c95db; }
+        .notification.center-content .user-comments__block header .make-all-readed:hover {
+          text-decoration: underline; }
+    .notification.center-content .user-comments__block .user-comments__wrapper, .notification.center-content .user-comments__block .user-comments__wrapper-example {
+      width: 100%; }
+    .notification.center-content .user-comments__block .user-comments__box {
+      display: block;
+      padding: 8px 14px;
+      border-bottom: 1px solid #d4d4d5;
+      border-left: 2px solid #f5f5f6;
+      background-color: #f5f5f6;
+      font-size: 13px;
+      line-height: 16px;
+      color: #3d3d3f;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: left; }
+      .notification.center-content .user-comments__block .user-comments__box .user-comments__name {
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #005fa6; }
+      .notification.center-content .user-comments__block .user-comments__box > div > img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        margin-bottom: -3px; }
+      .notification.center-content .user-comments__block .user-comments__box .comment {
+        width: 100%;
+        margin: 0;
+        font: 400 12px/13px "PT Sans", sans-serif;
+        color: #313133; }
+        .notification.center-content .user-comments__block .user-comments__box .comment.appear {
+          animation: smooth-bg-fade-appear 1s; }
+        .notification.center-content .user-comments__block .user-comments__box .comment .comment-body {
+          padding: 5px 10px; }
+        .notification.center-content .user-comments__block .user-comments__box .comment .comment-user {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          margin-top: 4px;
+          color: #9B9C9E;
+          position: relative; }
+          .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .user-avatar {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            width: 41px;
+            height: 41px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #808080;
+            background: white;
+            margin: 0 5px 0 0; }
+            .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .user-avatar img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              vertical-align: middle;
+              min-height: 105%;
+              min-width: 105%;
+              max-width: 100%;
+              max-height: 100%; }
+          .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .user-info {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+            position: relative;
+            text-align: left;
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 14px;
+            color: #005fa6;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; }
+          .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .achievement-rating {
+            display: inline-block;
+            position: relative; }
+            .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .achievement-rating.top-rating {
+              float: right; }
+            .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .achievement-rating .comment-time {
+              font: 400 13px/13px "PT Sans", sans-serif;
+              display: block;
+              text-align: right;
+              color: #9b9c9e;
+              margin: 0; }
+          .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .comment-message {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width: calc(100% - 46px);
+            margin: 0; }
+            .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .comment-message .msg {
+              font: 400 13px/14px "PT Sans", sans-serif;
+              overflow: hidden;
+              position: relative;
+              color: #404040;
+              margin: 0 0 -3px;
+              max-width: 790px; }
+              .notification.center-content .user-comments__block .user-comments__box .comment .comment-user .comment-message .msg img[alt="sticker-msg"] {
+                max-width: 80px;
+                max-height: 80px; }
+        .notification.center-content .user-comments__block .user-comments__box .comment .relative-comment-box {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          margin: 5px 0;
+          padding: 7px;
+          text-decoration: none;
+          background-color: rgba(188, 188, 188, 0.17); }
+          .notification.center-content .user-comments__block .user-comments__box .comment .relative-comment-box .donor {
+            display: block;
+            color: #005fa6;
+            font: bold 15px/16px "PT Sans", sans-serif;
+            text-decoration: none;
+            margin-bottom: 4px;
+            margin-left: 5px; }
+          .notification.center-content .user-comments__block .user-comments__box .comment .relative-comment-box .comment {
+            width: 100%;
+            margin: 0;
+            font: 400 12px/13px "PT Sans", sans-serif; }
+            .notification.center-content .user-comments__block .user-comments__box .comment .relative-comment-box .comment.message-box {
+              background-color: #fff;
+              padding: 5px;
+              color: #313133;
+              overflow: hidden; }
+      .notification.center-content .user-comments__block .user-comments__box:hover, .notification.center-content .user-comments__block .user-comments__box.unreaded:hover {
+        background-color: #ffebc7; }
+      .notification.center-content .user-comments__block .user-comments__box.unreaded {
+        background-color: #e5e5e6;
+        border-left: 2px solid #2c95db; }
+      .notification.center-content .user-comments__block .user-comments__box:last-of-type {
+        border-bottom: none; }
+  .notification.center-content .message-row, .notification.center-content .message-row-example {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background: #f2f2f2;
+    margin: 5px 0;
+    border-left: 2px solid transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .notification.center-content .message-row .user-avatar, .notification.center-content .message-row-example .user-avatar {
+      position: relative;
+      min-width: 25px;
+      width: 25px;
+      height: 24px;
+      overflow: hidden;
+      text-align: center;
+      background: #F2F2F2;
+      margin: 0 10px 0 0;
+      border: solid 1px #B3B4B4; }
+    .notification.center-content .message-row .message-text-controls-wrap, .notification.center-content .message-row-example .message-text-controls-wrap {
+      width: 90%; }
+    .notification.center-content .message-row .coin-ico, .notification.center-content .message-row-example .coin-ico {
+      margin-right: 10px;
+      width: 24px;
+      height: 27px;
+      background: url("../img/gifts-coins-ico.svg") no-repeat center; }
+    .notification.center-content .message-row .message-type, .notification.center-content .message-row-example .message-type {
+      position: absolute;
+      right: 20px;
+      top: 10px; }
+    .notification.center-content .message-row.unreaded, .notification.center-content .message-row-example.unreaded {
+      border-left: 2px solid #4A4A4D;
+      background-color: #cccccc; }
+      .notification.center-content .message-row.unreaded .message-type g, .notification.center-content .message-row.unreaded .message-type path, .notification.center-content .message-row-example.unreaded .message-type g, .notification.center-content .message-row-example.unreaded .message-type path {
+        fill: #fff; }
+    .notification.center-content .message-row .message-text, .notification.center-content .message-row-example .message-text {
+      width: 100%; }
+      .notification.center-content .message-row .message-text a, .notification.center-content .message-row-example .message-text a {
+        color: #345e91;
+        text-decoration: underline; }
+    .notification.center-content .message-row .controls, .notification.center-content .message-row-example .controls {
+      position: relative;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #345e91; }
+      .notification.center-content .message-row .controls .accept:hover, .notification.center-content .message-row .controls .decline:hover, .notification.center-content .message-row-example .controls .accept:hover, .notification.center-content .message-row-example .controls .decline:hover {
+        text-decoration: underline;
+        cursor: pointer; }
+      .notification.center-content .message-row .controls .accept, .notification.center-content .message-row-example .controls .accept {
+        padding-right: 5px;
+        border-right: 1px solid #666666; }
+      .notification.center-content .message-row .controls .decline, .notification.center-content .message-row-example .controls .decline {
+        padding: 0 5px; }
+      .notification.center-content .message-row .controls .chosen-container-single .chosen-single, .notification.center-content .message-row-example .controls .chosen-container-single .chosen-single {
+        border: 1px solid rgba(153, 153, 153, 0.53);
+        background: #fff; }
+      .notification.center-content .message-row .controls .chosen-container .chosen-drop, .notification.center-content .message-row-example .controls .chosen-container .chosen-drop {
+        border: 1px solid rgba(153, 153, 153, 0.53);
+        border-top: none;
+        background: #fff; }
+
+/*# sourceMappingURL=2.2.14.page-notification-old.css.map */

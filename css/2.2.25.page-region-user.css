@@ -1,0 +1,58 @@
+.region-user-page {
+  width: 854px;
+  padding-left: 15px; }
+  .region-user-page .title {
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: #e6c12e;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 20px; }
+  .region-user-page .constructor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    .region-user-page .constructor .controls {
+      display: flex;
+      flex-direction: column;
+      width: 400px; }
+      .region-user-page .constructor .controls label {
+        color: #222222;
+        font-size: 16px;
+        text-decoration: underline;
+        outline: none;
+        margin: 10px 0 5px 0; }
+      .region-user-page .constructor .controls input {
+        padding: 5px 10px;
+        color: #222222;
+        font-size: 14px;
+        border-radius: 0;
+        outline: none; }
+  .region-user-page .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0; }
+    .region-user-page .buttons .btn {
+      width: 100px;
+      padding: 5px 0;
+      background-color: #fff;
+      color: #313133;
+      font-size: 16px;
+      text-transform: uppercase;
+      border: solid 1px #313133;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+      .region-user-page .buttons .btn:hover {
+        background-color: #999999; }
+      .region-user-page .buttons .btn:active {
+        background-color: #e6c12e;
+        color: #fff;
+        border-color: #fff; }
+
+/*# sourceMappingURL=2.2.25.page-region-user.css.map */

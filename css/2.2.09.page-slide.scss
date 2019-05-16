@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.slide-page.center-content {
+  padding-top: 16px;
+
+  .slide-ribbon {
+    position: relative;
+    height: 100%;
+    padding-left: 16px;
+    width: 100%;
+    max-width: 854px;
+
+    .user-controls {
+      @include flexbox;
+      @include stretch-height;
+      padding: 10px 0;
+      font-size: 18px;
+      color: $font-color--middle;
+
+      .control-btn {
+        @include flexbox;
+        @include align-items-center;
+        @include not-selectable;
+        cursor: pointer;
+        padding: 10px;
+        min-height: 40px;
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
+
+        &:hover {
+          background-color: $bg-color-complement;
+          color: $font-color--white;
+          box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
+
+          path, g {
+            fill: $bg-color--white;
+          }
+        }
+
+        &:active {
+          background-color: $background-color-antagonist;
+          color: $font-color--white;
+          @include transform(translateY(2px));
+          box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+
+          path, g {
+            fill: $bg-color--white;
+          }
+        }
+      }
+
+      .previous-user {
+        @include flex(1 22.7%);
+        @include justify-content-center;
+        margin-right: 7px;
+        background-color: $bg-color--lighter;
+
+        .backwards-ico {
+          margin-right: 10px;
+        }
+      }
+
+      .next-user {
+        position: relative;
+        @include flex(1 48%);
+        background-color: $bg-color--lighter;
+        padding-left: 20%;
+
+        .forwards-ico {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .slider-block {
+      position: relative;
+      @include flex(1 auto);
+      height: 450px;
+
+      .slider-block-inner-wrap {
+        @include bg-fill;
+
+        $slider-width: 838px;
+        $slider-height: 450px;
+
+        .swiper-container {
+          position: relative;
+          width: $slider-width;
+          height: $slider-height;
+          background-color: #000;
+          box-shadow: .5px .5px 4px 0 rgba(0, 0, 0, .4);
+
+          .swiper-wrapper {
+            @include flexbox;
+            @include align-items-center;
+
+            .swiper-slide {
+              position: relative;
+              width: $slider-width;
+              height: $slider-height;
+              @include flexbox;
+              @include align-items-center;
+              background-color: #000;
+
+              .sizebox {
+                width: $slider-width;
+                height: $slider-height;
+                z-index: 1;
+              }
+
+              .pick-image {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                max-width: $slider-width;
+                max-height: $slider-height;
+                @include transform(translate(-50%, -50%));
+              }
+
+              .endslide {
+                &-box {
+                  position: absolute;
+                  left: $slider-width/2;
+                  bottom: 40%;
+                  @include transform(translateX(-50%));
+                  white-space: nowrap;
+                  color: $font-color--white;
+                  animation: fadeBoxIn 1s ease;
+                  text-align: center;
+                }
+
+                @keyframes fadeBoxIn {
+                  0%, 70% {
+                    opacity: 0;
+                  }
+
+                  100% {
+                    opacity: 1;
+                  }
+                }
+
+                &-button {
+                  color: $font-color--white;
+                  white-space: nowrap;
+                  margin: 20px 0 0;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .swiper-button-next {
+            margin-top: 0;
+            top: 0;
+            width: 270px;
+            height: 100%;
+            background-position: right;
+          }
+
+          .swiper-button-prev {
+            margin-top: 0;
+            top: 0;
+            width: 270px;
+            height: 100%;
+            background-position: left;
+          }
+        }
+      }
+
+    }
+
+  }
+}

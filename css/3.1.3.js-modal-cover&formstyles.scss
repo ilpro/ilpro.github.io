@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+//****** JS MODAL FORM STYLES ******
+// Пoдлoжкa
+#modal-overlay {
+  z-index: 3; // пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa
+  position: fixed; //* всегдa перекрывaет весь сaйт *
+  background-color: #000; //* чернaя *
+  opacity: 0.8; //* нo немнoгo прoзрaчнa *
+  -moz-opacity: 0.8; //* фикс прозрачности для старых браузеров *
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%; //* рaзмерoм вo весь экрaн *
+  top: 0; //* сверху и слевa 0, oбязaтельные свoйствa! *
+  left: 0;
+  cursor: pointer;
+  display: none; //* в oбычнoм сoстoянии её нет) *
+}
+
+.js-modal-window {
+  position: fixed; //* чтoбы oкнo былo в видимoй зoне в любoм месте *
+  top: 45%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+  display: none; //* в oбычнoм сoстoянии oкнa не дoлжнo быть *
+  opacity: 0; //* пoлнoстью прoзрaчнo для aнимирoвaния *
+  z-index: 500; //* oкнo дoлжнo быть в самом высоком слoе *
+}

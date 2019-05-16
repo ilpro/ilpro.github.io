@@ -1,0 +1,282 @@
+.modal-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  text-align: center;
+  display: none;
+  z-index: 50;
+  font-size: 14px; }
+  .modal-video .cover-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vh;
+    min-height: 100vh;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1; }
+  .modal-video video::-webkit-media-controls {
+    display: none; }
+  .modal-video .pick-form {
+    width: 232px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background: rgba(49, 49, 51, 0.8);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.6);
+    display: none; }
+  .modal-video .form-body.pick-filter {
+    padding: 15px; }
+    .modal-video .form-body.pick-filter .close-cross {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: absolute;
+      cursor: pointer;
+      top: -12px;
+      right: -12px;
+      width: 30px;
+      height: 30px;
+      background-color: #e6c12e;
+      border-radius: 50%;
+      box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.6); }
+    .modal-video .form-body.pick-filter .logo {
+      margin: 5px 0 20px; }
+    .modal-video .form-body.pick-filter .select-title {
+      color: #e6c12e;
+      margin: 10px 0;
+      font-size: 15px;
+      text-transform: uppercase; }
+    .modal-video .form-body.pick-filter .search-button {
+      border: none;
+      background-color: rgba(230, 193, 46, 0.8);
+      color: #313133;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      margin: 9px auto 10px;
+      display: block;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-radius: 4px;
+      box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+      outline: none;
+      font-size: 16px; }
+      .modal-video .form-body.pick-filter .search-button:hover {
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.75); }
+      .modal-video .form-body.pick-filter .search-button:active {
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+        -o-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px); }
+    .modal-video .form-body.pick-filter .search-registration-link, .modal-video .form-body.pick-filter .search-login-link {
+      display: inline-block;
+      color: #fff;
+      margin: 0 auto 5px;
+      text-decoration: underline; }
+      .modal-video .form-body.pick-filter .search-registration-link:hover, .modal-video .form-body.pick-filter .search-login-link:hover {
+        text-decoration: underline; }
+    .modal-video .form-body.pick-filter .info-ribbon-container {
+      margin: 0 -33px;
+      background: -moz-linear-gradient(0% 50% 0deg, #d4145a 8.25%, #ed1e79 25.45%, #d4145a 53.03%, #ed1e79 76.56%, #d4145a 100%);
+      background: -webkit-linear-gradient(0deg, #d4145a 8.25%, #ed1e79 25.45%, #d4145a 53.03%, #ed1e79 76.56%, #d4145a 100%);
+      background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0.0825, #d4145a), color-stop(0.2545, #ed1e79), color-stop(0.5303, #d4145a), color-stop(0.7656, #ed1e79), color-stop(1, #d4145a));
+      background: -o-linear-gradient(0deg, #d4145a 8.25%, #ed1e79 25.45%, #d4145a 53.03%, #ed1e79 76.56%, #d4145a 100%);
+      background: -ms-linear-gradient(0deg, #d4145a 8.25%, #ed1e79 25.45%, #d4145a 53.03%, #ed1e79 76.56%, #d4145a 100%);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D4145A', endColorstr='#D4145A' ,GradientType=0)";
+      background: linear-gradient(90deg, #d4145a 8.25%, #ed1e79 25.45%, #d4145a 53.03%, #ed1e79 76.56%, #d4145a 100%);
+      text-align: center;
+      font-size: 15px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: relative; }
+      .modal-video .form-body.pick-filter .info-ribbon-container:before, .modal-video .form-body.pick-filter .info-ribbon-container:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0; }
+      .modal-video .form-body.pick-filter .info-ribbon-container:before {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+        height: 2px;
+        bottom: 1px; }
+      .modal-video .form-body.pick-filter .info-ribbon-container:after {
+        background: linear-gradient(90deg, #d4145a 8.25%, #ed1e79 25.45%, #d4145a 53.03%, #ed1e79 76.56%, #d4145a 100%);
+        height: 2px;
+        bottom: 0; }
+      .modal-video .form-body.pick-filter .info-ribbon-container .info-ribbon {
+        padding: 10px; }
+        .modal-video .form-body.pick-filter .info-ribbon-container .info-ribbon:before, .modal-video .form-body.pick-filter .info-ribbon-container .info-ribbon:after {
+          content: "";
+          position: absolute;
+          display: block;
+          border-style: solid;
+          border-color: #d6155d transparent transparent transparent;
+          bottom: -7px;
+          z-index: -1; }
+        .modal-video .form-body.pick-filter .info-ribbon-container .info-ribbon:before {
+          left: 0;
+          border-width: 7px 0 0 18px; }
+        .modal-video .form-body.pick-filter .info-ribbon-container .info-ribbon:after {
+          right: 0;
+          border-width: 7px 18px 0 0; }
+    .modal-video .form-body.pick-filter .input-range-wrapper {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 10px; }
+      .modal-video .form-body.pick-filter .input-range-wrapper > * {
+        margin: 0 3px; }
+      .modal-video .form-body.pick-filter .input-range-wrapper .input-title {
+        color: #e6c12e;
+        font-size: 15px; }
+      .modal-video .form-body.pick-filter .input-range-wrapper .age-input {
+        width: 40px;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        background-color: #fff;
+        height: 20px;
+        line-height: 20px;
+        padding: 5px;
+        text-align: center; }
+      .modal-video .form-body.pick-filter .input-range-wrapper .dash {
+        width: 12px;
+        height: 1px;
+        border-radius: 2px;
+        background-color: #fff; }
+    .modal-video .form-body.pick-filter .slider-ui {
+      position: relative;
+      margin: 20px 10%;
+      border-radius: 0;
+      height: 1px;
+      background-color: #fff;
+      border: none; }
+      .modal-video .form-body.pick-filter .slider-ui .ui-slider-range {
+        border: none;
+        top: 0;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        font-size: .7em;
+        display: block; }
+      .modal-video .form-body.pick-filter .slider-ui .ui-slider-handle {
+        top: -9px;
+        margin-left: -10px;
+        position: absolute;
+        z-index: 2;
+        cursor: default;
+        width: 20px;
+        border: 1px solid #fff;
+        height: 20px;
+        background: #e6c12e;
+        border-radius: 4px;
+        outline: none; }
+    .modal-video .form-body.pick-filter .status-check {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      color: #fff;
+      margin: 15px 0; }
+      .modal-video .form-body.pick-filter .status-check-title {
+        color: #e6c12e; }
+      .modal-video .form-body.pick-filter .status-check .check-container {
+        border-radius: 2px;
+        margin: 0 4px; }
+        .modal-video .form-body.pick-filter .status-check .check-container:hover {
+          background-color: rgba(251, 173, 48, 0.5); }
+        .modal-video .form-body.pick-filter .status-check .check-container input {
+          top: 5px;
+          left: 5px;
+          position: absolute;
+          width: 0;
+          height: 0;
+          z-index: -1;
+          opacity: 0; }
+        .modal-video .form-body.pick-filter .status-check .check-container input[type=checkbox]:checked + label .check-img {
+          background-position: -187px -144px; }
+        .modal-video .form-body.pick-filter .status-check .check-container label {
+          position: relative;
+          height: 100%;
+          cursor: pointer;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1; }
+        .modal-video .form-body.pick-filter .status-check .check-container .check-img {
+          width: 18px;
+          height: 18px;
+          display: block;
+          vertical-align: middle;
+          background: url(../img/sprite-common.png) no-repeat -169px -144px; }
+      .modal-video .form-body.pick-filter .status-check .chosen-container-single .chosen-search {
+        color: #313133; }
+    .modal-video .form-body.pick-filter .vert-divider {
+      display: inline-block;
+      width: 1px;
+      height: 25px;
+      background-color: #fff;
+      margin: 0 17px -9px; }
+
+/*# sourceMappingURL=3.1.5.page-pick-modals.css.map */

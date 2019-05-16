@@ -1,0 +1,178 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.notification.center-content {
+  position: relative;
+
+  .user-comments__block {
+    background-color: rgba(255, 255, 255, 0.95);
+
+    header {
+      padding: 6px 12px 2px 12px;
+      font-size: 13px;
+      line-height: 13px;
+      color: #313133;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .make-all-readed {
+        padding: 4px 7px 4px 0;
+        color: #2c95db;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .user-comments__wrapper, .user-comments__wrapper-example {
+      width: 100%;
+    }
+
+    .user-comments__box {
+      display: block;
+      padding: 8px 14px;
+      border-bottom: 1px solid #d4d4d5;
+      border-left: 2px solid #f5f5f6;
+      background-color: #f5f5f6;
+      font-size: 13px;
+      line-height: 16px;
+      color: #3d3d3f;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: left;
+
+      .user-comments__name {
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #005fa6;
+      }
+
+      & > div > img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        margin-bottom: -3px;
+      }
+
+      .comment {
+        @include related-comment-construct;
+      }
+
+      &:hover, &.unreaded:hover {
+        background-color: #ffebc7;
+      }
+
+      &.unreaded {
+        background-color: #e5e5e6;
+        border-left: 2px solid #2c95db;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .message-row, .message-row-example {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background: $bg-color--lighter;
+    margin: 5px 0;
+    border-left: 2px solid transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .user-avatar {
+      position: relative;
+      min-width: 25px;
+      width: 25px;
+      height: 24px;
+      overflow: hidden;
+      text-align: center;
+      background: #F2F2F2;
+      margin: 0 10px 0 0;
+      border: solid 1px $border-color-complement;
+    }
+
+    .message-text-controls-wrap {
+      width: 90%;
+    }
+
+    .coin-ico {
+      margin-right: 10px;
+      width: 24px;
+      height: 27px;
+      background: url("../img/gifts-coins-ico.svg")  no-repeat center;
+    }
+
+    .message-type{
+      position: absolute;
+      right: 20px;
+      top: 10px; //firefox top fix bug
+    }
+
+    &.unreaded {
+      border-left: 2px solid $border-color--orange;
+      background-color: $bg-color-dark-grey;
+
+      .message-type {
+        g,path {
+          fill: #fff
+        }
+      }
+    }
+
+    .message-text {
+      width: 100%;
+
+      a {
+        color: $main-color-complement;
+        text-decoration: underline;
+      }
+    }
+
+    .controls {
+      position: relative;
+      @include flexbox;
+      @include justify-content-end;
+      @include align-items-center;
+      color: $main-color-complement;
+
+      .accept:hover, .decline:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .accept {
+        padding-right: 5px;
+        border-right: 1px solid $bg-color--soft-light;
+      }
+
+      .decline {
+        padding: 0 5px;
+      }
+
+      .chosen-container-single .chosen-single {
+        border: 1px solid rgba(153, 153, 153, 0.53);
+        background: #fff;
+      }
+
+      .chosen-container .chosen-drop {
+        border: 1px solid rgba(153, 153, 153, 0.53);
+        border-top: none;
+        background: #fff;
+      }
+
+      .info-state {
+      }
+    }
+  }
+}

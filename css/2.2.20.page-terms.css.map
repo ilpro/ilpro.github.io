@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAsB;EACpB,OAAO,EAAE,IAAI;EAEb,wBAAG;IAED,UAAU,EAAE,IAAI;IAEhB,aAAa,EAAE,EAAE;EAEnB,wBAAG;IACD,MAAM,EAAE,MAAM;IAEd,+BAAS;MAIP,iBAAiB,EAAE,EAAE;MAIrB,OAAO,EAAE,qBAAqB",
+"sources": ["2.2.20.page-terms.scss"],
+"names": [],
+"file": "2.2.20.page-terms.css"
+}

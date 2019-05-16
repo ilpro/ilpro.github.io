@@ -1,0 +1,285 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.transactions-user.center-content {
+  padding: 5px 5px 0 5px;
+
+  .nav-row {
+    @include flexbox;
+    @include space-between;
+    margin-bottom: 5px;
+
+    .links-block {
+      color: $font-color--soft-light;
+      font-size: 15px;
+
+      & > * {
+        margin: 5px;
+        text-decoration: underline;
+      }
+
+      .active {
+        color: $font-color-complement;
+        text-decoration: none;
+        cursor: default;
+      }
+
+    }
+
+    .coins-block {
+      @include flexbox;
+      @include align-items-center;
+      .coins-ico {
+        margin-right: 10px;
+      }
+      .coins-amount {
+        color: $font-color--soft-light;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .transactions-user-outer-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .transactions-user-inner-wrapper {
+      //overflow-y: auto;
+/*      top: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;*/
+      width: 100%;
+
+      &.relative {
+        position: relative;
+      }
+
+      $order-serial-number: 130px;
+      $spent-target: 130px;
+      $payment-type: 130px;
+      $payment-amount: 130px;
+      $date-quantity: 130px;
+      $comments: 130px;
+      $function-ask: 70px;
+
+      .transactions-user-table-head {
+        @include flexbox;
+        width: 100%;
+        @include space-between;
+        padding: 3px 5px;
+        color: $bg-color--soft-light;
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        & > * {
+          @include flexbox;
+          @include align-items-center;
+        }
+
+        .order-serial-number-head {
+          width: $order-serial-number;
+        }
+        .spent-target-head {
+          width: $spent-target;
+        }
+        .payment-type-head {
+          width: $payment-type;
+        }
+        .payment-amount-head {
+          width: $payment-amount;
+        }
+        .date-quantity-head {
+          width: $date-quantity;
+        }
+        .comments-head {
+          width: $comments;
+        }
+        .function-ask-head {
+          @include justify-content-center;
+          width: $function-ask;
+        }
+      }
+
+      .transactions-user-table-filter {
+        @include flexbox;
+        width: 100%;
+        @include space-between;
+        padding: 3px 5px;
+        background-color: $bg-color-dark-grey;
+
+        & > * {
+          @include flexbox;
+          @include align-items-center;
+        }
+
+        .order-serial-number-filter {
+          width: $order-serial-number;
+        }
+        .spent-target-filter {
+          width: $spent-target;
+        }
+        .payment-type-filter {
+          width: $payment-type;
+        }
+        .payment-amount-filter {
+          width: $payment-amount;
+
+          .spent-input {
+            width: $payment-amount - 10px;
+            height: 25px;
+            border: 1px solid $bg-color--soft-light;
+            padding: 0 5px;
+          }
+        }
+        .date-quantity-filter {
+          width: $date-quantity;
+        }
+        .comments-filter {
+          width: $comments;
+
+          .comments-input {
+            width: $payment-amount - 10px;
+            height: 25px;
+            border: 1px solid $bg-color--soft-light;
+            padding: 0 5px;
+          }
+        }
+        .function-ask-filter {
+          @include justify-content-center;
+          width: $function-ask;
+
+          .ok-button {
+            width: 50px;
+            height: 25px;
+            background-color: $bg-color--lighter;
+            color: $font-color--soft-light;
+            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #666;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .transactions-user-table-body {
+        width: 100%;
+
+        .table-row {
+          @include flexbox;
+          @include space-between;
+          background-color: $bg-color--lighter;
+          margin: 1px 0;
+          padding: 3px 5px;
+
+          & > * {
+            @include flexbox;
+            @include align-items-center;
+          }
+
+          .order-serial-number {
+            /*@include flex-flow(column, wrap);
+            @include stretch-height;*/
+            @include flexbox;
+            @include align-items-center;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            width: $order-serial-number;
+
+            .serial {
+              @include flexbox;
+              @include align-items-center;
+              color: $font-color--light;
+              padding-left: 5px;
+            }
+
+            .order-state {
+              @include flexbox;
+              @include align-items-center;
+              color: $font-color--soft-light;
+
+              svg {
+                margin-right: 3px;
+              }
+            }
+          }
+
+          .spent-target {
+            @include flex-flow(column, wrap);
+            @include stretch-height;
+            width: $spent-target;
+
+            .user-target-nick {
+              @include flexbox;
+              @include align-items-center;
+              color: #005fa6;
+              text-decoration: underline;
+            }
+
+            .user-target-id {
+              @include flexbox;
+              @include align-items-center;
+              color: $font-color--soft-light;
+            }
+          }
+
+          .payment-type {
+            color: $font-color--light;
+            width: $payment-type;
+          }
+
+          .payment-amount {
+            width: $payment-amount;
+
+            .payment-income, .payment-outcome {
+              display: none;
+            }
+
+            &.income {
+              .payment-income {
+                display: block;
+              }
+            }
+
+            &.outcome {
+              .payment-outcome {
+                display: block;
+              }
+            }
+
+            svg {
+              margin-right: 3px;
+            }
+
+            .payment-quantity {
+              color: $font-color--light;
+            }
+          }
+
+          .date-quantity {
+            width: $date-quantity;
+          }
+
+          .comments {
+            width: $comments;
+          }
+
+          .function-ask {
+            @include justify-content-center;
+            @include align-items-center;
+            color: $font-color-antagonist;
+            text-decoration: underline;
+            width: $function-ask;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.subscribe-page {
+  position: absolute;
+  padding: 0;
+  z-index: 0;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: auto; }
+  .subscribe-page .user-subscribe {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 10px 0; }
+    .subscribe-page .user-subscribe .avatar-holder {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-flex: 0 auto;
+      -moz-box-flex: 0 auto;
+      -webkit-flex: 0 auto;
+      -ms-flex: 0 auto;
+      flex: 0 auto;
+      max-width: 20%; }
+      .subscribe-page .user-subscribe .avatar-holder .user-avatar {
+        position: relative;
+        min-width: 52px;
+        width: 52px;
+        height: 52px;
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+        z-index: 0;
+        border: solid 1px #B3B4B4;
+        border-radius: 50%;
+        z-index: 0; }
+        .subscribe-page .user-subscribe .avatar-holder .user-avatar img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          vertical-align: middle;
+          min-height: 100%;
+          min-width: 100%;
+          max-width: 100%; }
+    .subscribe-page .user-subscribe .info-box {
+      position: relative;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-left: 2%; }
+      .subscribe-page .user-subscribe .info-box .info-row {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .subscribe-page .user-subscribe .info-box .info-row .id-box .id {
+          display: inline-block;
+          font-weight: bold;
+          font-size: 15px;
+          color: #313133;
+          text-transform: uppercase;
+          color: #fff;
+          background-color: #313133;
+          padding: 0 3px; }
+        .subscribe-page .user-subscribe .info-box .info-row .name {
+          font-weight: bold;
+          font-size: 15px;
+          color: #313133;
+          text-transform: uppercase;
+          text-transform: none;
+          color: #005fa6;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: -moz-calc(100% - 76px);
+          width: -webkit-calc(100% - 76px);
+          width: calc(100% - 76px);
+          padding-left: 5px;
+          -webkit-box-flex: 1;
+          -moz-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+      .subscribe-page .user-subscribe .info-box .online-status {
+        display: block;
+        -webkit-box-flex: 0 auto;
+        -moz-box-flex: 0 auto;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+        position: relative;
+        margin-left: 7px;
+        padding: 0;
+        white-space: nowrap;
+        color: #B3B4B4; }
+        .subscribe-page .user-subscribe .info-box .online-status:before {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          left: -7px;
+          top: 5px;
+          border-radius: 50%; }
+        .subscribe-page .user-subscribe .info-box .online-status.online:before {
+          background-color: #39B54A; }
+        .subscribe-page .user-subscribe .info-box .online-status.offline:before {
+          background-color: #FF0000; }
+    .subscribe-page .user-subscribe .user-msg {
+      position: absolute;
+      right: 180px;
+      top: 13.5px;
+      cursor: pointer; }
+      .subscribe-page .user-subscribe .user-msg:hover g {
+        fill: #313133; }
+  .subscribe-page .inner-content {
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    .subscribe-page .inner-content .users-list {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -22px;
+      overflow: auto; }
+      .subscribe-page .inner-content .users-list .user-subscribe {
+        width: 870px; }
+  .subscribe-page .search {
+    width: 870px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 5;
+    padding: 15px 10px 10px;
+    border-bottom: solid 1px #B3B4B4; }
+    .subscribe-page .search .search__input {
+      color: #808080;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      position: relative;
+      border: none;
+      width: 790px;
+      left: 8px; }
+    .subscribe-page .search .search__input:active, .subscribe-page .search .search__input:hover, .subscribe-page .search .search__input:focus {
+      outline: 0;
+      outline-offset: 0; }
+    .subscribe-page .search .search__icosearch {
+      position: relative;
+      top: 2px;
+      cursor: pointer; }
+    .subscribe-page .search .search__close {
+      position: relative;
+      top: 1px;
+      float: right;
+      cursor: pointer; }
+  .subscribe-page .search-result {
+    width: 100%;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: 3;
+    max-height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 40px -10px #000;
+    overflow-y: auto;
+    display: none; }
+
+.sub-button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #313133;
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  white-space: nowrap;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer; }
+  .sub-button.active {
+    background-color: #fff;
+    color: #313133; }
+  .sub-button:last-of-type {
+    margin-right: 0; }
+
+.button-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 3px; }
+
+/*# sourceMappingURL=2.2.16.page-subscribe.css.map */

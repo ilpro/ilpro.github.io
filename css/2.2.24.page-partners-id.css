@@ -1,0 +1,364 @@
+.partners-id.center-content {
+  padding: 5px 5px 0 5px; }
+  .partners-id.center-content .nav-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+    .partners-id.center-content .nav-row .links-block {
+      color: #666666;
+      font-size: 15px; }
+      .partners-id.center-content .nav-row .links-block > * {
+        margin: 5px;
+        text-decoration: underline; }
+      .partners-id.center-content .nav-row .links-block .active {
+        color: #B3B4B4;
+        text-decoration: none;
+        cursor: default; }
+    .partners-id.center-content .nav-row .coins-block {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .partners-id.center-content .nav-row .coins-block .coins-ico {
+        margin-right: 10px; }
+      .partners-id.center-content .nav-row .coins-block .coins-amount {
+        color: #666666;
+        font-size: 15px;
+        font-weight: bold; }
+  .partners-id.center-content .transactions-user-outer-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%; }
+    .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper {
+      /*      top: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;*/
+      width: 100%; }
+      .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper.relative {
+        position: relative; }
+      .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .head-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .head-info .title {
+          color: #fff;
+          background-color: #e6c12e;
+          padding: 5px 10px;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-left: -5px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .head-info .back {
+          width: 50px;
+          height: 25px;
+          background-color: #f2f2f2;
+          color: #666666;
+          box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+          font-size: 15px;
+          text-align: center;
+          line-height: 25px;
+          border: 1px solid #666;
+          cursor: pointer; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .head-info .back:hover {
+            background-color: #999999; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .head-info .back:active {
+            background-color: #e6c12e;
+            color: #fff;
+            border: solid 1px #fff; }
+      .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        width: 100%;
+        -webkit-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 3px 5px;
+        color: #666666;
+        font-size: 15px;
+        margin-bottom: 5px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head > * {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .order-serial-number-head {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .spent-target-head {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .payment-type-head {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .payment-amount-head {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .date-quantity-head {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .comments-head {
+          width: 175px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-head .function-ask-head {
+          -webkit-justify-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: 70px; }
+      .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        width: 100%;
+        -webkit-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 3px 5px;
+        background-color: #cccccc; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter > * {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .order-serial-number-filter {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .spent-target-filter {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .payment-type-filter {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .payment-amount-filter {
+          width: 130px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .payment-amount-filter .spent-input {
+            width: 120px;
+            height: 25px;
+            border: 1px solid #666666;
+            padding: 0 5px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .date-quantity-filter {
+          width: 130px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .comments-filter {
+          width: 125px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .comments-filter .comments-input {
+            width: 120px;
+            height: 25px;
+            border: 1px solid #666666;
+            padding: 0 5px; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .function-ask-filter {
+          -webkit-justify-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: 70px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .function-ask-filter .ok-button {
+            width: 50px;
+            height: 25px;
+            background-color: #f2f2f2;
+            color: #666666;
+            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #666;
+            cursor: pointer; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .function-ask-filter .ok-button:hover {
+              background-color: #999999; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-filter .function-ask-filter .ok-button:active {
+              background-color: #e6c12e;
+              color: #fff;
+              border: solid 1px #fff; }
+      .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body {
+        width: 100%; }
+        .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-shrink: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          -webkit-justify-content: space-between;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          background-color: #f2f2f2;
+          margin: 1px 0;
+          padding: 3px 5px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row > * {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .order-serial-number {
+            /*@include flex-flow(column, wrap);
+            @include stretch-height;*/
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            width: 130px; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .order-serial-number .serial {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              color: #313133;
+              padding-left: 5px; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .order-serial-number .order-state {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              color: #666666; }
+              .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .order-serial-number .order-state svg {
+                margin-right: 3px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .spent-target {
+            -webkit-flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+            -webkit-box-align: stretch;
+            -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            width: 130px; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .spent-target .user-target-nick {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              color: #005fa6;
+              text-decoration: underline; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .spent-target .user-target-id {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-shrink: 1;
+              -ms-flex-negative: 1;
+              flex-shrink: 1;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              color: #666666; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-type {
+            color: #313133;
+            width: 130px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount {
+            width: 130px; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount .payment-income, .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount .payment-outcome {
+              display: none; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount.income .payment-income {
+              display: block; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount.outcome .payment-outcome {
+              display: block; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount svg {
+              margin-right: 3px; }
+            .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .payment-amount .payment-quantity {
+              color: #313133; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .date-quantity {
+            width: 130px; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .comments {
+            width: 175px;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .partners-id.center-content .transactions-user-outer-wrapper .transactions-user-inner-wrapper .transactions-user-table-body .table-row .function-ask {
+            -webkit-justify-content: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            color: #e6c12e;
+            text-decoration: underline;
+            width: 70px; }
+
+/*# sourceMappingURL=2.2.24.page-partners-id.css.map */

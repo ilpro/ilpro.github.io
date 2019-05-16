@@ -1,0 +1,114 @@
+.my-comments.center-content {
+  position: relative; }
+  .my-comments.center-content .comments-box {
+    max-height: 100%;
+    overflow: auto;
+    padding: 10px; }
+    .my-comments.center-content .comments-box .comment {
+      width: 100%;
+      margin: 0;
+      font: 400 12px/13px "PT Sans", sans-serif;
+      color: #313133; }
+      .my-comments.center-content .comments-box .comment.appear {
+        animation: smooth-bg-fade-appear 1s; }
+      .my-comments.center-content .comments-box .comment .comment-body {
+        padding: 5px 10px; }
+      .my-comments.center-content .comments-box .comment .comment-user {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        margin-top: 4px;
+        color: #9B9C9E;
+        position: relative; }
+        .my-comments.center-content .comments-box .comment .comment-user .user-avatar {
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          width: 41px;
+          height: 41px;
+          overflow: hidden;
+          text-align: center;
+          border: 1px solid #808080;
+          background: white;
+          margin: 0 5px 0 0; }
+          .my-comments.center-content .comments-box .comment .comment-user .user-avatar img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            vertical-align: middle;
+            min-height: 105%;
+            min-width: 105%;
+            max-width: 100%;
+            max-height: 100%; }
+        .my-comments.center-content .comments-box .comment .comment-user .user-info {
+          display: inline-block;
+          vertical-align: middle;
+          width: 50%;
+          position: relative;
+          text-align: left;
+          font-family: inherit;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 14px;
+          color: #005fa6;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+        .my-comments.center-content .comments-box .comment .comment-user .achievement-rating {
+          display: inline-block;
+          position: relative; }
+          .my-comments.center-content .comments-box .comment .comment-user .achievement-rating.top-rating {
+            float: right; }
+          .my-comments.center-content .comments-box .comment .comment-user .achievement-rating .comment-time {
+            font: 400 13px/13px "PT Sans", sans-serif;
+            display: block;
+            text-align: right;
+            color: #9b9c9e;
+            margin: 0; }
+        .my-comments.center-content .comments-box .comment .comment-user .comment-message {
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          width: calc(100% - 46px);
+          margin: 0; }
+          .my-comments.center-content .comments-box .comment .comment-user .comment-message .msg {
+            font: 400 13px/14px "PT Sans", sans-serif;
+            overflow: hidden;
+            position: relative;
+            color: #404040;
+            margin: 0 0 -3px;
+            max-width: 790px; }
+            .my-comments.center-content .comments-box .comment .comment-user .comment-message .msg img[alt="sticker-msg"] {
+              max-width: 80px;
+              max-height: 80px; }
+      .my-comments.center-content .comments-box .comment .relative-comment-box {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        margin: 5px 0;
+        padding: 7px;
+        text-decoration: none;
+        background-color: rgba(188, 188, 188, 0.17); }
+        .my-comments.center-content .comments-box .comment .relative-comment-box .donor {
+          display: block;
+          color: #005fa6;
+          font: bold 15px/16px "PT Sans", sans-serif;
+          text-decoration: none;
+          margin-bottom: 4px;
+          margin-left: 5px; }
+        .my-comments.center-content .comments-box .comment .relative-comment-box .comment {
+          width: 100%;
+          margin: 0;
+          font: 400 12px/13px "PT Sans", sans-serif; }
+          .my-comments.center-content .comments-box .comment .relative-comment-box .comment.message-box {
+            background-color: #fff;
+            padding: 5px;
+            color: #313133;
+            overflow: hidden; }
+
+/*# sourceMappingURL=2.2.15.page-my-comments.css.map */

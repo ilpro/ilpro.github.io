@@ -1,0 +1,1324 @@
+/**** top-nav icons ****/
+.ico {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../img/sprite-common.png") no-repeat;
+}
+
+.news-ico-s {
+  width: 16px;
+  height: 16px;
+  background-position: -99px -313px;
+}
+
+.news-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -137px 0;
+}
+
+.active-item .news-ico, .top-nav li:hover>a .news-ico {
+  background-position: -157px 0;
+}
+
+.radio-player-ico {
+  top: -3px;
+  width: 20px;
+  height: 20px;
+  background-position: -13px -54px;
+}
+
+.active-item .radio-player-ico, .top-nav  a:hover .radio-player-ico {
+  background-position: -33px -54px;
+}
+
+.vk-song-ico {
+  margin: 2px 0px 0px 9px;
+  width: 28px;
+  height: 16px;
+  background-position: -386px -412px;
+}
+
+.tv-ico {
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  background-position: -160px -54px;
+}
+
+.active-item .tv-ico, .top-nav  a:hover .tv-ico {
+  background-position: -181px -54px;
+}
+
+.info-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -36px 0;
+}
+
+.active-item .info-ico, .top-nav  li:hover>a .info-ico {
+  background-position: -56px 0;
+}
+
+.gif-ico {
+  width: 27px;
+  height: 17px;
+  background-position: -135px -315px;
+}
+
+.active-item .gif-ico, .top-nav  li:hover>a .gif-ico {
+  background-position: -220px -315px;
+}
+
+.search-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -53px -54px;
+}
+
+.search-active-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -72px -54px;
+}
+
+.active-item .search-ico, button:hover .search-ico {
+  background-position: -73px -54px;
+}
+
+.login-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -76px 0;
+}
+
+.login-dark-ico {
+  width: 18px;
+  height: 19px;
+  background-position: -48px -221px;
+}
+
+.logout-ico {
+  width: 25px;
+  height: 26px;
+  background-position: -122px -193px;
+}
+
+.register-ico {
+  width: 20px;
+  height: 19px;
+  background-position: -27px -221px
+}
+
+.active-item .login-ico, a:hover .login-ico {
+  background-position: -96px 0;
+}
+
+.logo-main-ico {
+  width: 204px;
+  height: 34px;
+  background-position: 0 -20px;
+}
+
+.logo-grey-ico {
+  width: 203px;
+  height: 35px;
+  background-position: -126px -359px;
+}
+
+.logo-small-light-ico {
+  width: 120px;
+  height: 20px;
+  background-position: 0 -117px;
+}
+
+.logo-small-dark-ico {
+  width: 120px;
+  height: 20px;
+  background-position: 0 -96px;
+}
+
+/*** ARROWS ***/
+.arrow-down-ico {
+  width: 11px;
+  height: 7px;
+  background-position: 0 0;
+}
+
+.arrow-left-ico {
+  width: 7px;
+  height: 11px;
+  background-position: -11px 0;
+}
+
+.arrow-right-ico {
+  width: 7px;
+  height: 11px;
+  background-position: -18px 0;
+}
+
+.arrow-right-brown-ico {
+  width: 7px;
+  height: 10px;
+  background-position: -41px -84px;
+}
+
+.arrow-up-ico {
+  width: 11px;
+  height: 7px;
+  background-position: -25px 0;
+}
+
+.arrow-yellow-down-ico {
+  width: 10px;
+  height: 7px;
+  background-position: -143px -85px;
+}
+
+.arrow-yellow-up-ico {
+  width: 10px;
+  height: 7px;
+  background-position: -143px -75px;
+}
+
+.arrow-left-blue-ico {
+  width: 5px;
+  height: 8px;
+  background-position: -150px -94px;
+}
+
+.arrow-right-blue-ico {
+  width: 5px;
+  height: 8px;
+  background-position: -173px -103px;
+}
+
+.arrow-left-black-ico {
+  width: 5px;
+  height: 9px;
+  background-position: -179px -103px;
+}
+
+.arrow-right-black-ico {
+  width: 5px;
+  height: 9px;
+  background-position: -179px -103px;
+}
+
+.arrow-left-orange-m-ico {
+  width: 10px;
+  height: 16px;
+  background-position: -36px -305px;
+}
+
+.arrow-right-orange-m-ico {
+  width: 10px;
+  height: 16px;
+  background-position: -45px -305px;
+}
+
+.comments-minus-ico {
+  width: 9px;
+  height: 1px;
+  background-position: -104px -309px;
+}
+
+.comments-plus-ico {
+  width: 9px;
+  height: 10px;
+  background-position: -104px -299px;
+}
+
+.comments-arrow-right-ico {
+  width: 8px;
+  height: 14px;
+  background-position: -127px -300px;
+}
+
+.slider-prev-ico {
+  width: 16px;
+  height: 28px;
+  background-position: -362px -305px;
+}
+
+.slider-next-ico {
+  width: 16px;
+  height: 28px;
+  background-position: -383px -305px;
+}
+
+.triangle-up-ico {
+  width: 17px;
+  height: 11px;
+  background-position: -268px -321px;
+}
+
+.triangle-up-white-ico {
+  width: 12px;
+  height: 6px;
+  background-position: -271px -315px;
+}
+
+.header-arrow-yellow-start-ico {
+  width: 13px;
+  height: 49px;
+  background-position: -425px -359px;
+}
+
+.header-arrow-yellow-end-ico {
+  width: 13px;
+  height: 49px;
+  background-position: -439px -359px;
+}
+
+.header-arrow-green-start-ico {
+  width: 13px;
+  height: 49px;
+  background-position: -397px -359px;
+}
+
+.header-arrow-green-end-ico {
+  width: 13px;
+  height: 49px;
+  background-position: -411px -359px;
+}
+
+.header-arrow-dark-start-ico {
+  width: 13px;
+  height: 49px;
+  background-position: -453px -359px;
+}
+
+.header-arrow-dark-end-ico {
+  width: 13px;
+  height: 49px;
+  background-position: -468px -359px;
+}
+
+/*** end arrows ***/
+
+.warning-grey-ico {
+  width: 15px;
+  height: 15px;
+  background-position: -231px -299px;
+}
+
+.warning-red-ico {
+  width: 19px;
+  height: 19px;
+  background-position: -294px -314px;
+}
+
+.comments-grey-ico {
+  width: 16px;
+  height: 16px;
+  background-position: -154px -76px;
+}
+
+.comments-transparent-ico {
+  width: 16px;
+  height: 16px;
+  background-position: -171px -76px;
+}
+
+.comments-blue-ico {
+  width: 16px;
+  height: 16px;
+  background-position: -188px -76px;
+}
+
+.comments-white-ico {
+  width: 19px;
+  height: 18px;
+  background-position: -176px -273px;
+}
+
+.comments-user-empty-ico {
+  width: 16px;
+  height: 16px;
+  background-position: 0 -398px;
+}
+
+.comments-user-not-empty-ico {
+  width: 16px;
+  height: 16px;
+  background-position: 0 -414px;
+}
+
+.comments-user-red {
+  width: 16px;
+  height: 16px;
+  background-position: -19px -398px;
+}
+
+.comments-user-l-red {
+  width: 20px;
+  height: 20px;
+  background-position: -21px -377px;
+}
+
+.comments-user-l-grey {
+  width: 20px;
+  height: 20px;
+  background-position: -42px -377px;
+}
+
+.filter-ico {
+  width: 21px;
+  height: 20px;
+  background-position: -116px 0;
+}
+
+.filter-yellow-ico {
+  width: 15px;
+  height: 15px;
+  background-position: -125px -118px;
+}
+
+.person-ico {
+  width: 21px;
+  height: 20px;
+  background-position: -177px 0;
+}
+
+.person_small-ico {
+  width: 13px;
+  height: 16px;
+  background-position: 0 -54px;
+}
+
+.thumbsup-ico {
+  width: 21px;
+  height: 20px;
+  background-position: -93px -54px;
+}
+
+.thumbsup-m-ico {
+  width: 17px;
+  height: 17px;
+  background-position: -137px -297px;
+}
+
+.thumbsup_small-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -114px -54px;
+}
+
+.time-ico {
+  width: 21px;
+  height: 20px;
+  background-position: -128px -54px;
+}
+
+.time-grey-ico {
+  width: 22px;
+  height: 22px;
+  background-position: -98px -256px;
+}
+
+.time-small-ico {
+  width: 12px;
+  height: 12px;
+  background-position: -149px -54px;
+}
+
+.viewed-ico {
+  width: 21px;
+  height: 20px;
+  background-position: 0 -74px;
+}
+
+.viewed-small-ico {
+  width: 21px;
+  height: 16px;
+  background-position: -20px -76px;
+}
+
+
+
+.horn-ico {
+  width: 21px;
+  height: 17px;
+  background-position: -150px -94px;
+}
+
+/*.enter-ico {
+  width: 33px;
+  height: 33px;
+  background-position: -363px -359px;
+}*/
+
+.close-ico {
+  width: 11px;
+  height: 11px;
+  background-position: -186px -94px;
+}
+
+.close-white-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -161px -113px;
+}
+
+.save-ico {
+  width: 20px;
+  height: 16px;
+  background-position: -184px -107px;
+}
+
+.reset-ico {
+  width: 17px;
+  height: 17px;
+  background-position: -142px -118px;
+}
+
+.unchecked-square-yellow {
+   width: 17px;
+   height: 18px;
+   background-position: -169px -144px;
+ }
+
+.checked-square-yellow {
+  width: 17px;
+  height: 18px;
+  background-position: -187px -144px;
+}
+
+.unchecked-square-green {
+  width: 17px;
+  height: 17px;
+  background-position: -117px -315px;
+}
+
+.checked-square-yellow {
+  width: 17px;
+  height: 17px;
+  background-position: -183px -315px;
+}
+
+.checked-circle {
+  width: 16px;
+  height: 16px;
+  background-position: -142px -118px;
+}
+
+.unchecked-circle {
+  width: 16px;
+  height: 16px;
+  background-position: -142px -118px;
+}
+
+.wheel-ico {
+  width: 23px;
+  height: 23px;
+  background-position: -145px -139px;
+}
+
+.radio-big-ico {
+  width: 32px;
+  height: 34px;
+  background-position: -85px -137px;
+}
+
+.tv-big-ico {
+  width: 47px;
+  height: 49px;
+  background-position: 0 -140px;
+}
+
+.close-circle-ico {
+  width: 16px;
+  height: 17px;
+  background-position: -67px -137px;
+}
+
+.close-small-white-ico {
+  width: 10px;
+  height: 11px;
+  background-position: -55px -137px;
+}
+
+/**** radio icons ****/
+.play-ico {
+  width: 15px;
+  height: 26px;
+  background-position: -149px -192px
+}
+
+.play-l-ico {
+  width: 42px;
+  height: 73px;
+  background-position: -166px -163px;
+}
+
+.pause-ico {
+  width: 12px;
+  height: 24px;
+  background-position: -466px -154px;
+}
+
+.pause-l-ico {
+  width: 34px;
+  height: 62px;
+  background-position: -431px -154px;
+}
+
+.vk-radio-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -49px -153px;
+}
+
+.sound-cloud-radio-ico {
+  width: 22px;
+  height: 16px;
+  background-position: -416px -412px;
+}
+
+.yandex-music-radio-ico {
+  width: 18px;
+  height: 16px;
+  background-position: -454px -412px;
+}
+
+.apple-radio-ico {
+  width: 61px;
+  height: 18px;
+  background-position: -50px -172px;
+}
+
+.youtube-radio-ico {
+  width: 22px;
+  height: 18px;
+  background-position: -133px -172px;
+}
+
+.google-radio-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -112px -173px;
+}
+
+.radio-info-ico{
+  width: 19px;
+  height: 18px;
+  background-position: -365px -395px;
+}
+
+.radio-info-ico:hover{
+  width: 19px;
+  height: 18px;
+  background-position: -365px -414px;
+}
+
+/**** social first block icons ****/
+.facebook-ico {
+  width: 26px;
+  height: 28px;
+  background-position: 0 -193px;
+}
+
+.twitter-ico {
+  width: 26px;
+  height: 28px;
+  background-position: -27px -193px;
+}
+
+.google-ico {
+  width: 26px;
+  height: 28px;
+  background-position: -54px -193px;
+}
+
+.vk-ico {
+  width: 26px;
+  height: 28px;
+  background-position: -81px -193px
+}
+
+.odnoklassniki-ico {
+  width: 26px;
+  height: 28px;
+  background-position: 0 -221px;
+}
+
+/**** social second block icons ****/
+.facebook-2-ico {
+  width: 25px;
+  height: 24px;
+  background-position: -27px -266px;
+}
+
+.odnoklassniki-2-ico {
+  width: 25px;
+  height: 24px;
+  background-position: -27px -241px;
+}
+
+.google-2-ico {
+  width: 25px;
+  height: 24px;
+  background-position: -53px -241px;
+}
+
+.vkontakte-2-ico {
+  width: 25px;
+  height: 24px;
+  background-position: 0 -250px;
+}
+
+.twitter-2-ico {
+  width: 26px;
+  height: 25px;
+  background-position: -27px -193px;
+}
+
+/****** TOOLTIP SOCIAL ICONS *****/
+.facebook-dark-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -404px -268px;
+}
+
+.facebook-active-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -423px -268px;
+}
+
+.vk-active-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -343px -286px;
+}
+
+.twitter-dark-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -381px -287px;
+}
+
+.twitter-active-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -344px -305px;
+}
+
+.google-dark-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -366px -268px;
+}
+
+.google-active-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -385px -268px;
+}
+
+.odnoklassniki-active-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -461px -268px;
+}
+
+.ms-active-ico {
+  width: 18px;
+  height: 18px;
+  background-position: -480px -268px;
+}
+
+.like-fb-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -64px -392px;
+}
+
+.like-vk-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -79px -392px;
+}
+
+.like-ms-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -94px -392px;
+}
+
+.like-unactive-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -126px -408px;
+}
+
+.comment-fb-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -64px -378px;
+}
+
+.comment-vk-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -64px -377px;
+}
+
+.comment-ms-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -92px -376px;
+}
+
+.comment-unactive-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -126px -394px;
+}
+
+.repost-fb-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -110px -390px;
+}
+
+.repost-vk-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -110px -376px;
+}
+
+.repost-gp-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -110px -406px;
+}
+
+.repost-ok-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -64px -406px;
+}
+
+.repost-ms-ico {
+  width: 14px;
+  height: 14px;
+  background-position: -94px -406px;
+}
+
+/*statistic page icons styles*/
+.speedometer-sm-ico {
+  width: 20px;
+  height: 18px;
+  background-position: -128px -222px;
+}
+
+.speedometer-sm-yellow-ico {
+  width: 20px;
+  height: 18px;
+  background-position: -107px -222px;
+}
+
+.diagram-sm-ico {
+  width: 19px;
+  height: 17px;
+  background-position: -87px -222px;
+}
+
+.diagram-sm-yellow-ico {
+  width: 19px;
+  height: 17px;
+  background-position: -66px -222px;
+}
+
+.page-sm-ico {
+  width: 18px;
+  height: 24px;
+  background-position: -66px -222px;
+}
+
+.page-sm-yellow-ico {
+  width: 18px;
+  height: 24px;
+  background-position: -66px -222px;
+}
+
+.person-big-ico {
+  width: 27px;
+  height: 33px;
+  background-position: -120px -241px;
+}
+
+.speedometer-big-ico {
+  width: 38px;
+  height: 34px;
+  background-position: -168px -237px;
+}
+
+.speedometer-l-yellow-ico {
+  width: 70px;
+  height: 64px;
+  background-position: -296px -214px;
+}
+
+.menu-ico {
+  width: 19px;
+  height: 14px;
+  background-position: -100px -241px;
+}
+
+.blog-m-ico {
+  width: 63px;
+  height: 46px;
+  background-position: -318px 0;
+}
+
+.blog-l-ico {
+  width: 111px;
+  height: 83px;
+  background-position: -207px 0;
+}
+
+.eye-ico-m {
+  width: 70px;
+  height: 38px;
+  background-position: -407px -47px;
+}
+
+.eye-l-ico {
+  width: 80px;
+  height: 44px;
+  background-position: -381px -1px;
+}
+
+.google-colored-m-ico {
+  width: 37px;
+  height: 37px;
+  background-position: 0 -291px;
+}
+
+.google-colored-l-ico {
+  width: 64px;
+  height: 66px;
+  background-position: -367px -155px;
+}
+
+.star-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -53px -266px;
+}
+
+.star-yellow-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -53px -287px;
+}
+
+.star-grey-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -177px -291px;
+}
+
+.star-green-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -177px -291px;
+}
+
+.random-ico {
+  width: 20px;
+  height: 20px;
+  background-position: -163px -313px;
+}
+
+.refresh-ico {
+  width: 17px;
+  height: 19px;
+  background-position: -196px -272px;
+}
+
+.gif-s-ico {
+  width: 22px;
+  height: 13px;
+  background-position: -198px -299px;
+}
+
+.gif-mav-yellow-ico {
+  width: 27px;
+  height: 17px;
+  background-position: -135px -315px;
+}
+
+.gif-mav-white-ico {
+  width: 27px;
+  height: 17px;
+  background-position: -135px -315px;
+}
+
+.gif-l-ico {
+  width: 68px;
+  height: 68px;
+  background-position: -414px -291px;
+}
+
+.radio-tower-ico {
+  width: 20px;
+  height: 36px;
+  background-position: -78px -239px;
+}
+
+.radio-tower-yellow-ico {
+  width: 20px;
+  height: 36px;
+  background-position: -78px -274px;
+}
+
+.soc-network-index-ico {
+  width: 79px;
+  height: 60px;
+  background-position: -209px -232px;
+  margin: 0 0 8px 0;
+}
+
+
+.man-reading-s-ico {
+  width: 18px;
+  height: 20px;
+  background-position: -81px -311px;
+}
+
+
+
+.man-reading-m-ico {
+  width: 46px;
+  height: 57px;
+  background-position: -321px -156px;
+}
+
+.man-reading-l-ico {
+  width: 79px;
+  height: 60px;
+  background-position: -321px -156px;
+}
+
+.social-index-s-ico {
+  width: 25px;
+  height: 19px;
+  background-position: -55px -311px;
+}
+
+.social-index-m-ico {
+  width: 85px;
+  height: 63px;
+  background-position: -209px -168px;
+}
+
+.social-index-l-ico {
+  width: 111px;
+  height: 83px;
+  background-position: -209px -84px;
+}
+
+.social-mentions-m-ico {
+  width: 79px;
+  height: 68px;
+  background-position: -406px -86px;
+}
+
+
+/*****  SMILES ICONS ****/
+.like-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: 0 -333px;
+}
+
+.like-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -29px -333px;
+}
+
+.love-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -58px -333px;
+}
+
+.love-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -88px -333px;
+}
+
+.laugh-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -116px -333px;
+}
+
+.laugh-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -146px -333px;
+}
+
+.glad-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -176px -333px;
+}
+
+.glad-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -206px -333px;
+}
+
+.shout-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -236px -333px;
+}
+
+.shout-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -266px -333px;
+}
+
+.sad-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -296px -333px;
+}
+
+.sad-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -326px -333px;
+}
+
+.angry-smile-grey-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -356px -333px;
+}
+
+.angry-smile-red-ico {
+  width: 28px;
+  height: 26px;
+  background-position: -386px -333px;
+}
+
+/**** ACHIEVEMENTS *****/
+.badge-l-ico{
+  width: 12px;
+  height: 20px;
+  background-position: -104px -278px;
+}
+
+.badge-s-ico {
+  width: 12px;
+  height: 20px;
+  background-position: -104px -278px;
+}
+
+.badge-blue-ico {
+  width: 14px;
+  height: 21px;
+  background-position: -117px -278px;
+}
+
+
+/**** SOCIAL ICONS ****/
+.tooltip-vk-ico {
+  width: 15px;
+  height: 15px;
+  background-position: -393px -228px;
+}
+
+.tooltip-fb-ico {
+  width: 15px;
+  height: 15px;
+  background-position: -373px -228px;
+}
+
+.tooltip-odnoklassniki-ico {
+  width: 15px;
+  height: 15px;
+  background-position: -413px -228px;
+}
+
+.tooltip-google-ico {
+  width: 15px;
+  height: 15px;
+  background-position: -433px -228px;
+}
+
+.dot-yellow {
+  width: 5px;
+  height: 5px;
+  background-position: -97px -305px;
+}
+
+.sticker-ico-grey {
+  width: 23px;
+  height: 23px;
+  background-position: -246px -292px;
+}
+
+.sticker-red-ico {
+  width: 33px;
+  height: 33px;
+  background-position: -329px -359px;
+}
+
+.avatar-empty {
+  width: 34px;
+  height: 34px;
+  background-position: -449px -228px;
+}
+
+.radio-volume-mask {
+  width: 74px;
+  height: 18px;
+  background-position: 0 -359px;
+}
+
+.copy-link-l-ico {
+  width: 26px;
+  height: 34px;
+  background-position: -294px -278px;
+}
+
+.copy-link-s-ico {
+  width: 15px;
+  height: 18px;
+  background-position: -201px -314px;
+}
+
+.lamp-red-ico {
+  width: 23px;
+  height: 26px;
+  background-position: -477px 0;
+}
+
+.lamp-yellow-ico {
+  width: 23px;
+  height: 26px;
+  background-position: -477px -27px;
+}
+
+.lamp-green-ico {
+  width: 23px;
+  height: 26px;
+  background-position: -477px -54px;
+}
+
+.globe-white {
+  width: 21px;
+  height: 21px;
+  background-position: -466px -179px
+}
+
+.globe-yellow {
+  width: 21px;
+  height: 21px;
+  background-position: -466px -201px;
+}
+
+.up-btn-ico {
+  width: 50px;
+  height: 50px;
+  background-position: -74px -359px;
+}
+
+.img-ico {
+  width: 26px;
+  height: 15px;
+  background-position: -36px -399px;
+}
+
+.banner-views-ico {
+  width: 24px;
+  height: 17px;
+  background-position: -226px -395px;
+}
+
+
+.banner-views-active-ico {
+  width: 24px;
+  height: 16px;
+  background-position: -251px -395px;
+}
+
+.banner-unique-views-ico {
+  width: 24px;
+  height: 24px;
+  background-position: -175px -395px;
+}
+
+.banner-unique-views-active-ico {
+  width: 24px;
+  height: 24px;
+  background-position: -277px -395px;
+}
+
+.banner-clicks-ico {
+  width: 13px;
+  height: 19px;
+  background-position: -142px -395px;
+}
+
+.banner-clicks-active-ico {
+  width: 13px;
+  height: 18px;
+  background-position: -303px -395px;
+}
+
+.banner-unique-clicks-ico {
+  width: 23px;
+  height: 23px;
+  background-position: -201px -395px;
+}
+
+.banner-unique-clicks-active-ico {
+  width: 23px;
+  height: 23px;
+  background-position: -318px -395px;
+}
+
+.banner-coef-ico {
+  width: 17px;
+  height: 23px;
+  background-position: -157px -395px;
+}
+
+.banner-coef-active-ico {
+  width: 14px;
+  height: 20px;
+  background-position: -343px -395px;
+}
+
+/** TRAFFIC LIGHTS **/
+.traffic-light-green-ico {
+  width: 36px;
+  height: 32px;
+  background-position: -251px -395px;
+}
+
+.traffic-light-yellow-ico {
+  width: 36px;
+  height: 32px;
+  background-position: -289px -395px;
+}
+
+.traffic-light-red-ico {
+  width: 36px;
+  height: 32px;
+  background-position: -327px -395px;
+}

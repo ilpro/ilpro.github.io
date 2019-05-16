@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.main-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 11px;
+  @include calc(width, '100% - 150px');
+  //all - header - shadow-bottom - margin-top
+  @include calc(min-height, '100vh - 42px - 3px - 11px');
+}
+
+//All PROJECT PAGES IMPORT
+@import "2.2.01.page-main";
+@import "2.2.02.page-profile";
+@import "2.2.03.page-profile-edit";
+@import "2.2.04.page-cards-users";
+@import "2.2.05.page-lists-users";
+@import "2.2.06.page-date-preferences";
+@import "2.2.07.page-radio";
+@import "2.2.08.page-messages";
+@import "2.2.09.page-slide";
+@import "2.2.10.page-info-single";
+@import "2.2.11.page-settings";
+@import "2.2.12.page-commercial";
+@import "2.2.13.page-chat-old";
+@import "2.2.14.page-notification-old";
+@import "2.2.15.page-my-comments";
+@import "2.2.16.page-subscribe";
+@import "2.2.17.page-music";
+@import "2.2.18.page-feed";
+@import "2.2.19.page-transactions";
+@import "2.2.20.page-terms";
+@import "2.2.21.page-error";
+@import "2.2.22.page-miss-city";
+@import "2.2.23.page-partners";
+@import "2.2.24.page-partners-id";
+@import "2.2.25.page-region-user";
+@import "2.2.26.page-company-site";
+@import "2.2.27.page-market-item";

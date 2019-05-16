@@ -1,0 +1,346 @@
+@charset "utf-8";
+@import "0.0.mixins";
+@import "0.1.font-colors-variables";
+
+.radio-all {
+  @include flexbox;
+  @include align-items-center;
+  position: relative;
+  height: 100%;
+  width: 870px;
+  padding: 0 26px 0 0;
+
+  &.show-list {
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $background-color-main-inverse;
+    }
+  }
+
+  &.jp-state-playing {
+    #current-station {
+      .play-pause-wrapper {
+        .state-pause {
+          display: block;
+        }
+        .state-play {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .stations {
+    height: 100%;
+    cursor: pointer;
+    padding-left: 10px;
+    z-index: 1;
+
+    //&:before, &:after {
+    //  content: '';
+    //  position: absolute;
+    //  border: 8px solid transparent;
+    //  border-top: 10px solid $border-color-main;
+    //}
+    //
+    //&:before {
+    //  top: 15px;
+    //}
+    //
+    //&:after {
+    //  top: 14px;
+    //  border-top: 10px solid $border-color-main-inverse;
+    //}
+
+    &.hovered {
+      background-color: rgba(153, 153, 153, 0.2);
+    }
+
+    .current-station-logo {
+      @include flexbox;
+      @include align-items-center;
+      @include justify-content-center;
+      height: 100%;
+      width: 170px;
+      min-width: 170px;
+
+      svg {
+        min-width: 150px;
+        max-height: 35px;
+
+        path, g {
+          fill: $background-color-main;
+        }
+      }
+    }
+  }
+
+  .control-name-container {
+    @include flexbox;
+    @include align-items-center;
+    @include space-between;
+    height: 100%;
+    overflow: hidden;
+    width: 407px;
+    z-index: 1;
+
+    &#current-station .play-pause-wrapper {
+      background-color: $background-color-main-inverse;
+
+      path, g {
+        fill: $background-color-main;
+        stroke: $background-color-main;
+      }
+
+      &:hover {
+        background-color: $background-color-main;
+
+        path, g {
+          fill: $background-color-main-inverse;
+          stroke: $background-color-main-inverse;
+        }
+      }
+
+      &:active {
+        background-color: $background-color-antagonist;
+
+        path, g {
+          fill: $background-color-main-inverse;
+          stroke: $background-color-main-inverse;
+        }
+      }
+    }
+
+    .play-pause-wrapper {
+      @include flexbox;
+      @include align-items-center;
+      @include justify-content-center;
+      height: 100%;
+      cursor: pointer;
+      padding: 0 15px;
+      margin-right: 10px;
+
+      .state-play, .state-pause {
+        margin-top: -3px;
+      }
+
+      .state-pause {
+        display: none;
+      }
+      .state-play {
+        display: block;
+      }
+    }
+
+
+    .track-info {
+      @include flexbox;
+      @include align-items-center;
+      white-space: nowrap;
+      height: 100%;
+      width: 95%;
+      color: $font-color-main-inverse;
+
+      .artist {
+        position: relative;
+        /*        padding: 0 15px 0 0;
+
+                &:after {
+                  content: '-';
+                  position: absolute;
+                  right: 5px;
+                  top: -2px;
+                  display: block;
+                  height: 100%;
+                  width: 5px;
+                  color: inherit;
+                }*/
+      }
+
+      .track-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .volume-copy-block {
+    @include flexbox;
+    @include align-items-center;
+    @include space-between;
+    width: 256px;
+    position: relative;
+
+    &>* {
+      @include flexbox;
+      @include align-items-center;
+      @include justify-content-center;
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        path, g {
+          opacity: .8;
+        }
+      }
+
+      &:active {
+        path, g {
+          opacity: 1;
+          fill: $font-color-antagonist;
+        }
+      }
+    }
+
+    .volume-control {
+      margin-right: 20px;
+
+      &:hover {
+        box-shadow:  0 1px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .jp-volume-bar {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      height: 100px;
+      width: 10px;
+      z-index: 10;
+
+      .ui-slider-range {
+        position: absolute;
+        z-index: 1;
+        font-size: .7em;
+        display: block;
+        border: 0;
+        background-position: 0 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .ui-slider-handle {
+        position: absolute;
+        z-index: 2;
+        width: 1.2em;
+        height: 1.2em;
+        cursor: default;
+        -ms-touch-action: none;
+        touch-action: none;
+        left: -.3em;
+        margin-left: 0;
+        margin-bottom: -.6em;
+      }
+    }
+  }
+
+  .stations-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 350px;
+    background-color: $background-color-main-inverse;
+    z-index: $z-stations-list;
+    overflow: auto;
+
+    .station-row {
+      @include flexbox;
+      @include align-items-center;
+      width: 100%;
+      position: relative;
+      padding: 0 10px;
+      margin: 3px 0;
+      height: 40px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bg-color--orange;
+
+        .play-pause-wrapper {
+          background-color: $background-color-main;
+
+          path, g {
+            fill: $background-color-main-inverse;
+          }
+        }
+      }
+
+      &:active {
+        .station-ico-holder {
+          svg {
+            path, g {
+              fill: $background-color-antagonist;
+            }
+          }
+        }
+
+        .play-pause-wrapper {
+          background-color: $background-color-antagonist;
+
+          path, g {
+            fill: $background-color-main-inverse;
+          }
+        }
+
+        .track-info {
+          color: $font-color-antagonist;
+        }
+
+        .volume-copy-block {
+          path, g {
+            fill: $background-color-antagonist;
+          }
+        }
+      }
+
+      &.active {
+        background-color: darken($main-color, 10%)
+      }
+
+      .station-ico-holder {
+        @include flexbox;
+        @include align-items-center;
+        @include justify-content-center;
+        height: 100%;
+        width: 170px;
+        min-width: 170px;
+
+        svg {
+          min-width: 150px;
+
+          path, g {
+            fill: $background-color-main;
+          }
+        }
+      }
+
+      .control-name-container .track-info {
+        padding-left: 7px;
+      }
+    }
+  }
+}
