@@ -119,7 +119,7 @@ a {
   content: '';
   display: block;
   position: absolute;
-  top: 38px;
+  top: 45px;
   width: 100%;
   height: 3px;
   background-color: #E6C12E;
@@ -318,7 +318,7 @@ input:checked + .slider:before {
 .date ul:after {
   content: '';
   position: absolute;
-  top: 38px;
+  top: 45px;
   width: 1000px;
   height: 3px;
   background-color: #D4D4D4;
@@ -326,7 +326,6 @@ input:checked + .slider:before {
 
 
 .date ul li:last-child {
-  bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,9 +335,6 @@ input:checked + .slider:before {
   font-size: 13px;
 }
 
-.date ul li:last-child .active {
-  top: 48px;
-}
 
 .list-active {
   position: relative;
