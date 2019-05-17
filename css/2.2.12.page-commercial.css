@@ -54,6 +54,52 @@
   overflow-y: visible;
 }
 
+.formats-table2 {
+  position: relative;
+  width: 794px;
+  margin: 0 auto;
+  /*position: absolute;*/
+  /*top: 0;*/
+  display: none;
+  margin-top: 50px;
+}
+.formats-table2 .table-domains {
+  display: flex;
+  margin-top: 20px;
+}
+.formats-table2 .table-domains .table-domains_item {
+  width: 426px;
+  height: 337px;
+  border: 1px solid #D4D4D4;
+  overflow-y: scroll;
+}
+.formats-table2 .table-domains .table-domains_item ul {
+  margin: 20px 0 20px 25px;
+}
+.formats-table2 .table-domains .table-domains_item ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.formats-table2 .table-domains .table-domains_item ul li input {
+  margin-right: 10px;
+}
+.formats-table2 .table-domains .table-domains_item:last-child ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formats-table2 .table-domains .table-domains_item:last-child {
+  overflow-y: visible;
+}
+.formats-table2 .table-formats {
+  margin-top: 20px;
+}
+
+.br {
+  border-top: 1px solid #6E6E6E;
+}
+
 .table-devices {
   margin-top: 20px;
 }
@@ -176,8 +222,16 @@
 }
 
 .cross {
-  position: relative;
-  bottom: 30px;
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.cross2 {
+  position: absolute;
+  top: -30px;
+  right: 30px;
   cursor: pointer;
 }
 
@@ -188,7 +242,7 @@
 }
 
 .formats-table_search input {
-  width: 295px;
+  width: 350px;
   border: 1px solid #D4D4D4;
   outline: none;
   border-radius: 10px;
@@ -258,11 +312,6 @@
 
 .active-company {
   display: block !important;
-}
-
-.creat-company_active {
-  background-color: #313133 !important;
-  color: #E6C12E !important;
 }
 
 .svg-active {
