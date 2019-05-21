@@ -125,6 +125,8 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
+    font-size: 18px;
+    padding: 0 50px;
   }
   main .our-services_text ul li svg {
     margin-bottom: 20px;
