@@ -35,7 +35,7 @@ li {
     flex-wrap: wrap;
   }
   header .content-header .call-but a {
-    width: 250px;
+    width: 200px;
     height: 48px;
     display: flex;
     justify-content: space-around;
@@ -47,6 +47,9 @@ li {
     outline: none;
     cursor: pointer;
     color: #000;
+  }
+  header .content-header .call-but a svg {
+    margin-right: -10px;
   }
 
   main {
@@ -188,7 +191,10 @@ li {
     width: 25%;
   }
   header .content-header .call-but a {
-    width: 250px;
+    width: 200px;
+  }
+  header .content-header .call-but a svg {
+    margin-right: -10px;
   }
 
   main .contact-center {

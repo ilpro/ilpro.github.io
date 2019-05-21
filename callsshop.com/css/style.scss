@@ -35,7 +35,7 @@ li {
 			flex-wrap: wrap;
 			.call-but {
 				a {
-					width: 250px;
+					width: 200px;
 					height: 48px;
 					display: flex;
 					justify-content: space-around;
@@ -47,6 +47,9 @@ li {
 					outline: none;
 					cursor: pointer;
 					color:#000;
+					svg {
+						margin-right: -10px;
+					}
 				}
 			}
 		}
@@ -193,7 +196,10 @@ li {
 			.call-but {
 				width: 25%;
 				a {
-					width: 250px;
+					width: 200px;
+					svg {
+						margin-right: -10px;
+					}
 				}
 			}
 		}
