@@ -1,0 +1,292 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.content-wrapper {
+	width: 80% !important;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+	
+	header {
+		width: 100%;
+		padding: 40px 0;
+		.content-header {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			.call-but {
+				button {
+					width: 250px;
+					height: 48px;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					flex-wrap: wrap;
+					border-radius: 10px;
+					background-color: #fff;
+					border: 1px solid #000;
+					outline: none;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	main {
+		width: 100%;
+		.contact-center {
+			width: 100%;
+			height: 100%;
+			background: url(../img/contact-center.png) no-repeat center;
+			background-size: cover;
+			padding: 40px 0;
+			.contact-center_text {
+				text-align: center;
+				.cl {
+					font-weight: 600;
+					color: #000;
+				}
+			}
+		}
+		.work-with_us {
+			padding: 40px 0;
+			background: url(../img/arrow.png) no-repeat;
+			.bg-work {
+				display: none;
+			}
+			.work-with_us-text {
+				text-align: center;
+				h1 {
+					font-size: 35px;
+					font-weight: 600;
+					color: #3BA843;
+				}
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					text-align: center;
+					li {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						margin-bottom: 20px;
+						font-weight: 500;
+						color: #636363;
+					}
+				}
+			}
+		}
+		.partnership {
+			padding: 40px 0;
+			background: url(../img/partnership.png) no-repeat;
+			background-size: 300%;
+			background-color: #3BA843;
+			.partnership-text {
+				font-size: 21px;
+				text-align: center;
+				line-height: 1.8;
+				color: #fff;
+				p {	
+					font-weight: 300;
+					span {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		.our-services_text {
+			text-align: center;
+			ul {
+				width: 79%;
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					margin-bottom: 20px;
+					svg {
+						margin-bottom: 20px;
+						padding-bottom: 20px;
+						border-bottom: 2px solid #F79421;
+					}
+				}
+			}
+		}
+		.about-us {
+			background: url(../img/aboutUs.png) no-repeat center;
+			background-size: cover;
+			padding: 40px 0;
+			.about-us_text {
+				line-height: 1.5;
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+
+	footer {
+		width: 100%;
+		padding: 40px 0;
+		background-color: #303030;
+		.content-footer {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			.logo {
+				margin-bottom: 20px;
+			}
+			.call-but {
+				width: 100%;
+				button {
+					width: 100%;
+					height: 48px;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					flex-wrap: wrap;
+					color: #fff;
+					border-radius: 10px;
+					background-color: #303030;
+					border: 1px solid #fff;
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	header {
+		.content-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: nowrap;
+			.call-but {
+				width: 25%;
+				button {
+					width: 250px;
+				}
+			}
+		}
+	}
+
+	main {
+		.contact-center {
+			display: flex;
+			align-items: flex-end;
+			height: 652px;
+			.contact-center_text {
+				height: 360px ;
+				font-size: 36px;
+				height: 350px;
+				margin-bottom: 40px;
+			}
+		}
+		.work-with_us {
+			display: flex;
+			align-items: center;
+			height: 731px;
+			background-position: 71% 95%;
+			.work-with_us-text {
+				width: 700px !important;
+				height: 430px;
+				text-align: left;
+				ul {
+					margin-top: 95px;
+					flex-direction: column;
+					align-items: flex-start;
+					flex-wrap: nowrap;
+					li {
+						align-items: center;
+						svg {
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+			.bg-work {
+				display: block;
+				height: 100%;
+				width: 483px;
+				background: url(../img/work.png) no-repeat;
+			}
+		}
+
+		.partnership {
+			display: flex;
+			align-items: flex-end;
+			height: 316px;
+			background-size: 140%;
+			.partnership-text {
+				width: 700px !important;
+				font-size: 36px;
+			}
+		}
+
+		.our-services {
+			padding: 100px 0;
+			.our-services_text {
+				h2 {
+					color: #3BA843;
+					font-size: 48px;
+				}
+				font-size: 24px;
+				ul {
+					width: 100%;
+					align-items: center;
+					flex-wrap: nowrap;
+				}
+			}
+		}
+		.about-us {
+			height: 446px;
+			.about-us_text {
+				font-size: 28px;
+				font-weight: 300;
+				line-height: 1.8;
+			}
+		}
+	}
+
+	footer {
+		.content-footer {
+			align-items: center;
+			justify-content: space-between;
+			.logo {
+				margin-bottom: 0;
+			}
+			.call-but {
+				width: 250px;
+				button {
+					width: 250px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
