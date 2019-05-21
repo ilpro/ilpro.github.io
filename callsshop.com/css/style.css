@@ -34,7 +34,7 @@ li {
     justify-content: center;
     flex-wrap: wrap;
   }
-  header .content-header .call-but button {
+  header .content-header .call-but a {
     width: 250px;
     height: 48px;
     display: flex;
@@ -46,6 +46,7 @@ li {
     border: 1px solid #000;
     outline: none;
     cursor: pointer;
+    color: #000;
   }
 
   main {
@@ -161,7 +162,7 @@ li {
   footer .content-footer .call-but {
     width: 100%;
   }
-  footer .content-footer .call-but button {
+  footer .content-footer .call-but a {
     width: 100%;
     height: 48px;
     display: flex;
@@ -173,6 +174,7 @@ li {
     background-color: #303030;
     border: 1px solid #fff;
     outline: none;
+    color: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -185,7 +187,7 @@ li {
   header .content-header .call-but {
     width: 25%;
   }
-  header .content-header .call-but button {
+  header .content-header .call-but a {
     width: 250px;
   }
 
@@ -273,9 +275,10 @@ li {
   footer .content-footer .call-but {
     width: 250px;
   }
-  footer .content-footer .call-but button {
+  footer .content-footer .call-but a {
     width: 250px;
     cursor: pointer;
+    color: #fff;
   }
 }
 
