@@ -20,7 +20,7 @@
 }
 
 
-.formats-table {
+.format-tabl {
   width: 794px;
   margin: 0 auto;
   /*position: absolute;*/
@@ -66,7 +66,7 @@
 }
 
 
-.formats-table2 {
+.format-tabl2 {
   position: relative;
   width: 794px;
   margin: 0 auto;
@@ -210,7 +210,7 @@
 }
   
 
-.formats-table .formats-table_button {
+.format-tabl .format-tabl_button {
   display: flex;
   justify-content: space-between;
 }
@@ -218,7 +218,7 @@
 .table-buttons {
     display: flex;
     button {
-          display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 110px;
@@ -888,7 +888,33 @@
         border: none;
         outline: none;
         border-radius: 3px;
-        margin-right: 10px;
+        margin-right: 13px;
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      &.delete-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        flex: 0 140px;
+        height: 25px;
+        overflow: visible;
+        text-transform: none;
+        margin: 0;
+        font: inherit;
+        color: inherit;
+        -webkit-appearance: button;
+        cursor: pointer;
+        line-height: inherit;
+        color: #ffffff;
+        background-color: #E10000;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        margin-right: 13px;
         svg {
           margin-right: 5px;
         }
@@ -1012,6 +1038,7 @@
       background-color: $bg-color--lighter;
 
       .left-content-info {
+        position: relative;
         align-items: center;
         @include flexbox;
         @include flex(1 auto);
@@ -1039,6 +1066,10 @@
             color: $main-color;
             font-size: 12px;
           }
+        }
+        input {
+          margin-right: 20px;
+          cursor: pointer;
         }
       }
 

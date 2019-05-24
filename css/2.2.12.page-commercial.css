@@ -15,7 +15,7 @@
   fill: #fff;
 }
 
-.formats-table {
+.format-tabl {
   width: 794px;
   margin: 0 auto;
   /*position: absolute;*/
@@ -24,37 +24,37 @@
   border-top: 1px solid #6E6E6E;
   margin-top: 50px;
 }
-.formats-table .table-domains {
+.format-tabl .table-domains {
   display: flex;
   margin-top: 20px;
 }
-.formats-table .table-domains .table-domains_item {
+.format-tabl .table-domains .table-domains_item {
   width: 426px;
   height: 337px;
   border: 1px solid #D4D4D4;
   overflow-y: scroll;
 }
-.formats-table .table-domains .table-domains_item ul {
+.format-tabl .table-domains .table-domains_item ul {
   margin: 20px 0 20px 25px;
 }
-.formats-table .table-domains .table-domains_item ul li {
+.format-tabl .table-domains .table-domains_item ul li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.formats-table .table-domains .table-domains_item ul li input {
+.format-tabl .table-domains .table-domains_item ul li input {
   margin-right: 10px;
 }
-.formats-table .table-domains .table-domains_item:last-child ul li {
+.format-tabl .table-domains .table-domains_item:last-child ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.formats-table .table-domains .table-domains_item:last-child {
+.format-tabl .table-domains .table-domains_item:last-child {
   overflow-y: visible;
 }
 
-.formats-table2 {
+.format-tabl2 {
   position: relative;
   width: 794px;
   margin: 0 auto;
@@ -63,36 +63,36 @@
   display: none;
   margin-top: 50px;
 }
-.formats-table2 .table-domains {
+.format-tabl2 .table-domains {
   display: flex;
   margin-top: 20px;
 }
-.formats-table2 .table-domains .table-domains_item {
+.format-tabl2 .table-domains .table-domains_item {
   width: 426px;
   height: 337px;
   border: 1px solid #D4D4D4;
   overflow-y: scroll;
 }
-.formats-table2 .table-domains .table-domains_item ul {
+.format-tabl2 .table-domains .table-domains_item ul {
   margin: 20px 0 20px 25px;
 }
-.formats-table2 .table-domains .table-domains_item ul li {
+.format-tabl2 .table-domains .table-domains_item ul li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.formats-table2 .table-domains .table-domains_item ul li input {
+.format-tabl2 .table-domains .table-domains_item ul li input {
   margin-right: 10px;
 }
-.formats-table2 .table-domains .table-domains_item:last-child ul li {
+.format-tabl2 .table-domains .table-domains_item:last-child ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.formats-table2 .table-domains .table-domains_item:last-child {
+.format-tabl2 .table-domains .table-domains_item:last-child {
   overflow-y: visible;
 }
-.formats-table2 .table-formats {
+.format-tabl2 .table-formats {
   margin-top: 20px;
 }
 
@@ -191,7 +191,7 @@
   background-color: #cccccc;
 }
 
-.formats-table .formats-table_button {
+.format-tabl .format-tabl_button {
   display: flex;
   justify-content: space-between;
 }
@@ -892,9 +892,34 @@
   border: none;
   outline: none;
   border-radius: 3px;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 .table-heading .left-content-info-head .heading-item.add-button svg {
+  margin-right: 5px;
+}
+.table-heading .left-content-info-head .heading-item.delete-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  flex: 0 140px;
+  height: 25px;
+  overflow: visible;
+  text-transform: none;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  -webkit-appearance: button;
+  cursor: pointer;
+  line-height: inherit;
+  color: #ffffff;
+  background-color: #E10000;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-right: 13px;
+}
+.table-heading .left-content-info-head .heading-item.delete-banner svg {
   margin-right: 5px;
 }
 .table-heading .left-content-info-head .heading-item.price-1000 {
@@ -1121,6 +1146,7 @@
   background-color: #f2f2f2;
 }
 .table-body .body-row .row-content-part .left-content-info {
+  position: relative;
   align-items: center;
   display: -webkit-box;
   display: -moz-box;
@@ -1162,6 +1188,10 @@
 .table-body .body-row .row-content-part .left-content-info .banner-id .id-value {
   color: #313133;
   font-size: 12px;
+}
+.table-body .body-row .row-content-part .left-content-info input {
+  margin-right: 20px;
+  cursor: pointer;
 }
 .table-body .body-row .row-content-part .right-content-fill {
   position: relative;
